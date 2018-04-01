@@ -42,24 +42,22 @@ body{
     margin-left: 5px;
 }
 
-
-
 h1{          /*メニューバー*/
     position:center;
     margin: 0px;
     padding: 0;
     font-size: 14px;
     color: #000000;
-    font-weight: lighter;
-        font-family: "Helvetica Neue";
+    font-weight: normal;
+    font-family: "Helvetica Neue";
     text-align: center;
 }
 
 h2{          /*メニューバー2*/
     font-size: 12px;    
     font-family: "Helvetica Neue";
-     text-align: left;
-     word-wrap: break-word;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 
@@ -79,20 +77,20 @@ h2{          /*メニューバー2*/
     top: 0;
 } 
 
- a {
+a {
     color:#ffffff;
     text-decoration:none;
 }
 
- ul {
+ul {
     width:100%;
 }
 
- ul li {
+ul li {
     width: 100%;
 }
 
- ul li a:hover {
+ul li a:hover {
     color: #888888;
 }
 
@@ -113,16 +111,11 @@ h2{          /*メニューバー2*/
     color:#000000;
     text-decoration:none;
 }
-    
 
 h1#ryakureki,#gakkai, #sympo, #education{
     margin-top: -50px;
     padding-top: 50px;
 }
-
-
-
-
 
 
 
@@ -149,7 +142,7 @@ h1#ryakureki,#gakkai, #sympo, #education{
     padding: 0px;
     font-size: 60px;
     color: #141414;
-        font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue";
     font-weight: 400;
     text-align: center;
 }
