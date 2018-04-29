@@ -207,7 +207,7 @@ h1#ryakureki,#gakkai, #sympo, #education{
 
 .header3 h2{
     position: static;
-    margin-left: 80px;
+    margin-left: 25px;
     font-size: 13px;
     color: #000000;
     font-family :HelveticaNeue;
@@ -288,7 +288,7 @@ h1#ryakureki,#gakkai, #sympo, #education{
 }
 
 .header5 h2{
-    margin-left: 80px;
+    margin-left: 25px;
     font-size: 13px;
     color: #000000;
     font-family :HelveticaNeue;
