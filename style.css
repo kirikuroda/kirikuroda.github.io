@@ -197,15 +197,6 @@ h1#ryakureki,#gakkai, #sympo, #education{
     /*text-align: center;*/
 }
 
-
-.header3 h2{
-    position:right;
-    margin-left: 780px;
-    font-size: 13px;
-    color: #000000;
-    font-family :HelveticaNeue;
-}
-
 .header3 h1{
     margin-top: 20px;
     position:center;
@@ -213,6 +204,15 @@ h1#ryakureki,#gakkai, #sympo, #education{
     color: #141414;
     font-family : "ヒラギノ角ゴ Pro W3";
 }
+
+.header3 h2{
+    position: static;
+    margin-left: 80px;
+    font-size: 13px;
+    color: #000000;
+    font-family :HelveticaNeue;
+}
+
 .header3 p{
     font-size: 15px;
     margin-left: 25px;
@@ -288,8 +288,7 @@ h1#ryakureki,#gakkai, #sympo, #education{
 }
 
 .header5 h2{
-    position:right;
-    margin-left: 780px;
+    margin-left: 80px;
     font-size: 13px;
     color: #000000;
     font-family :HelveticaNeue;
