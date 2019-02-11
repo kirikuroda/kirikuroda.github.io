@@ -1,2 +1,0 @@
-"0","ggplot(aapl, aes(date, adj_price)) +"
-"0","  geom_line()"

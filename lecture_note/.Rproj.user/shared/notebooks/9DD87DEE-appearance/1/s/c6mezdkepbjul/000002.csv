@@ -1,3 +1,0 @@
-"0","ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) +"
-"0","  geom_point() +"
-"0","  scale_color_manual(values = c(""red"",""blue"",""green""))"

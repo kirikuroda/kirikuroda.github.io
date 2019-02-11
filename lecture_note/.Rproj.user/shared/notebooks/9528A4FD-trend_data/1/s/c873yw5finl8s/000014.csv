@@ -1,3 +1,0 @@
-"0","ggplot(worldpop, aes(Year, log10(Population))) +"
-"0","  geom_line() +"
-"0","  geom_point()"

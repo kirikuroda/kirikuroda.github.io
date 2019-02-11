@@ -1,3 +1,0 @@
-"0","ggplot(PlantGrowth, aes(group, weight, fill = group)) + # x軸にgroup、y軸にweight；fillで色の塗りつぶし"
-"0","  geom_boxplot() + # 箱ひげ図"
-"0","  guides(fill = FALSE) # 凡例（ここではfill）を消すためのコード"

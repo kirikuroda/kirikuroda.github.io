@@ -1,7 +1,0 @@
-"0","# 本資料で使うパッケージのインストール"
-"0","install.packages(c(""tidyverse"",""gcookbook"",""GGally"",""devtools""))"
-"1","
-"
-"1","  There is a binary version available but the source version is later"
-"1",":
-"

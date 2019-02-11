@@ -1,4 +1,0 @@
-"0","ggplot(cabbage_exp, aes(Date, Weight, fill = Cultivar, group = Cultivar)) +"
-"0","  geom_line(position = position_dodge(width = 0.9)) + # グルーピングされた棒グラフの復習"
-"0","  geom_point(position = position_dodge(width = 0.9)) +"
-"0","  geom_errorbar(aes(ymin = Weight - se, ymax = Weight + se), position = position_dodge(width = 0.9), width = 0.2)"

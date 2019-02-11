@@ -1,3 +1,0 @@
-"0","ggplot(mpg, aes(displ, hwy)) +"
-"0","  geom_point() +"
-"0","  facet_grid(drv ~ cyl)"

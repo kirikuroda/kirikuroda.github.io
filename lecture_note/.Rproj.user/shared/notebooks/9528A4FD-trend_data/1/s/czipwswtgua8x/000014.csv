@@ -1,5 +1,0 @@
-"0","ggplot(tg_mean, aes(dose, mean, color = supp, group = supp, linetype = supp)) + # color = suppとlinetype = suppを追加"
-"0","  geom_point() # ドットは添えるだけ"
-"2"," ggplot(tg_mean, aes(dose, mean, color = supp, group = supp, linetype = supp)) でエラー: 
-   関数 ""ggplot"" を見つけることができませんでした 
-"

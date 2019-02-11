@@ -1,2 +1,0 @@
-"0","ggplot(data = mtcars, aes(x = disp, y = mpg)) + # コードを読みやすくするため、「+」のところで改行すると良い"
-"0","  geom_point() # データを点（point）としてデザインするためのコードを追加"

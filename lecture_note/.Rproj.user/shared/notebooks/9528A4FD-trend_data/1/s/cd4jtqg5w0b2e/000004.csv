@@ -1,4 +1,0 @@
-"0","tg_mean = ToothGrowth %>%"
-"0","  group_by(supp, dose) %>%"
-"0","  summarise(mean = mean(len))"
-"0","tg_mean"

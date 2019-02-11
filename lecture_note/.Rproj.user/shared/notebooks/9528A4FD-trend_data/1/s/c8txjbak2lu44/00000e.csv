@@ -1,3 +1,0 @@
-"0","ggplot(BOD, aes(Time, demand)) +"
-"0","  geom_line() +"
-"0","  geom_point() # ドットは添えるだけ"

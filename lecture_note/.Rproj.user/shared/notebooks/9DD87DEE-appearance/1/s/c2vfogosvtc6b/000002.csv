@@ -1,8 +1,0 @@
-"0","ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) +"
-"0","  geom_point() +"
-"0","  labs(x = ""Weight (1,000 Ibs)"","
-"0","       y = ""Miles/(US) gallon"","
-"0","       title = ""Title"","
-"0","       subtitle = ""Subtitle"","
-"0","       caption = ""Caption"","
-"0","       tag = ""Tag"")"

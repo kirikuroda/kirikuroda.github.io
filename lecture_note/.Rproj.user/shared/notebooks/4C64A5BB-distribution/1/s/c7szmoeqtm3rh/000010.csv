@@ -1,5 +1,0 @@
-"0","ggplot(PlantGrowth, aes(group, weight, fill = group)) +"
-"0","  geom_violin() + # まずバイオリンプロット"
-"0","  geom_boxplot(outlier.shape = NA, width = 0.2) + # その上に箱ひげ図"
-"0","  geom_point(position = position_jitter(width = 0.1, height = 0, seed = 1)) + # その上にストリッププロット"
-"0","  stat_summary(geom = ""point"", fun.y = mean, shape = ""diamond"", color = ""white"", size = 3) # おまけに平均値を追加"
