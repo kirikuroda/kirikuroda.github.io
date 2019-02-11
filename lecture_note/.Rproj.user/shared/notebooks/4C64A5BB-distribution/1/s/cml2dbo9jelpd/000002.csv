@@ -1,0 +1,16 @@
+"0","ggplot(PlantGrowth, aes(group, weight, fill = group)) + # x軸にgroup、y軸にweight；fillで色の塗りつぶし"
+"0","  geom_boxplot() # 箱ひげ図を描くためのコード"
+"2"," 警告メッセージ: 
+"
+"2","1: "
+"2"," readLines(con) で: "
+"2","  '_bookdown.yml' で不完全な最終行が見つかりました 
+"
+"2","2: "
+"2"," readLines(con) で: "
+"2","  '_bookdown.yml' で不完全な最終行が見つかりました 
+"
+"2","3: "
+"2"," readLines(con) で: "
+"2","  '_bookdown.yml' で不完全な最終行が見つかりました 
+"

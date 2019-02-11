@@ -1,0 +1,3 @@
+"0","ggplot(cabbage_exp, aes(Date, Weight, fill = Cultivar)) +"
+"0","  geom_bar(stat = ""identity"", position = ""dodge"") + # グルーピングされた棒グラフの復習"
+"0","  geom_errorbar(aes(ymin = Weight - se, ymax = Weight + se), position = position_dodge(width = 0.9), width = 0.2) # ymin：エラーバーの下端、ymax：エラーバーの上端"

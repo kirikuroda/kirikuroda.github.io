@@ -1,0 +1,192 @@
+```{r, include=FALSE}
+source("common.R")
+```
+
+# 数量 {#amount}
+
+基本中の基本として、まずはデータの数量（数値、個数、比率、順位など）を可視化してみよう。
+
+```{r}
+library(ggplot2) # 忘れずにパッケージを読み込む
+```
+
+## 棒グラフ
+
+### 基本の棒グラフ
+
+数量の可視化で最も代表的、かつ馴染み深いのは<u>**棒グラフ**</u>（bar graph; bar chart; bar plot）だろう。
+
+まず、最も基本的な棒グラフを描いてみよう。使うデータは、gcookbookパッケージの`pg_mean`（植物の重さに関するデータセット）である。まず、gcookbookを読み込む。
+
+```{r}
+library(gcookbook)
+```
+
+データの中身は以下の通りである。
+
+```{r}
+head(pg_mean) # データが3行しかないのですべて表示される
+```
+
+2つの変数はそれぞれ
+
+- `group`：実験の条件（3水準）
+
+- `weight`：植物の重さの平均値
+
+を表している。素朴に思いつくのは、「条件をx軸に、重さをy軸に取った棒グラフ」だろう。数量を表す棒グラフは、`geom_bar()`をで描くことができる。
+
+(ref:bar-plot-1) 棒グラフ。x軸は条件、y軸は植物の平均重量を表している。
+
+```{r, fig.cap='(ref:bar-plot-1)'}
+ggplot(pg_mean, aes(group, weight)) + # x軸にgroup、y軸にweight
+  geom_bar(stat = "identity") # 棒グラフ；stat = "identity"が必要
+```
+
+なお、データの数値を棒グラフで描く際は、`stat = "identity"`と設定する必要がある。なぜなら、`geom_bar()`は、データの**個数**を描くのがデフォルト（`stat = "count"`という設定）になっているからである^[ここら辺のことはいずれわかるようになるので、今はそういうものだと飲み込んでほしい。いずれ勝手に理解できているはず（たぶん）。]。
+
+気になる人は、`stat = "identity"`の部分を消してコードを実行してみよう。`エラー: stat_count() must not be used with a y aesthetic.`というエラーメッセージが出て、プロットできないはずである^[本資料のコードを修正した上で実行してもPCが壊れたりすることはないので、「ここをこうしたらどうなるだろうか？」と積極的にいじってみることを推奨する。]。
+
+### グルーピングされた棒グラフ
+
+では、ここに変数を1つ追加してみよう。次に使うデータはgcookbookの`cabbage_exp`（キャベツに関するデータセット）である。
+
+```{r}
+head(cabbage_exp) # 6行しかないのですべて表示される
+```
+
+注目する変数は以下の3つである。
+
+- `Date`：キャベツの栽培期間（d16, d20, or d21）
+
+- `Cultivar`：キャベツの品種（c39 or c52）
+
+- `Weight`：キャベツの重量（kg）
+
+このとき、栽培期間と品種ごとにキャベツの重量を描いてみたいと思わない人はいない^[異論は認めない。]。このようなときは、`Date`を`x`、`Weight`を`y`、`Cultivar`を`fill`に対応づけて描けば良い。
+
+(ref:bar-plot-2) グルーピングされた棒グラフ。
+
+```{r, bar-plot-2, fig.cap='(ref:bar-plot-2)'}
+ggplot(cabbage_exp, aes(Date, Weight, fill = Cultivar)) + # x軸にDate、y軸にWeight；fill = Cultivarを追加
+  geom_bar(stat = "identity", position = "dodge") # 棒グラフ；position = "dodge"が必要
+```
+
+このように、2つの変数ごとに棒グラフを描きたい（グルーピングしたい）場合は、`fill`に変数を追加すれば良い。`fill`は「塗りつぶし」を意味しており、実際`Cultivar`の種類に応じて棒が塗りつぶされていることがわかる^[「色なのだから、`color`に変数を指定するのでは？」と思った人がいるかもしれない。実際、`geom_bar()`で`color`に変数を指定すると、棒の**枠線の色**が変わる。しかし、棒グラフの枠に色をつけてもごちゃごちゃするだけなので、基本的には変数を指定する必要はない。]。
+
+なお、このようなグラフを描く際は、基本的に`position = "dodge"`と指定する必要がある。なぜなら、`geom_bar()`はデフォルトが`position = "stack"`であり、そのままだと積み上げ棒グラフになってしまうからである。ちなみに、`position = "fill"`と指定すれば、全体を100%にした積み上げ棒グラフを描くことができる。積み上げ棒グラフは割合や比率を表すのによく使われるグラフである。
+
+### 個数を表す棒グラフ
+
+では、データの数値ではなく、データの**個数**（カウントデータ）はどのようにプロットすればよいだろうか？　次は、ggplot2の`diamonds`（ダイアモンドに関するデータセット）を使ってみよう。
+
+```{r}
+head(diamonds) # 先頭6行
+```
+
+ここでは`cut`という変数に着目してみよう。
+
+- `cut`：ダイアモンドのカットの質（Fair, Good, Very Good, Premium, or Ideal）
+
+ダイアモンドの個数をカットに応じてプロットしてみよう。なお、`geom_bar()`はデータの個数を自動的に数えてくれるので、`y`に変数を対応づける必要はない。
+
+(ref:bar-plot-3) カットごとのダイアモンドの個数。
+
+```{r, bar-plot-3, fig.cap='(ref:bar-plot-3)'}
+ggplot(diamonds, aes(cut)) + # x軸にcut；yには何も対応づける必要なし
+  geom_bar() # 棒グラフ；今回はデータの値ではなく個数を描くので、stat = "identity"は不要
+```
+
+無事に個数をプロットすることができた。
+
+
+## Clevelandのドットプロット
+
+数量の可視化に向いているのは棒グラフだけではない。というよりもむしろ、棒グラフが可視化に向かない場合もある。たとえば、gcookbookの`tophitters2001`（2001年MLBの上位144打手のデータセット）を使ってそれを見てみよう。
+
+```{r}
+head(tophitters2001)
+```
+
+変数がたくさんあるが、とりあえず
+
+- `name`：打手の名前
+
+- `avg`：打率
+
+に注目してみよう。なお、データが144行と少し多いので、わかりやすさのため先頭の20名のデータだけを使うことにする。20名のデータは`top20hitters`に代入する。
+
+```{r}
+top20hitters = tophitters2001[1:20,] # 先頭20行を抽出してtop20hittersに代入
+```
+
+それでは、この`top20hitters`を使って、まずは打手ごとの打率を素直に棒グラフで描いてみよう。
+
+(ref:bar-plot-4) 2001年MLBのトップ20の打率。
+
+```{r, bar-plot-4, fig.cap='(ref:bar-plot-4)'}
+ggplot(top20hitters, aes(name, avg)) + # x軸にname、y軸にavg
+  geom_bar(stat = "identity") # 棒グラフ
+```
+
+これを見てどのように思うだろうか？　おそらく「あまり美しくない」と感じる人が多いだろう。では、どこが問題なのか。大きく2つの問題点が挙げられるだろう。
+
+**問題1. 選手ごとの打率の違いが明確に見えない**
+
+- 棒グラフはy = 0から始まるという性質がある^[逆に、y = 0から始まっていない棒グラフを見た場合、少し疑ってかかったほうが良い。このような棒グラフは結構巷にあふれている。]。しかし、今回のデータの値（打率）は基本的に0.3前後なので、y = 0をグラフに含めるとデータの特徴が見えづらくなってしまう。このような場合、棒グラフは可視化に向いていない。
+
+**問題2. 打率の高低によって選手が並び替えられていない（ソートされていない）**
+
+- これは棒グラフ自体の問題ではないが、可視化において重要なポイントである。これも直す必要があるだろう。
+
+---
+
+これらの問題に対する解決策の1つとして、<u>**Clevelandのドットプロット**</u>（Cleveland dot plot）というものがある。ドットプロットというくらいなので、散布図のようにデータをドットで表現する手法である。描き方を順に見ていこう。
+
+(ref:dot-plot) Clevelandのドットプロット（2001年MLBトップ20の打率）。
+
+```{r, dot-plot, fig.cap='(ref:dot-plot)'}
+ggplot(top20hitters, aes(avg, reorder(name, avg))) + # x軸とy軸を交換、reorder()関数を使う
+  geom_point() # ドットで描く；stat = "identity"は不要
+```
+
+1. `ggplot(top20hitter, aes(avg, reorder(name, avg)))`
+
+    - 打率をx軸、選手名をy軸にする。こうすることで、選手名が重ならずに済む。
+    
+    - `reorder(name, avg)`により、選手名を打率でソートしている。`reorder(a, b)`はaをbの値で（昇順に）ソートする関数である。`reorder()`は、変数の**順序情報**を強調する際に使うと効果的である。
+
+2. `geom_point()`
+
+    - データをドットで表現するための関数。
+    
+    - ちなみに、`geom_point()`では`stat = "identity"`がデフォルトなので、`geom_bar()`とは異なり、`stat`の中身を明示的に指定する必要がない。
+
+<br>
+
+これがClevelandのドットプロット^[類似のグラフとしてロリポッププロット（lollipop plot; lollipop chart）というものもある。https://python-graph-gallery.com/lollipop-plot/ ]である。改めてFigure \@ref(fig:bar-plot-4)とFigure \@ref(fig:dot-plot)を見比べると、明らかにグラフの見栄えが改善していることがわかる。
+
+
+## 練習問題
+
+- `cabbage_exp`のデータを使い、x軸に`Cultivar`、y軸に`Weight`、`Date`で色分けした棒グラフを描いてみよう。
+
+```{r, include=FALSE}
+ggplot(cabbage_exp, aes(Cultivar, Weight, fill = Date)) +
+  geom_bar(stat = "identity", position = "dodge")
+```
+
+- `diamonds`のデータを使い、`clarity`（輝きの等級）ごとにダイアモンドの個数をプロットしてみよう。
+
+```{r, include=FALSE}
+ggplot(diamonds, aes(clarity)) +
+  geom_bar()
+```
+
+- gcookbookの`uspopchange`のデータ構造を確認しよう（`?uspopchange` と `head(uspopchange)`）。その上で、この章で学んだテクニックを使い、州ごとに人口がどれくらい増減したかをプロットしてみよう。また、どのようなデザインでプロットするのが最も妥当かつ見栄えが良いかを考えてみよう。
+
+```{r, include=FALSE}
+ggplot(uspopchange, aes(reorder(State, Change), Change)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+```

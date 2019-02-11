@@ -1,0 +1,3 @@
+"0","ggplot(mpg, aes(displ, hwy)) +"
+"0","  geom_point() +"
+"0","  facet_wrap(drv ~ cyl) # drvは行方向、cylは列方向"

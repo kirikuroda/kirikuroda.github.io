@@ -1,0 +1,86 @@
+```{r, include=FALSE}
+source("common.R")
+```
+
+# 連続変数間の関係 {#association}
+
+2つの連続変数の関係を見たいときは、<u>**散布図**</u>（scatter plot）を描くのがセオリーである。
+
+## 基本の散布図
+
+ここでは、Rにデフォルトで入っている```faithful```（オールド・フェイスフル・ガイザー^[イエローストーン国立公園内にある間欠泉。https://ja.wikipedia.org/wiki/オールド・フェイスフル・ガイザー ]に関するデータセット）
+
+```{r}
+head(faithful) # 先頭6行
+```
+
+変数はそれぞれ、
+
+- ```eruptions```：間欠泉の噴出時間（分）
+
+- ```waiting```：次の間欠泉が噴出するまでの時間（分）
+
+を表している。Chapter \@ref(tutorial)のチュートリアルでも見たように、散布図は```geom_point()```で描くことができる。
+
+(ref:scatter-plot) 散布図。強い正の相関が見て取れる。また、データを2つのクラスタに分けられそうなことが見て取れる。
+
+```{r}
+ggplot(faithful, aes(eruptions, waiting)) +
+  geom_point()
+```
+
+
+## グルーピングされた散布図
+
+Chapter \@ref(tutorial)のチュートリアルでも見たが、複数グループの散布図を描くことも可能である。改めて、Chapter \@ref(tutorial)で描いた散布図の復習をしよう。```geom_point()```でグループごとに色を変えるには、```color```に変数を指定すれば良い。
+
+(ref:scatter-plot-2) グルーピングされた散布図。Figure \@ref(fig:tutorial-5)と全く同じ散布図である。
+
+```{r, scatter-plot-2, fig.cap='(ref:scatter-plot-2)'}
+ggplot(mtcars, aes(wt, mpg)) + # factor(変数)とすることで、離散変数として扱える
+  geom_point()
+```
+
+また、見やすさや色覚配慮という観点から見れば、点の形も変えたほうが良いだろう。点の形を変えるには、```shape```に変数を指定すれば良い。
+
+(ref:scatter-plot-3) Figure \@ref(fig:scatter-plot-2)の点の形を変えた散布図。
+
+```{r, fig.cap='(ref:scatter-plot-3)'}
+ggplot(mpg, aes(displ, hwy, color = factor(year), shape = factor(year))) + # shape = factor(year)を追加
+  geom_point()
+```
+
+
+## 散布図行列
+
+```faithful```データは変数が2つだけなので、散布図を1つ描けば終わりである。しかし、実際のデータはたくさんの変数があり、変数が増えるにつれて確認しなければならない散布図の数は爆発的に増える。1つ1つ散布図を描くのは面倒である。
+
+しかし、そんなときに便利なものがある^[データ分析で「困ったなあ」とか「こういうのあれば便利なんだけど」と思うようなことは、大体海外の偉い人が既に解決してくれているものなので、困ったときはやはり（英語で）ググルに限る。これは重要なライフハックである。]。それは、GGallyパッケージの```ggpairs()```という関数である。Rにデフォルトで入っている```iris```データで試してみよう。まずはパッケージを読み込む。
+
+```{r, message=FALSE}
+library(GGally)
+```
+
+あとは、```ggpairs()```にデータセットを突っ込むだけ。以上。
+
+```{r, fig.height=5, message=FALSE}
+ggpairs(iris)
+```
+
+なんとこれだけで多変量の散布図、箱ひげ図などを一撃で描画できてしまうのである。しかも、変数の連続／離散に応じてグラフを適切に変更してくれる親切設計である。
+
+ただ、これだけでは少し味気ないので、```Species```に応じて色をつけてみよう。ggplot2と同じように指定すれば良い。
+
+```{r, fig.height=5, message=FALSE}
+ggpairs(iris, aes(color = Species, alpha = 0.7)) # ggplot2と同じように指定
+```
+
+他にも細かい設定ができるそうだが、ここでは説明を割愛する^[ぶっちゃけあまり知らない。]。
+
+## 練習問題
+
+- 
+
+-
+
+

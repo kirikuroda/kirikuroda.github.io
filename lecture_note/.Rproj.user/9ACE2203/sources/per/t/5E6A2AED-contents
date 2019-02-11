@@ -1,0 +1,19 @@
+book_filename: "lecture_note"
+delete_merged_file: true
+rmd_files: [
+  "index.Rmd",
+  "setup.Rmd",
+  "introduction.Rmd",
+  # Part I
+  "tutorial.Rmd",
+  "amount.Rmd",
+  "distribution.Rmd",
+  "association.Rmd",
+  "trend_data.Rmd",
+  "statistics.Rmd",
+  "appearance.Rmd",
+  # Part II
+  "data_handling.Rmd",
+  # Part III
+  "reference.Rmd",
+  "technical_notes.Rmd"]

@@ -1,0 +1,2 @@
+"0","ggplot(mtcars, aes(disp, mpg, color = factor(cyl), shape = factor(cyl))) + # shape = factor(year)を追加"
+"0","  geom_point()"

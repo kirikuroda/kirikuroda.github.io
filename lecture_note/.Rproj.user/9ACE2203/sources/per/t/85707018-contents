@@ -1,0 +1,299 @@
+```{r, include=FALSE}
+source("common.R")
+```
+
+# 分布 {#distribution}
+
+Chapter \@ref(introduction)の「アンスコムの例」で見たように、データの<u>**要約統計量**</u>（summary statistics；記述統計量、descriptive statisticsとも言う）だけに注目して、<u>**分布**</u>（distribution）を確認しないと痛い目にあうことがある。
+
+<u>**実験や調査でデータを集めたら、要約統計量を計算するだけでなく、まずデータの分布を確認・報告することを心がけよう。**</u>
+
+```{r}
+library(ggplot2) # 忘れずにパッケージを読み込む
+```
+
+
+## ヒストグラム
+
+### 基本のヒストグラム
+
+分布を表すグラフの中で最も代表的なのは<u>**ヒストグラム**</u>（histogram）だろう。ヒストグラムは複数の縦棒から構成されるグラフで、棒の幅（x軸）は変数の値、棒の高さ（y軸）はデータの個数を表している。
+
+早速具体例を見てみよう。Chapter \@ref(introduction)と同様に、ここでもgcookbookの`tophitters2001`（2001年MLBにおける144名の打手データ）を使うことにする。gcookbookを読み込み、改めてデータ構造を再確認しよう。
+
+```{r}
+library(gcookbook)
+```
+
+```{r}
+head(tophitters2001) # データの先頭6行を再確認
+```
+
+では、144名の打手の打率（`avg`）の分布を可視化してみよう。ヒストグラムはx軸に（連続）変数の値を取るグラフなので、以下のようにコードを書けば良い。
+
+(ref:histogram-1) 2001年MLBにおける144名の打率の分布。
+
+```{r, fig.cap='(ref:histogram-1)', message=FALSE}
+ggplot(tophitters2001, aes(avg)) + # x軸にavg；データの個数は自動的にカウントされるので、yは指定する必要なし
+  geom_histogram() # ヒストグラムを描く
+```
+
+グラフを見ると、大体0.28前後が<u>**中央値**</u>（median）あるいは<u>**最頻値**</u>（mode）になっていることがわかる。
+
+---
+
+なお、<u>**ビン**</u>（bin：ヒストグラムの1本1本の棒）の幅を調整することで、分布の印象が大幅に変わるということに注意してほしい。実際、上のグラフを描いた際に、
+
+``## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.``
+
+というメッセージが出たかと思う。これはまさにそのことを注意喚起するメッセージである。
+
+データ分析の際は、ビンの幅をいくつか試した上で、最も妥当そうな値を使うようにすると良い。参考に、ビンの幅をそれぞれ0.001、0.01、0.1にした場合の図を下に載せておく。
+
+(ref:histogram-2) ビンが細すぎるヒストグラム。
+
+```{r, fig.cap='(ref:histogram-2)'}
+ggplot(tophitters2001, aes(avg)) +
+  geom_histogram(binwidth = 0.001) # binwidth = ...でビンの幅を設定
+```
+
+(ref:histogram-3) ビンが妥当なサイズのヒストグラム。
+
+```{r, fig.cap='(ref:histogram-3)'}
+ggplot(tophitters2001, aes(avg)) +
+  geom_histogram(binwidth = 0.01) # binwidth = ...でビンの幅を設定
+```
+
+(ref:histogram-4) ビンが太すぎるヒストグラム。
+
+```{r, fig.cap='(ref:histogram-4)'}
+ggplot(tophitters2001, aes(avg)) +
+  geom_histogram(binwidth = 0.1) # binwidth = ...でビンの幅を設定
+```
+
+### グルーピングされたヒストグラム
+
+たとえば、実験や調査をおこなった際、変数の分布をある集団ごとに見比べたい（グルーピングしたい）ということがあるかと思う。たとえば、「○○の尺度得点の分布は男女間で異なるのでは？」とか、「実験群と統制群とで○○の分布に違いがあるのでは？」などである。
+
+引き続き`tophitters2001`を使って、その具体例を見てみよう。ここでは、リーグごとの打率の分布を見比べることにする。
+
+- `lg`：打手の所属リーグ（AL or NL；それぞれア・リーグとナ・リーグ）
+
+このようなときは、`fill`にグルーピングしたい変数（`lg`）を指定すれば良い。
+
+(ref:histogram-5) リーグごとの打率のヒストグラム。
+
+```{r, histogram-5, fig.cap='(ref:histogram-5)', message=FALSE}
+ggplot(tophitters2001, aes(avg, fill = lg)) + # x軸にavg；fillに変数を指定することでグルーピングできる
+  geom_histogram(position = "identity") # position = "identity"としないといけない
+```
+
+なお、ここでは`position = "identity"`と設定しなくてはならない。なぜなら、`geom_histogram()`は`position = "stack"`がデフォルト設定であり、そのままだと積み上げ棒グラフのようになってしまうからである。気になる人は、`position = "identity"`の部分を消した上で、もう一度グラフを描いてみよう。
+
+また、基本的には上のヒストグラムでも問題ないが、ア・リーグのデータがナ・リーグの後ろに隠れてしまっているのが若干気になる。このようなときは、`alpha`に0〜1の値を指定すると、ヒストグラムが半透明になり、上の問題を解決できる。
+
+(ref:histogram-6) Figure \@ref(fig:histogram-5)を半透明にしたもの。
+
+```{r, fig.cap='(ref:histogram-6)', message=FALSE}
+ggplot(tophitters2001, aes(avg, fill = lg)) +
+  geom_histogram(position = "identity", alpha = 0.7) # 0だと完全に透明、1だと完全に不透明
+```
+
+無事ア・リーグのデータが見えるようになった。
+
+## 密度プロット
+
+ヒストグラムと似たようなグラフに、<u>**密度プロット**</u>（density plot）がある。密度プロットとは、ヒストグラムのようにローデータ（raw data）をそのままプロットするのではなく、カーネル密度推定（kernel-density estimation）というテクニックで密度分布を推定した上で可視化する手法である。グラフが手書きの時代だった頃からヒストグラムがあるのに対し、密度プロットは計算機の発達によって開発された比較的新しいグラフである。
+
+描き方は簡単で、上で`geom_histogram()`としていたところを`geom_density()`に差し替えるだけで良い。
+
+(ref:density-plot-1) リーグごとの打率の密度プロット。
+
+```{r, fig.cap='(ref:density-plot-1)'}
+ggplot(tophitters2001, aes(avg, fill = lg)) + # x軸にavg；fillに変数を指定することでグルーピングできる
+  geom_density(alpha = 0.7) # デフォルトがposition = "identity"なので、geom_histogram(position = "identity")のように明示的に指定する必要がない
+```
+
+y軸は推定された密度を表している（5人とか10人といった人数を表しているわけではない）。この密度は、塗りつぶされた面積の総和が1になるように算出されているだけなので、値そのものにはあまり意味がないことに注意してほしい。
+
+また、密度プロットもヒストグラムと同様に、描き方次第ではデータの性質を捉えきれないという欠点がある。`geom_histogram()`では`binwidth`を調整する必要があったが、`geom_density()`では`adjust`という引数（カーネル密度推定に用いられるパラメタ）を調整する必要がある。先程と同様に、`adjust`の値をそれぞれ0.25, 1, 4にしたグラフを下に載せておく。
+
+(ref:density-plot-2) 平滑化が弱すぎる密度プロット。データの全体的な特徴が見えにくくなってしまっている。
+
+```{r fig.cap='(ref:density-plot-2)'}
+ggplot(tophitters2001, aes(avg, fill = lg)) +
+  geom_density(alpha = 0.7, adjust = 0.25) # adjust = ...で平滑化の強度を調整
+```
+
+(ref:density-plot-3) 妥当な平滑化の密度プロット（デフォルトの設定）。
+
+```{r fig.cap='(ref:density-plot-3)'}
+ggplot(tophitters2001, aes(avg, fill = lg)) +
+  geom_density(alpha = 0.7, adjust = 1) # adjust = ...で平滑化の強度を調整
+```
+
+(ref:density-plot-4) 平滑化が強すぎる密度プロット。データを平滑化しすぎており、分布の違いが見えなくなってしまっている。
+
+```{r fig.cap='(ref:density-plot-4)'}
+ggplot(tophitters2001, aes(avg, fill = lg)) +
+  geom_density(alpha = 0.7, adjust = 4) # adjust = ...で平滑化の強度を調整
+```
+
+---
+
+ところで、Chapter \@ref(tutorial)でも少し述べたように、<u>**ggplot2では複数のプロットを重ね合わせることができる。**</u>たとえば、ヒストグラムと密度プロットは以下のように重ね合わせることができる。
+
+(ref:histogram-density-plot) ヒストグラムと密度プロットを重ねたグラフ。
+
+```{r, fig.cap='(ref:histogram-density-plot)'}
+ggplot(tophitters2001, aes(avg, y = ..density..)) + # y = ..density..とする必要あり
+  geom_histogram(binwidth = 0.01) + # まずヒストグラムを描く
+  geom_density(alpha = 0.7) # その上に密度プロットを描く
+```
+
+なお、ここでは`y = ..density..`をコードに追加する必要がある。なぜなら、`geom_density()`が密度をy軸に取るのに対し、`geom_histogram()`はデフォルトでデータの個数をy軸に取ってしまうからである。2つのプロットのy軸の単位を揃えるために、ここでは「データの密度（`..density..`）をy軸に取ってください」と明示的に指定しなければならない。
+
+## 箱ひげ図
+
+ヒストグラムや密度プロットとは異なり、データの要約統計量を示しつつ、同時に分布を表せるようなグラフも存在する。その代表例は<u>**箱ひげ図**</u>（box plot; box-and-whisker plot）だろう。
+
+ここではRにデフォルトで搭載されている`PlantGrowth`（植物の重さに関する実験のデータセット）を使うことにする。
+
+```{r}
+head(PlantGrowth) # 先頭6行を確認
+```
+
+このデータには2つの変数があり、それぞれ
+
+- `group`：実験の条件（ctrl, trt1, or trt2）
+
+- `weight`：植物の重さ
+
+を表している。
+
+さて、3つの条件ごとに植物の重さの分布を可視化したい。もちろんヒストグラムや密度プロットでもよいが、ここでは箱ひげ図を使ってみよう。以下のコードで箱ひげ図を描くことができる。なお、箱ひげ図に色をつけるには`fill`に変数を指定すれば良い。
+
+(ref:boxplot-1) 箱ひげ図。x軸は条件、y軸は植物の重さを表している。
+
+```{r, boxplot-1, fig.cap='(ref:boxplot-1)'}
+ggplot(PlantGrowth, aes(group, weight, fill = group)) + # x軸にgroup、y軸にweight；fillで色の塗りつぶし
+  geom_boxplot() # 箱ひげ図を描くためのコード
+```
+
+何やら謎の図形が現れたが、まさにこれが箱ひげ図である。図形のそれぞれのパーツは以下のものを表している^[色々なスタイル・流派があるらしいが、ここでは最もよく使われるTukeyの箱ひげ図を説明している。]。
+
+- 四角（箱）：四分位範囲（interquartile range, IQR）。25パーセンタイルから75パーセンタイルのこと
+
+- 縦線（ひげ）：四角の上端／下端からIQR × 1.5の範囲
+
+- 太線：中央値。50パーセンタイル（percentile）とも言う
+
+- 点：外れ値（outlier；IQR × 1.5より外側の値）
+
+英語版Wikipedia "Interquartile range"（https://en.wikipedia.org/wiki/Interquartile_range） の図が説明としてわかりやすいだろう。
+
+---
+
+ただし、箱ひげ図だけではデータの平均値を描くことができない^[平均値は外れ値に引っ張られるので、分布の代表値としては中央値のほうが妥当な場合が多い。箱ひげ図がデフォルトで平均値を描かないのもおそらくはそのため。]。平均値を追加するには、以下のコードを書けば良い。
+
+(ref:boxplot-2) 平均値を追加した箱ひげ図。
+
+```{r, fig.cap='(ref:boxplot-2)'}
+ggplot(PlantGrowth, aes(group, weight, fill = group)) +
+  geom_boxplot() +
+  stat_summary(geom = "point", fun.y = mean, color = "white", shape = "diamond", size = 3) # 各引数の意味はなんとなく解読してほしい
+```
+
+`stat_summary()`は統計量をプロットするための関数である。このグラフでは「`y`（`weight`）の平均値をサイズ3の白いひし形で描いてください」と指示している。各引数の意味はなんとなくわかると思うので、説明は割愛する。
+
+
+## バイオリンプロット
+
+箱ひげ図に似たものとして、<u>**バイオリンプロット**</u>（violin plot）がある。バイオリンプロットとは、密度プロットを90°回転させ、アジの干物のように開いたグラフである。
+
+バイオリンプロットは、`geom_violin()`で描くことができる。
+
+(ref:violin-plot) バイオリンプロット。x軸は条件、y軸は植物の重さを表している。
+
+```{r, fig.cap='(ref:violin-plot)'}
+ggplot(PlantGrowth, aes(group, weight, fill = group)) + # x軸にgroup、y軸にweight、fillで塗りつぶし
+  geom_violin() # バイオリンプロットを描くためのコード
+```
+
+このように、バイオリンプロットを使うと、分布の形状が箱ひげ図よりも直観的にわかるようになる。なお、`geom_density()`と同様に、`geom_violin()`でも、カーネル密度推定用のパラメタ（`adjust`）をいじることができるので、いくつか試してみてほしい。
+
+
+## ストリッププロット
+
+箱ひげ図／バイオリンプロットは、<u>**ストリッププロット**</u>（strip plot）とも相性が良い。ストリッププロットとは、1つ1つのデータをそのままドットとして表現したグラフである。この説明ではイメージが湧きにくいと思うので、とりあえず下のプロットを見てほしい。
+
+(ref:strip-plot) ストリッププロットを箱ひげ図とバイオリンプロットの上に重ね合わせた図。ドットはデータそのものを表している。
+
+```{r, fig.cap='(ref:strip-plot)'}
+ggplot(PlantGrowth, aes(group, weight, fill = group)) + # x軸にgroup、y軸にweight、fillで塗りつぶし
+  geom_violin() + # まずバイオリンプロット
+  geom_boxplot(outlier.shape = NA, width = 0.2) + # その上に箱ひげ図
+  geom_point(position = position_jitter(width = 0.1, height = 0, seed = 1)) + # その上にストリッププロット
+  stat_summary(geom = "point", fun.y = mean, shape = "diamond", color = "white", size = 3) # おまけに平均値を追加
+```
+
+図中の黒いドットたちがストリッププロットである。1個1個のドットはデータそのものを表している。
+
+コードの内容を上から順に解説する。
+
+0. `ggplot(PlantGrowth, aes(group, weight, fill = group))`
+
+    - x軸に`group`、y軸に`weight`を指定。`group`ごとに塗りつぶす。
+
+1. `geom_violin()`
+
+    - バイオリンプロットを描く。
+
+2. `geom_boxplot(outlier.shape = NA, width = 0.2)`
+
+    - その上に箱ひげ図を描く。
+  
+    - `outlier.shape = NA`として外れ値を消すのがポイント。デフォルトだと、箱ひげ図の外れ値とストリッププロットのドットが混在してしまう。
+
+    - `width`は箱ひげ図の幅を調整する引数。1がデフォルトの大きさ。
+
+3. `geom_point(position = position_jitter(width = 0.1, seed = 1))`
+
+    - さらにストリッププロット（ドット）を描く。
+  
+    - `position = position_jitter()`はドットの位置をジッター（jitter：散らばらせる）ための関数である。これを設定しないと、ドットが縦一列に並んでしまい、データ構造が非常に見づらくなる（気になる人は、試しに`position`以下を消して実行してみよう）。
+  
+    - `width`は水平（x軸）方向の散らばり幅を調整する引数。また、`seed`はジッター具合を決めるための引数（乱数生成のシード）である。これを決めないと毎回ドットの位置が変わってしまうので、再現性を担保するためにも設定しておくと良い（気になる人は、試しに`seed`以下を消した上で何回か実行してみよう）。
+
+    - この図の場合、ドットが垂直（y軸）方向にも散らばっていると、誤解を招く結果を導きかねない。そのため、`height`（垂直方向の散らばりの大きさ）は0にしている。
+
+4. `stat_summary(geom = "point", fun.y = mean, shape = "diamond", color = "white", size = 3)`
+
+    - おまけに平均値を描く。
+
+<br>
+
+データポイントがそこまで大量でない場合は、このようにプロットするのが良いだろう。
+
+## 練習問題
+
+- Rにデフォルトで入っている`iris`（アヤメに関するデータセット^[様々なデータ分析においてチュートリアル的に用いられる代表的なデータセット。https://en.wikipedia.org/wiki/Iris_flower_data_set] ）を使い、`Species`ごとに`Sepal.Length`のヒストグラムと密度プロットをそれぞれ描いてみよう。
+
+```{r, include=FALSE}
+ggplot(iris, aes(Sepal.Length, fill = Species)) +
+  geom_histogram(position = "identity", binwidth = 0.3, alpha = 0.7)
+```
+
+```{r, include=FALSE}
+ggplot(iris, aes(Sepal.Length, fill = Species)) +
+  geom_density(alpha = 0.7)
+```
+
+- `Species`ごとに`Sepal.Width`の箱ひげ図、バイオリンプロット、ストリッププロットを重ね書きしてみよう。
+
+```{r, include=FALSE}
+ggplot(iris, aes(Species, Sepal.Width, fill = Species)) +
+  geom_violin() +
+  geom_boxplot(outlier.shape = NA, width = 0.2) +
+  geom_point(position = position_jitter(width = 0.1, seed = 1))
+```

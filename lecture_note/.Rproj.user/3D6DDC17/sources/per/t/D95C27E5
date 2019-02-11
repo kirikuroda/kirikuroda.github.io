@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549611191392.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "718213749",
+    "id" : "D95C27E5",
+    "lastKnownWriteTime" : 1549612469,
+    "last_content_update" : 1549612469720,
+    "path" : "~/OneDrive - The University of Tokyo/practice/lecture_note/data_handling.Rmd",
+    "project_path" : "data_handling.Rmd",
+    "properties" : {
+        "cursorPosition" : "4,7",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

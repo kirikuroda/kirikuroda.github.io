@@ -1,0 +1,5 @@
+"0","library(gcookbook)"
+"0","ggplot(heightweight, aes(heightIn, weightLb, color = sex)) +"
+"0","  geom_point() +"
+"0","  facet_wrap(~sex) +"
+"0","  guides(color = FALSE)"

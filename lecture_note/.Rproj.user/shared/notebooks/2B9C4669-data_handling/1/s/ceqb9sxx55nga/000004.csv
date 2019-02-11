@@ -1,0 +1,2 @@
+"0","stocks_long %>%"
+"0","  spread(stock, price)"

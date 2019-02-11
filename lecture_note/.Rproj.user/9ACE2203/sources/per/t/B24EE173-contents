@@ -1,0 +1,161 @@
+```{r, include=FALSE}
+source("common.R")
+```
+
+# 連続変数間の関係 {#association}
+
+連続変数間の関係を見たいときは、<u>**散布図**</u>（scatter plot）を描くのがセオリーである。
+
+```{r}
+library(ggplot2) # 忘れずにパッケージを読み込む
+```
+
+
+## 基本の散布図
+
+ここでは、Rにデフォルトで入っている`faithful`（オールド・フェイスフル・ガイザーに関するデータセット）を使ってみよう。ちなみに、オールド・フェイスフル・ガイザーとは、イエローストーン国立公園内にある間欠泉のことである^[https://ja.wikipedia.org/wiki/オールド・フェイスフル・ガイザー]。
+
+```{r}
+head(faithful) # 先頭6行
+```
+
+変数はそれぞれ、
+
+- `eruptions`：間欠泉の噴出時間（分）
+
+- `waiting`：次の間欠泉が噴出するまでの時間（分）
+
+を表している。散布図はドットから構成されるグラフなので、`geom_point()`で描くことができる。
+
+(ref:scatter-plot-1) `faithful`データの散布図。強い正の相関が見て取れる。また、データを2つのクラスタに分けられそうなことが見て取れる。
+
+```{r, fig.cap='(ref:scatter-plot-1)'}
+ggplot(faithful, aes(eruptions, waiting)) + # x軸にeruptions、y軸にwaiting
+  geom_point() # 散布図を描く（データをドットとして表示する）
+```
+
+
+## グルーピングされた散布図
+
+Chapter \@ref(tutorial)のチュートリアルでも見たが、複数グループの散布図を描く（グルーピングする）ことも可能である。Rにデフォルトで入っている`mtcars`を使い、改めてChapter \@ref(tutorial)で描いた散布図の復習をしよう。`geom_point()`でグループごとに色を変えるには、`color`に変数を指定すれば良い。
+
+(ref:scatter-plot-2) グルーピングされた散布図。
+
+```{r, scatter-plot-2, fig.cap='(ref:scatter-plot-2)'}
+ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) + # factor(変数)とすることで、離散変数として扱える
+  geom_point()
+```
+
+見やすさや色覚バリアフリーという観点に立てば、点の形も変えたほうが良いだろう^[このように、あえて情報に**冗長性**を持たせることをredundant codingという。]。ドットの形を変えるには、`shape`に変数を指定すれば良い。
+
+(ref:scatter-plot-3) Figure \@ref(fig:scatter-plot-2)のドットの形を変えた散布図。
+
+```{r, fig.cap='(ref:scatter-plot-3)'}
+ggplot(mtcars, aes(disp, mpg, color = factor(cyl), shape = factor(cyl))) + # shape = factor(year)を追加
+  geom_point()
+```
+
+`cyl`（シリンダーの個数）の値に応じてデータポイントの形が変わっているのが見て取れる。
+
+## 散布図行列
+
+`faithful`データは変数が2つだけなので、散布図を1つ描けば終わりである。しかし、実際のデータには多くの変数がある。変数が増えるにつれて、確認しなければならない散布図の数は爆発的に増える。そのようなとき、1つ1つ散布図を描くのは面倒である。
+
+しかし、そんなときに便利なものがある^[データ分析で「困ったなあ」とか「こういうのあれば便利なんだけど」と思うようなことは、大体海外の偉い人が既に解決してくれているものなので、困ったときはやはり（英語で）ググルに限る。これは重要なライフハックである。]。それは、GGallyパッケージの`ggpairs()`という関数である。では早速、Rにデフォルトで入っている`iris`データで試してみよう。まずはGGallyパッケージを読み込む。
+
+```{r, message=FALSE}
+library(GGally) # パッケージの読み込み
+```
+
+あとは、`ggpairs()`にデータセットを突っ込むだけ。以上。
+
+(ref:scatter-plot-matrix-1) `ggpairs()`による`iris`データの散布図行列。散布図だけでなく、変数の種類に応じて自動で箱ひげ図などもプロットされる。
+
+```{r, scatter-plot-matrix-1, fig.cap='(ref:scatter-plot-matrix-1)', message=FALSE}
+ggpairs(iris) # 散布図行列を描く
+```
+
+なんと、これだけで多変量の散布図、箱ひげ図などを一撃で描画できてしまうのである。しかも、変数の連続／離散に応じて適切なグラフを選んでくれる親切ゆとり設計である。
+
+ただ、これだけでは少し味気ないので、`Species`に応じて色をつけてみよう。ggplot2と同じように指定すれば良い。
+
+(ref:scatter-plot-matrix-2) Figure \@ref(fig:scatter-plot-matrix-1)に色をつけて半透明にした図。
+
+```{r, fig.cap='(ref:scatter-plot-matrix-2)', message=FALSE}
+ggpairs(iris, aes(color = Species, alpha = 0.7)) # ggplot2と同じように色と透明度を指定
+```
+
+他にも細かい設定ができるそうだが、ここでは説明を割愛する^[ぶっちゃけあまり知らない。]。
+
+## オーバープロットへの対処
+
+最後に、オーバープロットというものへの対処法を見ていくことにする。具体例として、ggplot2に入っている`mpg`データを使ってみよう。
+
+```{r}
+head(mpg) # 先頭6行
+```
+
+注目する変数は、
+
+- `displ`：エンジンの排気量（リットル）
+
+- `hwy`：燃費（マイル／ガロン）
+
+- `cyl`：シリンダー数（4, 5, 6, or 8）
+
+の2つである。早速、`x`に`displ`、`y`に`hwy`、`color`に`factor(cyl)`を指定して散布図を描いてみよう。
+
+(ref:scatter-plot-4) デフォルトの設定で描いた散布図。
+
+```{r, scatter-plot-4, fig.cap='(ref:scatter-plot-4)'}
+ggplot(mpg, aes(displ, hwy, color = factor(cyl))) +
+  geom_point()
+```
+
+とりあえず散布図を描くことができた。一見問題は無さそうである。
+
+では、ここで`mpg`のデータの行数（データポイントの数）を確認してみよう。`nrow(データセット)`で確認することができる。
+
+```{r}
+nrow(mpg)
+```
+
+なんと234個もあった。しかし、Figure \@ref(fig:scatter-plot-4)の散布図では、データ（ドット）がせいぜい数十〜百個ぐらいにしか見えない。なぜだろうか？
+
+なぜなら、x軸の値とy軸の値が全く同じデータポイントが複数個存在しており、それらが重なってしまっているからである。このような状態を<u>**オーバープロット**</u>（overplotting）という。
+
+たとえば、7件法のリカート尺度によって実験参加者の特性を測り、その散布図を描くというときに、オーバープロットは間違いなく生じる。では、どのように対処すればよいのだろうか？　ここでは、Chapter \@ref(distribution)でも扱ったジッター（jittering）というテクニックを使えば良い。
+
+(ref:scatter-plot-5) ドットをジッターさせた散布図。
+
+```{r, scatter-plot-5, fig.cap='(ref:scatter-plot-5)'}
+ggplot(mpg, aes(displ, hwy, color = factor(cyl))) +
+  geom_point(position = position_jitter(width = 0.1, height = 0.4, seed = 1)) # ドットをジッターさせている
+```
+
+`position = position_jitter(width = ..., height = ..., seed = ...)`を指定することで、オーバープロットを回避することができた。このとき、`width`や`height`に大きすぎる値を入れてしまうと、データが大きく歪んでしまうので注意が必要である。
+
+また、ここで点の形状や透明度を調節すれば、重複している箇所がより見やすくなって良いだろう。
+
+(ref:scatter-plot-6) Figure \@ref(fig:scatter-plot-5)のドットの形状と透明度を変えたもの。
+
+```{r, fig.cap='(ref:scatter-plot-6)'}
+ggplot(mpg, aes(displ, hwy, color = factor(cyl), shape = factor(cyl))) + # shapeに変数を指定
+  geom_point(position = position_jitter(width = 0.1, height = 0.4, seed = 1), alpha = 0.7) # alpha = 0.7を追加
+```
+
+## 練習問題
+
+- Rにデフォルトで入っている`trees`データを使い、`Girth`と`Volume`の散布図を描いてみよう。
+
+```{r, include=FALSE}
+ggplot(trees, aes(Girth, Volume)) +
+  geom_point()
+```
+
+- gcookbookの`heightweight`データの散布図行列を描いてみよう。
+
+```{r, include=FALSE}
+library(gcookbook)
+ggpairs(heightweight, aes(color = sex, alpha = 0.7))
+```

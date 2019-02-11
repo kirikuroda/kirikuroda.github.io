@@ -1,0 +1,3 @@
+"0","stocks_long = stocks %>%"
+"0","  gather(key = stock, value = price, X, Y, Z) # X:ZでもOK"
+"0","stocks_long"

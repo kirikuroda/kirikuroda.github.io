@@ -1,0 +1,157 @@
+```{r, include=FALSE}
+source("common.R")
+```
+
+# 推測統計 {#statistics}
+
+データの可視化では、推測統計量のプロットを含めることがしばしばである。
+
+```{r}
+library(ggplot2) # 忘れずにパッケージを読み込む
+```
+
+
+## エラーバー
+
+<u>**エラーバー**</u>（error bar）は誰でも馴染みがあるのではないだろうか。棒グラフとよく一緒にいるアイツのことである。エラーバーはデータの<u>**標準誤差**</u>（standard error of the mean; *SEM*^[構造方程式モデリング（structural equation modeling; SEM）のことではない。]）を表すのに使われることが多い。
+
+ここでは、gcookbookの`cabbage_exp`（キャベツに関するデータセット）を使ってエラーバーを描いてみよう。
+
+```{r}
+library(gcookbook) # パッケージの読み込み
+```
+
+```{r}
+head(cabbage_exp) #6行のデータなのですべて表示される
+```
+
+注目する変数は、
+
+- `Cultivar`：キャベツの品種（c39 or c52）
+
+- `Date`：栽培期間
+
+- `Weight`：キャベツの平均重量
+
+- `se`：キャベツの平均重量の標準誤差
+
+である。平均値を棒グラフで、標準誤差をエラーバーで描いてみよう。コードは以下の通りである。
+
+(ref:errorbar-1) エラーバー付きの棒グラフ。エラーバーは標準誤差を表している。
+
+```{r, errorbar-1, fig.cap='(ref:errorbar-1)'}
+ggplot(cabbage_exp, aes(Date, Weight, fill = Cultivar)) + # x軸にDate、y軸にWeight、Cultivarごとに色分け
+  geom_bar(stat = "identity", position = "dodge") + # グルーピングされた棒グラフの復習
+  geom_errorbar(aes(ymin = Weight - se, ymax = Weight + se), position = position_dodge(width = 0.9), width = 0.2) # ymin：エラーバーの下端、ymax：エラーバーの上端
+```
+
+コードの内容を順に解説する。
+
+0. `ggplot(cabbage_exp, aes(Date, Weight, fill = Cultivar)`
+
+    - x軸に`Date`、y軸に`Weight`、グルーピング（塗りつぶし）に`Cultivar`を指定。
+    
+1. `geom_bar(stat = "identity", position = "dodge")`
+
+    - 棒グラフ。`stat = "identity"`とする必要がある。また、`Cultivar`ごとに位置をずらすには、`position = "dodge"`としなければならない。
+    
+    - 忘れてしまった人は、もう一度Chapter \@ref(amount)を復習しよう。
+
+2. `geom_errorbar(aes(ymin = Weight - se, ymax = Weight + se), position = position_dodge(width = 0.9), width = 0.2)`
+
+    - エラーバー。`ymin`と`ymax`には、それぞれエラーバーの上端と下端のy座標を指定する。
+    
+    - `position = position_dodge(width = 0.9)`とすることで、エラーバーを棒グラフのように水平方向にずらすことができる。棒グラフのずらし幅が0.9なので、エラーバーの`width`（ずらし幅）も0.9にする^[ちなみに、今まで出てきた`position = "dodge"`は`position = position_dodge()`の省略版である。]。
+    
+    - 最後の`width`はエラーバーの横幅を表している。デフォルトだと、棒グラフの棒と同じ幅になる。
+
+<br>
+
+なお、<u>**エラーバーを描く際は、エラーバーが何を表しているのかをキャプションなどに含めなければならない。**</u>なぜなら、エラーバーは標準誤差、95%信頼区間（95% confidence interval; 95% CI）、標準偏差、ベイズ信頼区間など、様々な統計量を表現するのにも使われるからである。
+
+
+## 信頼区間
+
+信頼区間のプロットにも`geom_errorbar()`は使えるが、折れ線グラフ（時系列データ）などでは`geom_ribbon()`の方が良いだろう。ここでは、gcookbookの`climate`（気温の時系列データ）を使ってみよう。
+
+```{r}
+head(climate)
+```
+
+なお、ここでは`Source`が`"Berkeley"`のデータだけを抽出して可視化を行う。抽出したデータは`clim`に代入する。以下のコードは今は理解できなくて良い。
+
+```{r, message=FALSE}
+library(tidyverse) # データハンドリング用のパッケージ群を読み込む
+```
+
+```{r}
+clim = climate %>% # climateデータの
+  filter(Source == "Berkeley") # Sourceが"Berkeley"の行だけを抽出してください
+```
+
+プロットするのは以下の変数である。
+
+- `Year`：年
+
+- `Anomaly10y`：1951〜1980年の平均気温と比べたときのズレ
+
+- `Unc10y`：95%信頼区間
+
+では、`geom_ribbon()`を使ってプロットしてみよう。コードの書き方は`geom_errorbar()`に似ている。なお、`alpha`で信頼区間を半透明にしないと、グラフが真っ黒になってしまうので注意が必要である。
+
+(ref:ribbon-1) 95%信頼区間のプロット。
+
+```{r, fig.cap='(ref:ribbon-1)'}
+ggplot(clim, aes(Year, Anomaly10y)) +
+  geom_line() +
+  geom_ribbon(aes(ymin = Anomaly10y - Unc10y, ymax = Anomaly10y + Unc10y), alpha = 0.2) # alphaで透明度を指定
+```
+
+
+## 回帰直線などのフィッティング
+
+散布図に回帰直線などをフィッティングさせた図を見たことがあるだろう。ggplot2でもそれが可能である。ここでは、gcookbookの`heightweight`（こどもの身長と体重データ）を使ってみよう。
+
+```{r}
+head(heightweight) # 先頭6行
+```
+
+まず、`geom_point()`で身長（`heightIn`）と体重（`WeightLb`）の散布図を描き、その上に`geom_smooth()`で回帰直線を描いてみよう。なお、回帰直線を引くには、`method = lm`と指定する必要がある（デフォルトだとLOESS曲線^[https://en.wikipedia.org/wiki/Local_regression] が引かれる）。Rにおいて`lm`は線形モデル（linear model）を表している。
+
+(ref:smooth-plot-1) 散布図の上に回帰直線を描いたグラフ。網掛けの部分は95%信頼区間を表している。
+
+```{r, fig.cap='(ref:smooth-plot-1)'}
+ggplot(heightweight, aes(ageYear, heightIn)) +
+  geom_point() + # まず散布図
+  geom_smooth(method = lm) # それから回帰直線；method = lmと指定する必要あり
+```
+
+グループごとに回帰直線を引きたい場合は、`fill`にグルーピングの変数を指定すれば良い。
+
+(ref:smooth-plot-2) こどもの性別ごとに回帰直線を描いたグラフ。網掛けの部分は95%信頼区間を表している。
+
+```{r, fig.cap='(ref:smooth-plot-2)'}
+ggplot(heightweight, aes(ageYear, heightIn, fill = sex)) + # fill = sexを追加
+  geom_point() +
+  geom_smooth(method = lm)
+```
+
+
+## 練習問題
+
+- Figure \@ref(fig:errorbar-1)で描いた`cabbage_exp`データの平均値と標準誤差を、今度は折れ線グラフとエラーバーで描いてみよう。このとき、エラーバーはどれくらい調整すれば良いだろうか？
+
+```{r, include=FALSE}
+ggplot(cabbage_exp, aes(Date, Weight, fill = Cultivar, group = Cultivar)) +
+  geom_line(position = position_dodge(width = 0.2)) +
+  geom_point(position = position_dodge(width = 0.2)) +
+  geom_errorbar(aes(ymin = Weight - se, ymax = Weight + se), position = position_dodge(width = 0.2), width = 0.2)
+```
+
+- Rにデフォルトで入っている`faithful`データの散布図を描き、その上に回帰直線をプロットしてみよう。
+
+```{r, include=FALSE}
+ggplot(faithful, aes(eruptions, waiting)) +
+  geom_point() +
+  geom_smooth(method = lm)
+```

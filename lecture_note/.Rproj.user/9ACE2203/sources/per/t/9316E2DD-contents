@@ -1,0 +1,168 @@
+```{r, include=FALSE}
+source("common.R")
+```
+
+
+# トレンドデータ {#trend-data}
+
+x軸が時間であったり、連続変数かつ何かしらの説明要因である場合、<u>**折れ線グラフ**</u>（line graph）を描くのがセオリーである。
+
+```{r}
+library(ggplot2) # 忘れずにパッケージを読み込む
+```
+
+## 基本の折れ線グラフ
+
+まずは、gcookbookの`aapl`データ（Appleの週ごとの株価データ）を可視化してみよう。
+
+```{r}
+library(gcookbook) # パッケージの読み込み
+```
+
+
+```{r}
+head(aapl) # 先頭6行
+```
+
+変数はそれぞれ、
+
+- `date`：記録日
+
+- `adj_price`：株価
+
+を表している。では、株価の時系列変化をプロットしてみよう。`geom_line()`で折れ線グラフを描くことができる。
+
+(ref:line-graph-1) Appleの株価データ。
+
+```{r, line-graph-1, fig.cap='(ref:line-graph-1)'}
+ggplot(aapl, aes(date, adj_price)) + # x軸にdate、y軸にadj_price
+  geom_line() # 折れ線グラフ
+```
+
+---
+
+次は、Rにデフォルトで入っている`BOD`（生物化学的酸素要求量に関するデータセット）を可視化してみよう。なお、生物化学的酸素要求量（biochemical oxygen demand; BOD）とは水質指標のことである^[https://ja.wikipedia.org/wiki/生物化学的酸素要求量]。
+
+```{r}
+head(BOD) # 6行しかないのですべて表示される
+```
+
+早速、`x`に`Time`（時間）、`y`に`Demand`（BOD）を取って折れ線グラフを描いてみよう。
+
+(ref:line-graph-2) BODの折れ線グラフ。
+
+```{r, fig.cap='(ref:line-graph-2)'}
+ggplot(BOD, aes(Time, demand)) + # x軸にTime、y軸にdemand
+  geom_line() + # 折れ線グラフ
+  geom_point() # ドットは添えるだけ
+```
+
+なお、ここでは`geom_point()`を加えることで、ドットもプロットしている。`BOD`のようにデータポイントが少ない場合、折れ線だけでなく、ドットを添えると視覚的に楽になるように思われる（個人的意見だが）。逆に、Figure \@ref(fig:line-graph-1)のようにデータポイントが多い場合、ドットは不要である。
+
+
+## グルーピングされた折れ線グラフ
+
+では、例のごとく、折れ線グラフを複数のグループごとに描いてみよう。ここでは、Rにデフォルトで入っている`ToothGrowth`（モルモットの歯に関するデータセット）を使ってみることにする。早速データを確認してみよう。
+
+```{r}
+head(ToothGrowth) # 先頭6行
+```
+
+変数はそれぞれ、
+
+- `len`：モルモットの歯の長さ
+
+- `supp`：ビタミンCの与え方（VC or OJ；アスコルビン酸かオレンジジュース）
+
+- `dose`：ビタミンCの投与量（mg／日）
+
+を表している。ここで、`supp`と`dose`ごとに`len`の平均値をプロットしてみようと思うのだが、`ToothGrowth`には平均値のデータが入っておらず、自分で計算しなくてはならない。そこで、以下のコードを使って、平均値のデータセット（`tg_mean`）を新しく作ることにする。なお、今はまだ下のコードの内容を理解できなくても良い^[データハンドリングなどについては、Chapter \@ref(data-handling)で詳しく見ることにする。]。
+
+```{r, message=FALSE}
+library(tidyverse) # データ加工用のパッケージ群を読み込む。色々メッセージが出るだろうが気にしなくて良い。
+```
+
+```{r}
+tg_mean = ToothGrowth %>% # ToothGrowthデータの
+  group_by(supp, dose) %>% # suppとdoseごとに
+  summarise(mean = mean(len)) # lenの平均値を計算せよ
+
+tg_mean
+```
+
+`mean`はモルモットの歯の長さ（`len`）の平均値を表している。
+
+それでは、以下のコードを実行して、`supp`ごとに`dose`と`mean`の関係を可視化してみよう。
+
+(ref:line-graph-3) `supp`ごとにグルーピングされた折れ線グラフ。
+
+```{r, line-graph-3, fig.cap='(ref:line-graph-3)'}
+ggplot(tg_mean, aes(dose, mean, group = supp)) + # x軸にdose、y軸にmean；group = suppが必要
+  geom_line()
+```
+
+`supp`ごとに`dose`と`mean`の関係をプロットすることができた。なお、`geom_line()`をグルーピングする際には、`group`に変数を指定しなければならない（指定しないとどうなるのだろうか？　気になる人は確認してみよう）。
+
+ただし、このままでは見にくいので、折れ線の色（`color`）と線種（`linetype`）にも変数を指定しよう。また、`geom_line()`の`size`で折れ線の太さを調整することができる。
+
+加えて、ドットも付け足しておこう。Chapter \@ref(association)でも見たように、`shape`に変数を指定するとドットの形を変えることができる。また、`geom_point()`の`size`でドットの大きさを調整することができる。
+
+(ref:line-graph-4) Figure \@ref(fig:line-graph-3)の折れ線の色と線種を`supp`ごとに変え、さらにドットを付け足したグラフ。
+
+```{r, fig.cap='(ref:line-graph-4)'}
+ggplot(tg_mean, aes(dose, mean, color = supp, group = supp, linetype = supp, shape = supp)) + # color、linetype、shape = suppを追加
+  geom_line(size = 1.5) + # sizeで太さを指定
+  geom_point(size = 5) # ドットは添えるだけ。sizeで大きさを指定
+```
+
+
+## 面グラフ
+
+時間に伴う数量の変化の大きさをグループごとに比較・強調したい際には、<u>**面グラフ**</u>（area graph; area chart）が向いている。
+
+ここでは、gcookbookの`uspopage`（1900〜2002年のアメリカの人口統計）を使ってみよう。
+
+```{r}
+head(uspopage)
+```
+
+変数はそれぞれ、
+
+- `Year`：年
+
+- `AgeGroup`：年齢のカテゴリ
+
+- `Thousands`：人口
+
+を表している。面グラフは`geom_area()`で描くことができる。また、グループごとに色分けするには、`fill`に変数を指定すれば良い。
+
+(ref:area-graph-1) アメリカの人口の推移を表した面グラフ。
+
+```{r, fig.cap='(ref:area-graph-1)'}
+ggplot(uspopage, aes(Year, Thousands, fill = AgeGroup)) + # x軸にYear、y軸にThousands；fill = AgeGroupと指定することで、自動で塗りつぶされる
+  geom_area() # 面グラフ
+```
+
+
+## 練習問題
+
+- ggplot2の`economics`データを使って、失業者数の推移をプロットしてみよう。
+
+```{r, include=FALSE}
+ggplot(economics, aes(date, unemploy)) +
+  geom_line()
+```
+
+- gcookbookの`worldpop`データをもとに、`geom_line()`と`geom_point()`を使い、世界人口の推移をプロットしてみよう。また、世界人口の素値ではなく常用対数をプロットするとどのようになるだろうか？（ヒント：`log10(変数)`で常用対数を計算することができる）
+
+```{r, include=FALSE}
+ggplot(worldpop, aes(Year, Population)) +
+  geom_line() +
+  geom_point()
+```
+
+```{r, include=FALSE}
+ggplot(worldpop, aes(Year, log10(Population))) +
+  geom_line() +
+  geom_point()
+```

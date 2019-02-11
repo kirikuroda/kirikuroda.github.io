@@ -1,0 +1,2 @@
+"0","ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) + # factor(変数)とすることで、離散変数として扱える"
+"0","  geom_point()"

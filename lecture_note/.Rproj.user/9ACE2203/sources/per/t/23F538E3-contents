@@ -1,0 +1,17 @@
+--- 
+title: "いつか役に立つかもしれない資料"
+author: "Kiri Kuroda"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+# はじめに（服用上の注意） {-}
+
+**効能**：データの性質を他人にわかりやすく伝えられるようになる。
+
+**対象**：卒論等で（コンテンツはさておいて）わかりやすく、なんとなく見栄えの良いレポート・発表をしたいと思ってはいるけれど、どこから手を着ければいいかわからない人。
+
+**注意**：読んでいてわからないことに出くわした場合、とりあえずググってみること。おそらく検索能力も重要なスキルである。周りの人に尋ねてみるのも推奨。

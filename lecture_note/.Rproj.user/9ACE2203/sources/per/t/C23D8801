@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549810105018.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "192819804",
+    "id" : "C23D8801",
+    "lastKnownWriteTime" : 1549864659,
+    "last_content_update" : 1549864659505,
+    "path" : "~/OneDrive - The University of Tokyo/practice/lecture_note/reference.Rmd",
+    "project_path" : "reference.Rmd",
+    "properties" : {
+        "cursorPosition" : "41,63",
+        "scrollLine" : "20"
+    },
+    "relative_order" : 16,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

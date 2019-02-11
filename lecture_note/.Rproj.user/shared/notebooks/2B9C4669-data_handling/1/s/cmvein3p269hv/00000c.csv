@@ -1,0 +1,7 @@
+"0","mpg %>%"
+"0","  group_by(year) %>% # yearごとに"
+"0","  summarise(mean = mean(displ),"
+"0","            se = std.error(displ)) %>% # 平均値と標準誤差を計算；n()はデータの個数を数える関数"
+"0","  ggplot(aes(factor(year), mean, fill = factor(year))) +"
+"0","  geom_bar(stat = ""identity"") +"
+"0","  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), width = 0.2)"

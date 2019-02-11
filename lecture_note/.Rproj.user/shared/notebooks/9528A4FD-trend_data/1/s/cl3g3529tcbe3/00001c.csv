@@ -1,0 +1,2 @@
+"0","ggplot(uspopage, aes(Year, Thousands, fill = AgeGroup)) + # fill = AgeGroupと指定することで、自動で塗りつぶされる"
+"0","  geom_area()"

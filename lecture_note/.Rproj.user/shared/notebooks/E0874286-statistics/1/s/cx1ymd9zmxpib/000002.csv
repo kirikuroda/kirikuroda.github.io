@@ -1,0 +1,3 @@
+"0","ggplot(heightweight, aes(ageYear, heightIn, fill = sex)) +"
+"0","  geom_point() +"
+"0","  geom_smooth(method = lm)"

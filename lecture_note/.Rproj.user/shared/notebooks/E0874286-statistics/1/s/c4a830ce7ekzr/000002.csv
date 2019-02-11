@@ -1,0 +1,3 @@
+"0","ggplot(heightweight, aes(ageYear, heightIn)) +"
+"0","  geom_point() + # まず散布図"
+"0","  geom_smooth(method = lm) # それから回帰直線；method = lmと指定する必要あり"

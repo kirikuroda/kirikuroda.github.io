@@ -1,0 +1,2 @@
+"0","ggplot(tg_mean, aes(dose, mean, group = supp)) +"
+"0","  geom_line()"

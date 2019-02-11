@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>6 トレンドデータ | いつか役に立つかもしれない資料</title>
+  <meta name="description" content="6 トレンドデータ | いつか役に立つかもしれない資料">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="6 トレンドデータ | いつか役に立つかもしれない資料" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 トレンドデータ | いつか役に立つかもしれない資料" />
+  
+  
+  
+
+<meta name="author" content="Kiri Kuroda">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="association.html">
+<link rel="next" href="statistics.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">トップページ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>はじめに（服用上の注意）</a></li>
+<li class="chapter" data-level="" data-path="rrstudio.html"><a href="rrstudio.html"><i class="fa fa-check"></i>RとRStudioのセットアップ</a><ul>
+<li class="chapter" data-level="0.1" data-path="rrstudio.html"><a href="rrstudio.html#r"><i class="fa fa-check"></i><b>0.1</b> Rのインストール</a></li>
+<li class="chapter" data-level="0.2" data-path="rrstudio.html"><a href="rrstudio.html#rstudio"><i class="fa fa-check"></i><b>0.2</b> RStudioのインストール</a></li>
+<li class="chapter" data-level="0.3" data-path="rrstudio.html"><a href="rrstudio.html#section-0.3"><i class="fa fa-check"></i><b>0.3</b> パッケージのインストール</a></li>
+<li class="chapter" data-level="0.4" data-path="rrstudio.html"><a href="rrstudio.html#section-0.4"><i class="fa fa-check"></i><b>0.4</b> パッケージの読み込み</a></li>
+<li class="chapter" data-level="0.5" data-path="rrstudio.html"><a href="rrstudio.html#r"><i class="fa fa-check"></i><b>0.5</b> どうやってRのコードを実行するか？</a></li>
+</ul></li>
+<li class="part"><span><b>データの可視化</b></span></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> 可視化の重要性</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> アンスコムの例</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#ggplot2"><i class="fa fa-check"></i><b>1.2</b> 可視化のツール：ggplot2</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tutorial.html"><a href="tutorial.html"><i class="fa fa-check"></i><b>2</b> チュートリアル</a><ul>
+<li class="chapter" data-level="2.1" data-path="tutorial.html"><a href="tutorial.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 早速手を動かす</a></li>
+<li class="chapter" data-level="2.2" data-path="tutorial.html"><a href="tutorial.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> まとめ</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="amount.html"><a href="amount.html"><i class="fa fa-check"></i><b>3</b> 数量</a><ul>
+<li class="chapter" data-level="3.1" data-path="amount.html"><a href="amount.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 棒グラフ</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="amount.html"><a href="amount.html#section-3.1.1"><i class="fa fa-check"></i><b>3.1.1</b> 基本の棒グラフ</a></li>
+<li class="chapter" data-level="3.1.2" data-path="amount.html"><a href="amount.html#section-3.1.2"><i class="fa fa-check"></i><b>3.1.2</b> グルーピングされた棒グラフ</a></li>
+<li class="chapter" data-level="3.1.3" data-path="amount.html"><a href="amount.html#section-3.1.3"><i class="fa fa-check"></i><b>3.1.3</b> 個数を表す棒グラフ</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="amount.html"><a href="amount.html#cleveland"><i class="fa fa-check"></i><b>3.2</b> Clevelandのドットプロット</a></li>
+<li class="chapter" data-level="3.3" data-path="amount.html"><a href="amount.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 練習問題</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="distribution.html"><a href="distribution.html"><i class="fa fa-check"></i><b>4</b> 分布</a><ul>
+<li class="chapter" data-level="4.1" data-path="distribution.html"><a href="distribution.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> ヒストグラム</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="distribution.html"><a href="distribution.html#section-4.1.1"><i class="fa fa-check"></i><b>4.1.1</b> 基本のヒストグラム</a></li>
+<li class="chapter" data-level="4.1.2" data-path="distribution.html"><a href="distribution.html#section-4.1.2"><i class="fa fa-check"></i><b>4.1.2</b> グルーピングされたヒストグラム</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="distribution.html"><a href="distribution.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 密度プロット</a></li>
+<li class="chapter" data-level="4.3" data-path="distribution.html"><a href="distribution.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 箱ひげ図</a></li>
+<li class="chapter" data-level="4.4" data-path="distribution.html"><a href="distribution.html#section-4.4"><i class="fa fa-check"></i><b>4.4</b> バイオリンプロット</a></li>
+<li class="chapter" data-level="4.5" data-path="distribution.html"><a href="distribution.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> ストリッププロット</a></li>
+<li class="chapter" data-level="4.6" data-path="distribution.html"><a href="distribution.html#-1"><i class="fa fa-check"></i><b>4.6</b> 練習問題</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="association.html"><a href="association.html"><i class="fa fa-check"></i><b>5</b> 連続変数間の関係</a><ul>
+<li class="chapter" data-level="5.1" data-path="association.html"><a href="association.html#section-5.1"><i class="fa fa-check"></i><b>5.1</b> 基本の散布図</a></li>
+<li class="chapter" data-level="5.2" data-path="association.html"><a href="association.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> グルーピングされた散布図</a></li>
+<li class="chapter" data-level="5.3" data-path="association.html"><a href="association.html#section-5.3"><i class="fa fa-check"></i><b>5.3</b> 散布図行列</a></li>
+<li class="chapter" data-level="5.4" data-path="association.html"><a href="association.html#section-5.4"><i class="fa fa-check"></i><b>5.4</b> オーバープロットへの対処</a></li>
+<li class="chapter" data-level="5.5" data-path="association.html"><a href="association.html#-2"><i class="fa fa-check"></i><b>5.5</b> 練習問題</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="trend-data.html"><a href="trend-data.html"><i class="fa fa-check"></i><b>6</b> トレンドデータ</a><ul>
+<li class="chapter" data-level="6.1" data-path="trend-data.html"><a href="trend-data.html#section-6.1"><i class="fa fa-check"></i><b>6.1</b> 基本の折れ線グラフ</a></li>
+<li class="chapter" data-level="6.2" data-path="trend-data.html"><a href="trend-data.html#section-6.2"><i class="fa fa-check"></i><b>6.2</b> グルーピングされた折れ線グラフ</a></li>
+<li class="chapter" data-level="6.3" data-path="trend-data.html"><a href="trend-data.html#section-6.3"><i class="fa fa-check"></i><b>6.3</b> 面グラフ</a></li>
+<li class="chapter" data-level="6.4" data-path="trend-data.html"><a href="trend-data.html#-3"><i class="fa fa-check"></i><b>6.4</b> 練習問題</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>7</b> 推測統計</a><ul>
+<li class="chapter" data-level="7.1" data-path="statistics.html"><a href="statistics.html#section-7.1"><i class="fa fa-check"></i><b>7.1</b> エラーバー</a></li>
+<li class="chapter" data-level="7.2" data-path="statistics.html"><a href="statistics.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 信頼区間</a></li>
+<li class="chapter" data-level="7.3" data-path="statistics.html"><a href="statistics.html#section-7.3"><i class="fa fa-check"></i><b>7.3</b> 回帰直線などのフィッティング</a></li>
+<li class="chapter" data-level="7.4" data-path="statistics.html"><a href="statistics.html#-4"><i class="fa fa-check"></i><b>7.4</b> 練習問題</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="appearance.html"><a href="appearance.html"><i class="fa fa-check"></i><b>8</b> 図の体裁</a><ul>
+<li class="chapter" data-level="8.1" data-path="appearance.html"><a href="appearance.html#section-8.1"><i class="fa fa-check"></i><b>8.1</b> 軸の反転</a></li>
+<li class="chapter" data-level="8.2" data-path="appearance.html"><a href="appearance.html#small-multiple"><i class="fa fa-check"></i><b>8.2</b> Small multiple</a></li>
+<li class="chapter" data-level="8.3" data-path="appearance.html"><a href="appearance.html#section-8.3"><i class="fa fa-check"></i><b>8.3</b> テーマ</a></li>
+<li class="chapter" data-level="8.4" data-path="appearance.html"><a href="appearance.html#section-8.4"><i class="fa fa-check"></i><b>8.4</b> 色</a></li>
+<li class="chapter" data-level="8.5" data-path="appearance.html"><a href="appearance.html#section-8.5"><i class="fa fa-check"></i><b>8.5</b> 軸</a></li>
+<li class="chapter" data-level="8.6" data-path="appearance.html"><a href="appearance.html#section-8.6"><i class="fa fa-check"></i><b>8.6</b> 凡例</a></li>
+<li class="chapter" data-level="8.7" data-path="appearance.html"><a href="appearance.html#section-8.7"><i class="fa fa-check"></i><b>8.7</b> 複数パネルのグラフ</a></li>
+<li class="chapter" data-level="8.8" data-path="appearance.html"><a href="appearance.html#section-8.8"><i class="fa fa-check"></i><b>8.8</b> グラフの保存</a></li>
+<li class="chapter" data-level="8.9" data-path="appearance.html"><a href="appearance.html#-5"><i class="fa fa-check"></i><b>8.9</b> 練習問題</a></li>
+</ul></li>
+<li class="part"><span><b>データハンドリング</b></span></li>
+<li class="chapter" data-level="9" data-path="data-handling.html"><a href="data-handling.html"><i class="fa fa-check"></i><b>9</b> データハンドリング</a><ul>
+<li class="chapter" data-level="9.1" data-path="data-handling.html"><a href="data-handling.html#tidyverse"><i class="fa fa-check"></i><b>9.1</b> tidyverse</a></li>
+<li class="chapter" data-level="9.2" data-path="data-handling.html"><a href="data-handling.html#section-9.2"><i class="fa fa-check"></i><b>9.2</b> 抽出</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="data-handling.html"><a href="data-handling.html#section-9.2.1"><i class="fa fa-check"></i><b>9.2.1</b> データの値で絞り込み</a></li>
+<li class="chapter" data-level="9.2.2" data-path="data-handling.html"><a href="data-handling.html#section-9.2.2"><i class="fa fa-check"></i><b>9.2.2</b> データの列で絞り込み</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="data-handling.html"><a href="data-handling.html#section-9.3"><i class="fa fa-check"></i><b>9.3</b> 追加</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="data-handling.html"><a href="data-handling.html#section-9.3.1"><i class="fa fa-check"></i><b>9.3.1</b> 新しい列を追加</a></li>
+<li class="chapter" data-level="9.3.2" data-path="data-handling.html"><a href="data-handling.html#section-9.3.2"><i class="fa fa-check"></i><b>9.3.2</b> 列名を変更</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="data-handling.html"><a href="data-handling.html#section-9.4"><i class="fa fa-check"></i><b>9.4</b> 集約</a></li>
+<li class="chapter" data-level="9.5" data-path="data-handling.html"><a href="data-handling.html#section-9.5"><i class="fa fa-check"></i><b>9.5</b> 結合</a></li>
+<li class="chapter" data-level="9.6" data-path="data-handling.html"><a href="data-handling.html#section-9.6"><i class="fa fa-check"></i><b>9.6</b> ロングフォーマット</a></li>
+<li class="chapter" data-level="9.7" data-path="data-handling.html"><a href="data-handling.html#section-9.7"><i class="fa fa-check"></i><b>9.7</b> データファイルの読み込み</a></li>
+<li class="chapter" data-level="9.8" data-path="introduction.html"><a href="introduction.html#ggplot2"><i class="fa fa-check"></i><b>9.8</b> ggplot2と一緒に使う</a></li>
+</ul></li>
+<li class="part"><span><b>巻末資料</b></span></li>
+<li class="chapter" data-level="" data-path="e382aae383b3e383a9e382a4e383b3e8b387e69699.html"><a href="e382aae383b3e383a9e382a4e383b3e8b387e69699.html"><i class="fa fa-check"></i>オンライン資料</a></li>
+<li class="chapter" data-level="" data-path="e5ae9fe8a18ce792b0e5a283e383bbe38390e383bce382b8e383a7e383b3e68385e5a0b1.html"><a href="e5ae9fe8a18ce792b0e5a283e383bbe38390e383bce382b8e383a7e383b3e68385e5a0b1.html"><i class="fa fa-check"></i>実行環境・バージョン情報</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">いつか役に立つかもしれない資料</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="trend-data" class="section level1">
+<h1><span class="header-section-number">6</span> トレンドデータ</h1>
+<p>x軸が時間であったり、連続変数かつ何かしらの説明要因である場合、<u><strong>折れ線グラフ</strong></u>（line graph）を描くのがセオリーである。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2) <span class="co"># 忘れずにパッケージを読み込む</span></code></pre></div>
+<div id="section-6.1" class="section level2">
+<h2><span class="header-section-number">6.1</span> 基本の折れ線グラフ</h2>
+<p>まずは、gcookbookの<code>aapl</code>データ（Appleの週ごとの株価データ）を可視化してみよう。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(gcookbook) <span class="co"># パッケージの読み込み</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(aapl) <span class="co"># 先頭6行</span></code></pre></div>
+<pre><code>##         date adj_price
+## 1 1980-12-12  0.023268
+## 2 1980-12-19  0.022863
+## 3 1980-12-26  0.028731
+## 4 1981-01-02  0.027921
+## 5 1981-01-09  0.025797
+## 6 1981-01-16  0.025089</code></pre>
+<p>変数はそれぞれ、</p>
+<ul>
+<li><p><code>date</code>：記録日</p></li>
+<li><p><code>adj_price</code>：株価</p></li>
+</ul>
+<p>を表している。では、株価の時系列変化をプロットしてみよう。<code>geom_line()</code>で折れ線グラフを描くことができる。</p>
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(aapl, <span class="kw">aes</span>(date, adj_price)) <span class="op">+</span><span class="st"> </span><span class="co"># x軸にdate、y軸にadj_price</span>
+<span class="st">  </span><span class="kw">geom_line</span>() <span class="co"># 折れ線グラフ</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:line-graph-1"></span>
+<img src="lecture_note_files/figure-html/line-graph-1-1.png" alt="Appleの株価データ。" width="768" />
+<p class="caption">
+Figure 6.1: Appleの株価データ。
+</p>
+</div>
+<hr />
+<p>次は、Rにデフォルトで入っている<code>BOD</code>（生物化学的酸素要求量に関するデータセット）を可視化してみよう。なお、生物化学的酸素要求量（biochemical oxygen demand; BOD）とは水質指標のことである<a href="#fn18" class="footnoteRef" id="fnref18"><sup>18</sup></a>。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(BOD) <span class="co"># 6行しかないのですべて表示される</span></code></pre></div>
+<pre><code>##   Time demand
+## 1    1    8.3
+## 2    2   10.3
+## 3    3   19.0
+## 4    4   16.0
+## 5    5   15.6
+## 6    7   19.8</code></pre>
+<p>早速、<code>x</code>に<code>Time</code>（時間）、<code>y</code>に<code>Demand</code>（BOD）を取って折れ線グラフを描いてみよう。</p>
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(BOD, <span class="kw">aes</span>(Time, demand)) <span class="op">+</span><span class="st"> </span><span class="co"># x軸にTime、y軸にdemand</span>
+<span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span><span class="st"> </span><span class="co"># 折れ線グラフ</span>
+<span class="st">  </span><span class="kw">geom_point</span>() <span class="co"># ドットは添えるだけ</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-65"></span>
+<img src="lecture_note_files/figure-html/unnamed-chunk-65-1.png" alt="BODの折れ線グラフ。" width="768" />
+<p class="caption">
+Figure 6.2: BODの折れ線グラフ。
+</p>
+</div>
+<p>なお、ここでは<code>geom_point()</code>を加えることで、ドットもプロットしている。<code>BOD</code>のようにデータポイントが少ない場合、折れ線だけでなく、ドットを添えると視覚的に楽になるように思われる（個人的意見だが）。逆に、Figure <a href="trend-data.html#fig:line-graph-1">6.1</a>のようにデータポイントが多い場合、ドットは不要である。</p>
+</div>
+<div id="section-6.2" class="section level2">
+<h2><span class="header-section-number">6.2</span> グルーピングされた折れ線グラフ</h2>
+<p>では、例のごとく、折れ線グラフを複数のグループごとに描いてみよう。ここでは、Rにデフォルトで入っている<code>ToothGrowth</code>（モルモットの歯に関するデータセット）を使ってみることにする。早速データを確認してみよう。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(ToothGrowth) <span class="co"># 先頭6行</span></code></pre></div>
+<pre><code>##    len supp dose
+## 1  4.2   VC  0.5
+## 2 11.5   VC  0.5
+## 3  7.3   VC  0.5
+## 4  5.8   VC  0.5
+## 5  6.4   VC  0.5
+## 6 10.0   VC  0.5</code></pre>
+<p>変数はそれぞれ、</p>
+<ul>
+<li><p><code>len</code>：モルモットの歯の長さ</p></li>
+<li><p><code>supp</code>：ビタミンCの与え方（VC or OJ；アスコルビン酸かオレンジジュース）</p></li>
+<li><p><code>dose</code>：ビタミンCの投与量（mg／日）</p></li>
+</ul>
+<p>を表している。ここで、<code>supp</code>と<code>dose</code>ごとに<code>len</code>の平均値をプロットしてみようと思うのだが、<code>ToothGrowth</code>には平均値のデータが入っておらず、自分で計算しなくてはならない。そこで、以下のコードを使って、平均値のデータセット（<code>tg_mean</code>）を新しく作ることにする。なお、今はまだ下のコードの内容を理解できなくても良い<a href="#fn19" class="footnoteRef" id="fnref19"><sup>19</sup></a>。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse) <span class="co"># データ加工用のパッケージ群を読み込む。色々メッセージが出るだろうが気にしなくて良い。</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">tg_mean =<span class="st"> </span>ToothGrowth <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># ToothGrowthデータの</span>
+<span class="st">  </span><span class="kw">group_by</span>(supp, dose) <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># suppとdoseごとに</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mean =</span> <span class="kw">mean</span>(len)) <span class="co"># lenの平均値を計算せよ</span>
+
+tg_mean</code></pre></div>
+<pre><code>## # A tibble: 6 x 3
+## # Groups:   supp [?]
+##   supp   dose  mean
+##   &lt;fct&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 OJ      0.5 13.2 
+## 2 OJ      1   22.7 
+## 3 OJ      2   26.1 
+## 4 VC      0.5  7.98
+## 5 VC      1   16.8 
+## 6 VC      2   26.1</code></pre>
+<p><code>mean</code>はモルモットの歯の長さ（<code>len</code>）の平均値を表している。</p>
+<p>それでは、以下のコードを実行して、<code>supp</code>ごとに<code>dose</code>と<code>mean</code>の関係を可視化してみよう。</p>
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(tg_mean, <span class="kw">aes</span>(dose, mean, <span class="dt">group =</span> supp)) <span class="op">+</span><span class="st"> </span><span class="co"># x軸にdose、y軸にmean；group = suppが必要</span>
+<span class="st">  </span><span class="kw">geom_line</span>()</code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:line-graph-3"></span>
+<img src="lecture_note_files/figure-html/line-graph-3-1.png" alt="suppごとにグルーピングされた折れ線グラフ。" width="768" />
+<p class="caption">
+Figure 6.3: <code>supp</code>ごとにグルーピングされた折れ線グラフ。
+</p>
+</div>
+<p><code>supp</code>ごとに<code>dose</code>と<code>mean</code>の関係をプロットすることができた。なお、<code>geom_line()</code>をグルーピングする際には、<code>group</code>に変数を指定しなければならない（指定しないとどうなるのだろうか？　気になる人は確認してみよう）。</p>
+<p>ただし、このままでは見にくいので、折れ線の色（<code>color</code>）と線種（<code>linetype</code>）にも変数を指定しよう。また、<code>geom_line()</code>の<code>size</code>で折れ線の太さを調整することができる。</p>
+<p>加えて、ドットも付け足しておこう。Chapter <a href="association.html#association">5</a>でも見たように、<code>shape</code>に変数を指定するとドットの形を変えることができる。また、<code>geom_point()</code>の<code>size</code>でドットの大きさを調整することができる。</p>
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(tg_mean, <span class="kw">aes</span>(dose, mean, <span class="dt">color =</span> supp, <span class="dt">group =</span> supp, <span class="dt">linetype =</span> supp, <span class="dt">shape =</span> supp)) <span class="op">+</span><span class="st"> </span><span class="co"># color、linetype、shape = suppを追加</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="fl">1.5</span>) <span class="op">+</span><span class="st"> </span><span class="co"># sizeで太さを指定</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">5</span>) <span class="co"># ドットは添えるだけ。sizeで大きさを指定</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-69"></span>
+<img src="lecture_note_files/figure-html/unnamed-chunk-69-1.png" alt="Figure 6.3の折れ線の色と線種をsuppごとに変え、さらにドットを付け足したグラフ。" width="768" />
+<p class="caption">
+Figure 6.4: Figure <a href="trend-data.html#fig:line-graph-3">6.3</a>の折れ線の色と線種を<code>supp</code>ごとに変え、さらにドットを付け足したグラフ。
+</p>
+</div>
+</div>
+<div id="section-6.3" class="section level2">
+<h2><span class="header-section-number">6.3</span> 面グラフ</h2>
+<p>時間に伴う数量の変化の大きさをグループごとに比較・強調したい際には、<u><strong>面グラフ</strong></u>（area graph; area chart）が向いている。</p>
+<p>ここでは、gcookbookの<code>uspopage</code>（1900〜2002年のアメリカの人口統計）を使ってみよう。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(uspopage)</code></pre></div>
+<pre><code>##   Year AgeGroup Thousands
+## 1 1900       &lt;5      9181
+## 2 1900     5-14     16966
+## 3 1900    15-24     14951
+## 4 1900    25-34     12161
+## 5 1900    35-44      9273
+## 6 1900    45-54      6437</code></pre>
+<p>変数はそれぞれ、</p>
+<ul>
+<li><p><code>Year</code>：年</p></li>
+<li><p><code>AgeGroup</code>：年齢のカテゴリ</p></li>
+<li><p><code>Thousands</code>：人口</p></li>
+</ul>
+<p>を表している。面グラフは<code>geom_area()</code>で描くことができる。また、グループごとに色分けするには、<code>fill</code>に変数を指定すれば良い。</p>
+
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(uspopage, <span class="kw">aes</span>(Year, Thousands, <span class="dt">fill =</span> AgeGroup)) <span class="op">+</span><span class="st"> </span><span class="co"># x軸にYear、y軸にThousands；fill = AgeGroupと指定することで、自動で塗りつぶされる</span>
+<span class="st">  </span><span class="kw">geom_area</span>() <span class="co"># 面グラフ</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-71"></span>
+<img src="lecture_note_files/figure-html/unnamed-chunk-71-1.png" alt="アメリカの人口の推移を表した面グラフ。" width="768" />
+<p class="caption">
+Figure 6.5: アメリカの人口の推移を表した面グラフ。
+</p>
+</div>
+</div>
+<div id="-3" class="section level2">
+<h2><span class="header-section-number">6.4</span> 練習問題</h2>
+<ul>
+<li><p>ggplot2の<code>economics</code>データを使って、失業者数の推移をプロットしてみよう。</p></li>
+<li><p>gcookbookの<code>worldpop</code>データをもとに、<code>geom_line()</code>と<code>geom_point()</code>を使い、世界人口の推移をプロットしてみよう。また、世界人口の素値ではなく常用対数をプロットするとどのようになるだろうか？（ヒント：<code>log10(変数)</code>で常用対数を計算することができる）</p></li>
+</ul>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="18">
+<li id="fn18"><p><a href="https://ja.wikipedia.org/wiki/生物化学的酸素要求量" class="uri">https://ja.wikipedia.org/wiki/生物化学的酸素要求量</a><a href="trend-data.html#fnref18">↩</a></p></li>
+<li id="fn19"><p>データハンドリングなどについては、Chapter <a href="data-handling.html#data-handling">9</a>で詳しく見ることにする。<a href="trend-data.html#fnref19">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="association.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statistics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["lecture_note.pdf", "lecture_note.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+</body>
+
+</html>

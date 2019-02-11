@@ -1,0 +1,2 @@
+"0","ggplot(pg_mean, aes(group, weight)) + # x軸にgroup、y軸にweight"
+"0","  geom_bar(stat = ""identity"") # 棒グラフ；stat = ""identity""が必要"
