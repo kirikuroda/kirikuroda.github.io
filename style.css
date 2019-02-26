@@ -1,352 +1,478 @@
-body{
-    background: white;
-    margin: 0;
-    padding: 0;
-} 
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  /* width: 1200px; */
+}
 
 #wrapper {
-    width:100%;
-    overflow:hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
-.menu{
-    overflow: hidden;
-    background:#000000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:0;
-    padding: 0;
-    margin-right: auto;
+.menu {
+  overflow: hidden;
+  background: #141414;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  padding: 0;
+  margin-right: auto;
 }
 
-.menu2{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    color: black;
-    width: 140px;
-    height: 300px;
-    margin-top: 120px;
-    margin-left: 5px;
+.menu2 {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  color: black;
+  width: 140px;
+  height: 300px;
+  margin-top: 120px;
+  margin-left: 5px;
 }
 
-.menu3{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    color: black;
-    width: 140px;
-    height: 250px;
-    margin-top: 140px;
-    margin-left: 5px;
+.menu3 {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  color: black;
+  width: 140px;
+  height: 250px;
+  margin-top: 140px;
+  margin-left: 100px;
 }
 
-h1{          /*メニューバー*/
-    position:center;
-    margin: 0px;
-    padding: 0;
-    font-size: 14px;
-    color: #000000;
-    font-weight: normal;
-    font-family: "Helvetica Neue";
-    text-align: center;
+h1 {
+  /*メニューバー*/
+  position: center;
+  margin: 0px;
+  padding: 0;
+  font-size: 20px;
+  color: #141414;
+  font-weight: normal;
+  font-family: "Helvetica Neue";
+  text-align: center;
 }
 
-h2{          /*メニューバー2*/
-    font-size: 12px;    
-    font-family: "Helvetica Neue";
-    text-align: left;
-    word-wrap: break-word;
+h2 {
+  /*メニューバー2*/
+  font-size: 12px;
+  font-family: "Helvetica Neue";
+  text-align: left;
+  /* word-wrap: break-word; */
 }
 
-
-.flex{
-    display: flex;
-    justify-content: center;
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 #content {
-    position: relative;
-    background:#AAAAAA;
-    height: 3000px;
+  position: relative;
+  background: #AAAAAA;
+  height: 3000px;
 }
 
 #content .follow {
-    position: fixed;
-    top: 0;
-} 
+  position: fixed;
+  top: 0;
+}
 
 a {
-    color:#ffffff;
-    text-decoration:none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 ul {
-    width:100%;
+  width: 100%;
 }
 
 ul li {
-    width: 100%;
+  width: 100%;
 }
 
 ul li a:hover {
-    color: #888888;
+  color: #888888;
 }
 
-.menu2 ul{
-    width:100%;
-    margin-left: -1em;
+.menu2 ul {
+  width: 100%;
+  margin-left: -1em;
 }
+
 .menu2 a {
-    color:#000000;
-    text-decoration:none;
+  color: #141414;
+  text-decoration: none;
 }
 
-.menu3 ul{
-    width:100%;
-    margin-left: -1em;
+.menu2 ul li a:hover {
+  color: dodgerblue;
 }
+
+.menu3 ul {
+  width: 100%;
+  margin-left: -1em;
+}
+
 .menu3 a {
-    color:#000000;
-    text-decoration:none;
+  color: #141414;
+  text-decoration: none;
 }
 
-h1#ryakureki,#gakkai, #sympo, #education{
-    margin-top: -50px;
-    padding-top: 50px;
+.menu3 ul li a:hover {
+  color: dodgerblue;
 }
 
-
-
+h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publication, #presentation, #award, #pro {
+  margin-top: -50px;
+  padding-top: 50px;
+}
 
 .header1 {
-    display: table;
-    height: 100%;
-    width: 100%;
-    position: center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-    margin: 0 auto;
-    word-wrap: break-word;
-    /*font-family: HelveticaNeue-UltraLight;*/
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  word-wrap: break-word;
+  color: #141414;
 }
 
-.header1 h1{
-    position:center;
-    margin-top: 250px;
-    margin-bottom: 50px
-    padding: 0px;
-    font-size: 60px;
-    color: #141414;
-    font-family: "Helvetica Neue";
-    font-weight: 400;
-    text-align: center;
-}
-.header1 p{
-    position:left;
-    margin-top: 100px;
-    font-size: 20px;
-    color: #141414;
-    font-family : "ヒラギノ角ゴ Pro W3";
+.header1 h1 {
+  position: center;
+  margin-top: 230px;
+  margin-bottom: 50px;
+  padding: 0px;
+  font-size: 65px;
+  color: #141414;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  text-align: center;
 }
 
-
-
-
-.header2{
-    position:center;
-    margin-top: 200px;
-    margin-bottom: 50px
-    padding: 0px;
-    font-size: 50px;
-    color: #141414;
-    /*font-family: HelveticaNeue-UltraLight;*/
-    font-weight: 400;
-    text-align: center;
+.header1 p {
+  position: center;
+  font-size: 25px;
+  font-family: "Helvetica Neue";
+  text-align: left;
+  color: dodgerblue;
+  margin-left: 600px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.header2 h1{
-    position:left;
-    margin-top: 100px;
-    font-size: 20px;
-    color: #141414;
-    font-family : "ヒラギノ角ゴ Pro W3";
+.header1 h2 {
+  position: center;
+  height: 30em;
+  width: 800px;
+  /* 高さを制限(※) */
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-top: 0px;
+  overflow-y: scroll;
+  /* スクロールバーを表示(※) */
+  border: 5px black;
+  background-color: white;
+  /* 背景色を追加 */
+  text-align: center;
+  color: #141414;
 }
 
-.header2 p{
-    position:left;
-    margin-top: 30px;
-    font-size: 20px;
-    color: #141414;
-    font-family: "Helvetica Neue";
-    font-weight: bold;
+.header1 table {
+  width: 800px;
+  border-spacing: 10px;
+  text-align: left;
+}
+
+.header1 table tr th {
+  font-size: 15px;
+  padding: 7px;
+  text-align: left;
+  border-right: 1px solid gray;
+  color: dodgerblue;
+  line-height: 180%;
+}
+
+.header1 table tr td {
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 7px;
+  text-align: left;
+  color: #141414;
+  line-height: 180%;
+}
+
+.header1 a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.header1 a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+  background-color: #EAF6FD;
+}
+
+.header2 {
+  position: center;
+  margin-top: 200px;
+  margin-bottom: 50px padding: 0px;
+  /* margin-left: 800px; */
+  /* margin-left: 600px; */
+  font-size: 50px;
+  color: #141414;
+  /*font-family: HelveticaNeue-UltraLight;*/
+  /* font-weight: 400; */
+  text-align: center;
 }
 
 
-.header3{
-    margin-top: 80px;
-    font-family : "ヒラギノ角ゴ Pro W3";
-    color: #141414;
-    font-weight: 400;
-    margin-left: 160px; 
-    margin-right: 100px;
-    /*text-align: center;*/
+.header2 h1 {
+  position: center;
+  margin-top: 100px;
+  font-size: 20px;
+  color: #141414;
+  font-family: "ヒラギノ角ゴ Pro W3";
+  text-align: center;
 }
 
-.header3 h1{
-    margin-top: 20px;
-    position:center;
-    font-size: 20px;
-    color: #141414;
-    font-family : "ヒラギノ角ゴ Pro W3";
+.header2 p {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #141414;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  position: center;
 }
 
-.header3 h2{
-    position: static;
-    margin-left: 25px;
-    font-size: 13px;
-    color: #000000;
-    font-family :HelveticaNeue;
+/* .header2 p a {
+  position: left;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #141414;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+} */
+
+.header3 {
+  position: center;
+  margin-top: 120px;
+  /*margin-bottom: 30px;*/
+  color: #141414;
+  font-weight: 400;
+  margin-left: 600px;
+  margin-right: 600px;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3";
+  width: 800px;
 }
 
-.header3 p{
-    font-size: 15px;
-    margin-left: 25px;
-    margin-bottom: 50px;
-    color: #141414;
-    font-family : "ヒラギノ角ゴ Pro W3";
-    text-align: left;
+.header3 h1 {
+  text-align: left;
+  margin-top: 20px;
+  position: left;
+  font-size: 20px;
+  color: #141414;
+  font-family: "ヒラギノ角ゴ Pro W3";
 }
+
+.header3 h2 {
+  /* position: static; */
+  /* margin-left: 25px; */
+  font-size: 20px;
+  color: #141414;
+  font-family: HelveticaNeue;
+}
+
+.header3 p {
+  font-size: 19px;
+  /* margin-left: 25px; */
+  margin-bottom: 50px;
+  color: #141414;
+  font-family: "ヒラギノ角ゴ Pro W3";
+  text-align: left;
+}
+
+.header3 h2 a {
+  color: #141414;
+  text-decoration: none;
+}
+
 .header3 a {
-    color:#000000;
-    text-decoration:none;
+  color: dodgerblue;
+  text-decoration: none;
 }
 
 .header3 h2 a:hover {
-    color: #888888;
+  color: dodgerblue;
+  background-color: #EAF6FD;
 }
 
 .header3 ul li a:hover {
-    color: #888888;
+  color: dodgerblue;
+  background-color: #EAF6FD;
 }
 
-
-.header4{
-    color: #141414;
-    font-weight: 400;
-    margin-left: 50px; 
-    margin-right: 50px;
-    font-family : "ヒラギノ角ゴ Pro W3";
-}
-.header4 h1{
-    position:center;
-    margin-top: 55px;
-     margin-bottom: 40px;
-    font-size: 20px;
-    color: #141414;
-    font-family :HelveticaNeue;
-    
+.header3 ul li {
+  font-size: 17px;
+  margin-left: 18px;
+  color: #141414;
+  text-align: left;
+  line-height: 180%;
 }
 
-.header4 h2{
-    text-align: center;
-    margin-top: 18px;
-     margin-bottom: 40px;
-    font-size: 20px;
-    color: #141414;
-    font-weight:lighter;
-    font-family :HelveticaNeue;
+.header4 {
+  color: #141414;
+  font-weight: 400;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "ヒラギノ角ゴ Pro W3";
+  white-space: nowrap;
 }
 
-.header4 p{
-    position:center;
-    margin-bottom: 40px;
-    font-size: 15px;
-    margin-left: 100px;
-    color: #141414;
+.header4 h1 {
+  text-align: left;
+  position: center;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  margin-left: 600px;
+  margin-top: 100px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #141414;
+  font-family: HelveticaNeue;
+}
+
+.header4 h2 {
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  margin-left: 600px;
+  font-size: 22px;
+  color: #141414;
+  font-weight: bold;
+  font-family: HelveticaNeue;
+}
+
+.header4 p {
+  position: center;
+  margin-bottom: 40px;
+  font-size: 15px;
+  margin-left: 100px;
+  color: #141414;
 }
 
 .header4 a {
-    color:#000000;
-    text-decoration:none;
+  color: dodgerblue;
+  text-decoration: none;
 }
 
-
-.header5{
-    margin-top: 80px;
-    /*margin-bottom: 30px;*/
-    color: #000000;
-    font-weight: 400;
-    margin-left: 160px; 
-    margin-right: 100px;
-    /*text-align: center;*/
-    font-family :HelveticaNeue;
+.header4 a:hover {
+  color: dodgerblue;
+  background-color: #EAF6FD;
 }
 
-.header5 h2{
-    margin-left: 25px;
-    font-size: 13px;
-    color: #000000;
-    font-family :HelveticaNeue;
+.header4 ul li {
+  margin-left: 600px;
+  font-size: 17px;
+  color: #141414;
+  text-align: left;
+}
+
+.header5 {
+  position: center;
+  margin-top: 120px;
+  /*margin-bottom: 30px;*/
+  color: #141414;
+  font-weight: 400;
+  margin-left: 600px;
+  margin-right: 600px;
+  text-align: center;
+  font-family: HelveticaNeue;
+  width: 800px;
+}
+
+.header5 h2 {
+  /* margin-left: 25px; */
+  font-size: 20px;
+  color: #141414;
+  font-family: HelveticaNeue;
 }
 
 .header5 h2 a:hover {
-    color: #888888;
+  color: dodgerblue;
+  background-color: #EAF6FD;
 }
 
 .header5 ul li a:hover {
-    color: #888888;
+  color: dodgerblue;
+  background-color: #EAF6FD;
 }
 
-.header5 h1{
-    position:center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #000000;
-    font-family :HelveticaNeue;
+.header5 h1 {
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #141414;
+  font-family: HelveticaNeue;
+  font-weight: bold;
+}
 
+.header5 p {
+  margin-top: 40px;
+  font-size: 20px;
+  /* margin-left: 25px; */
+  margin-bottom: 50px;
+  color: #141414;
+  text-align: left;
+  line-height: 150%;
 }
-.header5 p{
-    margin-top: 40px;
-    font-size: 18px;
-    margin-left: 25px;
-    margin-bottom: 50px;
-    color: #000000;
-    text-align: left;
+
+.header5 ul li {
+  font-size: 18px;
+  margin-left: 18px;
+  color: #141414;
+  text-align: left;
+  line-height: 150%;
 }
+
+.header5 h2 a {
+  color: #141414;
+  text-decoration: none;
+}
+
 .header5 a {
-    color:#000000;
-    text-decoration:none;
+  color: dodgerblue;
+  text-decoration: none;
 }
-
-
-
-
 
 #container {
-    width: 100%;
-    position: relative;
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
+  width: 100%;
+  position: relative;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
 }
 
 #contents {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
-footer{
-    position: fixed;
-	width:100%;
-	height:25px;
-	bottom: 0;
-	color:#000000;
-	font-size:16px;
-	font-family :HelveticaNeue-UltraLight;
-	text-align: right;
+footer {
+  position: fixed;
+  width: 100%;
+  height: 25px;
+  bottom: 0;
+  color: #141414;
+  font-size: 16px;
+  font-family: HelveticaNeue-UltraLight;
+  text-align: right;
 }
