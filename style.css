@@ -189,6 +189,7 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
   width: 800px;
   border-spacing: 10px;
   text-align: left;
+  padding-bottom: 50px;
 }
 
 .header1 table tr th {
