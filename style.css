@@ -131,8 +131,6 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
 
 .header1 {
   display: table;
-  height: 100%;
-  width: 100%;
   position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -140,6 +138,7 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
   -o-background-size: cover;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 100px;
   word-wrap: break-word;
   color: #141414;
 }
@@ -162,19 +161,19 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
   font-family: "Helvetica Neue";
   text-align: left;
   color: dodgerblue;
-  margin-left: 600px;
+  margin-left: 150px;
   margin-top: 100px;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .header1 h2 {
-  position: center;
+  position: right;
   height: 30em;
   width: 800px;
   /* 高さを制限(※) */
-  margin-left: 600px;
-  margin-right: 600px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-top: 0px;
   overflow-y: scroll;
   /* スクロールバーを表示(※) */
@@ -186,9 +185,10 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
 }
 
 .header1 table {
+  position: center;
   width: 800px;
   border-spacing: 10px;
-  text-align: left;
+  text-align: center;
   padding-bottom: 50px;
 }
 
@@ -238,6 +238,7 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
 .header2 h1 {
   position: center;
   margin-top: 100px;
+  /*margin-left: 100px;*/
   font-size: 20px;
   color: #141414;
   font-family: "ヒラギノ角ゴ Pro W3";
@@ -334,6 +335,7 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
   font-weight: 400;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 100px;
   font-family: "ヒラギノ角ゴ Pro W3";
   white-space: nowrap;
 }
@@ -341,10 +343,9 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
 .header4 h1 {
   text-align: left;
   position: center;
-  margin-top: 55px;
-  margin-bottom: 40px;
-  margin-left: 600px;
   margin-top: 100px;
+  margin-bottom: 40px;
+  margin-left: 100px;
   font-size: 22px;
   font-weight: bold;
   color: #141414;
@@ -355,7 +356,7 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
   text-align: left;
   margin-top: 18px;
   margin-bottom: 40px;
-  margin-left: 600px;
+  margin-left: 100px;
   font-size: 22px;
   color: #141414;
   font-weight: bold;
@@ -381,7 +382,7 @@ h1 #ryakureki, #ronbun, #gakkai, #sympo, #batsu, #shoku, #education, #publicatio
 }
 
 .header4 ul li {
-  margin-left: 600px;
+  margin-left: 100px;
   font-size: 17px;
   color: #141414;
   text-align: left;
