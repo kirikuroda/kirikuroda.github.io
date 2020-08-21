@@ -5,12 +5,23 @@
     <link>/category/writing/</link>
       <atom:link href="/category/writing/index.xml" rel="self" type="application/rss+xml" />
     <description>Writing</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Writing</title>
       <link>/category/writing/</link>
     </image>
+    
+    <item>
+      <title>Hugo Academicでウェブサイトをリニューアルしました</title>
+      <link>/post/hugo-academic/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/hugo-academic/</guid>
+      <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていたHugo Academicというテンプレートと、blogdown（Rのパッケージ）を使うことにしました。&lt;/p&gt;
+&lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
+&lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Test</title>

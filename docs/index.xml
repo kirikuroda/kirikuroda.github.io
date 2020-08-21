@@ -13,6 +13,17 @@
     </image>
     
     <item>
+      <title>Hugo Academicでウェブサイトをリニューアルしました</title>
+      <link>/post/hugo-academic/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/hugo-academic/</guid>
+      <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていたHugo Academicというテンプレートと、blogdown（Rのパッケージ）を使うことにしました。&lt;/p&gt;
+&lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
+&lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>データ可視化 まとめ</title>
       <link>/post/datareporting/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
