@@ -9,7 +9,7 @@ tags:
   - Blogging
   - Writing
 subtitle: ''
-summary: ''
+summary: 'Hugo Academicとblogdownがおすすめ'
 authors: []
 lastmod: '2020-08-21T21:14:53+09:00'
 featured: no
