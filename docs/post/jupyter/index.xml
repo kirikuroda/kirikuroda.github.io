@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Display Jupyter Notebooks with Academic | Kiri Kuroda</title>
+    <link>/post/jupyter/</link>
+      <atom:link href="/post/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    <description>Display Jupyter Notebooks with Academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/post/jupyter/featured.png</url>
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>/post/jupyter/</link>
+    </image>
+    
+  </channel>
+</rss>
