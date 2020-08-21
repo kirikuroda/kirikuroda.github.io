@@ -1,14 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/courses/example/example1/</loc>
+<loc>/courses/example/_example1/</loc>
 
 <lastmod>2019-05-05T00:00:00+01:00</lastmod>
 
 </url>
 
 <url>
-<loc>/courses/example/example2/</loc>
+<loc>/courses/example/_example2/</loc>
 
 <lastmod>2019-05-05T00:00:00+01:00</lastmod>
 
@@ -43,30 +43,9 @@
 </url>
 
 <url>
-<loc>/slides/example/</loc>
-
-<lastmod>2019-02-05T00:00:00+00:00</lastmod>
-
-</url>
-
-<url>
 <loc>/publication/bryant2018perception/</loc>
 
 <lastmod>2018-07-25T00:00:00+00:00</lastmod>
-
-</url>
-
-<url>
-<loc>/project/external-project/</loc>
-
-<lastmod>2016-04-27T00:00:00+00:00</lastmod>
-
-</url>
-
-<url>
-<loc>/project/internal-project/</loc>
-
-<lastmod>2016-04-27T00:00:00+00:00</lastmod>
 
 </url>
 

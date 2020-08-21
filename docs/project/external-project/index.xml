@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>External Project | Kiri Kuroda</title>
+    <link>/project/external-project/</link>
+      <atom:link href="/project/external-project/index.xml" rel="self" type="application/rss+xml" />
+    <description>External Project</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/project/external-project/featured.jpg</url>
+      <title>External Project</title>
+      <link>/project/external-project/</link>
+    </image>
+    
+  </channel>
+</rss>
