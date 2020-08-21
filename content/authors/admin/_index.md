@@ -20,10 +20,8 @@ interests:
 - Speed–accuracy tradeoff
 organizations:
 - name: The University of Tokyo
-  url: "http://www.utokyo-socpsy.com/index-e.html"
-- name: JSPS Research Fellow (DC1)
-  url: "https://www.jsps.go.jp/english/e-pd/index.html"
-role:
+  url: ""
+role: JSPS Research Fellow (DC1)
 social:
 - icon: google-scholar
   icon_pack: ai
