@@ -13,7 +13,7 @@ publication_types:
 - "2"
 publishDate: "20219-09-01T00:00:00Z"
 tags:
-title: "You watch my back, I'll watch yours: Emergence of collective risk monitoring through tacit coordination in human social foraging"
+title: "You Watch My Back, I'll Watch Yours: Emergence of Collective Risk Monitoring Through Tacit Coordination in Human Social Foraging"
 url_code: ""
 url_dataset: ""
 url_pdf: "https://reader.elsevier.com/reader/sd/pii/S1090513819300340?token=B45AF74208B14FCD74629DAC273CFEDFE35ED6972A5F1093F0A645F0AEBDF3F5E2B3DD4F9EADB4F55EA579EA8661527F"
