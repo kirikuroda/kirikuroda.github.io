@@ -35,12 +35,12 @@ h3.article-title a:hover {
 }
 
 #navbar-main .main-menu-item ul li .nav-link:hover{
-  font-weight: bold;
+  // font-weight: bold;
   color: #fa5246;
 }
 
 .navbar .navbar-nav .nav-link.active {
-  font-weight: bold;
+  font-weight: normal !important;
   color: #fa5246 !important;
 }
 
