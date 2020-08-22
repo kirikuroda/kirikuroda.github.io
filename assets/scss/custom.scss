@@ -1,6 +1,49 @@
 body {
   background-color: rgb(245, 245, 245);
+  font-family: "Roboto" "Noto Sans JP";
 }
+
+.article h1 {
+  font-family: "Montserrat", "Noto Sans JP";
+  font-weight: bold;
+}
+
+a {
+  color: #fa5246;
+  text-decoration: none;
+  transition: color 0.0s ease;
+}
+
+h3.article-title a:hover {
+  color: #fa5246;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.experience .card-text {
+  color: #212529 !important;
+  font-family: Optima;
+}
+
+.experience .m-2 .border, .experience .col.border-right {
+  border-color: rgb(180, 180, 180) !important;
+}
+
+.navbar-light .navbar-brand {
+  font-weight: normal;
+  color: #2b2b2b !important;
+}
+
+#navbar-main .main-menu-item ul li .nav-link:hover{
+  color: #fa5246;
+  transition: color 0.2s ease;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #fa5246 !important;
+}
+
 
 .ai-google-scholar {
   color: rgb(50, 139, 250);

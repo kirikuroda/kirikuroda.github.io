@@ -5,7 +5,7 @@
     <link>/author/kiri-kuroda/</link>
       <atom:link href="/author/kiri-kuroda/index.xml" rel="self" type="application/rss+xml" />
     <description>Kiri Kuroda</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Kiri Kuroda</title>
@@ -13,22 +13,29 @@
     </image>
     
     <item>
-      <title>Investor&#39;s Pessimistic and False Belief About Trustworthiness and Stake Size in Trust Decision</title>
-      <link>/publication/kuroda2020investor/</link>
-      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/kuroda2020investor/</guid>
-      <description></description>
+      <title>データ可視化 まとめ</title>
+      <link>/post/datareporting/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/datareporting/</guid>
+      <description>&lt;p&gt;数年前になりますが、データ可視化・報告・ggplot2の初歩をまとめました。&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; target = &#34;_blank&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>You Watch My Back, I&#39;ll Watch Yours: Emergence of Collective Risk Monitoring Through Tacit Coordination in Human Social Foraging</title>
-      <link>/publication/kuroda2019you/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/kuroda2019you/</guid>
-      <description></description>
+      <title>Test</title>
+      <link>/post/test/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/test/</guid>
+      <description>
+
+
+&lt;p&gt;This is a test.&lt;/p&gt;
+</description>
     </item>
     
-    <item>
+  </channel>
+</rss>
+m>
       <title>The Perception of Spontaneous and Volitional Laughter Across 21 Societies</title>
       <link>/publication/bryant2018perception/</link>
       <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
