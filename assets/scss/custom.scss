@@ -59,6 +59,20 @@ a:hover h4.card-title.exp-title.text-muted {
   color: rgb(214, 214, 214);
 }
 
+button.navbar-toggler i {
+  color: white;
+}
+
+.navbar-collapse.collapsing, .navbar-collapse.show {
+  z-index: 1031 !important;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  text-align: center !important;
+}
+
 .btn, .btn i {
   // padding: 5px .4rem 5px .4rem;
   font-size: 1.2rem;
