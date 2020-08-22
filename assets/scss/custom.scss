@@ -20,6 +20,14 @@ h3.article-title a:hover {
   transition: color 0.2s ease;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+a:hover h4.card-title.exp-title.text-muted {
+  color: #fa5246 !important;
+}
+
 .experience .card-text {
   color: #212529 !important;
   font-family: Optima;

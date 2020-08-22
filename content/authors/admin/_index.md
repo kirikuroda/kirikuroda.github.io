@@ -21,7 +21,9 @@ interests:
 organizations:
 - name: The University of Tokyo
   url: ""
-role: JSPS Research Fellow (DC1)
+- name: JSPS Research Fellow (DC1)
+  url: ""
+role:
 social:
 - icon: google-scholar
   icon_pack: ai

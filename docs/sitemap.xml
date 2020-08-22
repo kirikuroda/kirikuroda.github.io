@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-08-22T01:38:58+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/blogging/</loc>
     <lastmod>2020-08-21T22:10:46+09:00</lastmod>
   </url>
@@ -95,6 +90,11 @@
   <url>
     <loc>/publication-type/2/</loc>
     <lastmod>2020-08-21T23:30:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-08-22T01:38:58+09:00</lastmod>
   </url>
   
   <url>

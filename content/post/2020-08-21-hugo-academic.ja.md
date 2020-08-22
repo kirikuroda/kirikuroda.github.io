@@ -18,6 +18,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+aliases: [/blog/2020/08/21/hugo-academic]
 ---
 
 2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていたHugo Academicというテンプレートと、blogdown（Rのパッケージ）を使うことにしました。

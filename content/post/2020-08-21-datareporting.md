@@ -2,8 +2,7 @@
 title: "データ可視化 まとめ"
 summary: "ggplot2の基礎"
 slug: datareporting
-authors:
- - admin
+author: admin
 date: 2020-08-21
 categories: ["Presentation"]
 tags: ["Presentation", "Visualization", "ggplot2"]
