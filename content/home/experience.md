@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2020-10-01"
   date_end = "2021-01-31"
   description = """
-  Course: Research Method in Social Psychology IV
+  Course | Research Method in Social Psychology IV
   """
 
 [[experience]]
@@ -36,7 +36,7 @@ date_format = "Jan 2006"
   date_start = "2019-10-01"
   date_end = "2020-01-31"
   description = """
-  Course: Research Method in Social Psychology IV
+  Course | Research Method in Social Psychology IV
   """
 
 [[experience]]
@@ -57,7 +57,7 @@ date_format = "Jan 2006"
   date_start = "2017-10-01"
   date_end = "2018-01-31"
   description = """
-  Course: Research Method in Social Psychology
+  Course | Research Method in Social Psychology
   """
 
 [[experience]]
@@ -68,7 +68,7 @@ date_format = "Jan 2006"
   date_start = "2016-10-01"
   date_end = "2017-01-31"
   description = """
-  Course: Laboratory Course in Experimental Social Psychology (1)
+  Course | Laboratory Course in Experimental Social Psychology (1)
   """
 
 [[experience]]
