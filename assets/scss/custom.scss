@@ -9,13 +9,13 @@ body {
 }
 
 a {
-  color: #fa5246;
+  color: #d9473d;
   text-decoration: none;
   transition: color 0.0s ease;
 }
 
 h3.article-title a:hover {
-  color: #fa5246;
+  color: #d9473d;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -25,7 +25,7 @@ a:hover {
 }
 
 a:hover h4.card-title.exp-title.text-muted {
-  color: #fa5246 !important;
+  color: #d9473d !important;
 }
 
 .experience .card-text {
