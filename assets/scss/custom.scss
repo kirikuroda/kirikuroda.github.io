@@ -37,19 +37,26 @@ a:hover h4.card-title.exp-title.text-muted {
   border-color: rgb(180, 180, 180) !important;
 }
 
+.navbar {
+  background: rgb(51, 51, 51);
+}
+
 .navbar-light .navbar-brand {
   font-weight: normal;
-  color: #2b2b2b !important;
+  color: white !important;
 }
 
 #navbar-main .main-menu-item ul li .nav-link:hover{
   // font-weight: bold;
-  color: #fa5246;
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
+  font-weight: normal !important;
+  color: white !important;
 }
 
-.navbar .navbar-nav .nav-link.active {
-  font-weight: normal !important;
-  color: #fa5246 !important;
+.navbar-light .navbar-nav .nav-link, #navbar-main .main-menu-item ul li .nav-link {
+  color: rgb(214, 214, 214);
 }
 
 .btn, .btn i {
