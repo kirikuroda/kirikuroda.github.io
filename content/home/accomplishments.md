@@ -59,7 +59,7 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
-  organization = "Japanese Society of Social Psychology"
+  organization = "The Japanese Society of Social Psychology"
   organization_url = "http://www.socialpsychology.jp"
   title = "Young Investigator Research Award (JPY 100,000)"
   url = "http://www.socialpsychology.jp/award/wakate_2016_2.html"
