@@ -52,7 +52,7 @@
   translation: PDF
 
 - id: btn_cite
-  translation: Cite
+  translation: BibTeX
 
 - id: btn_slides
   translation: Slides
