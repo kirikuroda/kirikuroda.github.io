@@ -52,6 +52,35 @@ a:hover h4.card-title.exp-title.text-muted {
   color: #fa5246 !important;
 }
 
+.btn, .btn i {
+  // padding: 5px .4rem 5px .4rem;
+  font-size: 1.2rem;
+  // border-radius: 0;
+  border: none;
+}
+
+.btn-links .btn:hover {
+  transform: scale(1.2);
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.fa-file-pdf {
+  color: rgb(177, 10, 15);
+}
+
+.fa-quote-right {
+  color: #333333;
+}
+
+.fa-external-link-alt {
+  color: #333333;
+}
+
 .ai-google-scholar {
   color: rgb(50, 139, 250);
 }

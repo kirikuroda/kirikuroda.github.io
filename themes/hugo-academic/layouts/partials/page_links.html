@@ -26,14 +26,15 @@
 
 {{ with $pdf }}
 <a class="btn btn-outline-primary my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
-  {{ i18n "btn_pdf" }}
+  <i class="fas fa-file-pdf"></i>
 </a>
 {{ end }}
+
 {{ $resource := $page.Resources.GetMatch "cite.bib" }}
 {{ with $resource }}
 <button type="button" class="btn btn-outline-primary my-1 mr-1{{ if $is_list }} btn-sm{{end}} js-cite-modal"
         data-filename="{{ .RelPermalink }}">
-  {{ i18n "btn_cite" }}
+  <i class="fas fa-quote-right"></i>
 </button>
 {{ end }}
 {{ with $page.Params.url_code }}
@@ -129,7 +130,8 @@
 {{ end }}
 {{ with $page.Params.doi }}
 <a class="btn btn-outline-primary my-1 mr-1{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
-  DOI
+  <i class="fas fa-external-link-alt"></i>
+  <!-- DOI -->
 </a>
 {{ end }}
 {{ range $page.Params.links }}
