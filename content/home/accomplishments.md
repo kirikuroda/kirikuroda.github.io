@@ -31,7 +31,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Japan Society for Promotion of Science"
   organization_url = "https://www.jsps.go.jp/english/index.html"
-  title = "JSPS Grant-in-Aid for JSPS fellows (DC1: JPY 3,100,000)"
+  title = "Grant-in-Aid for JSPS Fellows (DC1: JPY 3,100,000)"
   url = "https://app.dimensions.ai/details/grant/grant.7526403"
   certificate_url = ""
   date_start = "2018-04-01"
