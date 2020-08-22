@@ -3,6 +3,10 @@ body {
   font-family: "Roboto" "Noto Sans JP";
 }
 
+#about p, #about li, #publications .article-style, #posts .article-style {
+  font-family: "Spectral", "Noto Serif JP";
+}
+
 .article h1 {
   font-family: "Montserrat", "Noto Sans JP";
   font-weight: bold;
@@ -30,7 +34,7 @@ a:hover h4.card-title.exp-title.text-muted {
 
 .experience .card-text {
   color: #212529 !important;
-  font-family: Optima;
+  font-family: "Spectral";
 }
 
 .experience .m-2 .border, .experience .col.border-right {
