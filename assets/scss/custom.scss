@@ -24,12 +24,30 @@ a:hover {
   text-decoration: none;
 }
 
+#talks p a {
+  color: rgb(47, 47, 47);
+}
+
+#talks p a:hover {
+  color: #d9473d;
+  border-bottom: solid 1px #d9473d;
+}
+
 a:hover h4.card-title.exp-title.text-muted {
   color: #d9473d !important;
 }
 
 .experience .card-text {
-  color: #212529 !important;
+  color: rgb(47, 47, 47) !important;
+}
+
+.card h4 a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.card h4 a:hover {
+  color: #d9473d;
+  border-bottom: solid 1px #d9473d;
 }
 
 .experience .m-2 .border, .experience .col.border-right {
