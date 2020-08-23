@@ -153,6 +153,16 @@
   </url>
   
   <url>
+    <loc>/privacy_disabled/</loc>
+    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/terms_disabled/</loc>
+    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tag/deep-learning/</loc>
     <lastmod>2020-08-21T20:40:23+09:00</lastmod>
   </url>
