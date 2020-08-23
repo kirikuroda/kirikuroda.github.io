@@ -80,8 +80,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 [taxonomies]
   tag = "tags"
   category = "categories"
-  publication_type = ""
-  author = ""
+  publication_type = "publication_types"
+  author = "authors"
 
 # Related content.
 [related]

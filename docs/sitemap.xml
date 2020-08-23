@@ -3,17 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kirikuroda.github.io/blog/</loc>
-    <lastmod>2020-08-23T19:41:35+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/</loc>
-    <lastmod>2020-08-23T21:20:09+09:00</lastmod>
+    <lastmod>2020-08-23T21:55:27+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/blog/r-markdown-test/</loc>
+    <loc>https://kirikuroda.github.io/post/r-markdown-test/</loc>
     <lastmod>2020-08-23T19:41:35+09:00</lastmod>
   </url>
   
@@ -33,7 +28,7 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/blog/hugo-academic/</loc>
+    <loc>https://kirikuroda.github.io/post/hugo-academic/</loc>
     <lastmod>2020-08-23T19:41:35+09:00</lastmod>
   </url>
   
@@ -68,7 +63,7 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/blog/datareporting/</loc>
+    <loc>https://kirikuroda.github.io/post/datareporting/</loc>
     <lastmod>2020-08-23T19:41:35+09:00</lastmod>
   </url>
   
@@ -78,7 +73,17 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/blog/test/</loc>
+    <loc>https://kirikuroda.github.io/post/test/</loc>
+    <lastmod>2020-08-23T19:41:35+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/publication_types/2/</loc>
+    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/authors/</loc>
     <lastmod>2020-08-23T19:41:35+09:00</lastmod>
   </url>
   
@@ -88,8 +93,23 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/publication/</loc>
+    <loc>https://kirikuroda.github.io/authors/kiri-kuroda/</loc>
     <lastmod>2020-08-21T23:30:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/publication_types/</loc>
+    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/authors/tatsuya-kameda/</loc>
+    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/authors/yoshio-kamijo/</loc>
+    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
   </url>
   
   <url>
@@ -98,16 +118,22 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/authors/daniel-m.-t.-fessler/</loc>
+    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/authors/gregory-a.-bryant/</loc>
+    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/publication/bryant2018perception/</loc>
     <lastmod>2020-08-21T20:07:32+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/index.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/blog/</loc>
+    <loc>https://kirikuroda.github.io/post/</loc>
     <lastmod>2020-08-23T19:41:35+09:00</lastmod>
   </url>
   
@@ -122,8 +148,12 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/authors/more.../</loc>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/publication/</loc>
-    <lastmod>2020-08-23T21:20:09+09:00</lastmod>
+    <lastmod>2020-08-23T21:55:27+09:00</lastmod>
   </url>
   
   <url>

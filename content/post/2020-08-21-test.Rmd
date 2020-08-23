@@ -1,0 +1,13 @@
+---
+title: "Test"
+subtitle: "My very first blog post."
+summary: "My very first blog post."
+slug: test
+author: admin
+date: 2020-08-20
+categories: ["Writing"]
+tags: ["Blogging", "Books"]
+aliases: [/post/2020/08/21/test]
+---
+
+This is a test.
