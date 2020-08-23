@@ -3,7 +3,7 @@
 .RData
 .Ruserdata
 *.DS_store
-/docs/author
+/docs/author/*
 !/docs/author/kiri-kuroda
 /docs/authors
 /docs/courses
