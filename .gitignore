@@ -3,10 +3,10 @@
 .RData
 .Ruserdata
 *.DS_store
-docs/author/
-!/docs/author/kiri-kuroda/
-docs/courses/
-docs/talk/
-docs/publication_types/
-docs/publication-type/
-docs/media/
+/docs/author
+!/docs/author/kiri-kuroda
+/docs/courses
+/docs/talk
+/docs/publication_types
+/docs/publication-type
+/docs/media
