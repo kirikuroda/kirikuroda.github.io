@@ -5,7 +5,6 @@
 *.DS_store
 /docs/authors/*
 !/docs/authors/admin
-!/docs/authors/page
 /docs/courses
 /docs/media
 /docs/publication_types
