@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Talks
+title: Blog
 view: 2
 ---
