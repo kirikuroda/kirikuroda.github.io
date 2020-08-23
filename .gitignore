@@ -5,7 +5,8 @@
 *.DS_store
 /docs/author/*
 !/docs/author/kiri-kuroda
-/docs/authors
+/docs/authors/*
+!/docs/authors/page
 /docs/courses
 /docs/talk
 /docs/publication_types
