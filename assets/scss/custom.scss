@@ -32,7 +32,7 @@ p a {
   color: #d9473d;
 }
 
-li a:hover, #talks p a:hover, p a:hover {
+.pub a:hover, li a:hover, #talks p a:hover, p a:hover {
   color: #d9473d;
   text-decoration: underline;
 }
@@ -51,7 +51,8 @@ a:hover h4.card-title.exp-title.text-muted {
 
 .card h4 a:hover {
   color: #d9473d;
-  border-bottom: solid 1px #d9473d;
+  border-bottom: none;
+  text-decoration: underline;
 }
 
 .experience .m-2 .border, .experience .col.border-right {
