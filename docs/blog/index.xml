@@ -12,52 +12,5 @@
       <link>https://kirikuroda.github.io/blog/</link>
     </image>
     
-    <item>
-      <title>R Markdown Test</title>
-      <link>https://kirikuroda.github.io/blog/r-markdown-test/</link>
-      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/blog/r-markdown-test/</guid>
-      <description>
-
-
-&lt;p&gt;This is a test.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>https://kirikuroda.github.io/blog/hugo-academic/</link>
-      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/blog/hugo-academic/</guid>
-      <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
-&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
-&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
-&lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
-&lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>データ可視化 まとめ</title>
-      <link>https://kirikuroda.github.io/blog/datareporting/</link>
-      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/blog/datareporting/</guid>
-      <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
-&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://kirikuroda.github.io/blog/test/</link>
-      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/blog/test/</guid>
-      <description>
-
-
-&lt;p&gt;This is a test.&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
