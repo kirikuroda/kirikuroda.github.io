@@ -6,4 +6,5 @@
 /docs/courses
 /docs/talk
 /docs/media
-/docs/authors
+/docs/authors/*
+!/docs/authors/kiri-kuroda
