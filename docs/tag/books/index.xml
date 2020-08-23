@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books | Kiri Kuroda｜黒田 起吏</title>
-    <link>/tag/books/</link>
-      <atom:link href="/tag/books/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/tag/books/</link>
+      <atom:link href="https://kirikuroda.github.io/tag/books/index.xml" rel="self" type="application/rss+xml" />
     <description>Books</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Books</title>
-      <link>/tag/books/</link>
+      <link>https://kirikuroda.github.io/tag/books/</link>
     </image>
     
     <item>
       <title>Test</title>
-      <link>/post/test/</link>
+      <link>https://kirikuroda.github.io/post/test/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/test/</guid>
+      <guid>https://kirikuroda.github.io/post/test/</guid>
       <description>
 
 
