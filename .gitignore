@@ -4,7 +4,7 @@
 .Ruserdata
 *.DS_store
 docs/author/
-!/docs/author/kiri-kuroda
+!/docs/author/kiri-kuroda/
 docs/courses/
 docs/talk/
 docs/publication_types/
