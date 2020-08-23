@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Blog
+title: Blogs
 view: 2
 ---
