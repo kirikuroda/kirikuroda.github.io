@@ -5,7 +5,7 @@
   id = "email"
   url = "mailto:?subject={title}&body={url}"
   title = "Email"
-  icon_pack = "fas"
+  icon_pack = "far"
   icon = "envelope"
   enable = true
 
@@ -14,7 +14,7 @@
   url = "https://twitter.com/intent/tweet?url={url}&text={title}"
   title = "Twitter"
   icon_pack = "fab"
-  icon = "twitter"
+  icon = "twitter-square"
   enable = true
 
 [[buttons]]
@@ -22,7 +22,7 @@
   url = "https://www.facebook.com/sharer.php?u={url}&t={title}"
   title = "Facebook"
   icon_pack = "fab"
-  icon = "facebook"
+  icon = "facebook-square"
   enable = true
 
 [[buttons]]
