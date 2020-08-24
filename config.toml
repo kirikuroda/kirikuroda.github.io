@@ -6,7 +6,7 @@
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
 # Title of your site
-title = "Kiri Kuroda｜黒田 起吏"
+title = "黒田 起吏｜Kiri Kuroda"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -29,7 +29,7 @@ theme = "hugo-academic"
 enableGitInfo = true
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
+defaultContentLanguage = "ja"
 hasCJKLanguage = true  # Set `true` for Chinese/Japanese/Korean languages.
 languageCode = "ja-jp"
 defaultContentLanguageInSubdir = false

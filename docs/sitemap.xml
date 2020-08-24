@@ -1,164 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://kirikuroda.github.io/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/22/r-markdown-test/</loc>
-    <lastmod>2020-08-23T23:24:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/blogging/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/ggplot2/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/presentation/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/presentation/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/visualization/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/writing/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/writing/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/21/datareporting/</loc>
-    <lastmod>2020-08-24T14:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/books/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/20/test/</loc>
-    <lastmod>2020-08-24T18:27:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication_types/2/</loc>
-    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/</loc>
-    <lastmod>2020-08-23T19:41:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication/kuroda2020investor/</loc>
-    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/kiri-kuroda/</loc>
-    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication_types/</loc>
-    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/tatsuya-kameda/</loc>
-    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/yoshio-kamijo/</loc>
-    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication/kuroda2019you/</loc>
-    <lastmod>2020-08-21T23:30:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/daniel-m.-t.-fessler/</loc>
-    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/gregory-a.-bryant/</loc>
-    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication/bryant2018perception/</loc>
-    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/</loc>
-    <lastmod>2020-08-23T23:24:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/courses/</loc>
-    <lastmod>2020-08-21T20:07:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/admin/</loc>
-    <lastmod>2020-08-23T19:41:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/more.../</loc>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication/</loc>
-    <lastmod>2020-08-23T21:55:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/talk/</loc>
-    <lastmod>2020-08-23T19:41:35+09:00</lastmod>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://kirikuroda.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2020-08-22T02:52:56+09:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://kirikuroda.github.io/ja/sitemap.xml</loc>
+		
+	   	<lastmod>2020-08-22T02:52:56+09:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>

@@ -9,3 +9,8 @@
 /docs/media
 /docs/publication_types
 /docs/talk
+/docs/ja/authors/*
+!/docs/ja/authors/admin
+/docs/ja/courses
+/docs/ja/publication_types
+/docs/ja/talk

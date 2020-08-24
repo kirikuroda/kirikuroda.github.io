@@ -65,7 +65,7 @@
 
       {{ if and $data.email (not $st.Params.email_form) }}
       <li>
-        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <i class="fa-li far fa-envelope fa-2x" aria-hidden="true"></i>
         <span id="person-email">
         {{- if $autolink }}<a href="mailto:{{ $data.email }}">{{ $data.email }}</a>{{ else }}{{ $data.email }}{{ end -}}
         </span>
