@@ -89,11 +89,11 @@ a:hover h4.card-title.exp-title.text-muted {
   color: white;
 }
 
-.navbar-light .navbar-nav .nav-link, #navbar-main .main-menu-item ul li .nav-link {
+button.navbar-toggler i, .navbar-light .navbar-nav .nav-link, #navbar-main .main-menu-item ul li .nav-link {
   color: rgb(214, 214, 214);
 }
 
-button.navbar-toggler i {
+button.navbar-toggler i:hover {
   color: white;
 }
 
