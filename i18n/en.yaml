@@ -211,7 +211,7 @@
   translation: Search
 
 - id: search_placeholder
-  translation: Search...
+  translation: 　
 
 - id: search_results
   translation: results found

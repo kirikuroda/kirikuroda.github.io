@@ -113,11 +113,11 @@
 - id: search
   translation: 検索
 - id: search_placeholder
-  translation: 検索...
+  translation: 　
 - id: search_results
   translation: 件
 - id: search_no_results
-  translation: 結果が見つかりませんでした
+  translation: 結果が見つかりませんでした。
 - id: page_not_found
   translation: Page not found
 - id: 404_recommendations
