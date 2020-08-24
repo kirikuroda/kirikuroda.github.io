@@ -27,7 +27,7 @@
 
 [[buttons]]
   id = "line"
-  url = "http://line.me/R/msg/text/?{title}{url}"
+  url = "https://social-plugins.line.me/lineit/share?url={url}"
   title = "Line"
   icon_pack = "fab"
   icon = "line"
