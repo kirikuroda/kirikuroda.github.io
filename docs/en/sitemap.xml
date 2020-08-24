@@ -3,231 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kirikuroda.github.io/en/post/2020/08/22/r-markdown-test/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/post/2020/08/22/r-markdown-test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/post/2020/08/22/r-markdown-test/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/blogging/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/blogging/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/blogging/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/categories/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/ggplot2/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/ggplot2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/ggplot2/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/post/2020/08/21/hugo-academic/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/post/2020/08/21/hugo-academic/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/post/2020/08/21/hugo-academic/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/presentation/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/presentation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/presentation/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/categories/presentation/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/categories/presentation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/categories/presentation/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/visualization/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/visualization/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/visualization/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/writing/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/writing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/writing/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/categories/writing/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/categories/writing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/categories/writing/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/post/2020/08/21/datareporting/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/post/2020/08/21/datareporting/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/post/2020/08/21/datareporting/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/tags/books/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/books/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/books/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/post/2020/08/20/test/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/post/2020/08/20/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/post/2020/08/20/test/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/en/publication_types/2/</loc>
     <lastmod>2020-08-24T21:40:17+09:00</lastmod>
     <xhtml:link
@@ -333,6 +108,21 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/en/</loc>
+    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/en/publication/kuroda2019you/</loc>
     <lastmod>2020-08-24T21:40:17+09:00</lastmod>
     <xhtml:link
@@ -423,6 +213,20 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/en/courses/</loc>
     <lastmod>2020-08-24T21:40:17+09:00</lastmod>
     <xhtml:link
@@ -464,6 +268,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kirikuroda.github.io/en/publication/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/tags/"
                 />
   </url>
   
