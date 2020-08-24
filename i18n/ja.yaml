@@ -71,7 +71,7 @@
 - id: abstract
   translation: Abstract
 - id: publication
-  translation: Journal
+  translation: Publication
 - id: publication_type
   translation: Type
 - id: date
