@@ -41,7 +41,7 @@
 - id: btn_download
   translation: ダウンロード
 - id: interests
-  translation: 研究領域
+  translation: 関心
 - id: education
   translation: 学歴
 - id: user_profile_latest
@@ -55,9 +55,9 @@
 - id: more_posts
   translation: 投稿一覧
 - id: more_talks
-  translation: 登壇一覧
+  translation: 学会発表一覧
 - id: more_publications
-  translation: 発表文献一覧
+  translation: 論文一覧
 - id: contact_name
   translation: Name
 - id: contact_email
@@ -69,11 +69,11 @@
 - id: book_appointment
   translation: Book an appointment
 - id: abstract
-  translation: 概要
+  translation: Abstract
 - id: publication
-  translation: 収録
+  translation: Journal
 - id: publication_type
-  translation: タイプ
+  translation: Type
 - id: date
   translation: 日付
 - id: last_updated
@@ -105,9 +105,9 @@
 - id: posts
   translation: 投稿
 - id: publications
-  translation: 発表文献
+  translation: 論文
 - id: talks
-  translation: 登壇
+  translation: 学会発表
 - id: projects
   translation: プロジェクト
 - id: search

@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
-title = "発表"
+title = "学会発表"
 subtitle = ""
 
 [content]
@@ -90,7 +90,7 @@ subtitle = ""
 
 **黒田起吏**・亀田達也
 「リスク下の社会的採餌における協力的な分業の創発 認知–生理–行動実験による検討」
-[日本社会心理学会第59回大会]("http://www.socialpsychology.jp/conf2018/" "日本社会心理学会第59回大会")，[追手門学院大学](https://www.otemon.ac.jp "追手門学院大学")，2018年8月28–29日（口頭）
+[日本社会心理学会第59回大会](http://www.socialpsychology.jp/conf2018/ "日本社会心理学会第59回大会")，[追手門学院大学](https://www.otemon.ac.jp "追手門学院大学")，2018年8月28–29日（口頭）
 
 **Kiri Kuroda** & Tatsuya Kameda.
 Emergence of cooperative division of labor in dyadic foraging under risk.
