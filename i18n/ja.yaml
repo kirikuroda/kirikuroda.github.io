@@ -45,7 +45,7 @@
 - id: education
   translation: 学歴
 - id: user_profile_latest
-  translation: 最近の投稿
+  translation: Latest
 - id: see_certificate
   translation: See certificate
 - id: present
@@ -121,7 +121,7 @@
 - id: page_not_found
   translation: Page not found
 - id: 404_recommendations
-  translation: Recommendations
+  translation: Are you looking for one of the following pages?
 - id: cookie_message
   translation: このウェブサイトはあなたが最高の体験を得るためにクッキーを使用します。
 - id: cookie_dismiss
