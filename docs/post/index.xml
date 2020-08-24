@@ -2,36 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | 黒田 起吏｜Kiri Kuroda</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/post/</link>
+      <atom:link href="https://kirikuroda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Blog</title>
-      <link>/post/</link>
+      <link>https://kirikuroda.github.io/post/</link>
     </image>
     
     <item>
-      <title>大学院生が（いまさら）買ってよかったもの10選</title>
-      <link>/post/2020/08/24/mustbuy-10-2020-summer/</link>
-      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/24/mustbuy-10-2020-summer/</guid>
-      <description>&lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えた。結局、合計額は10万円を超えてしまったけれど。とりあえず10個紹介してみる。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;1-iphone-se&#34;&gt;1. iPhone SE&lt;/h2&gt;
-&lt;p&gt;高校の頃から10年近く使ってきたガラケーにガタが来ていた。これまではiPod touchやiPadでごまかしてきたが、ようやく腹をくくってスマートフォンを買った。おおむね便利という印象である。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;2-apple-watch-第3世代&#34;&gt;2. Apple Watch 第3世代&lt;/h2&gt;
-&lt;p&gt;ガジェット系のブログを読んでほしい。地味に便利である。スマートフォンやタブレットを見る時間が減るので、&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>R Markdown Test</title>
-      <link>/post/2020/08/22/r-markdown-test/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/22/r-markdown-test/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/22/r-markdown-test/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/22/r-markdown-test/</guid>
       <description>
 
 
@@ -41,9 +26,9 @@
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>/post/2020/08/21/hugo-academic/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/21/hugo-academic/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
       <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
 &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
@@ -54,9 +39,9 @@
     
     <item>
       <title>データ可視化 まとめ</title>
-      <link>/post/2020/08/21/datareporting/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/21/datareporting/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/21/datareporting/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/21/datareporting/</guid>
       <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
 &lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
@@ -64,9 +49,9 @@
     
     <item>
       <title>Test</title>
-      <link>/post/2020/08/20/test/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/20/test/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/20/test/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/20/test/</guid>
       <description>
 
 

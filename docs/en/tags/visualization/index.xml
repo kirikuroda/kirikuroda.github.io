@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization | 黒田 起吏｜Kiri Kuroda</title>
-    <link>/en/tags/visualization/</link>
-      <atom:link href="/en/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/en/tags/visualization/</link>
+      <atom:link href="https://kirikuroda.github.io/en/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Visualization</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Visualization</title>
-      <link>/en/tags/visualization/</link>
+      <link>https://kirikuroda.github.io/en/tags/visualization/</link>
     </image>
     
     <item>
       <title>データ可視化 まとめ</title>
-      <link>/en/post/2020/08/21/datareporting/</link>
+      <link>https://kirikuroda.github.io/en/post/2020/08/21/datareporting/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/en/post/2020/08/21/datareporting/</guid>
+      <guid>https://kirikuroda.github.io/en/post/2020/08/21/datareporting/</guid>
       <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
 &lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
