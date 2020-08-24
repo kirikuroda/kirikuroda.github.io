@@ -85,6 +85,10 @@ a:hover h4.card-title.exp-title.text-muted {
   color: white !important;
 }
 
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
 .navbar-light .navbar-nav .nav-link, #navbar-main .main-menu-item ul li .nav-link {
   color: rgb(214, 214, 214);
 }

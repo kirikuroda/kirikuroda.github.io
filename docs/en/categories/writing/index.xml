@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing | 黒田 起吏｜Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/en/categories/writing/</link>
-      <atom:link href="https://kirikuroda.github.io/en/categories/writing/index.xml" rel="self" type="application/rss+xml" />
+    <link>/en/categories/writing/</link>
+      <atom:link href="/en/categories/writing/index.xml" rel="self" type="application/rss+xml" />
     <description>Writing</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Writing</title>
-      <link>https://kirikuroda.github.io/en/categories/writing/</link>
+      <link>/en/categories/writing/</link>
     </image>
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>https://kirikuroda.github.io/en/post/2020/08/21/hugo-academic/</link>
+      <link>/en/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/en/post/2020/08/21/hugo-academic/</guid>
+      <guid>/en/post/2020/08/21/hugo-academic/</guid>
       <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
 &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
@@ -27,9 +27,9 @@
     
     <item>
       <title>Test</title>
-      <link>https://kirikuroda.github.io/en/post/2020/08/20/test/</link>
+      <link>/en/post/2020/08/20/test/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/en/post/2020/08/20/test/</guid>
+      <guid>/en/post/2020/08/20/test/</guid>
       <description>
 
 
