@@ -45,6 +45,10 @@ a:hover h4.card-title.exp-title.text-muted {
   color: #d9473d !important;
 }
 
+.article-metadata a:hover {
+  text-decoration: underline;
+}
+
 .experience .card-text {
   color: rgb(47, 47, 47) !important;
 }
@@ -153,4 +157,49 @@ button.navbar-toggler i {
 
 .fa-researchgate {
   color: rgb(0, 194, 176);
+}
+
+.fa-twitter {
+  color: rgb(40, 156, 232);
+}
+
+.fa-facebook {
+  color: rgb(55, 93, 169);
+}
+
+.fa-line {
+  color: rgb(33, 179, 42);
+}
+
+.fa-get-pocket {
+  color: rgb(236, 64, 89);
+}
+
+.fa-linkedin {
+  color: rgb(15, 115, 174);
+}
+
+.fa-reddit {
+  color: rgb(252, 61, 30);
+}
+
+.fa-pinterest {
+  color: rgb(227, 0, 43);
+}
+
+.fa-tumblr-square {
+  color: rgb(45, 74, 99);
+}
+
+.fa-hatena {
+  &:before {
+    content: "B!";
+    font-family: Verdana;
+    font-weight: bold;
+    color: rgb(27, 164, 209);
+  }
+}
+
+.fa-rss-square {
+  color: rgb(246, 139, 30);
 }
