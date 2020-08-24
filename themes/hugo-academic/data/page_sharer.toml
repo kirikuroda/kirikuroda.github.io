@@ -79,7 +79,7 @@
   title = "Pinterest"
   icon_pack = "fab"
   icon = "pinterest"
-  enable = true
+  enable = false
 
 [[buttons]]
   id = "xing"
@@ -103,12 +103,4 @@
   title = "Reddit"
   icon_pack = "fab"
   icon = "reddit"
-  enable = true
-
-[[buttons]]
-  id = "rss"
-  url = "https://kirikuroda.github.io/index.xml"
-  title = "RSS"
-  icon_pack = "fas"
-  icon = "rss-square"
-  enable = true
+  enable = false
