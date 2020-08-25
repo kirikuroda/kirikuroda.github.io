@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>黒田 起吏｜Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/</link>
-      <atom:link href="https://kirikuroda.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>黒田 起吏｜Kiri Kuroda</description>
+    <title>Life | 黒田 起吏｜Kiri Kuroda</title>
+    <link>https://kirikuroda.github.io/tags/life/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <description>Life</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
-      <title>黒田 起吏｜Kiri Kuroda</title>
-      <link>https://kirikuroda.github.io/</link>
+      <title>Life</title>
+      <link>https://kirikuroda.github.io/tags/life/</link>
     </image>
     
     <item>
@@ -83,56 +83,6 @@
 &lt;p&gt;どのアイテムもそれなりに贅沢ですが、地味に、でも確実に生活のクオリティを上げてくれます。いいものを買ってるので、それに見合った仕事をしたいです。&lt;/p&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>データの可視化 まとめ</title>
-      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
-      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
-      <description>
-
-
-&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
-      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
-      <description>
-
-
-&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
-&lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
-&lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Investor&#39;s Pessimistic and False Belief About Trustworthiness and Stake Size in Trust Decision</title>
-      <link>https://kirikuroda.github.io/publication/kuroda2020investor/</link>
-      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/kuroda2020investor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>You Watch My Back, I&#39;ll Watch Yours: Emergence of Collective Risk Monitoring Through Tacit Coordination in Human Social Foraging</title>
-      <link>https://kirikuroda.github.io/publication/kuroda2019you/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/kuroda2019you/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The Perception of Spontaneous and Volitional Laughter Across 21 Societies</title>
-      <link>https://kirikuroda.github.io/publication/bryant2018perception/</link>
-      <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/bryant2018perception/</guid>
-      <description></description>
     </item>
     
   </channel>
