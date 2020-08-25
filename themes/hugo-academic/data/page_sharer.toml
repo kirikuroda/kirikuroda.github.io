@@ -2,14 +2,6 @@
 # Documentation: https://sourcethemes.com/academic/docs/customization/#page-sharer
 
 [[buttons]]
-  id = "email"
-  url = "mailto:?subject={title}&body={url}"
-  title = "Email"
-  icon_pack = "far"
-  icon = "envelope"
-  enable = true
-
-[[buttons]]
   id = "twitter"
   url = "https://twitter.com/intent/tweet?url={url}&text={title}"
   title = "Twitter"
@@ -104,3 +96,11 @@
   icon_pack = "fab"
   icon = "reddit"
   enable = false
+
+[[buttons]]
+  id = "email"
+  url = "mailto:?subject={title}&body={url}"
+  title = "Email"
+  icon_pack = "fas"
+  icon = "envelope"
+  enable = true
