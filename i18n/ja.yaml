@@ -77,7 +77,7 @@
 - id: date
   translation: 日付
 - id: last_updated
-  translation: 最終更新
+  translation: Last updated on
 - id: event
   translation: イベント
 - id: location

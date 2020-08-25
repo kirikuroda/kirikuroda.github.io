@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/publication_types/2/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/</loc>
-    <lastmod>2020-08-25T10:37:44+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/publication/kuroda2020investor/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -49,7 +49,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/kiri-kuroda/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/publication_types/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -78,8 +78,23 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/en/publication/</loc>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/publication/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/en/authors/tatsuya-kameda/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -94,7 +109,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/yoshio-kamijo/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -109,7 +124,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/</loc>
-    <lastmod>2020-08-25T10:37:44+09:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -124,7 +139,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/publication/kuroda2019you/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -139,7 +154,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/daniel-m.-t.-fessler/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2018-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -154,7 +169,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/gregory-a.-bryant/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2018-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -169,7 +184,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/publication/bryant2018perception/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2018-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -184,7 +199,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/yi-zhou/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2018-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -199,7 +214,6 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/post/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -228,7 +242,6 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/courses/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -243,7 +256,6 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/authors/admin/</loc>
-    <lastmod>2020-08-25T10:37:44+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -253,21 +265,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kirikuroda.github.io/en/authors/admin/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/publication/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/publication/"
                 />
   </url>
   
@@ -287,7 +284,6 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/talk/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"

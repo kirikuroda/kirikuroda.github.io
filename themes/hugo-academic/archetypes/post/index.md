@@ -8,7 +8,7 @@ authors: []
 tags: []
 categories: []
 date: {{ .Date }}
-lastmod: {{ .Date }}
+# lastmod: {{ .Date }}
 featured: false
 draft: true
 
