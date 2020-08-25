@@ -1,7 +1,7 @@
 ---
 title: Hugo Academicでウェブサイトをリニューアルしました
-author: admin
-date: '2020-08-21'
+author: ''
+date: '2020-08-22'
 slug: hugo-academic
 categories:
   - Writing
@@ -9,15 +9,16 @@ tags:
   - Blogging
   - Writing
 subtitle: ''
-summary: 'Hugo Academicとblogdownがおすすめ'
+summary: 'Hugo AcademicとBlogdownがおすすめ'
 authors: []
-lastmod: '2020-08-21T21:14:53+09:00'
+lastmod: '2020-08-22T14:02:18+09:00'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
 projects: []
+draft: false
 ---
 
 2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた[Hugo Academic](https://themes.gohugo.io/academic/ "Hugo Academic")というテンプレートと、[blogdown](https://bookdown.org/yihui/blogdown/ "blogdown: Creating Websites with R Markdown")（Rのパッケージ）を使うことにしました。

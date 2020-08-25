@@ -3,33 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/22/r-markdown-test/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/tags/blogging/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:02:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/categories/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,27 +24,27 @@
   
   <url>
     <loc>https://kirikuroda.github.io/tags/ggplot2/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <loc>https://kirikuroda.github.io/post/2020/08/22/hugo-academic/</loc>
+    <lastmod>2020-08-22T14:02:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/tags/presentation/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/categories/presentation/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/tags/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -79,32 +59,37 @@
   
   <url>
     <loc>https://kirikuroda.github.io/tags/visualization/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/tags/writing/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:02:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/categories/writing/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-22T14:02:18+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/21/datareporting/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <loc>https://kirikuroda.github.io/post/2020/08/22/datareporting/</loc>
+    <lastmod>2020-08-22T14:03:54+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/books/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/2020/08/20/test/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <loc>https://kirikuroda.github.io/</loc>
+    <lastmod>2020-08-25T10:37:44+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/"
+                />
   </url>
   
   <url>
@@ -124,7 +109,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/authors/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-25T10:37:44+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -349,7 +334,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/authors/admin/</loc>
-    <lastmod>2020-08-24T21:40:17+09:00</lastmod>
+    <lastmod>2020-08-25T10:37:44+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

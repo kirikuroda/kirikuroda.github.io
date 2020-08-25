@@ -1,16 +1,17 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "{{ replace .Name "-" " " | title }}"
+title: "2020 08 25 Ejikomaru"
 subtitle: ""
 summary: ""
 authors: []
 tags: []
 categories: []
-date: {{ .Date }}
-lastmod: {{ .Date }}
+date: 2020-08-25T14:27:17+09:00
+lastmod: 2020-08-25T14:27:17+09:00
 featured: false
 draft: true
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
