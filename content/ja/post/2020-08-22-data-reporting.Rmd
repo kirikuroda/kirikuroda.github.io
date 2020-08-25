@@ -9,7 +9,7 @@ tags:
   - Presentation
   - Visualization
   - ggplot2
-subtitle: ''
+subtitle: 'ggplot2の基礎'
 summary: 'ggplot2の基礎'
 authors: []
 featured: no

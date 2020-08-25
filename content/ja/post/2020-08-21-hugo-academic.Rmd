@@ -8,7 +8,7 @@ categories:
 tags:
   - Blogging
   - Writing
-subtitle: ''
+subtitle: 'Hugo AcademicとBlogdownがおすすめ'
 summary: 'Hugo AcademicとBlogdownがおすすめ'
 authors: []
 featured: no

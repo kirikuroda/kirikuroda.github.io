@@ -7,7 +7,7 @@ categories:
   - Life
 tags:
   - Life
-subtitle: ''
+subtitle: 'どのアイテムも地味に生活のクオリティを上げてくれます'
 summary: 'どのアイテムも地味に生活のクオリティを上げてくれます'
 authors: []
 featured: no
