@@ -212,9 +212,9 @@ button.navbar-toggler i:hover {
   color: rgb(51, 51, 51);
 }
 
-.icon-feedly, .icon-feedly-o {
+.icon-feedly:hover, .icon-feedly-o:hover, .icon-feedly, .icon-feedly-o {
   color: rgb(137, 192, 78);
-  font-size: 0.9rem !important;
+  font-size: 99% !important;
 }
 
 @font-face {
