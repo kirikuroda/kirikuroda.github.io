@@ -4,37 +4,37 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "ホーム"
+  name = "Home"
   url = "#about"
   weight = 10
 
 [[main]]
-  name = "論文"
+  name = "Papers"
   url = "#publications"
   weight = 20
 
 [[main]]
-  name = "業績"
+  name = "Accomplishments"
   url = "#accomplishments"
   weight = 30
 
 [[main]]
-  name = "学会発表"
+  name = "Talks"
   url = "#talks"
   weight = 40
 
 [[main]]
-  name = "職歴"
+  name = "Career"
   url = "#experience"
   weight = 50
 
 [[main]]
-  name = "ブログ"
+  name = "Blog"
   url = "#posts"
   weight = 60
 
 [[main]]
-  name = "連絡先"
+  name = "Contact"
   url = "#contact"
   weight = 70
 
