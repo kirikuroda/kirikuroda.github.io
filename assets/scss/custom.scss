@@ -8,6 +8,14 @@ body.dark {
   font-family: "Roboto" "Noto Sans JP";
 }
 
+.dark .pub {
+  background-color: rgb(40, 40, 40);
+}
+
+.dark artricle.article {
+  background-color: rgb(40, 40, 40);
+}
+
 .dark .home-section:nth-of-type(even) {
   background-color: rgb(40, 40, 40);
 }
