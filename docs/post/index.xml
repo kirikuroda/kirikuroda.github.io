@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | Kiri Kuroda</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/post/</link>
+      <atom:link href="https://kirikuroda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Blog</title>
-      <link>/post/</link>
+      <link>https://kirikuroda.github.io/post/</link>
     </image>
     
     <item>
       <title>大学院生が（いまさら）買ってよかったもの8選</title>
-      <link>/post/2020/08/25/mustbuy-2020-summer/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/25/mustbuy-2020-summer/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
       <description>
 
 
@@ -87,9 +87,9 @@
     
     <item>
       <title>データの可視化 まとめ</title>
-      <link>/post/2020/08/22/datareporting/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/22/datareporting/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
       <description>
 
 
@@ -99,9 +99,9 @@
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>/post/2020/08/21/hugo-academic/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/21/hugo-academic/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
       <description>
 
 

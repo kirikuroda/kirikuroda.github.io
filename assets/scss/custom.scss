@@ -64,6 +64,15 @@ h3.article-title a:hover {
   color: white;
 }
 
+.dark .summary-link {
+  color: white !important;
+}
+
+.dark a.summary-link:hover {
+  color: unset !important;
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -448,14 +457,6 @@ button.navbar-toggler i:hover {
   color: white;
 }
 
-.dark a.summary-link {
-  color: white;
-}
-
-.dark a.summary-link:hover {
-  color: white;
-}
-
 .article-categories a:hover {
   color: #ffd803;
 }
@@ -466,4 +467,12 @@ li.nav-item a:hover {
 
 .dark a:hover, .dark a:focus, .dark .navbar .dropdown-item.active, .dark .navbar .dropdown-item-active {
   color: #ffd803 !important;
+}
+
+.section-heading p {
+  color: rgb(47, 47, 47);
+}
+
+.dark .section-heading p {
+  color: white;
 }
