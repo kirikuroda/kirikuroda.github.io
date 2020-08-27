@@ -4,8 +4,9 @@
 .Ruserdata
 *.DS_store
 /docs/authors/*
-/docs/authors/admin/*
-!/docs/authors/admin/*.jpg
+!/docs/authors/admin/
+/docs/authors/admin/*.html
+/docs/authors/admin/*.xml
 /docs/courses
 /docs/media
 /docs/publication_types
