@@ -3,17 +3,17 @@ body {
   font-family: "Roboto" "Noto Sans JP";
 }
 
-body.dark {
+.dark {
   background-color: rgb(40, 40, 40);
   font-family: "Roboto" "Noto Sans JP";
 }
 
 .dark .home-section:nth-of-type(even) {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(40, 40, 40);
 }
 
 .dark .home-section:nth-of-type(odd) {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(10, 10, 10);
 }
 
 .article h1 {
