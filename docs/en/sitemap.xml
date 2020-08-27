@@ -63,6 +63,21 @@
   </url>
   
   <url>
+    <loc>/en/</loc>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
     <loc>/en/publication_types/</loc>
     <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -119,21 +134,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/en/authors/yoshio-kamijo/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
                 />
   </url>
   
