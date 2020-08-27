@@ -768,7 +768,7 @@
     setTimeout(function () {
       dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
       menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-    }, 300);
+    }, 100);
 
     // Re-initialize Scrollspy with dynamic navbar height offset.
     fixScrollspy();
