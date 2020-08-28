@@ -48,53 +48,13 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/life/</loc>
-    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/life/</loc>
-    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/</loc>
-    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</loc>
     <lastmod>2020-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/ggplot2/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/presentation/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/presentation/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/visualization/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+    <loc>https://kirikuroda.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -103,8 +63,8 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/blogging/</loc>
-    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+    <loc>https://kirikuroda.github.io/categories/%E3%83%95%E3%83%AC%E3%82%BB%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
+    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -113,12 +73,7 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/writing/</loc>
-    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/writing/</loc>
+    <loc>https://kirikuroda.github.io/categories/%E5%9F%B7%E7%AD%86/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -328,6 +283,20 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://kirikuroda.github.io/courses/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/tags/"
                 />
   </url>
   

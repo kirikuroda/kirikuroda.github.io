@@ -2,10 +2,10 @@ body {
   font-family: "Roboto" "Noto Sans JP";
 }
 
-// body.dark {
-//   background-color: rgb(40, 40, 40);
-//   font-family: "Roboto" "Noto Sans JP";
-// }
+body.dark {
+  background-color: rgb(10, 10, 10);
+  font-family: "Roboto" "Noto Sans JP";
+}
 
 .dark .pub {
   background-color: rgb(40, 40, 40);
