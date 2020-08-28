@@ -6,8 +6,8 @@ slug: english-dictionary
 categories:
   - 執筆
 tags:
-subtitle: '「これ」という辞書を厳選するのが大事っぽいです'
-summary: '「これ」という辞書を厳選するのが大事っぽいです'
+subtitle: '「これ」という辞書を厳選するのが大事'
+summary: '「これ」という辞書を厳選するのが大事'
 authors: []
 featured: no
 image:

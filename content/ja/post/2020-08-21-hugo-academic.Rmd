@@ -6,8 +6,8 @@ slug: hugo-academic
 categories:
   - 執筆
 tags:
-subtitle: 'Hugo Academicとblogdownがおすすめです'
-summary: 'Hugo Academicとblogdownがおすすめです'
+subtitle: 'Hugo Academicとblogdownがおすすめ'
+summary: 'Hugo Academicとblogdownがおすすめ'
 authors: []
 featured: no
 image:
