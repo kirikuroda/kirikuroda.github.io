@@ -34,9 +34,9 @@ draft: false
 
 <br>
 
-## 英英・類語辞典
+# 英英・類語辞典
 
-### [LEXICO](https://www.lexico.com "LEXICO")
+## [LEXICO](https://www.lexico.com "LEXICO")
 
 **語義・類語・例文・語源、オールインワンの辞書サイト**です。Oxford Dictionaryによって運営されているようです。アメリカ英語・イギリス英語、両方とも載っているので、英単語の意味を調べるときは、とりあえずこれで良いと思います。
 
@@ -44,29 +44,29 @@ draft: false
 
 例文が多いのも魅力的です。各単語のページの「+ More example sentences」をクリックすると、どういうニュアンスで使われることが多いかを確認できます。
 
-### [Oxford Learner's Dictionaries](https://www.oxfordlearnersdictionaries.com "Oxford Learner's Dictionaries")
+## [Oxford Learner's Dictionaries](https://www.oxfordlearnersdictionaries.com "Oxford Learner's Dictionaries")
 
 名前のとおり、英語学習者用の辞書であるため、LEXICOより情報がコンパクトになっています。**単語の意味をさっと確認したいときに便利**です。また、**平易な英語で語義が説明されている**ので、LEXICOの説明がわかりにくいときに使うのもおすすめです。頻出単語については、コロケーションや用法も載っています。
 
 <br>
 
-## コロケーション
+# コロケーション
 
-### [Just the Word](http://www.just-the-word.com "Just the Word")
+## [Just the Word](http://www.just-the-word.com "Just the Word")
 
 **「単語を検索→コロケーション」**というシンプルなサイトです。また、気になったコロケーションをクリックすると、例文も表示されます。コロケーションに関するウェブサイト（そういうのをコーパスっていうんでしょうか？）は他にもありますが、Just the Wordは見た目と機能がシンプルであり、使い方がわかりやすいので気に入っています。
 
-### [Netspeak](https://netspeak.org "Netspeak")
+## [Netspeak](https://netspeak.org "Netspeak")
 
 **ある単語や語順の使用頻度を調べたり、比較したりする**のに使います。たとえば、「atとin、どっちがよく使われるんだろう？」とか、「この副詞は文のどこに置かれることが多いんだろう？」と思ったときに使います。
 
 <br>
 
-## フレーズ集
+# フレーズ集
 
-### Useful Phrases
+## [Useful Phrases](https://www.springer.com/jp/book/9783319260921 "Useful Phrases")
 
-**英語論文で頻出のフレーズ**がまとまっています。["English for Writing Research Papers"](https://www.springer.com/jp/book/9783319260921 "English for Writing Research Papers")（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍[^1]の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。
+**英語論文で頻出のフレーズ**がまとまっています。"English for Writing Research Papers"（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍[^1]の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。
 
 同様のフレーズ集として、[Academic Phrasebank](http://www.phrasebank.manchester.ac.uk "Academic Phrasebank")というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。
 
