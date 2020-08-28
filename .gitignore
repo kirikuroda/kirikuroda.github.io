@@ -3,6 +3,7 @@
 .RData
 .Ruserdata
 *.DS_store
+
 /docs/authors/*
 !/docs/authors/admin
 /docs/authors/admin/index.html
@@ -12,6 +13,7 @@
 /docs/publication_types
 /docs/talk
 
+/docs/en/authors/*
 !/docs/en/authors/admin
 /docs/en/authors/admin/index.html
 /docs/en/authors/admin/index.xml
