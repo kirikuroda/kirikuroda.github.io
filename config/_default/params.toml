@@ -48,7 +48,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "黒田 起吏｜Kiri Kuroda"
+description = "Kiri Kuroda｜黒田 起吏"
 
 ############################
 ## Site Features
