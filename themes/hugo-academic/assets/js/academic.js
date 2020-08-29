@@ -39,7 +39,7 @@
       $('body').addClass('scrolling');
       $('html, body').animate({
         scrollTop: elementOffset
-      }, 0, function () {
+      }, 600, function () {
         $('body').removeClass('scrolling');
       });
     } else {
