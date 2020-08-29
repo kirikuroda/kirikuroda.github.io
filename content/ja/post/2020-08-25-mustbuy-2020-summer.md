@@ -53,7 +53,7 @@ draft: false
 
 # 3. Bellroyのスマホケース
 
-[Phone Case – 3 Card](https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0 Phone Case – 3 Card)
+[Phone Case – 3 Card](https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0 "Phone Case – 3 Card")
 
 名前の通り、背面にカードを3枚入れられるスマホケースです。このケースの中に、クレジットカード・学生証・大学生協の組合員証を入れています。これのおかげで財布をほぼ使わなくなったし、近場に行くときには財布を持つことすらなくなりました。
 
