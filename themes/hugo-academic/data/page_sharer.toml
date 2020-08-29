@@ -98,9 +98,9 @@
   enable = false
 
 [[buttons]]
-  id = "email"
-  url = "mailto:?subject={title}&body={url}"
-  title = "Email"
+  id = "rss-square"
+  url = "https://kirikuroda.github.io/index.xml"
+  title = "RSS"
   icon_pack = "fas"
-  icon = "envelope"
+  icon = "rss-square"
   enable = true
