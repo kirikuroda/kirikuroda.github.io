@@ -39,7 +39,7 @@
       $('body').addClass('scrolling');
       $('html, body').animate({
         scrollTop: elementOffset
-      }, 600, function () {
+      }, 0, function () {
         $('body').removeClass('scrolling');
       });
     } else {
@@ -768,7 +768,7 @@
     setTimeout(function () {
       dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
       menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-    }, 20);
+    }, 100);
 
     // Re-initialize Scrollspy with dynamic navbar height offset.
     fixScrollspy();
