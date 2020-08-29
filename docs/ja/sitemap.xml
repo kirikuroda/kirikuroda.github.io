@@ -292,6 +292,20 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/authors/admin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/admin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/admin/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -316,20 +330,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://kirikuroda.github.io/talk/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/authors/admin/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/authors/admin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/authors/admin/"
                 />
   </url>
   
