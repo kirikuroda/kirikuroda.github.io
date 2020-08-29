@@ -238,8 +238,8 @@ button.navbar-toggler i:hover {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .navbar-collapse.collapsing, .navbar-collapse.show {
+@media (max-width: 991.98px) {
+  .navbar-collapse, .navbar-collapse.collapsing, .navbar-collapse.show {
     z-index: 1031 !important;
     position: absolute;
     left: 0;
@@ -248,7 +248,7 @@ button.navbar-toggler i:hover {
     background-color: rgb(51, 51, 51);
     text-align: center !important;
   }
-  .dark .navbar-collapse.collapsing, .navbar-collapse.show {
+  .dark .navbar-collapse, .dark .navbar-collapse.collapsing, .dark .navbar-collapse.show {
     z-index: 1031 !important;
     position: absolute;
     left: 0;
