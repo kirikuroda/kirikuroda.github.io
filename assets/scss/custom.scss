@@ -1,9 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto" "Noto Sans JP";
 }
 
 body.dark {
-  background-color: rgb(10, 10, 10);
+  background: rgb(10, 10, 10);
   font-family: "Roboto" "Noto Sans JP";
 }
 
@@ -479,4 +483,42 @@ li.nav-item a:hover {
 
 .dark .section-heading p {
   color: white;
+}
+
+#TableOfContents li a, #TableOfContents li a.active, #TableOfContents li a:hover {
+  font-weight: 400;
+}
+
+.dark #TableOfContents li a, .dark #TableOfContents li a.active, .dark #TableOfContents li a:hover {
+  color: #ffd803;
+  font-weight: 400;
+}
+
+#TableOfContents li a, .toc-top li a {
+  display: block;
+  padding: .125rem 1.5rem;
+  color: rgb(47, 47, 47);
+  font-size: 0.7rem;
+}
+
+.dark #TableOfContents li a, .dark .toc-top li a {
+  display: block;
+  padding: .125rem 1.5rem;
+  color: white;
+  font-size: 0.7rem;
+}
+
+a#back_to_top.docs-toc-title {
+  font-weight: 400;
+}
+
+.dark a#back_to_top.docs-toc-title {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#TableOfContents {
+  padding-left: 0;
+  border-left: 1px solid rgb(47, 47, 47);
 }

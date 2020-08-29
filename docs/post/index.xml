@@ -2,180 +2,162 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | Kiri Kuroda</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/post/</link>
+      <atom:link href="https://kirikuroda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Blog</title>
-      <link>/post/</link>
+      <link>https://kirikuroda.github.io/post/</link>
     </image>
     
     <item>
       <title>英語を書かなきゃいけないときに使う辞書系ツール</title>
-      <link>/post/2020/08/28/english-dictionary/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/28/english-dictionary/</guid>
-      <description>
-
-
-&lt;div id=&#34;辞書をあらかじめ決めておく&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
+      <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
+      <description>&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
 &lt;p&gt;タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。&lt;/p&gt;
 &lt;p&gt;大事なのは、&lt;strong&gt;使う辞書をあらかじめ決めておく&lt;/strong&gt;ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。&lt;/p&gt;
 &lt;p&gt;辞書系ツールを選ぶに当たり、以下の3つを選定基準としています。&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;無料&lt;/strong&gt;　現状、辞書系ツールに限って言えば、無料で十分だと思います。ただし、専門家じゃないので断言はできません。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;オンライン&lt;/strong&gt;　デバイスの環境に依存しないのがメリットです。ただし当然ですが、ネットにつながらないと使えません。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;NO自動翻訳&lt;/strong&gt;　機械学習による自動翻訳ツールは除きました。なるべく自力で文章を書いたほうが、長期的には自分のスキルアップにつながると思うからです。しかし、自動翻訳ツールが発達している今、こういう考えは時代遅れになりつつあるのかもしれません。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;では、辞書系ツールを紹介します。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;英英類語辞典&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;英英・類語辞典&lt;/h1&gt;
-&lt;div id=&#34;lexico&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://www.lexico.com&#34; title=&#34;LEXICO&#34;&gt;LEXICO&lt;/a&gt;&lt;/h2&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;英英類語辞典&#34;&gt;英英・類語辞典&lt;/h1&gt;
+&lt;h2 id=&#34;lexico&#34;&gt;LEXICO&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.lexico.com&#34; title=&#34;LEXICO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LEXICO&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;語義・類語・例文・語源、オールインワンの辞書サイト&lt;/strong&gt;です。Oxford Dictionaryによって運営されているようです。アメリカ英語・イギリス英語、両方とも載っているので、英単語の意味を調べるときは、とりあえずこれで良いと思います。&lt;/p&gt;
 &lt;p&gt;特に、類語（シソーラス）を調べるときには、必ずこのサイトを使っています。検索窓のメニューを「THESAURUS」にすると、類語を検索できます。あるいは、各単語のページの「+ Synonyms」をクリックしても、類語を見ることができます。&lt;/p&gt;
 &lt;p&gt;例文が多いのも魅力的です。各単語のページの「+ More example sentences」をクリックすると、どういうニュアンスで使われることが多いかを確認できます。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;oxford-learners-dictionaries&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://www.oxfordlearnersdictionaries.com&#34; title=&#34;Oxford Learner&amp;#39;s Dictionaries&#34;&gt;Oxford Learner’s Dictionaries&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;oxford-learners-dictionaries&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.oxfordlearnersdictionaries.com&#34; title=&#34;Oxford Learner&amp;#39;s Dictionaries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;名前のとおり、英語学習者用の辞書であるため、LEXICOより情報がコンパクトになっています。&lt;strong&gt;単語の意味をさっと確認したいときに便利&lt;/strong&gt;です。また、&lt;strong&gt;平易な英語で語義が説明されている&lt;/strong&gt;ので、LEXICOの説明がわかりにくいときに使うのもおすすめです。頻出単語については、コロケーションや用法も載っています。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;コロケーション&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;コロケーション&lt;/h1&gt;
-&lt;div id=&#34;just-the-word&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;http://www.just-the-word.com&#34; title=&#34;Just the Word&#34;&gt;Just the Word&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;「単語を検索→コロケーション」&lt;/strong&gt;というシンプルなサイトです。また、気になったコロケーションをクリックすると、例文も表示されます。コロケーションに関するウェブサイト（そういうのをコーパスっていうんでしょうか？）は他にもありますが、Just the Wordは見た目と機能がシンプルであり、使い方がわかりやすいので気に入っています。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;netspeak&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://netspeak.org&#34; title=&#34;Netspeak&#34;&gt;Netspeak&lt;/a&gt;&lt;/h2&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;コロケーション&#34;&gt;コロケーション&lt;/h1&gt;
+&lt;h2 id=&#34;just-the-word&#34;&gt;Just the Word&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.just-the-word.com&#34; title=&#34;Just the Word&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Just the Word&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;**「単語を検索→コロケーション」**というシンプルなサイトです。また、気になったコロケーションをクリックすると、例文も表示されます。コロケーションに関するウェブサイト（そういうのをコーパスっていうんでしょうか？）は他にもありますが、Just the Wordは見た目と機能がシンプルであり、使い方がわかりやすいので気に入っています。&lt;/p&gt;
+&lt;h2 id=&#34;netspeak&#34;&gt;Netspeak&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://netspeak.org&#34; title=&#34;Netspeak&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netspeak&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ある単語や語順の使用頻度を調べたり、比較したりする&lt;/strong&gt;のに使います。たとえば、「atとin、どっちがよく使われるんだろう？」とか、「この副詞は文のどこに置かれることが多いんだろう？」と思ったときに使います。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;フレーズ集&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;フレーズ集&lt;/h1&gt;
-&lt;div id=&#34;useful-phrases&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://www.springer.com/jp/book/9783319260921&#34; title=&#34;Useful Phrases&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;英語論文で頻出のフレーズ&lt;/strong&gt;がまとまっています。“English for Writing Research Papers”（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。&lt;/p&gt;
-&lt;p&gt;同様のフレーズ集として、&lt;a href=&#34;http://www.phrasebank.manchester.ac.uk&#34; title=&#34;Academic Phrasebank&#34;&gt;Academic Phrasebank&lt;/a&gt;というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;おわりに&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;おわりに&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;フレーズ集&#34;&gt;フレーズ集&lt;/h1&gt;
+&lt;h2 id=&#34;useful-phrases&#34;&gt;Useful Phrases&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.springer.com/jp/book/9783319260921&#34; title=&#34;Useful Phrases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;英語論文で頻出のフレーズ&lt;/strong&gt;がまとまっています。&amp;ldquo;English for Writing Research Papers&amp;rdquo;（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。&lt;/p&gt;
+&lt;p&gt;同様のフレーズ集として、
+&lt;a href=&#34;http://www.phrasebank.manchester.ac.uk&#34; title=&#34;Academic Phrasebank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Phrasebank&lt;/a&gt;というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
 &lt;p&gt;以上、「英語を書かなきゃいけないときに使う辞書系ツール」を紹介しました。このようなツールを使うと、Google検索でなんとなく英語を調べるよりは、裏づけのある良質な情報を得られると思います。ぜひ、自分にピッタリのツールを探してみてください。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr /&gt;
+&lt;br&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;この“English for Writing Research Papers”という本は、非常に参考になりました。昨年、&lt;a href=&#34;https://www.amazon.co.jp/ネイティブが教える-日本人研究者のための論文の書き方・アクセプト術-KS科学一般書-エイドリアン・ウォールワーク/dp/4065120446&#34; title=&#34;Amazon商品ページ&#34;&gt;『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』&lt;/a&gt;（講談社）として翻訳されたので、関心のある人は読んでみてください。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;この&amp;quot;English for Writing Research Papers&amp;quot;という本は、非常に参考になりました。昨年、
+&lt;a href=&#34;https://www.amazon.co.jp/%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%8c%e6%95%99%e3%81%88%e3%82%8b-%e6%97%a5%e6%9c%ac%e4%ba%ba%e7%a0%94%e7%a9%b6%e8%80%85%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e8%ab%96%e6%96%87%e3%81%ae%e6%9b%b8%e3%81%8d%e6%96%b9%e3%83%bb%e3%82%a2%e3%82%af%e3%82%bb%e3%83%97%e3%83%88%e8%a1%93-KS%e7%a7%91%e5%ad%a6%e4%b8%80%e8%88%ac%e6%9b%b8-%e3%82%a8%e3%82%a4%e3%83%89%e3%83%aa%e3%82%a2%e3%83%b3%e3%83%bb%e3%82%a6%e3%82%a9%e3%83%bc%e3%83%ab%e3%83%af%e3%83%bc%e3%82%af/dp/4065120446&#34; title=&#34;Amazon商品ページ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』&lt;/a&gt;（講談社）として翻訳されたので、関心のある人は読んでみてください。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
     <item>
       <title>大学院生が（いまさら）買ってよかったもの8選</title>
-      <link>/post/2020/08/25/mustbuy-2020-summer/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/25/mustbuy-2020-summer/</guid>
-      <description>
-
-
-&lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;はじめに&lt;/h1&gt;
+      <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;iphone-se第2世代&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;1. &lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;1-iphone-se第2世代&#34;&gt;1. iPhone SE（第2世代）&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;高校の頃から10年近く使ってきたガラケーにガタが来ていました。これまではiPod touchやiPadでごまかしてきたけれど、ようやく腹をくくってiPhoneを買うことにしました。おおむね便利です。&lt;/p&gt;
 &lt;p&gt;しかし、iPhoneを導入してから数日後、外出先で通知を確認するのがめちゃくちゃめんどくさい、というか、通知を見逃しやすいということに気がつきました。ガラケーと違い、通知のバイブレーションが短くて弱すぎたのです。&lt;/p&gt;
 &lt;p&gt;この「通知気づきにくい問題」に対処するため、Apple Watchを買いました。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;apple-watch-series-3&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;2. &lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;2-apple-watch-series-3&#34;&gt;2. Apple Watch Series 3&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;買う当初は「スマートウォッチって贅沢すぎでは？」と思っていましが、使っているうちに、この1年でベスト3くらいの買い物だと考えを改めることになりました。以下の3つが特に便利です。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;必ず通知に気づく&lt;/strong&gt;：当初の計画通り、通知を見逃さずに済むようになりました。また、必ず通知に気づくようになったことで、メールやメッセージアプリを確認する回数、すなわち、無駄にデバイスを見る時間が減りました。これは時間の節約になるし、精神的な疲労の軽減にもつながると思います。Twitter等のSNSをやっている人だと、この時短効果はより大きいのではないでしょうか。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;支払いが楽&lt;/strong&gt;：Apple WatchにモバイルSuicaを入れておけば、レジの読み取り機や自動改札機にタッチするだけで決済できるようになります。スマホだけでもキャッシュレス決済はできるけれど、いちいちスマホを取り出さずに済むのは予想以上に楽です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;ライフログを取れる&lt;/strong&gt;：これは贅沢かもしれないですが、なんとなくライフログを取ることにしました。Autosleep（自動で睡眠時間を記録してくれるアプリ）とLife Cycle（いつ、どこら辺にいたかを記録してくれるアプリ）を使っています。よく運動をする人であれば、この他にも活用法を見いだせると思います。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;必ず通知に気づく&lt;/strong&gt;：当初の計画通り、通知を見逃さずに済むようになりました。また、必ず通知に気づくようになったことで、メールやメッセージアプリを確認する回数、すなわち、無駄にデバイスを見る時間が減りました。これは時間の節約になるし、精神的な疲労の軽減にもつながると思います。Twitter等のSNSをやっている人だと、この時短効果はより大きいのではないでしょうか。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;支払いが楽&lt;/strong&gt;：Apple WatchにモバイルSuicaを入れておけば、レジの読み取り機や自動改札機にタッチするだけで決済できるようになります。スマホだけでもキャッシュレス決済はできるけれど、いちいちスマホを取り出さずに済むのは予想以上に楽です。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ライフログを取れる&lt;/strong&gt;：これは贅沢かもしれないですが、なんとなくライフログを取ることにしました。Autosleep（自動で睡眠時間を記録してくれるアプリ）とLife Cycle（いつ、どこら辺にいたかを記録してくれるアプリ）を使っています。よく運動をする人であれば、この他にも活用法を見いだせると思います。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;逆に、スマートウォッチを持っていない人は、どうやって通知を確認しているのでしょうか？　いちいちスマホを開くのが無駄だと感じている場合は、購入を考えても良いかもしれません。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;bellroyのphone-case-3-card&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;3. &lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0%20Phone%20Case%20–%203%20Card&#34;&gt;BellroyのPhone Case – 3 Card&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;3-bellroyのスマホケース&#34;&gt;3. Bellroyのスマホケース&lt;/h1&gt;
+&lt;p&gt;[Phone Case – 3 Card](&lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&#34;&gt;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&lt;/a&gt; Phone Case – 3 Card)&lt;/p&gt;
 &lt;p&gt;名前の通り、背面にカードを3枚入れられるスマホケースです。このケースの中に、クレジットカード・学生証・大学生協の組合員証を入れています。これのおかげで財布をほぼ使わなくなったし、近場に行くときには財布を持つことすらなくなりました。&lt;/p&gt;
 &lt;p&gt;このスマホケースは10000円します。カードを入れられるスマホケースで、もっと安いものはいくらでも見つかると思います。実際、私も「さすがに贅沢では」と悩みましたが、ふだん安物買いの銭失いで失敗することが多いので、思い切って買うことにしました。長く使いたいです。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;airpods-pro&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;4. &lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;4-airpods-pro&#34;&gt;4. AirPods Pro&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;めちゃくちゃ良いです。ノイズキャンセリング性能が良いのはもちろんのこと、装着感が軽いのが何より素晴らしいです。自分は音楽をほぼ聞かないし、かなりいい値段もするけれど、それでも買って良かったと思います。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;クリアサングラス&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;5. クリアサングラス&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;5-クリアサングラス&#34;&gt;5. クリアサングラス&lt;/h1&gt;
 &lt;p&gt;日差しがまぶしすぎるので、例年、夏になるとサングラスをかけています。しかし、今年はマスクを着けなければいけないので、サングラスをかけると不審者に見えてしまうという問題が生じました。&lt;/p&gt;
 &lt;p&gt;そこで、クリアサングラス（透明なサングラス）を買いました。見た目にはふつうの眼鏡なので、マスクと合わせても不審者感は全くないです。地味にいい買い物でした。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;thermosの真空断熱タンブラー&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;6. &lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34;&gt;THERMOSの真空断熱タンブラー&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;6-thermosの真空断熱タンブラー&#34;&gt;6. THERMOSの真空断熱タンブラー&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;真空断熱タンブラー&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;真空断熱タンブラーこそ、「地味に生活のクオリティを上げてくれるアイテム」の筆頭だと思います。これまで2年くらい、サーモスのステンレス製タンブラーを使ってきました。今回買い替えたのは、（おそらく）経年劣化のために保冷効果が弱まってきたからです。&lt;/p&gt;
 &lt;p&gt;今までのステンレス製とは違い、今回買ったのは陶器っぽいマットな仕上がりで、飲み口も柔らかくなっています。他にも色や素材にバリエーションがあるので、気になった方は調べてみてください。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;洗顔ネット&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;7. 洗顔ネット&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;7-洗顔ネット&#34;&gt;7. 洗顔ネット&lt;/h1&gt;
 &lt;p&gt;持っている人からしたら当たり前のことですが、洗顔ネットを使うと「どこにこんな泡があったんだ！？」というレベルでもこもこ泡立ちます。はじめて使ったとき、この数ヶ月で一番びっくりしました。値段も全然高くないし、一度買えば数年から一生は使えると思うので、買ってよかったです。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;realforceのキーボード&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;8. &lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34;&gt;REALFORCEのキーボード&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;8-realforceのキーボード&#34;&gt;8. REALFORCEのキーボード&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REALFORCE TKL SA for Mac&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;REALFORCEというのは、有名なキーボードブランドの1つです。HHKBというブランドもありますが、個人的には、REALFORCEのほうが軽くて好みです。&lt;/p&gt;
 &lt;p&gt;それなりに文章に接する職業の人間、すなわち博士課程の院生なら、高めのキーボードを買ったほうが良いと思います。ふつうのキーボードより手への負担が減るだけでなく、文章を書くこと自体がなんとなく楽しくなります。&lt;/p&gt;
 &lt;p&gt;ちなみに、同じメーカーでもキーボードの種類が多いので、買うときは公式サイトやネットの情報をよく調べるようにしてください。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;おわりに&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;おわりに&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
 &lt;p&gt;どのアイテムもそれなりに贅沢ですが、地味に、でも確実に生活のクオリティを上げてくれます。いいものを買ってるので、それに見合った仕事をしたいです。&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>データの可視化 まとめ</title>
-      <link>/post/2020/08/22/datareporting/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/22/datareporting/</guid>
-      <description>
-
-
-&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
+      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
+      <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
+&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>/post/2020/08/21/hugo-academic/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/21/hugo-academic/</guid>
-      <description>
-
-
-&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
+      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
+      <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
+&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
 &lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
 &lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
 </description>

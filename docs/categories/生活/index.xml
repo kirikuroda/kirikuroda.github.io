@@ -2,86 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活 | Kiri Kuroda</title>
-    <link>/categories/%E7%94%9F%E6%B4%BB/</link>
-      <atom:link href="/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+      <atom:link href="https://kirikuroda.github.io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <description>生活</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>生活</title>
-      <link>/categories/%E7%94%9F%E6%B4%BB/</link>
+      <link>https://kirikuroda.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
     </image>
     
     <item>
       <title>大学院生が（いまさら）買ってよかったもの8選</title>
-      <link>/post/2020/08/25/mustbuy-2020-summer/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/25/mustbuy-2020-summer/</guid>
-      <description>
-
-
-&lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;はじめに&lt;/h1&gt;
+      <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;iphone-se第2世代&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;1. &lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;1-iphone-se第2世代&#34;&gt;1. iPhone SE（第2世代）&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;高校の頃から10年近く使ってきたガラケーにガタが来ていました。これまではiPod touchやiPadでごまかしてきたけれど、ようやく腹をくくってiPhoneを買うことにしました。おおむね便利です。&lt;/p&gt;
 &lt;p&gt;しかし、iPhoneを導入してから数日後、外出先で通知を確認するのがめちゃくちゃめんどくさい、というか、通知を見逃しやすいということに気がつきました。ガラケーと違い、通知のバイブレーションが短くて弱すぎたのです。&lt;/p&gt;
 &lt;p&gt;この「通知気づきにくい問題」に対処するため、Apple Watchを買いました。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;apple-watch-series-3&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;2. &lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;2-apple-watch-series-3&#34;&gt;2. Apple Watch Series 3&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;買う当初は「スマートウォッチって贅沢すぎでは？」と思っていましが、使っているうちに、この1年でベスト3くらいの買い物だと考えを改めることになりました。以下の3つが特に便利です。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;必ず通知に気づく&lt;/strong&gt;：当初の計画通り、通知を見逃さずに済むようになりました。また、必ず通知に気づくようになったことで、メールやメッセージアプリを確認する回数、すなわち、無駄にデバイスを見る時間が減りました。これは時間の節約になるし、精神的な疲労の軽減にもつながると思います。Twitter等のSNSをやっている人だと、この時短効果はより大きいのではないでしょうか。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;支払いが楽&lt;/strong&gt;：Apple WatchにモバイルSuicaを入れておけば、レジの読み取り機や自動改札機にタッチするだけで決済できるようになります。スマホだけでもキャッシュレス決済はできるけれど、いちいちスマホを取り出さずに済むのは予想以上に楽です。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;ライフログを取れる&lt;/strong&gt;：これは贅沢かもしれないですが、なんとなくライフログを取ることにしました。Autosleep（自動で睡眠時間を記録してくれるアプリ）とLife Cycle（いつ、どこら辺にいたかを記録してくれるアプリ）を使っています。よく運動をする人であれば、この他にも活用法を見いだせると思います。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;必ず通知に気づく&lt;/strong&gt;：当初の計画通り、通知を見逃さずに済むようになりました。また、必ず通知に気づくようになったことで、メールやメッセージアプリを確認する回数、すなわち、無駄にデバイスを見る時間が減りました。これは時間の節約になるし、精神的な疲労の軽減にもつながると思います。Twitter等のSNSをやっている人だと、この時短効果はより大きいのではないでしょうか。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;支払いが楽&lt;/strong&gt;：Apple WatchにモバイルSuicaを入れておけば、レジの読み取り機や自動改札機にタッチするだけで決済できるようになります。スマホだけでもキャッシュレス決済はできるけれど、いちいちスマホを取り出さずに済むのは予想以上に楽です。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ライフログを取れる&lt;/strong&gt;：これは贅沢かもしれないですが、なんとなくライフログを取ることにしました。Autosleep（自動で睡眠時間を記録してくれるアプリ）とLife Cycle（いつ、どこら辺にいたかを記録してくれるアプリ）を使っています。よく運動をする人であれば、この他にも活用法を見いだせると思います。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;逆に、スマートウォッチを持っていない人は、どうやって通知を確認しているのでしょうか？　いちいちスマホを開くのが無駄だと感じている場合は、購入を考えても良いかもしれません。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;bellroyのphone-case-3-card&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;3. &lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0%20Phone%20Case%20–%203%20Card&#34;&gt;BellroyのPhone Case – 3 Card&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;3-bellroyのスマホケース&#34;&gt;3. Bellroyのスマホケース&lt;/h1&gt;
+&lt;p&gt;[Phone Case – 3 Card](&lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&#34;&gt;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&lt;/a&gt; Phone Case – 3 Card)&lt;/p&gt;
 &lt;p&gt;名前の通り、背面にカードを3枚入れられるスマホケースです。このケースの中に、クレジットカード・学生証・大学生協の組合員証を入れています。これのおかげで財布をほぼ使わなくなったし、近場に行くときには財布を持つことすらなくなりました。&lt;/p&gt;
 &lt;p&gt;このスマホケースは10000円します。カードを入れられるスマホケースで、もっと安いものはいくらでも見つかると思います。実際、私も「さすがに贅沢では」と悩みましたが、ふだん安物買いの銭失いで失敗することが多いので、思い切って買うことにしました。長く使いたいです。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;airpods-pro&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;4. &lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;4-airpods-pro&#34;&gt;4. AirPods Pro&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;めちゃくちゃ良いです。ノイズキャンセリング性能が良いのはもちろんのこと、装着感が軽いのが何より素晴らしいです。自分は音楽をほぼ聞かないし、かなりいい値段もするけれど、それでも買って良かったと思います。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;クリアサングラス&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;5. クリアサングラス&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;5-クリアサングラス&#34;&gt;5. クリアサングラス&lt;/h1&gt;
 &lt;p&gt;日差しがまぶしすぎるので、例年、夏になるとサングラスをかけています。しかし、今年はマスクを着けなければいけないので、サングラスをかけると不審者に見えてしまうという問題が生じました。&lt;/p&gt;
 &lt;p&gt;そこで、クリアサングラス（透明なサングラス）を買いました。見た目にはふつうの眼鏡なので、マスクと合わせても不審者感は全くないです。地味にいい買い物でした。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;thermosの真空断熱タンブラー&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;6. &lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34;&gt;THERMOSの真空断熱タンブラー&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;6-thermosの真空断熱タンブラー&#34;&gt;6. THERMOSの真空断熱タンブラー&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;真空断熱タンブラー&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;真空断熱タンブラーこそ、「地味に生活のクオリティを上げてくれるアイテム」の筆頭だと思います。これまで2年くらい、サーモスのステンレス製タンブラーを使ってきました。今回買い替えたのは、（おそらく）経年劣化のために保冷効果が弱まってきたからです。&lt;/p&gt;
 &lt;p&gt;今までのステンレス製とは違い、今回買ったのは陶器っぽいマットな仕上がりで、飲み口も柔らかくなっています。他にも色や素材にバリエーションがあるので、気になった方は調べてみてください。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;洗顔ネット&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;7. 洗顔ネット&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;7-洗顔ネット&#34;&gt;7. 洗顔ネット&lt;/h1&gt;
 &lt;p&gt;持っている人からしたら当たり前のことですが、洗顔ネットを使うと「どこにこんな泡があったんだ！？」というレベルでもこもこ泡立ちます。はじめて使ったとき、この数ヶ月で一番びっくりしました。値段も全然高くないし、一度買えば数年から一生は使えると思うので、買ってよかったです。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;realforceのキーボード&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;8. &lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34;&gt;REALFORCEのキーボード&lt;/a&gt;&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;8-realforceのキーボード&#34;&gt;8. REALFORCEのキーボード&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REALFORCE TKL SA for Mac&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;REALFORCEというのは、有名なキーボードブランドの1つです。HHKBというブランドもありますが、個人的には、REALFORCEのほうが軽くて好みです。&lt;/p&gt;
 &lt;p&gt;それなりに文章に接する職業の人間、すなわち博士課程の院生なら、高めのキーボードを買ったほうが良いと思います。ふつうのキーボードより手への負担が減るだけでなく、文章を書くこと自体がなんとなく楽しくなります。&lt;/p&gt;
 &lt;p&gt;ちなみに、同じメーカーでもキーボードの種類が多いので、買うときは公式サイトやネットの情報をよく調べるようにしてください。&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;おわりに&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;おわりに&lt;/h1&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
 &lt;p&gt;どのアイテムもそれなりに贅沢ですが、地味に、でも確実に生活のクオリティを上げてくれます。いいものを買ってるので、それに見合った仕事をしたいです。&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     

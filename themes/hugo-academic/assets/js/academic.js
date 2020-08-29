@@ -39,7 +39,7 @@
       $('body').addClass('scrolling');
       $('html, body').animate({
         scrollTop: elementOffset
-      }, 600, function () {
+      }, 0, function () {
         $('body').removeClass('scrolling');
       });
     } else {
@@ -548,7 +548,7 @@
   function fixHugoOutput() {
     // Fix Goldmark table of contents.
     // - Must be performed prior to initializing ScrollSpy.
-    $('#TableOfContents').addClass('nav flex-column');
+    $('#TableOfContents').addClass('docs-toc-title nav flex-column');
     $('#TableOfContents li').addClass('nav-item');
     $('#TableOfContents li a').addClass('nav-link');
 

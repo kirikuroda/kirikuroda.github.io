@@ -1,13 +1,13 @@
 ---
-title: 英語を書かなきゃいけないときに使う辞書系ツール
+title: Hugoとblogdownを使って最速でウェブサイトを公開する
 author: ''
-date: '2020-08-28'
-slug: english-dictionary
+date: '2020-08-29'
+slug: make-website-with-hugo-blogdown
 categories:
   - 執筆
 tags:
-subtitle: '「これ」という辞書を厳選するのが大事'
-summary: '「これ」という辞書を厳選するのが大事'
+subtitle: '最速で作る'
+summary: '最速で作る'
 authors: []
 featured: no
 image:
@@ -15,7 +15,8 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: false
+toc: true
+draft: true
 ---
 
 # 辞書をあらかじめ決めておく
@@ -78,4 +79,4 @@ draft: false
 
 <br>
 
-[^1]:この"English for Writing Research Papers"という本は、非常に参考になりました。昨年、[『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』](https://www.amazon.co.jp/ネイティブが教える-日本人研究者のための論文の書き方・アクセプト術-KS科学一般書-エイドリアン・ウォールワーク/dp/4065120446 "Amazon商品ページ")（講談社）として翻訳されたので、関心のある人は読んでみてください。
+[^1]: この"English for Writing Research Papers"という本は、非常に参考になりました。昨年、[『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』](https://www.amazon.co.jp/ネイティブが教える-日本人研究者のための論文の書き方・アクセプト術-KS科学一般書-エイドリアン・ウォールワーク/dp/4065120446 "Amazon商品ページ")（講談社）として翻訳されたので、関心のある人は読んでみてください。

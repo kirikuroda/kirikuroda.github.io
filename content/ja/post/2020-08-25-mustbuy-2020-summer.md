@@ -14,6 +14,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+toc: true
 draft: false
 ---
 
@@ -23,7 +24,9 @@ draft: false
 
 <br>
 
-# 1. [iPhone SE（第2世代）](https://www.apple.com/jp/iphone-se/ "iPhone SE")
+# 1. iPhone SE（第2世代）
+
+[iPhone SE（第2世代）](https://www.apple.com/jp/iphone-se/ "iPhone SE")
 
 高校の頃から10年近く使ってきたガラケーにガタが来ていました。これまではiPod touchやiPadでごまかしてきたけれど、ようやく腹をくくってiPhoneを買うことにしました。おおむね便利です。
 
@@ -33,7 +36,9 @@ draft: false
 
 <br>
 
-# 2. [Apple Watch Series 3](https://www.apple.com/jp/apple-watch-series-3/ "Apple Watch Series 3")
+# 2. Apple Watch Series 3
+
+[Apple Watch Series 3](https://www.apple.com/jp/apple-watch-series-3/ "Apple Watch Series 3")
 
 買う当初は「スマートウォッチって贅沢すぎでは？」と思っていましが、使っているうちに、この1年でベスト3くらいの買い物だと考えを改めることになりました。以下の3つが特に便利です。
 
@@ -46,7 +51,9 @@ draft: false
 
 <br>
 
-# 3. [BellroyのPhone Case – 3 Card](https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0 Phone Case – 3 Card)
+# 3. Bellroyのスマホケース
+
+[Phone Case – 3 Card](https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0 Phone Case – 3 Card)
 
 名前の通り、背面にカードを3枚入れられるスマホケースです。このケースの中に、クレジットカード・学生証・大学生協の組合員証を入れています。これのおかげで財布をほぼ使わなくなったし、近場に行くときには財布を持つことすらなくなりました。
 
@@ -54,7 +61,9 @@ draft: false
 
 <br>
 
-# 4. [AirPods Pro](https://www.apple.com/jp/airpods-pro/ "AirPods Pro")
+# 4. AirPods Pro
+
+[AirPods Pro](https://www.apple.com/jp/airpods-pro/ "AirPods Pro")
 
 めちゃくちゃ良いです。ノイズキャンセリング性能が良いのはもちろんのこと、装着感が軽いのが何より素晴らしいです。自分は音楽をほぼ聞かないし、かなりいい値段もするけれど、それでも買って良かったと思います。
 
@@ -68,7 +77,9 @@ draft: false
 
 <br>
 
-# 6. [THERMOSの真空断熱タンブラー](https://www.shopthermos.jp/shop/g/g350059280500/ "真空断熱タンブラー JDM-420 ブラック")
+# 6. THERMOSの真空断熱タンブラー
+
+[真空断熱タンブラー](https://www.shopthermos.jp/shop/g/g350059280500/ "真空断熱タンブラー JDM-420 ブラック")
 
 真空断熱タンブラーこそ、「地味に生活のクオリティを上げてくれるアイテム」の筆頭だと思います。これまで2年くらい、サーモスのステンレス製タンブラーを使ってきました。今回買い替えたのは、（おそらく）経年劣化のために保冷効果が弱まってきたからです。
 
@@ -82,7 +93,9 @@ draft: false
 
 <br>
 
-# 8. [REALFORCEのキーボード](https://www.realforce.co.jp/products/R2TLSA-US3M-WH/ "REALFORCE TKL SA for Mac / R2TLSA-US3M-WH")
+# 8. REALFORCEのキーボード
+
+[REALFORCE TKL SA for Mac](https://www.realforce.co.jp/products/R2TLSA-US3M-WH/ "REALFORCE TKL SA for Mac / R2TLSA-US3M-WH")
 
 REALFORCEというのは、有名なキーボードブランドの1つです。HHKBというブランドもありますが、個人的には、REALFORCEのほうが軽くて好みです。
 
@@ -95,3 +108,4 @@ REALFORCEというのは、有名なキーボードブランドの1つです。H
 # おわりに
 
 どのアイテムもそれなりに贅沢ですが、地味に、でも確実に生活のクオリティを上げてくれます。いいものを買ってるので、それに見合った仕事をしたいです。
+
