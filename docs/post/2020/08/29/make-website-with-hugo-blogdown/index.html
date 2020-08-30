@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="「これ」という辞書を厳選するのが大事">
+  <meta name="description" content="最速？">
 
   
-  <link rel="alternate" hreflang="ja-jp" href="/post/2020/08/28/english-dictionary/">
+  <link rel="alternate" hreflang="ja-jp" href="/post/2020/08/29/make-website-with-hugo-blogdown/">
 
   
 
@@ -241,7 +241,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/2020/08/28/english-dictionary/">
+  <link rel="canonical" href="/post/2020/08/29/make-website-with-hugo-blogdown/">
 
   
   
@@ -257,15 +257,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Kiri Kuroda">
-  <meta property="og:url" content="/post/2020/08/28/english-dictionary/">
-  <meta property="og:title" content="英語を書かなきゃいけないときに使う辞書系ツール | Kiri Kuroda">
-  <meta property="og:description" content="「これ」という辞書を厳選するのが大事"><meta property="og:image" content="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="/post/2020/08/29/make-website-with-hugo-blogdown/">
+  <meta property="og:title" content="Hugoとblogdownを使って最速でウェブサイトを公開する | Kiri Kuroda">
+  <meta property="og:description" content="最速？"><meta property="og:image" content="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ja-jp">
   
     
-      <meta property="article:published_time" content="2020-08-28T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-08-29T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-08-28T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-08-29T00:00:00&#43;00:00">
   
 
   
@@ -289,12 +289,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/2020/08/28/english-dictionary/"
+    "@id": "/post/2020/08/29/make-website-with-hugo-blogdown/"
   },
-  "headline": "英語を書かなきゃいけないときに使う辞書系ツール",
+  "headline": "Hugoとblogdownを使って最速でウェブサイトを公開する",
   
-  "datePublished": "2020-08-28T00:00:00Z",
-  "dateModified": "2020-08-28T00:00:00Z",
+  "datePublished": "2020-08-29T00:00:00Z",
+  "dateModified": "2020-08-29T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -309,7 +309,7 @@
       "url": "/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "「これ」という辞書を厳選するのが大事"
+  "description": "最速？"
 }
 </script>
 
@@ -327,7 +327,7 @@
 
 
 
-  <title>英語を書かなきゃいけないときに使う辞書系ツール | Kiri Kuroda</title>
+  <title>Hugoとblogdownを使って最速でウェブサイトを公開する | Kiri Kuroda</title>
 
 </head>
 
@@ -662,25 +662,15 @@
         </ul>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#辞書をあらかじめ決めておく">辞書をあらかじめ決めておく</a></li>
-    <li><a href="#英英類語辞典">英英・類語辞典</a>
-      <ul>
-        <li><a href="#lexico">LEXICO</a></li>
-        <li><a href="#oxford-learners-dictionaries">Oxford Learner&rsquo;s Dictionaries</a></li>
-      </ul>
-    </li>
-    <li><a href="#コロケーション">コロケーション</a>
-      <ul>
-        <li><a href="#just-the-word">Just the Word</a></li>
-        <li><a href="#netspeak">Netspeak</a></li>
-      </ul>
-    </li>
-    <li><a href="#フレーズ集">フレーズ集</a>
-      <ul>
-        <li><a href="#useful-phrases">Useful Phrases</a></li>
-      </ul>
-    </li>
-    <li><a href="#おわりに">おわりに</a></li>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#このページで説明することしないこと">このページで説明すること・しないこと</a></li>
+    <li><a href="#1-githubでリポジトリを作る">1. GitHubでリポジトリを作る</a></li>
+    <li><a href="#2-リポジトリ設定の修正">2. リポジトリ設定の修正</a></li>
+    <li><a href="#3-リポジトリをクローンする">3. リポジトリをクローンする</a></li>
+    <li><a href="#4-rとrstudioをインストールする">4. RとRStudioをインストールする</a></li>
+    <li><a href="#5-rでblogdownパッケージをインストールする">5. Rでblogdownパッケージをインストールする</a></li>
+    <li><a href="#6-configtomlを修正する">6. config.tomlを修正する</a></li>
+    <li><a href="#7-paramstomlを修正する">7. params.tomlを修正する</a></li>
   </ul>
 </nav>
         
@@ -707,10 +697,10 @@
   
   
 <div class="article-container pt-3">
-  <h1>英語を書かなきゃいけないときに使う辞書系ツール</h1>
+  <h1>Hugoとblogdownを使って最速でウェブサイトを公開する</h1>
 
   
-  <p class="page-subtitle">「これ」という辞書を厳選するのが大事</p>
+  <p class="page-subtitle">最速？</p>
   
 
   
@@ -728,7 +718,7 @@
     
       
     
-    2020年8月28日
+    2020年8月29日
   </span>
   
 
@@ -773,77 +763,116 @@
                 <h2>目次</h2>
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#辞書をあらかじめ決めておく">辞書をあらかじめ決めておく</a></li>
-    <li><a href="#英英類語辞典">英英・類語辞典</a>
-      <ul>
-        <li><a href="#lexico">LEXICO</a></li>
-        <li><a href="#oxford-learners-dictionaries">Oxford Learner&rsquo;s Dictionaries</a></li>
-      </ul>
-    </li>
-    <li><a href="#コロケーション">コロケーション</a>
-      <ul>
-        <li><a href="#just-the-word">Just the Word</a></li>
-        <li><a href="#netspeak">Netspeak</a></li>
-      </ul>
-    </li>
-    <li><a href="#フレーズ集">フレーズ集</a>
-      <ul>
-        <li><a href="#useful-phrases">Useful Phrases</a></li>
-      </ul>
-    </li>
-    <li><a href="#おわりに">おわりに</a></li>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#このページで説明することしないこと">このページで説明すること・しないこと</a></li>
+    <li><a href="#1-githubでリポジトリを作る">1. GitHubでリポジトリを作る</a></li>
+    <li><a href="#2-リポジトリ設定の修正">2. リポジトリ設定の修正</a></li>
+    <li><a href="#3-リポジトリをクローンする">3. リポジトリをクローンする</a></li>
+    <li><a href="#4-rとrstudioをインストールする">4. RとRStudioをインストールする</a></li>
+    <li><a href="#5-rでblogdownパッケージをインストールする">5. Rでblogdownパッケージをインストールする</a></li>
+    <li><a href="#6-configtomlを修正する">6. config.tomlを修正する</a></li>
+    <li><a href="#7-paramstomlを修正する">7. params.tomlを修正する</a></li>
   </ul>
 </nav>
-<h1 id="辞書をあらかじめ決めておく">辞書をあらかじめ決めておく</h1>
-<p>タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。</p>
-<p>大事なのは、<strong>使う辞書をあらかじめ決めておく</strong>ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。</p>
-<p>辞書系ツールを選ぶに当たり、以下の3つを選定基準としています。</p>
+<h1 id="はじめに">はじめに</h1>
+<p>
+<a href="https://kirikuroda.github.io/post/2020/08/21/hugo-academic/" title="「Hugo Academicでウェブサイトをリニューアルしました」" target="_blank" rel="noopener">先日の投稿</a>に「サイト構築の詳しい手順は説明しません」と書きましたが、気が変わったので、必要最低限の手順を残しておくことにしました。</p>
+<br>
+<h1 id="このページで説明することしないこと">このページで説明すること・しないこと</h1>
+<p>表題のとおり、このページではHugoとblogdownを使って「<strong>最速でウェブサイトを公開する</strong>」ことを目指します。そのため、作ったウェブサイトには必要最低限の情報、すなわち、</p>
+<ul>
+<li>自己紹介</li>
+<li>論文情報／業績</li>
+<li>連絡先／SNSのリンク</li>
+</ul>
+<p>しか載せません。それ以外の情報や手順、たとえば、</p>
+<ul>
+<li>ブログ投稿</li>
+<li>多言語対応</li>
+<li>CSS（見た目）のカスタマイズ</li>
+<li>デモページの削除　etc.</li>
+</ul>
+<p>については説明しません。このページを参考にしてウェブサイトを作ろうとするくらいモチベーションがあるならば、そこまでの説明が要らないような気もするからです<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<p>また、それぞれの手順が何を意味しているのか（例：なぜGitHubでリポジトリを作らなきゃいけないか）についても、詳しくは説明しません。これも最速のためです。</p>
+<p>それでは説明スタートです。</p>
+<br>
+<h1 id="1-githubでリポジトリを作る">1. GitHubでリポジトリを作る</h1>
+<p>**GitHubでリポジトリを作ってください。**初めてリポジトリを作るという方は、
+<a href="https://qiita.com/kooohei/items/361da3c9dbb6e0c7946b" title="GitHubアカウント作成とリポジトリの作成手順" target="_blank" rel="noopener">『GitHubアカウント作成とリポジトリの作成手順』</a>を読んでください。</p>
+<p>設定画面での注意点は以下の2つです：</p>
 <ol>
-<li><strong>無料</strong>　現状、辞書系ツールに限って言えば、無料で十分だと思います。ただし、専門家じゃないので断言はできません。</li>
-<li><strong>オンライン</strong>　デバイスの環境に依存しないのがメリットです。ただし当然ですが、ネットにつながらないと使えません。</li>
-<li><strong>NO自動翻訳</strong>　機械学習による自動翻訳ツールは除きました。なるべく自力で文章を書いたほうが、長期的には自分のスキルアップにつながると思うからです。しかし、自動翻訳ツールが発達している今、こういう考えは時代遅れになりつつあるのかもしれません。</li>
+<li><strong>リポジトリ作成時の設定はすべてデフォルトのまま</strong>にしてください。</li>
+<li>**リポジトリ名は「（GitHubの）ユーザ名.github.io」**がおすすめです。この場合、できあがったウェブサイトのURLは「https://ユーザ名.github.io」になります。そうしなかった場合、ウェブサイトのURLは「https://ユーザ名.github.io/リポジトリ名」になります。</li>
 </ol>
-<p>では、辞書系ツールを紹介します。</p>
 <br>
-<h1 id="英英類語辞典">英英・類語辞典</h1>
-<h2 id="lexico">LEXICO</h2>
-<p>
-<a href="https://www.lexico.com" title="LEXICO" target="_blank" rel="noopener">LEXICO</a></p>
-<p><strong>語義・類語・例文・語源、オールインワンの辞書サイト</strong>です。Oxford Dictionaryによって運営されているようです。アメリカ英語・イギリス英語、両方とも載っているので、英単語の意味を調べるときは、とりあえずこれで良いと思います。</p>
-<p>特に、類語（シソーラス）を調べるときには、必ずこのサイトを使っています。検索窓のメニューを「THESAURUS」にすると、類語を検索できます。あるいは、各単語のページの「+ Synonyms」をクリックしても、類語を見ることができます。</p>
-<p>例文が多いのも魅力的です。各単語のページの「+ More example sentences」をクリックすると、どういうニュアンスで使われることが多いかを確認できます。</p>
-<h2 id="oxford-learners-dictionaries">Oxford Learner&rsquo;s Dictionaries</h2>
-<p>
-<a href="https://www.oxfordlearnersdictionaries.com" title="Oxford Learner&#39;s Dictionaries" target="_blank" rel="noopener">Oxford Learner&rsquo;s Dictionaries</a></p>
-<p>名前のとおり、英語学習者用の辞書であるため、LEXICOより情報がコンパクトになっています。<strong>単語の意味をさっと確認したいときに便利</strong>です。また、<strong>平易な英語で語義が説明されている</strong>ので、LEXICOの説明がわかりにくいときに使うのもおすすめです。頻出単語については、コロケーションや用法も載っています。</p>
+<h1 id="2-リポジトリ設定の修正">2. リポジトリ設定の修正</h1>
+<p>リポジトリを作成したら、<code>Settings</code>をクリックしてください。</p>
+<p>下の方にある<code>GitHub Pages</code>という項目を見つけたら、<code>None</code>を<code>Master</code>に、<code>/(root)</code>を<code>/docs</code>に変更してください。</p>
+<p>その後、右にある<code>Save</code>をクリックしたら、修正完了です。</p>
 <br>
-<h1 id="コロケーション">コロケーション</h1>
-<h2 id="just-the-word">Just the Word</h2>
-<p>
-<a href="http://www.just-the-word.com" title="Just the Word" target="_blank" rel="noopener">Just the Word</a></p>
-<p><strong>単語を検索するとコロケーションが表示される</strong>、というシンプルなサイトです。また、気になったコロケーションをクリックすると、例文も表示されます。コロケーションに関するウェブサイト（そういうのをコーパスっていうんでしょうか？）は他にもありますが、Just the Wordは見た目と機能がシンプルであり、使い方がわかりやすいので気に入っています。</p>
-<h2 id="netspeak">Netspeak</h2>
-<p>
-<a href="https://netspeak.org" title="Netspeak" target="_blank" rel="noopener">Netspeak</a></p>
-<p><strong>ある単語や語順の使用頻度を調べたり、比較したりする</strong>のに使います。たとえば、「atとin、どっちがよく使われるんだろう？」とか、「この副詞は文のどこに置かれることが多いんだろう？」と思ったときに使います。</p>
+<h1 id="3-リポジトリをクローンする">3. リポジトリをクローンする</h1>
+<p>**上で作ったリポジトリをクローン<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>します。**初めての方は、
+<a href="https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/cloning-a-repository" title="リポジトリをクローンする" target="_blank" rel="noopener">『リポジトリをクローンする』</a>を読んでください。</p>
 <br>
-<h1 id="フレーズ集">フレーズ集</h1>
-<h2 id="useful-phrases">Useful Phrases</h2>
-<p>
-<a href="https://www.springer.com/jp/book/9783319260921" title="Useful Phrases" target="_blank" rel="noopener">Useful Phrases</a></p>
-<p><strong>英語論文で頻出のフレーズ</strong>がまとまっています。&ldquo;English for Writing Research Papers&rdquo;（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。</p>
-<p>同様のフレーズ集として、
-<a href="http://www.phrasebank.manchester.ac.uk" title="Academic Phrasebank" target="_blank" rel="noopener">Academic Phrasebank</a>というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。</p>
+<h1 id="4-rとrstudioをインストールする">4. RとRStudioをインストールする</h1>
+<p>**RとRStudioをインストールします。**初めての方は、
+<a href="https://qiita.com/hujuu/items/ddd66ae8e6f3f989f2c0" title="Rと R Studioのインストール" target="_blank" rel="noopener">『R と R Studioのインストール』</a>を読んでください。インストール済みの方は、スキップしてください。</p>
 <br>
-<h1 id="おわりに">おわりに</h1>
-<p>以上、「英語を書かなきゃいけないときに使う辞書系ツール」を紹介しました。このようなツールを使うと、Google検索でなんとなく英語を調べるよりは、裏づけのある良質な情報を得られると思います。ぜひ、自分にピッタリのツールを探してみてください。</p>
+<h1 id="5-rでblogdownパッケージをインストールする">5. Rでblogdownパッケージをインストールする</h1>
+<p>RStudioを立ち上げ、以下のコードをコンソールで実行します。</p>
+<pre><code class="language-R">install.packages(&quot;blogdown&quot;) # blogdownのインストール
+</code></pre>
 <br>
+<p>インストールが終わったら、以下の手順でRプロジェクトを作ります。</p>
+<ol>
+<li><code>File &gt; New Project &gt; New Directory &gt; Website using blogdown</code>をクリック</li>
+<li><strong>上で作ったGitHubのリポジトリ名</strong>を<code>Directory name</code>に入力</li>
+<li><strong>クローンしたリポジトリの1個上のディレクトリ</strong>を<code>Create project as subdirectory of</code>で指定</li>
+<li><code>Hugo theme</code>で好きなテーマを指定。ここでは<code>gcushen/hugo-academic</code>とします</li>
+<li>その他はデフォルトのまま</li>
+<li><code>Create Project</code>をクリック</li>
+</ol>
+<br>
+<h1 id="6-configtomlを修正する">6. config.tomlを修正する</h1>
+<p>Rプロジェクトができたら、ルートディレクトリにある<code>config.toml</code>を開き、</p>
+<ul>
+<li>title</li>
+<li>baseurl</li>
+<li>hasCJKLanguage</li>
+</ul>
+<p>を以下のように修正してください。</p>
+<pre><code class="language-toml">title = &quot;Hugo Academic&quot; # サイト名（なんでもいいです）
+baseurl = &quot;https://github.io/GitHubのユーザ名&quot; # リポジトリ名を「ユーザ名.github.io」にした場合
+# baseurl = &quot;https://github.io/GitHubのユーザ名/リポジトリ名&quot;　※リポジトリ名が「ユーザ名.github.io」じゃない場合
+hasCJKLanguage = true
+</code></pre>
+<br>
+<p>次に、</p>
+<ul>
+<li>publishDir</li>
+<li>relativeulrs</li>
+<li>LanguageCode</li>
+</ul>
+<p>を追加します。以下のように書き足してください（どこでもいいですが、Advanced options belowの下辺りに書いておきましょう）</p>
+<pre><code class="language-toml">publishDir = &quot;docs&quot;
+relativeurls = true
+languageCode = &quot;ja-jp&quot;
+</code></pre>
+<br>
+<h1 id="7-paramstomlを修正する">7. params.tomlを修正する</h1>
+<p>次に、ルートディレクトリにある<code>params.toml</code>を開き、以下の内容を修正します：</p>
+<ul>
+<li><strong>連絡先情報</strong>：<code>Contact details</code>の下に、メールアドレスなどの項目があるので、適宜編集してください。表示したくない項目については、空欄にしてください。</li>
+<li>一番下に<code>ai = false</code>という箇所があるので、それを<code>ai = true</code>にしておく。</li>
+</ul>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>この&quot;English for Writing Research Papers&quot;という本は、非常に参考になりました。昨年、
-<a href="https://www.amazon.co.jp/%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%8c%e6%95%99%e3%81%88%e3%82%8b-%e6%97%a5%e6%9c%ac%e4%ba%ba%e7%a0%94%e7%a9%b6%e8%80%85%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e8%ab%96%e6%96%87%e3%81%ae%e6%9b%b8%e3%81%8d%e6%96%b9%e3%83%bb%e3%82%a2%e3%82%af%e3%82%bb%e3%83%97%e3%83%88%e8%a1%93-KS%e7%a7%91%e5%ad%a6%e4%b8%80%e8%88%ac%e6%9b%b8-%e3%82%a8%e3%82%a4%e3%83%89%e3%83%aa%e3%82%a2%e3%83%b3%e3%83%bb%e3%82%a6%e3%82%a9%e3%83%bc%e3%83%ab%e3%83%af%e3%83%bc%e3%82%af/dp/4065120446" title="Amazon商品ページ" target="_blank" rel="noopener">『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』</a>（講談社）として翻訳されたので、関心のある人は読んでみてください。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>そもそも、色々検索するくらいモチベーションがある人にとって、このページの説明自体どれだけ必要なのか、需要があるのかという気もします。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>リポジトリを自分のコンピュータにコピーし、同期させること。 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -869,7 +898,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/2020/08/28/english-dictionary/&amp;text=%e8%8b%b1%e8%aa%9e%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%aa%e3%81%8d%e3%82%83%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%a8%e3%81%8d%e3%81%ab%e4%bd%bf%e3%81%86%e8%be%9e%e6%9b%b8%e7%b3%bb%e3%83%84%e3%83%bc%e3%83%ab" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/2020/08/29/make-website-with-hugo-blogdown/&amp;text=Hugo%e3%81%a8blogdown%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e6%9c%80%e9%80%9f%e3%81%a7%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%85%ac%e9%96%8b%e3%81%99%e3%82%8b" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter-square"></i>
         </a>
       </li>
@@ -882,7 +911,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/2020/08/28/english-dictionary/&amp;t=%e8%8b%b1%e8%aa%9e%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%aa%e3%81%8d%e3%82%83%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%a8%e3%81%8d%e3%81%ab%e4%bd%bf%e3%81%86%e8%be%9e%e6%9b%b8%e7%b3%bb%e3%83%84%e3%83%bc%e3%83%ab" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020/08/29/make-website-with-hugo-blogdown/&amp;t=Hugo%e3%81%a8blogdown%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e6%9c%80%e9%80%9f%e3%81%a7%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%85%ac%e9%96%8b%e3%81%99%e3%82%8b" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-square"></i>
         </a>
       </li>
@@ -895,7 +924,7 @@
       
       
       <li>
-        <a href="https://social-plugins.line.me/lineit/share?url=/post/2020/08/28/english-dictionary/" target="_blank" rel="noopener" class="share-btn-line">
+        <a href="https://social-plugins.line.me/lineit/share?url=/post/2020/08/29/make-website-with-hugo-blogdown/" target="_blank" rel="noopener" class="share-btn-line">
           <i class="fab fa-line"></i>
         </a>
       </li>
@@ -906,7 +935,7 @@
       
       
       <li>
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=/post/2020/08/28/english-dictionary/&amp;title=%e8%8b%b1%e8%aa%9e%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%aa%e3%81%8d%e3%82%83%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%a8%e3%81%8d%e3%81%ab%e4%bd%bf%e3%81%86%e8%be%9e%e6%9b%b8%e7%b3%bb%e3%83%84%e3%83%bc%e3%83%ab" target="_blank" rel="noopener" class="share-btn-hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=/post/2020/08/29/make-website-with-hugo-blogdown/&amp;title=Hugo%e3%81%a8blogdown%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e6%9c%80%e9%80%9f%e3%81%a7%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%85%ac%e9%96%8b%e3%81%99%e3%82%8b" target="_blank" rel="noopener" class="share-btn-hatena">
           <i class="fa fa-hatena"></i>
         </a>
       </li>
@@ -919,7 +948,7 @@
       
       
       <li>
-        <a href="http://getpocket.com/edit?url=/post/2020/08/28/english-dictionary/&amp;title=%e8%8b%b1%e8%aa%9e%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%aa%e3%81%8d%e3%82%83%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%a8%e3%81%8d%e3%81%ab%e4%bd%bf%e3%81%86%e8%be%9e%e6%9b%b8%e7%b3%bb%e3%83%84%e3%83%bc%e3%83%ab" target="_blank" rel="noopener" class="share-btn-pocket">
+        <a href="http://getpocket.com/edit?url=/post/2020/08/29/make-website-with-hugo-blogdown/&amp;title=Hugo%e3%81%a8blogdown%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e6%9c%80%e9%80%9f%e3%81%a7%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%85%ac%e9%96%8b%e3%81%99%e3%82%8b" target="_blank" rel="noopener" class="share-btn-pocket">
           <i class="fab fa-get-pocket"></i>
         </a>
       </li>
@@ -932,7 +961,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/2020/08/28/english-dictionary/&amp;title=%e8%8b%b1%e8%aa%9e%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%aa%e3%81%8d%e3%82%83%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%a8%e3%81%8d%e3%81%ab%e4%bd%bf%e3%81%86%e8%be%9e%e6%9b%b8%e7%b3%bb%e3%83%84%e3%83%bc%e3%83%ab" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020/08/29/make-website-with-hugo-blogdown/&amp;title=Hugo%e3%81%a8blogdown%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e6%9c%80%e9%80%9f%e3%81%a7%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%85%ac%e9%96%8b%e3%81%99%e3%82%8b" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -945,7 +974,7 @@
       
       
       <li>
-        <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=/post/2020/08/28/english-dictionary/&amp;title=%e8%8b%b1%e8%aa%9e%e3%82%92%e6%9b%b8%e3%81%8b%e3%81%aa%e3%81%8d%e3%82%83%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%a8%e3%81%8d%e3%81%ab%e4%bd%bf%e3%81%86%e8%be%9e%e6%9b%b8%e7%b3%bb%e3%83%84%e3%83%bc%e3%83%ab" target="_blank" rel="noopener" class="share-btn-tumblr">
+        <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=/post/2020/08/29/make-website-with-hugo-blogdown/&amp;title=Hugo%e3%81%a8blogdown%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e6%9c%80%e9%80%9f%e3%81%a7%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e5%85%ac%e9%96%8b%e3%81%99%e3%82%8b" target="_blank" rel="noopener" class="share-btn-tumblr">
           <i class="fab fa-tumblr-square"></i>
         </a>
       </li>
@@ -1119,7 +1148,7 @@
       
       <li><a href="/post/2020/08/30/japanese-writing-book/">日本語を書く上で参考になる本</a></li>
       
-      <li><a href="/post/2020/08/29/make-website-with-hugo-blogdown/">Hugoとblogdownを使って最速でウェブサイトを公開する</a></li>
+      <li><a href="/post/2020/08/28/english-dictionary/">英語を書かなきゃいけないときに使う辞書系ツール</a></li>
       
       <li><a href="/post/2020/08/21/hugo-academic/">Hugo Academicでウェブサイトをリニューアルしました</a></li>
       

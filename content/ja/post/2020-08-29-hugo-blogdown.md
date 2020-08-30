@@ -19,6 +19,8 @@ toc: true
 draft: true
 ---
 
+{{%toc%}}
+
 # はじめに
 
 [先日の投稿](https://kirikuroda.github.io/post/2020/08/21/hugo-academic/ "「Hugo Academicでウェブサイトをリニューアルしました」")に「サイト構築の詳しい手順は説明しません」と書きましたが、気が変わったので、必要最低限の手順を残しておくことにしました。

@@ -2,22 +2,234 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/post/</link>
-      <atom:link href="https://kirikuroda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Blog</title>
-      <link>https://kirikuroda.github.io/post/</link>
+      <link>/post/</link>
     </image>
     
     <item>
+      <title>日本語を書く上で参考になる本</title>
+      <link>/post/2020/08/30/japanese-writing-book/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020/08/30/japanese-writing-book/</guid>
+      <description>&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#理論&#34;&gt;理論&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#新版日本語の作文技術&#34;&gt;『＜新版＞日本語の作文技術』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#理科系の作文技術&#34;&gt;『理科系の作文技術』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#レポートの組み立て方&#34;&gt;『レポートの組み立て方』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#論理が伝わる世界標準の書く技術&#34;&gt;『論理が伝わる　世界標準の「書く技術」』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#文章力の基本&#34;&gt;『文章力の基本』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#文章力を伸ばす&#34;&gt;『文章力を伸ばす』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#初心者からプロまで一生使える伝わる文章の基本&#34;&gt;『初心者からプロまで一生使える　伝わる文章の基本』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#書きたいことがすらすら書ける接続詞の技術&#34;&gt;『書きたいことがすらすら書ける！「接続詞」の技術」』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#技術者のためのテクニカルライティング入門講座&#34;&gt;『技術者のためのテクニカルライティング入門講座』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#記者ハンドブック第13版&#34;&gt;『記者ハンドブック　第13版』&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#分かりやすい公用文の書き方改訂版増補&#34;&gt;『分かりやすい公用文の書き方　改訂版（増補）』&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;p&gt;あいう&lt;/p&gt;
+&lt;h1 id=&#34;理論&#34;&gt;理論&lt;/h1&gt;
+&lt;h2 id=&#34;新版日本語の作文技術&#34;&gt;『＜新版＞日本語の作文技術』&lt;/h2&gt;
+&lt;p&gt;本多勝一『
+&lt;a href=&#34;https://publications.asahi.com/ecs/detail/?item_id=17593&#34; title=&#34;＜新版＞日本語の作文技術&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;＜新版＞日本語の作文技術&lt;/a&gt;』（朝日新聞出版、2015）&lt;/p&gt;
+&lt;h2 id=&#34;理科系の作文技術&#34;&gt;『理科系の作文技術』&lt;/h2&gt;
+&lt;p&gt;木下是雄『
+&lt;a href=&#34;https://www.chuko.co.jp/shinsho/1981/09/100624.html&#34; title=&#34;理科系の作文技術&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;理科系の作文技術&lt;/a&gt;』（中央公論新社、1981）&lt;/p&gt;
+&lt;h2 id=&#34;レポートの組み立て方&#34;&gt;『レポートの組み立て方』&lt;/h2&gt;
+&lt;p&gt;木下是雄『
+&lt;a href=&#34;https://www.chikumashobo.co.jp/product/9784480081216/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;レポートの組み立て方&lt;/a&gt;』（筑摩書房、1994）&lt;/p&gt;
+&lt;h2 id=&#34;論理が伝わる世界標準の書く技術&#34;&gt;『論理が伝わる　世界標準の「書く技術」』&lt;/h2&gt;
+&lt;p&gt;倉島保美『
+&lt;a href=&#34;https://bookclub.kodansha.co.jp/product?item=0000194754&#34; title=&#34;論理が伝わる 世界標準の「書く技術」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;論理が伝わる　世界標準の「書く技術」&lt;/a&gt;』（講談社、2012）&lt;/p&gt;
+&lt;h2 id=&#34;文章力の基本&#34;&gt;『文章力の基本』&lt;/h2&gt;
+&lt;p&gt;阿部紘久『
+&lt;a href=&#34;https://www.njg.co.jp/book/9784534045881/&#34; title=&#34;文章力の基本&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章力の基本&lt;/a&gt;』（日本実業出版社、2009）&lt;/p&gt;
+&lt;h2 id=&#34;文章力を伸ばす&#34;&gt;『文章力を伸ばす』&lt;/h2&gt;
+&lt;p&gt;阿部紘久『
+&lt;a href=&#34;https://www.njg.co.jp/book/9784534055002/&#34; title=&#34;文章力を伸ばす&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章力を伸ばす&lt;/a&gt;』（日本実業出版社、2017）&lt;/p&gt;
+&lt;h2 id=&#34;初心者からプロまで一生使える伝わる文章の基本&#34;&gt;『初心者からプロまで一生使える　伝わる文章の基本』&lt;/h2&gt;
+&lt;p&gt;『
+&lt;a href=&#34;http://www.horei.com/seigo_1733.html&#34; title=&#34;初心者からプロまで一生使える　伝わる文章の基本&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;初心者からプロまで一生使える　伝わる文章の基本&lt;/a&gt;』&lt;/p&gt;
+&lt;h2 id=&#34;書きたいことがすらすら書ける接続詞の技術&#34;&gt;『書きたいことがすらすら書ける！「接続詞」の技術」』&lt;/h2&gt;
+&lt;p&gt;石黒圭『
+&lt;a href=&#34;https://jitsumu.hondana.jp/book/b239603.html&#34; title=&#34;書きたいことがすらすら書ける！「接続詞」の技術&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;書きたいことがすらすら書ける！「接続詞」の技術」&lt;/a&gt;』（実務教育出版、2016）&lt;/p&gt;
+&lt;h2 id=&#34;技術者のためのテクニカルライティング入門講座&#34;&gt;『技術者のためのテクニカルライティング入門講座』&lt;/h2&gt;
+&lt;p&gt;高橋慈子『
+&lt;a href=&#34;https://www.shoeisha.co.jp/book/detail/9784798157191&#34; title=&#34;技術者のためのテクニカルライティング入門講座&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;技術者のためのテクニカルライティング入門講座&lt;/a&gt;』（翔泳社、2018）&lt;/p&gt;
+&lt;h2 id=&#34;記者ハンドブック第13版&#34;&gt;『記者ハンドブック　第13版』&lt;/h2&gt;
+&lt;p&gt;一般社団法人共同通信社『
+&lt;a href=&#34;https://www.kyodo.co.jp/books/isbn/978-4-7641-0687-1/&#34; title=&#34;記者ハンドブック　第13版&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;記者ハンドブック　第13版&lt;/a&gt;』（共同通信社、2016）&lt;/p&gt;
+&lt;h2 id=&#34;分かりやすい公用文の書き方改訂版増補&#34;&gt;『分かりやすい公用文の書き方　改訂版（増補）』&lt;/h2&gt;
+&lt;p&gt;磯崎陽輔『
+&lt;a href=&#34;https://shop.gyosei.jp/products/detail/9768&#34; title=&#34;分かりやすい公用文の書き方　改訂版（増補）&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;分かりやすい公用文の書き方　改訂版（増補）&lt;/a&gt;』（ぎょうせい、2018）&lt;/p&gt;
+&lt;p&gt;ところでこの本のタイトルには、（1）「分かりやすい公用文」の書き方、（2）分かりやすい「（公用文の）書き方」なのか判別できない。本の内容からしたら（1）「分かりやすい公用文」の書き方、なのだろうけれど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugoとblogdownを使って最速でウェブサイトを公開する</title>
+      <link>/post/2020/08/29/make-website-with-hugo-blogdown/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020/08/29/make-website-with-hugo-blogdown/</guid>
+      <description>&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#このページで説明することしないこと&#34;&gt;このページで説明すること・しないこと&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-githubでリポジトリを作る&#34;&gt;1. GitHubでリポジトリを作る&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-リポジトリ設定の修正&#34;&gt;2. リポジトリ設定の修正&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-リポジトリをクローンする&#34;&gt;3. リポジトリをクローンする&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-rとrstudioをインストールする&#34;&gt;4. RとRStudioをインストールする&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-rでblogdownパッケージをインストールする&#34;&gt;5. Rでblogdownパッケージをインストールする&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-configtomlを修正する&#34;&gt;6. config.tomlを修正する&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-paramstomlを修正する&#34;&gt;7. params.tomlを修正する&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://kirikuroda.github.io/post/2020/08/21/hugo-academic/&#34; title=&#34;「Hugo Academicでウェブサイトをリニューアルしました」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;先日の投稿&lt;/a&gt;に「サイト構築の詳しい手順は説明しません」と書きましたが、気が変わったので、必要最低限の手順を残しておくことにしました。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;このページで説明することしないこと&#34;&gt;このページで説明すること・しないこと&lt;/h1&gt;
+&lt;p&gt;表題のとおり、このページではHugoとblogdownを使って「&lt;strong&gt;最速でウェブサイトを公開する&lt;/strong&gt;」ことを目指します。そのため、作ったウェブサイトには必要最低限の情報、すなわち、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自己紹介&lt;/li&gt;
+&lt;li&gt;論文情報／業績&lt;/li&gt;
+&lt;li&gt;連絡先／SNSのリンク&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;しか載せません。それ以外の情報や手順、たとえば、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ブログ投稿&lt;/li&gt;
+&lt;li&gt;多言語対応&lt;/li&gt;
+&lt;li&gt;CSS（見た目）のカスタマイズ&lt;/li&gt;
+&lt;li&gt;デモページの削除　etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;については説明しません。このページを参考にしてウェブサイトを作ろうとするくらいモチベーションがあるならば、そこまでの説明が要らないような気もするからです&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;また、それぞれの手順が何を意味しているのか（例：なぜGitHubでリポジトリを作らなきゃいけないか）についても、詳しくは説明しません。これも最速のためです。&lt;/p&gt;
+&lt;p&gt;それでは説明スタートです。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;1-githubでリポジトリを作る&#34;&gt;1. GitHubでリポジトリを作る&lt;/h1&gt;
+&lt;p&gt;**GitHubでリポジトリを作ってください。**初めてリポジトリを作るという方は、
+&lt;a href=&#34;https://qiita.com/kooohei/items/361da3c9dbb6e0c7946b&#34; title=&#34;GitHubアカウント作成とリポジトリの作成手順&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;『GitHubアカウント作成とリポジトリの作成手順』&lt;/a&gt;を読んでください。&lt;/p&gt;
+&lt;p&gt;設定画面での注意点は以下の2つです：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;リポジトリ作成時の設定はすべてデフォルトのまま&lt;/strong&gt;にしてください。&lt;/li&gt;
+&lt;li&gt;**リポジトリ名は「（GitHubの）ユーザ名.github.io」**がおすすめです。この場合、できあがったウェブサイトのURLは「https://ユーザ名.github.io」になります。そうしなかった場合、ウェブサイトのURLは「https://ユーザ名.github.io/リポジトリ名」になります。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;2-リポジトリ設定の修正&#34;&gt;2. リポジトリ設定の修正&lt;/h1&gt;
+&lt;p&gt;リポジトリを作成したら、&lt;code&gt;Settings&lt;/code&gt;をクリックしてください。&lt;/p&gt;
+&lt;p&gt;下の方にある&lt;code&gt;GitHub Pages&lt;/code&gt;という項目を見つけたら、&lt;code&gt;None&lt;/code&gt;を&lt;code&gt;Master&lt;/code&gt;に、&lt;code&gt;/(root)&lt;/code&gt;を&lt;code&gt;/docs&lt;/code&gt;に変更してください。&lt;/p&gt;
+&lt;p&gt;その後、右にある&lt;code&gt;Save&lt;/code&gt;をクリックしたら、修正完了です。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;3-リポジトリをクローンする&#34;&gt;3. リポジトリをクローンする&lt;/h1&gt;
+&lt;p&gt;**上で作ったリポジトリをクローン&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;します。**初めての方は、
+&lt;a href=&#34;https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/cloning-a-repository&#34; title=&#34;リポジトリをクローンする&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;『リポジトリをクローンする』&lt;/a&gt;を読んでください。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;4-rとrstudioをインストールする&#34;&gt;4. RとRStudioをインストールする&lt;/h1&gt;
+&lt;p&gt;**RとRStudioをインストールします。**初めての方は、
+&lt;a href=&#34;https://qiita.com/hujuu/items/ddd66ae8e6f3f989f2c0&#34; title=&#34;Rと R Studioのインストール&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;『R と R Studioのインストール』&lt;/a&gt;を読んでください。インストール済みの方は、スキップしてください。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;5-rでblogdownパッケージをインストールする&#34;&gt;5. Rでblogdownパッケージをインストールする&lt;/h1&gt;
+&lt;p&gt;RStudioを立ち上げ、以下のコードをコンソールで実行します。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;install.packages(&amp;quot;blogdown&amp;quot;) # blogdownのインストール
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;インストールが終わったら、以下の手順でRプロジェクトを作ります。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;File &amp;gt; New Project &amp;gt; New Directory &amp;gt; Website using blogdown&lt;/code&gt;をクリック&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;上で作ったGitHubのリポジトリ名&lt;/strong&gt;を&lt;code&gt;Directory name&lt;/code&gt;に入力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クローンしたリポジトリの1個上のディレクトリ&lt;/strong&gt;を&lt;code&gt;Create project as subdirectory of&lt;/code&gt;で指定&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Hugo theme&lt;/code&gt;で好きなテーマを指定。ここでは&lt;code&gt;gcushen/hugo-academic&lt;/code&gt;とします&lt;/li&gt;
+&lt;li&gt;その他はデフォルトのまま&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Create Project&lt;/code&gt;をクリック&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;6-configtomlを修正する&#34;&gt;6. config.tomlを修正する&lt;/h1&gt;
+&lt;p&gt;Rプロジェクトができたら、ルートディレクトリにある&lt;code&gt;config.toml&lt;/code&gt;を開き、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;li&gt;baseurl&lt;/li&gt;
+&lt;li&gt;hasCJKLanguage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を以下のように修正してください。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;title = &amp;quot;Hugo Academic&amp;quot; # サイト名（なんでもいいです）
+baseurl = &amp;quot;https://github.io/GitHubのユーザ名&amp;quot; # リポジトリ名を「ユーザ名.github.io」にした場合
+# baseurl = &amp;quot;https://github.io/GitHubのユーザ名/リポジトリ名&amp;quot;　※リポジトリ名が「ユーザ名.github.io」じゃない場合
+hasCJKLanguage = true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;p&gt;次に、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;publishDir&lt;/li&gt;
+&lt;li&gt;relativeulrs&lt;/li&gt;
+&lt;li&gt;LanguageCode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を追加します。以下のように書き足してください（どこでもいいですが、Advanced options belowの下辺りに書いておきましょう）&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;publishDir = &amp;quot;docs&amp;quot;
+relativeurls = true
+languageCode = &amp;quot;ja-jp&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;7-paramstomlを修正する&#34;&gt;7. params.tomlを修正する&lt;/h1&gt;
+&lt;p&gt;次に、ルートディレクトリにある&lt;code&gt;params.toml&lt;/code&gt;を開き、以下の内容を修正します：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;連絡先情報&lt;/strong&gt;：&lt;code&gt;Contact details&lt;/code&gt;の下に、メールアドレスなどの項目があるので、適宜編集してください。表示したくない項目については、空欄にしてください。&lt;/li&gt;
+&lt;li&gt;一番下に&lt;code&gt;ai = false&lt;/code&gt;という箇所があるので、それを&lt;code&gt;ai = true&lt;/code&gt;にしておく。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;そもそも、色々検索するくらいモチベーションがある人にとって、このページの説明自体どれだけ必要なのか、需要があるのかという気もします。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;リポジトリを自分のコンピュータにコピーし、同期させること。 &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
       <title>英語を書かなきゃいけないときに使う辞書系ツール</title>
-      <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
+      <link>/post/2020/08/28/english-dictionary/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
-      <description>&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
+      <guid>/post/2020/08/28/english-dictionary/</guid>
+      <description>&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#英英類語辞典&#34;&gt;英英・類語辞典&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#lexico&#34;&gt;LEXICO&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#oxford-learners-dictionaries&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#コロケーション&#34;&gt;コロケーション&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#just-the-word&#34;&gt;Just the Word&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#netspeak&#34;&gt;Netspeak&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#フレーズ集&#34;&gt;フレーズ集&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#useful-phrases&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
 &lt;p&gt;タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。&lt;/p&gt;
 &lt;p&gt;大事なのは、&lt;strong&gt;使う辞書をあらかじめ決めておく&lt;/strong&gt;ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。&lt;/p&gt;
 &lt;p&gt;辞書系ツールを選ぶに当たり、以下の3つを選定基準としています。&lt;/p&gt;
@@ -75,20 +287,35 @@
     
     <item>
       <title>大学院生が（いまさら）買ってよかったもの8選</title>
-      <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
+      <link>/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
-      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+      <guid>/post/2020/08/25/mustbuy-2020-summer/</guid>
+      <description>&lt;h2&gt;目次&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#iphone-se第2世代&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#apple-watch-series-3&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#bellroyのスマホケース&#34;&gt;Bellroyのスマホケース&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#airpods-pro&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#クリアサングラス&#34;&gt;クリアサングラス&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#thermosの真空断熱タンブラー&#34;&gt;THERMOSの真空断熱タンブラー&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#洗顔ネット&#34;&gt;洗顔ネット&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#realforceのキーボード&#34;&gt;REALFORCEのキーボード&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;1-iphone-se第2世代&#34;&gt;1. iPhone SE（第2世代）&lt;/h1&gt;
+&lt;h1 id=&#34;iphone-se第2世代&#34;&gt;iPhone SE（第2世代）&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;高校の頃から10年近く使ってきたガラケーにガタが来ていました。これまではiPod touchやiPadでごまかしてきたけれど、ようやく腹をくくってiPhoneを買うことにしました。おおむね便利です。&lt;/p&gt;
 &lt;p&gt;しかし、iPhoneを導入してから数日後、外出先で通知を確認するのがめちゃくちゃめんどくさい、というか、通知を見逃しやすいということに気がつきました。ガラケーと違い、通知のバイブレーションが短くて弱すぎたのです。&lt;/p&gt;
 &lt;p&gt;この「通知気づきにくい問題」に対処するため、Apple Watchを買いました。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;2-apple-watch-series-3&#34;&gt;2. Apple Watch Series 3&lt;/h1&gt;
+&lt;h1 id=&#34;apple-watch-series-3&#34;&gt;Apple Watch Series 3&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;買う当初は「スマートウォッチって贅沢すぎでは？」と思っていましが、使っているうちに、この1年でベスト3くらいの買い物だと考えを改めることになりました。以下の3つが特に便利です。&lt;/p&gt;
@@ -105,31 +332,31 @@
 &lt;/ul&gt;
 &lt;p&gt;逆に、スマートウォッチを持っていない人は、どうやって通知を確認しているのでしょうか？　いちいちスマホを開くのが無駄だと感じている場合は、購入を考えても良いかもしれません。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;3-bellroyのスマホケース&#34;&gt;3. Bellroyのスマホケース&lt;/h1&gt;
+&lt;h1 id=&#34;bellroyのスマホケース&#34;&gt;Bellroyのスマホケース&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&#34; title=&#34;Phone Case – 3 Card&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phone Case – 3 Card&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;名前の通り、背面にカードを3枚入れられるスマホケースです。このケースの中に、クレジットカード・学生証・大学生協の組合員証を入れています。これのおかげで財布をほぼ使わなくなったし、近場に行くときには財布を持つことすらなくなりました。&lt;/p&gt;
 &lt;p&gt;このスマホケースは10000円します。カードを入れられるスマホケースで、もっと安いものはいくらでも見つかると思います。実際、私も「さすがに贅沢では」と悩みましたが、ふだん安物買いの銭失いで失敗することが多いので、思い切って買うことにしました。長く使いたいです。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;4-airpods-pro&#34;&gt;4. AirPods Pro&lt;/h1&gt;
+&lt;h1 id=&#34;airpods-pro&#34;&gt;AirPods Pro&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;めちゃくちゃ良いです。ノイズキャンセリング性能が良いのはもちろんのこと、装着感が軽いのが何より素晴らしいです。自分は音楽をほぼ聞かないし、かなりいい値段もするけれど、それでも買って良かったと思います。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;5-クリアサングラス&#34;&gt;5. クリアサングラス&lt;/h1&gt;
+&lt;h1 id=&#34;クリアサングラス&#34;&gt;クリアサングラス&lt;/h1&gt;
 &lt;p&gt;日差しがまぶしすぎるので、例年、夏になるとサングラスをかけています。しかし、今年はマスクを着けなければいけないので、サングラスをかけると不審者に見えてしまうという問題が生じました。&lt;/p&gt;
 &lt;p&gt;そこで、クリアサングラス（透明なサングラス）を買いました。見た目にはふつうの眼鏡なので、マスクと合わせても不審者感は全くないです。地味にいい買い物でした。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;6-thermosの真空断熱タンブラー&#34;&gt;6. THERMOSの真空断熱タンブラー&lt;/h1&gt;
+&lt;h1 id=&#34;thermosの真空断熱タンブラー&#34;&gt;THERMOSの真空断熱タンブラー&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;真空断熱タンブラー&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;真空断熱タンブラーこそ、「地味に生活のクオリティを上げてくれるアイテム」の筆頭だと思います。これまで2年くらい、サーモスのステンレス製タンブラーを使ってきました。今回買い替えたのは、（おそらく）経年劣化のために保冷効果が弱まってきたからです。&lt;/p&gt;
 &lt;p&gt;今までのステンレス製とは違い、今回買ったのは陶器っぽいマットな仕上がりで、飲み口も柔らかくなっています。他にも色や素材にバリエーションがあるので、気になった方は調べてみてください。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;7-洗顔ネット&#34;&gt;7. 洗顔ネット&lt;/h1&gt;
+&lt;h1 id=&#34;洗顔ネット&#34;&gt;洗顔ネット&lt;/h1&gt;
 &lt;p&gt;持っている人からしたら当たり前のことですが、洗顔ネットを使うと「どこにこんな泡があったんだ！？」というレベルでもこもこ泡立ちます。はじめて使ったとき、この数ヶ月で一番びっくりしました。値段も全然高くないし、一度買えば数年から一生は使えると思うので、買ってよかったです。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;8-realforceのキーボード&#34;&gt;8. REALFORCEのキーボード&lt;/h1&gt;
+&lt;h1 id=&#34;realforceのキーボード&#34;&gt;REALFORCEのキーボード&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REALFORCE TKL SA for Mac&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;REALFORCEというのは、有名なキーボードブランドの1つです。HHKBというブランドもありますが、個人的には、REALFORCEのほうが軽くて好みです。&lt;/p&gt;
@@ -143,9 +370,9 @@
     
     <item>
       <title>データの可視化 まとめ</title>
-      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
+      <link>/post/2020/08/22/datareporting/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
+      <guid>/post/2020/08/22/datareporting/</guid>
       <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
 &lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
@@ -153,9 +380,9 @@
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
+      <link>/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
+      <guid>/post/2020/08/21/hugo-academic/</guid>
       <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
 &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;

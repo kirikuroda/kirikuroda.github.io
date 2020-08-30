@@ -18,13 +18,15 @@ toc: true
 draft: false
 ---
 
+{{%toc%}}
+
 # はじめに
 
 10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。
 
 <br>
 
-# 1. iPhone SE（第2世代）
+# iPhone SE（第2世代）
 
 [iPhone SE（第2世代）](https://www.apple.com/jp/iphone-se/ "iPhone SE")
 
@@ -36,7 +38,7 @@ draft: false
 
 <br>
 
-# 2. Apple Watch Series 3
+# Apple Watch Series 3
 
 [Apple Watch Series 3](https://www.apple.com/jp/apple-watch-series-3/ "Apple Watch Series 3")
 
@@ -51,7 +53,7 @@ draft: false
 
 <br>
 
-# 3. Bellroyのスマホケース
+# Bellroyのスマホケース
 
 [Phone Case – 3 Card](https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0 "Phone Case – 3 Card")
 
@@ -61,7 +63,7 @@ draft: false
 
 <br>
 
-# 4. AirPods Pro
+# AirPods Pro
 
 [AirPods Pro](https://www.apple.com/jp/airpods-pro/ "AirPods Pro")
 
@@ -69,7 +71,7 @@ draft: false
 
 <br>
 
-# 5. クリアサングラス
+# クリアサングラス
 
 日差しがまぶしすぎるので、例年、夏になるとサングラスをかけています。しかし、今年はマスクを着けなければいけないので、サングラスをかけると不審者に見えてしまうという問題が生じました。
 
@@ -77,7 +79,7 @@ draft: false
 
 <br>
 
-# 6. THERMOSの真空断熱タンブラー
+# THERMOSの真空断熱タンブラー
 
 [真空断熱タンブラー](https://www.shopthermos.jp/shop/g/g350059280500/ "真空断熱タンブラー JDM-420 ブラック")
 
@@ -87,13 +89,13 @@ draft: false
 
 <br>
 
-# 7. 洗顔ネット
+# 洗顔ネット
 
 持っている人からしたら当たり前のことですが、洗顔ネットを使うと「どこにこんな泡があったんだ！？」というレベルでもこもこ泡立ちます。はじめて使ったとき、この数ヶ月で一番びっくりしました。値段も全然高くないし、一度買えば数年から一生は使えると思うので、買ってよかったです。
 
 <br>
 
-# 8. REALFORCEのキーボード
+# REALFORCEのキーボード
 
 [REALFORCE TKL SA for Mac](https://www.realforce.co.jp/products/R2TLSA-US3M-WH/ "REALFORCE TKL SA for Mac / R2TLSA-US3M-WH")
 

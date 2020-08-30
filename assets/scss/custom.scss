@@ -514,10 +514,22 @@ a#back_to_top.docs-toc-title {
 .dark a#back_to_top.docs-toc-title {
   color: white;
   text-decoration: none;
-  font-weight: 400;
 }
 
 #TableOfContents {
   padding-left: 0;
   border-left: 1px solid rgb(47, 47, 47);
+}
+
+.dark #TableOfContents {
+  padding-left: 0;
+  border-left: 1px solid white;
+}
+
+.dark nav#TableOfContents li a.active, #TableOfContents li a.active {
+  font-weight: 700;
+}
+
+.see-all a:hover {
+  text-decoration: underline;
 }
