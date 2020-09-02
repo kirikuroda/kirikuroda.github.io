@@ -2,7 +2,7 @@
 title: 需要あるかわからないPsychoPy Coderチュートリアル
 author: ''
 date: '2020-09-02'
-slug: psychopy-coder-demo
+slug: psychopy-coder-tutorial
 categories:
   - 実験
 tags:
