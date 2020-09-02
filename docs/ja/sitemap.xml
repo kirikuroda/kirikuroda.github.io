@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/post/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/categories/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,6 +45,16 @@
                 hreflang="ja"
                 href="https://kirikuroda.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/categories/%E5%AE%9F%E9%A8%93/</loc>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-demo/</loc>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
