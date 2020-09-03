@@ -258,7 +258,7 @@
   
   <meta property="og:site_name" content="Kiri Kuroda">
   <meta property="og:url" content="https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/">
-  <meta property="og:title" content="需要あるかわからないPsychoPy Coderチュートリアル | Kiri Kuroda">
+  <meta property="og:title" content="PsychoPy Coderチュートリアル | Kiri Kuroda">
   <meta property="og:description" content="いきなりやってみるタイプのCoderチュートリアル"><meta property="og:image" content="https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ja-jp">
   
@@ -291,7 +291,7 @@
     "@type": "WebPage",
     "@id": "https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/"
   },
-  "headline": "需要あるかわからないPsychoPy Coderチュートリアル",
+  "headline": "PsychoPy Coderチュートリアル",
   
   "datePublished": "2020-09-02T00:00:00Z",
   "dateModified": "2020-09-02T00:00:00Z",
@@ -327,7 +327,7 @@
 
 
 
-  <title>需要あるかわからないPsychoPy Coderチュートリアル | Kiri Kuroda</title>
+  <title>PsychoPy Coderチュートリアル | Kiri Kuroda</title>
 
 </head>
 
@@ -674,7 +674,28 @@
         <li><a href="#いきなりセットアップ">いきなりセットアップ</a></li>
         <li><a href="#いきなり実験">いきなり実験</a></li>
         <li><a href="#実験の構造">実験の構造</a></li>
-        <li><a href="#解説">解説</a></li>
+      </ul>
+    </li>
+    <li><a href="#解説">解説</a>
+      <ul>
+        <li><a href="#ダイアログボックスを呈示する3846行目">ダイアログボックスを呈示する（38–46行目）</a></li>
+        <li><a href="#データファイルの名前を作る5267行目">データファイルの名前を作る（52–67行目）</a></li>
+        <li><a href="#クイズの項目を読み込む6970行目">クイズの項目を読み込む（69–70行目）</a></li>
+        <li><a href="#画面マウスキーボードを設定する7680行目">画面、マウス、キーボードを設定する（76–80行目）</a></li>
+        <li><a href="#都市名刺激を設定する86103行目">都市名刺激を設定する（86–103行目）</a></li>
+        <li><a href="#キーを設定する105112行目">キーを設定する（105–112行目）</a></li>
+        <li><a href="#教示を定義する114121行目">教示を定義する（114–121行目）</a></li>
+        <li><a href="#startボタンを定義する123129行目">Startボタンを定義する（123–129行目）</a></li>
+        <li><a href="#その他のテキスト刺激や図形を定義する131157行目">その他のテキスト刺激や図形を定義する（131–157行目）</a></li>
+        <li><a href="#ログファイルを設定する163164行目">ログファイルを設定する（163–164行目）</a></li>
+        <li><a href="#教示を呈示する170190行目">教示を呈示する（170–190行目）</a></li>
+        <li><a href="#csvファイルの1行目に変数名を書き込む192199行目">CSVファイルの1行目に変数名を書き込む（192–199行目）</a></li>
+        <li><a href="#カーソルを消して課題を始める205215行目">カーソルを消して課題を始める（205–215行目）</a></li>
+        <li><a href="#都市名を呈示217244行目">都市名を呈示（217–244行目）</a></li>
+        <li><a href="#開始時間を記録しキーボードをリセット246251行目">開始時間を記録し、キーボードをリセット（246–251行目）</a></li>
+        <li><a href="#回答を待つ253318行目">回答を待つ（253–318行目）</a></li>
+        <li><a href="#フィードバックをし各試行のデータを記録320338行目">フィードバックをし、各試行のデータを記録（320–338行目）</a></li>
+        <li><a href="#実験終了344355行目">実験終了（344–355行目）</a></li>
       </ul>
     </li>
     <li><a href="#おわりに">おわりに</a></li>
@@ -704,7 +725,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>需要あるかわからないPsychoPy Coderチュートリアル</h1>
+  <h1>PsychoPy Coderチュートリアル</h1>
 
   
   <p class="page-subtitle">いきなりやってみるタイプのCoderチュートリアル</p>
@@ -782,7 +803,28 @@
         <li><a href="#いきなりセットアップ">いきなりセットアップ</a></li>
         <li><a href="#いきなり実験">いきなり実験</a></li>
         <li><a href="#実験の構造">実験の構造</a></li>
-        <li><a href="#解説">解説</a></li>
+      </ul>
+    </li>
+    <li><a href="#解説">解説</a>
+      <ul>
+        <li><a href="#ダイアログボックスを呈示する3846行目">ダイアログボックスを呈示する（38–46行目）</a></li>
+        <li><a href="#データファイルの名前を作る5267行目">データファイルの名前を作る（52–67行目）</a></li>
+        <li><a href="#クイズの項目を読み込む6970行目">クイズの項目を読み込む（69–70行目）</a></li>
+        <li><a href="#画面マウスキーボードを設定する7680行目">画面、マウス、キーボードを設定する（76–80行目）</a></li>
+        <li><a href="#都市名刺激を設定する86103行目">都市名刺激を設定する（86–103行目）</a></li>
+        <li><a href="#キーを設定する105112行目">キーを設定する（105–112行目）</a></li>
+        <li><a href="#教示を定義する114121行目">教示を定義する（114–121行目）</a></li>
+        <li><a href="#startボタンを定義する123129行目">Startボタンを定義する（123–129行目）</a></li>
+        <li><a href="#その他のテキスト刺激や図形を定義する131157行目">その他のテキスト刺激や図形を定義する（131–157行目）</a></li>
+        <li><a href="#ログファイルを設定する163164行目">ログファイルを設定する（163–164行目）</a></li>
+        <li><a href="#教示を呈示する170190行目">教示を呈示する（170–190行目）</a></li>
+        <li><a href="#csvファイルの1行目に変数名を書き込む192199行目">CSVファイルの1行目に変数名を書き込む（192–199行目）</a></li>
+        <li><a href="#カーソルを消して課題を始める205215行目">カーソルを消して課題を始める（205–215行目）</a></li>
+        <li><a href="#都市名を呈示217244行目">都市名を呈示（217–244行目）</a></li>
+        <li><a href="#開始時間を記録しキーボードをリセット246251行目">開始時間を記録し、キーボードをリセット（246–251行目）</a></li>
+        <li><a href="#回答を待つ253318行目">回答を待つ（253–318行目）</a></li>
+        <li><a href="#フィードバックをし各試行のデータを記録320338行目">フィードバックをし、各試行のデータを記録（320–338行目）</a></li>
+        <li><a href="#実験終了344355行目">実験終了（344–355行目）</a></li>
       </ul>
     </li>
     <li><a href="#おわりに">おわりに</a></li>
@@ -822,7 +864,19 @@
 <h2 id="このチュートリアルの特色">このチュートリアルの特色（？）</h2>
 <p>このチュートリアルでは、Pythonの初歩の説明をすっ飛ばします。上で紹介した記事も含め、もっと優れた資料や書籍が山のようにあるからです。</p>
 <p>その代わりに、<strong>（社会）心理学の実験で割と使うと思われる機能</strong>に絞って話を進めます。くわえてこのチュートリアルでは、<strong>最初から完成したコードを見て</strong>、それを順に解説していくという方針を取ります。「該当するコードをコピペしていけば、自分の実験も書けるんじゃないか？」と思ってもらえることを狙っています。</p>
-<p>この試みがどこまでうまくいくかわかりませんが、とりあえずセットアップしてみましょう。</p>
+<p>主に説明するのは以下の機能です：</p>
+<ul>
+<li>ダイアログボックス</li>
+<li>データをCSVに記録</li>
+<li>テキスト刺激の呈示</li>
+<li>キー押しの検出</li>
+<li>クリックの検出</li>
+<li>反応時間の計測</li>
+<li>マウスやキー押しに応じて刺激の色を変える</li>
+<li>反応に応じたフィードバック　etc.</li>
+</ul>
+<br>
+<p>このチュートリアルの試みがどこまでうまくいくかわかりませんが、とりあえずセットアップしてみましょう。</p>
 <br>
 <h1 id="いきなりやってみるタイプのチュートリアル">いきなりやってみるタイプのチュートリアル</h1>
 <h2 id="いきなりセットアップ">いきなりセットアップ</h2>
@@ -869,8 +923,8 @@ FileNotFoundError: [Errno 2] No such file or directory
 <br>
 <p>では、コードを順になぞっていきます。</p>
 <br>
-<h2 id="解説">解説</h2>
-<h3 id="ダイアログボックスを呈示する3846行目">ダイアログボックスを呈示する（38–46行目）</h3>
+<h1 id="解説">解説</h1>
+<h2 id="ダイアログボックスを呈示する3846行目">ダイアログボックスを呈示する（38–46行目）</h2>
 <pre><code class="language-python"># ダイアログボックスを呈示し、参加者の情報を入力
 subj_info = {&quot;subj_id&quot;: &quot;&quot;, &quot;add_here_what_you_want&quot;: &quot;&quot;}
 dialogue_box = gui.DlgFromDict(subj_info, order = [&quot;subj_id&quot;, &quot;add_here_what_you_want&quot;])
@@ -884,7 +938,7 @@ else:
 <p>参加者の情報を入力するためのダイアログボックスを呈示しています。</p>
 <p><code>add_here_what_you_want</code>と書いてあるように、他に記録したい情報がある場合は、後ろに付け足してください。</p>
 <br>
-<h3 id="データファイルの名前を作る5267行目">データファイルの名前を作る（52–67行目）</h3>
+<h2 id="データファイルの名前を作る5267行目">データファイルの名前を作る（52–67行目）</h2>
 <pre><code class="language-python"># 現在日時を記録
 exp_date = data.getDateStr(&quot;%Y%m%d%H%M%S&quot;)
 
@@ -905,13 +959,13 @@ file_name_log = os.path.join(&quot;data/log/&quot; + file_name + &quot;.log&quot
 <p>参加者のIDと現在日時からファイル名を作っています。プログラムを実行した日時は、何らかの形で記録しておくようにしましょう。</p>
 <p>CSVファイルに行動データ、logファイルに実験のログを記録することにします。</p>
 <br>
-<h3 id="クイズの項目を読み込む6970行目">クイズの項目を読み込む（69–70行目）</h3>
+<h2 id="クイズの項目を読み込む6970行目">クイズの項目を読み込む（69–70行目）</h2>
 <pre><code class="language-python"># クイズの項目（都市名、人口）を読み込む
 city = pd.read_csv(&quot;city.csv&quot;)
 </code></pre>
 <p>この実験課題で呈示する項目（CSVファイル）を読み込んでいます。</p>
 <br>
-<h3 id="画面マウスキーボードを設定する7680行目">画面、マウス、キーボードを設定する（76–80行目）</h3>
+<h2 id="画面マウスキーボードを設定する7680行目">画面、マウス、キーボードを設定する（76–80行目）</h2>
 <pre><code class="language-python"># 画面の座標系　units = &quot;norm&quot;
 # 画面中心が(0, 0)、X軸が-1〜+1、Y軸が-1〜+1
 win = visual.Window(width = 1200, height = 900, units = &quot;norm&quot;)
@@ -920,7 +974,7 @@ kb = keyboard.Keyboard()
 </code></pre>
 <p>PsychoPyでは、ふつうスクリーンを<code>win</code>として記録します。</p>
 <br>
-<h3 id="都市名刺激を設定する86103行目">都市名刺激を設定する（86–103行目）</h3>
+<h2 id="都市名刺激を設定する86103行目">都市名刺激を設定する（86–103行目）</h2>
 <pre><code class="language-python"># テキスト刺激の色と日本語フォント
 color_default, color_highlight = &quot;white&quot;, &quot;yellow&quot;
 font_ja = &quot;ヒラギノ角ゴシック W3&quot;
@@ -943,7 +997,7 @@ trial_order = np.random.permutation(range(len(city)))
 <p>テキスト刺激は<code>visual.TextStim()</code>で作ります。日本語フォントは好きなものに修正してもらって構いません。</p>
 <p>ここでは、呈示位置のカウンターバランスと、試行順序のランダマイズもしています<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。</p>
 <br>
-<h3 id="キーを設定する105112行目">キーを設定する（105–112行目）</h3>
+<h2 id="キーを設定する105112行目">キーを設定する（105–112行目）</h2>
 <pre><code class="language-python"># キー設定
 key_left, key_right = &quot;f&quot;, &quot;j&quot;
 
@@ -956,7 +1010,7 @@ key_right_text = visual.TextStim(win, text = &quot;J&quot;, pos = (city_nudge_x,
 <p>Fが左、Jが右に対応するようにしています。</p>
 <p>また、課題中に呈示する「F」と「J」の刺激もここで作っています。</p>
 <br>
-<h3 id="教示を定義する114121行目">教示を定義する（114–121行目）</h3>
+<h2 id="教示を定義する114121行目">教示を定義する（114–121行目）</h2>
 <pre><code class="language-python"># 教示を定義
 inst_text = visual.TextStim(win, alignText = &quot;left&quot;, anchorHoriz = &quot;center&quot;)
 inst_text.setText(&quot;&quot;&quot;
@@ -969,7 +1023,7 @@ Click &quot;Start&quot; and work on the task.
 <p>教示を作っています。日本語だと少しめんどくさいので、英語で書いています。</p>
 <p><code>.setText()</code>を使うと、<code>TextStim</code>にテキストを埋め込むことができます。</p>
 <br>
-<h3 id="startボタンを定義する123129行目">Startボタンを定義する（123–129行目）</h3>
+<h2 id="startボタンを定義する123129行目">Startボタンを定義する（123–129行目）</h2>
 <pre><code class="language-python"># ボックスの線の太さ
 box_line_width = 10
 
@@ -980,7 +1034,7 @@ start_text = visual.TextStim(win, text = &quot;Start&quot;, pos = (0, start_pos_
 </code></pre>
 <p>Startボタンを定義しています。四角形は<code>visual.Rect()</code>で作ります。</p>
 <br>
-<h3 id="その他のテキスト刺激や図形を定義する131157行目">その他のテキスト刺激や図形を定義する（131–157行目）</h3>
+<h2 id="その他のテキスト刺激や図形を定義する131157行目">その他のテキスト刺激や図形を定義する（131–157行目）</h2>
 <pre><code class="language-python"># 試行間で呈示するテキスト（テキストの中身は毎試行変えるので、後で定義する）
 iti_text = visual.TextStim(win)
 # ITIの長さ
@@ -1011,13 +1065,13 @@ time_limit = 5
 </code></pre>
 <p>その他のテキスト刺激や図形を定義しています。</p>
 <br>
-<h3 id="ログファイルを設定する163164行目">ログファイルを設定する（163–164行目）</h3>
+<h2 id="ログファイルを設定する163164行目">ログファイルを設定する（163–164行目）</h2>
 <pre><code class="language-python"># ログファイルの設定
 file_log = logging.LogFile(file_name_log, level = logging.EXP)
 </code></pre>
 <p>ログファイルを設定しています。実験中に何が起きたかをほぼ自動で記録してくれるので、設定しておくことをおすすめします。</p>
 <br>
-<h3 id="教示を呈示する170190行目">教示を呈示する（170–190行目）</h3>
+<h2 id="教示を呈示する170190行目">教示を呈示する（170–190行目）</h2>
 <pre><code class="language-python"># 教示（無限ループ）
 while True:
 
@@ -1044,7 +1098,7 @@ while True:
 <p>Startボタンにカーソルが載ったら色を変えるようにしています。これを応用すると、マウスの位置を記録することができます。</p>
 <p>Startボタンがクリックされたらループを抜けます。</p>
 <br>
-<h3 id="csvファイルの1行目に変数名を書き込む192199行目">CSVファイルの1行目に変数名を書き込む（192–199行目）</h3>
+<h2 id="csvファイルの1行目に変数名を書き込む192199行目">CSVファイルの1行目に変数名を書き込む（192–199行目）</h2>
 <pre><code class="language-python"># CSVファイルの先頭行に変数名を書き込む
 with open(file_name_csv, &quot;a&quot;, encoding = &quot;cp932&quot;) as f:
     writer = csv.writer(f, lineterminator = &quot;\n&quot;)
@@ -1056,7 +1110,7 @@ with open(file_name_csv, &quot;a&quot;, encoding = &quot;cp932&quot;) as f:
 </code></pre>
 <p>CSVファイルに変数名を書き込んでいます。データを記録するときは、この書き方を真似するのがおすすめです。</p>
 <br>
-<h3 id="カーソルを消して課題を始める205215行目">カーソルを消して課題を始める（205–215行目）</h3>
+<h2 id="カーソルを消して課題を始める205215行目">カーソルを消して課題を始める（205–215行目）</h2>
 <pre><code class="language-python"># カーソルを消す
 mouse.setVisible(False)
 
@@ -1073,7 +1127,7 @@ for trial_index in range(len(city)):
 <p><code>iti_text</code>を定義し、呈示しています。</p>
 <p><code>core.wait(秒数)</code>で、プログラムを指定時間止めることができます。</p>
 <br>
-<h3 id="都市名を呈示217244行目">都市名を呈示（217–244行目）</h3>
+<h2 id="都市名を呈示217244行目">都市名を呈示（217–244行目）</h2>
 <pre><code class="language-python">    # 刺激テキストをセット
     city_1 = city[&quot;city_1&quot;][trial_order[trial_index]]
     city_2 = city[&quot;city_2&quot;][trial_order[trial_index]]
@@ -1106,7 +1160,7 @@ for trial_index in range(len(city)):
 <p>都市名刺激を定義・描画したり、課題に関連するデータを記録したりしています。</p>
 <p><code>.setPos()</code>を使うと、刺激の呈示位置を変更することができます。</p>
 <br>
-<h3 id="開始時間を記録しキーボードをリセット246251行目">開始時間を記録し、キーボードをリセット（246–251行目）</h3>
+<h2 id="開始時間を記録しキーボードをリセット246251行目">開始時間を記録し、キーボードをリセット（246–251行目）</h2>
 <pre><code class="language-python">    # 回答を待ち始めた時間をresp_onsetとして記録
     resp_onset = core.Clock()
 
@@ -1117,7 +1171,7 @@ for trial_index in range(len(city)):
 <p>刺激呈示の開始時間を記録し、キーボードをリセットしています。</p>
 <p>ここでキーボードをリセットしないと、次の試行にキー押しが引き継がれてしまいます。忘れないようにしましょう。</p>
 <br>
-<h3 id="回答を待つ253318行目">回答を待つ（253–318行目）</h3>
+<h2 id="回答を待つ253318行目">回答を待つ（253–318行目）</h2>
 <pre><code class="language-python">    # 回答を待つ（無限ループ）
     while True:
 
@@ -1189,7 +1243,7 @@ for trial_index in range(len(city)):
 <p>回答を待ちます。反応があったらテキストを黄色にし、四角で囲みます。5秒経過したらプロンプトを出すようにしています。</p>
 <p>コードは長めですが、ここでのキー押し判定や条件分岐は汎用性が高いです。というか、ほとんどの実験はこういう（長い）パーツの組み合わせからできています。</p>
 <br>
-<h3 id="フィードバックをし各試行のデータを記録320338行目">フィードバックをし、各試行のデータを記録（320–338行目）</h3>
+<h2 id="フィードバックをし各試行のデータを記録320338行目">フィードバックをし、各試行のデータを記録（320–338行目）</h2>
 <pre><code class="language-python">    # 正解不正解のフィードバックを呈示
     if result == &quot;correct&quot;:
         correct_text.draw()
@@ -1213,7 +1267,7 @@ for trial_index in range(len(city)):
 <p>正解不正解のフィードバックを出してから、データを記録しています。</p>
 <p>なお、ここでは日本語（都市名）を記録しているので、<code>encoding = &quot;cp932&quot;</code>としていますが、ふつうは要らないです。</p>
 <br>
-<h3 id="実験終了344355行目">実験終了（344–355行目）</h3>
+<h2 id="実験終了344355行目">実験終了（344–355行目）</h2>
 <pre><code class="language-python"># 終わりの画面を定義
 finish_text = visual.TextStim(win)
 finish_text.setText(&quot;&quot;&quot;
@@ -1270,7 +1324,7 @@ core.quit()
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;text=%e9%9c%80%e8%a6%81%e3%81%82%e3%82%8b%e3%81%8b%e3%82%8f%e3%81%8b%e3%82%89%e3%81%aa%e3%81%84PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;text=PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter-square"></i>
         </a>
       </li>
@@ -1283,7 +1337,7 @@ core.quit()
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;t=%e9%9c%80%e8%a6%81%e3%81%82%e3%82%8b%e3%81%8b%e3%82%8f%e3%81%8b%e3%82%89%e3%81%aa%e3%81%84PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;t=PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-square"></i>
         </a>
       </li>
@@ -1307,7 +1361,7 @@ core.quit()
       
       
       <li>
-        <a href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=%e9%9c%80%e8%a6%81%e3%81%82%e3%82%8b%e3%81%8b%e3%82%8f%e3%81%8b%e3%82%89%e3%81%aa%e3%81%84PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-hatena">
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-hatena">
           <i class="fa fa-hatena"></i>
         </a>
       </li>
@@ -1320,7 +1374,7 @@ core.quit()
       
       
       <li>
-        <a href="http://getpocket.com/edit?url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=%e9%9c%80%e8%a6%81%e3%81%82%e3%82%8b%e3%81%8b%e3%82%8f%e3%81%8b%e3%82%89%e3%81%aa%e3%81%84PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-pocket">
+        <a href="http://getpocket.com/edit?url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-pocket">
           <i class="fab fa-get-pocket"></i>
         </a>
       </li>
@@ -1333,7 +1387,7 @@ core.quit()
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=%e9%9c%80%e8%a6%81%e3%81%82%e3%82%8b%e3%81%8b%e3%82%8f%e3%81%8b%e3%82%89%e3%81%aa%e3%81%84PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -1346,7 +1400,7 @@ core.quit()
       
       
       <li>
-        <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=%e9%9c%80%e8%a6%81%e3%81%82%e3%82%8b%e3%81%8b%e3%82%8f%e3%81%8b%e3%82%89%e3%81%aa%e3%81%84PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-tumblr">
+        <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/&amp;title=PsychoPy%20Coder%e3%83%81%e3%83%a5%e3%83%bc%e3%83%88%e3%83%aa%e3%82%a2%e3%83%ab" target="_blank" rel="noopener" class="share-btn-tumblr">
           <i class="fab fa-tumblr-square"></i>
         </a>
       </li>
