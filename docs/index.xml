@@ -20,7 +20,25 @@
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
-true
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#背景&#34;&gt;背景&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#このページの概要&#34;&gt;このページの概要&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#遅延割引のモデルを解説&#34;&gt;遅延割引のモデルを解説&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#遅延割引課題とは&#34;&gt;遅延割引課題とは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#遅延割引のモデル&#34;&gt;遅延割引のモデル&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#肢選択のモデル&#34;&gt;2肢選択のモデル&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#実際に遅延割引パラメタを推定する&#34;&gt;実際に遅延割引パラメタを推定する&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#実験データを作ってみる&#34;&gt;実験データを作ってみる&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#素朴にパラメタを推定してみる&#34;&gt;素朴にパラメタを推定してみる&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#尤度を計算する&#34;&gt;尤度を計算する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#対数尤度を計算する&#34;&gt;対数尤度を計算する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#optimでパラメタを推定する&#34;&gt;optimでパラメタを推定する&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;

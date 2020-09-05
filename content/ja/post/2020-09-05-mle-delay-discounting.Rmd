@@ -8,7 +8,9 @@ categories:
 tags:
 subtitle: "遅延割引課題を例として使います"
 summary: "遅延割引課題を例として使います"
-toc: true
+output:
+  blogdown::html_page:
+    toc: true
 draft: false
 ---
 
