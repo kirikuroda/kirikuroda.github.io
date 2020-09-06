@@ -10,9 +10,9 @@ summary: 'ggplot2の基礎'
 authors: []
 featured: no
 image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
+  placement: 1
+  focal_point: "Center"
+  preview_only: false
 projects: []
 draft: false
 ---

@@ -8,6 +8,10 @@ categories:
 tags:
 subtitle: "遅延割引課題を例として使います"
 summary: "遅延割引課題を例として使います"
+image:
+  placement: 1
+  focal_point: "Center"
+  preview_only: false
 output:
   blogdown::html_page:
     toc: true

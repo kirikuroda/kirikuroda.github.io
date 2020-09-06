@@ -11,9 +11,9 @@ summary: '「これ」という辞書を厳選するのが大事'
 authors: []
 featured: no
 image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
+  placement: 1
+  focal_point: "Center"
+  preview_only: false
 projects: []
 toc: true
 draft: false
