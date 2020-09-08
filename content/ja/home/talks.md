@@ -11,6 +11,7 @@ title = "Talks"
 subtitle = "学会・シンポジウム"
 
 [content]
+
   # Page type to display. E.g. post, talk, or publication.
   page_type = "talk"
 
@@ -42,6 +43,7 @@ subtitle = "学会・シンポジウム"
   view = 1
 
 [design.background]
+
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.
   #   Choose a light or dark text color by setting `text_color_light`.
@@ -70,6 +72,10 @@ subtitle = "学会・シンポジウム"
 +++
 
 # **2020**
+
+**黒田起吏**・伊藤真利子・大槻久・亀田達也
+「Speed–accuracy tradeoff状況における社会情報処理の認知過程」
+[日本心理学会第84回大会](http://jpa2020.com "日本心理学会第84回大会")，オンライン開催，2020年9月8日–11月2日
 
 # **2019**
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kiri Kuroda</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/</link>
+      <atom:link href="https://kirikuroda.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Kiri Kuroda</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Kiri Kuroda</title>
-      <link>/</link>
+      <link>https://kirikuroda.github.io/</link>
     </image>
     
     <item>
       <title>認知モデルのパラメタを最尤推定する</title>
-      <link>/post/2020/09/05/mle-delay-discounting/</link>
+      <link>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/09/05/mle-delay-discounting/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -84,7 +84,7 @@ U(A,t) = U(A)\frac{1}{1+kt}
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;では、この&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;（遅延割引パラメタ）とは具体的にどういうものなのでしょうか？　それを理解するために、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;をいじってみましょう。&lt;/p&gt;
-&lt;p&gt;下の図の横軸は「t日」、縦軸は「そのとき50000円をもらったときの嬉しさ（すなわち、&lt;span class=&#34;math inline&#34;&gt;\(U(A,t)\)&lt;/span&gt;）」を表しています。ここでは、&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日を0〜30で変化させ、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;を0から0.5まで0.05刻みで変化させています。&lt;/p&gt;
+&lt;p&gt;Figure 1の横軸は「t日」、縦軸は「そのとき50000円をもらったときの嬉しさ（すなわち、&lt;span class=&#34;math inline&#34;&gt;\(U(A,t)\)&lt;/span&gt;）」を表しています。ここでは、&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日を0〜30で変化させ、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;を0から0.5まで0.05刻みで変化させています。&lt;/p&gt;
 &lt;p&gt;この図からどういうことが読み取れるでしょうか？&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 
@@ -96,22 +96,22 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
   labs(x = &amp;quot;t（日）&amp;quot;, y = &amp;quot;t日後に50000円もらったときの嬉しさ&amp;quot;) +
   theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
   theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:fig-1&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/fig-1-1.png&#34; alt=&#34;図1. t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 1: 図1. t日後に50000円もらったときの嬉しさ
+Figure 1: t日後に50000円もらったときの嬉しさ
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;まず、&lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt;のとき、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;がどんな値であれ、縦軸（50000円もらったときの嬉しさ）は50000円です。&lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt;は「今すぐ」と同じだからです。&lt;/p&gt;
-&lt;p&gt;次に、&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;が大きくなるほど、「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円」の嬉しさは低くなっていることがわかります。&lt;/p&gt;
+&lt;p&gt;次に、&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;が大きくなるほど、「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円」の嬉しさは低くなっています。&lt;/p&gt;
 &lt;p&gt;また、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きくなるほど（線が明るい色になるほど）、「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円」の嬉しさは低くなっています。これを引っ張って考えると、「&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きい人ほど、今すぐの利益に目がくらんでしまいがち&lt;/strong&gt;」ということになります&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;肢選択のモデル&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;2肢選択のモデル&lt;/h2&gt;
 &lt;p&gt;では次に「2つの選択肢（目先の利益 vs. 長期的な利益）をどうやって選ぶか」のモデルを考えてみましょう。&lt;/p&gt;
-&lt;p&gt;ここでは「今すぐ5000円をもらうか、1ヶ月後に50000円をもらうか」を選ぶ状況を例としてみます。私たちは多くの場合、「1ヶ月後に50000円」を選ぶでしょう。&lt;/p&gt;
+&lt;p&gt;ここでは「今すぐ5000円をもらうか、1ヶ月後に50000円をもらうか」を選ぶ状況を例とします。私たちは多くの場合、「1ヶ月後に50000円」を選ぶでしょう。&lt;/p&gt;
 &lt;p&gt;しかし、人間というものは、そこまで完璧ではありません。もし「ねえ、今すぐ5000円あげるけど、欲しいよね？」と100回も聞かれたら、何回かは誘惑にかられて「今すぐ5000円」を選んでしまうかもしれません。&lt;/p&gt;
 &lt;p&gt;このような現象を表すため、よくロジスティック関数&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;というものが用いられます。遅延割引課題の例では、以下のように書くことができます。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
@@ -128,7 +128,7 @@ P_{d} = \frac{1}{1+\exp(-\beta[U(A^{d})-U(A^{s})])}
 &lt;p&gt;詳しくは「ロジスティック関数」などで調べてほしいのですが、この式で大事なのは以下の2点です。&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(U(A^{d})-U(A^{s})\)&lt;/span&gt;が大きくなるほど&lt;span class=&#34;math inline&#34;&gt;\(P_{d}\)&lt;/span&gt;も大きくなる。&lt;/strong&gt;すなわち、遅延報酬が即時報酬よりも魅力的であるほど、遅延報酬を選ぶ確率が高くなるということです。裏を返すと、即時報酬のほうが魅力的であるほど、遅延報酬を選ぶ確率が低くなる（つまり、即時報酬を選ぶ確率が高くなる）ということも表しています。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が大きいほど、「嬉しさ」の差分に強く反応する。&lt;/strong&gt;つまり、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が大きい場合、嬉しさの大きい方を忠実に選ぶようになるということです。逆に&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が0に近いほど、どちらを選ぶかはランダムに近づく（「誘惑に駆られやすくなる」）ということも表しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が大きいほど、「嬉しさ」の差分に強く反応する。&lt;/strong&gt;つまり、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が大きい場合、嬉しさの大きい方を忠実に選ぶようになるということです。逆に&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が0に近いほど、どちらを選ぶかはランダムに近づく（「嬉しさ」の影響力が弱くなり、選択肢をでたらめに選ぶようになる）ということも表しています。&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -164,9 +164,9 @@ data &amp;lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;図2．ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 2: 図2．ある参加者がどれくらい遅延報酬を選んだか
+Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -189,13 +189,13 @@ p &amp;lt;- 1 / (1 + exp(-beta * (u_delay - 5000)))
 print(p)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 0.6791787&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;さて、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたとき、遅延報酬を選ぶ確率は0.6791787になりました。では、実際のデータはどうだったでしょうか？（つまり、「今すぐ5000円 vs. 30日後に50000円」のとき、どっちを選んでいたでしょうか？）&lt;/p&gt;
-&lt;p&gt;図2を見ると、参加者は遅延報酬（30日後に50000円）を選んでいたことがわかります。では、上の計算で出てきた「遅延報酬を選ぶ確率は0.6791787」と「参加者が実際に遅延報酬を選んでいたという事実」はどのように関係しているのでしょうか。&lt;/p&gt;
+&lt;p&gt;さて、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたとき、遅延報酬を選ぶ確率は0.6791787になりました。では、実際のデータはどうだったでしょうか？ つまり、「今すぐ5000円 vs. 30日後に50000円」のとき、どっちを選んでいたでしょうか？&lt;/p&gt;
+&lt;p&gt;Figure 2を見ると、参加者が遅延報酬（30日後に50000円）を選んでいたということがわかります。では、上の計算で出てきた「遅延報酬を選ぶ確率は0.6791787」と「参加者が実際に遅延報酬を選んでいたという事実」はどのように関係しているのでしょうか。&lt;/p&gt;
 &lt;p&gt;「遅延報酬を選ぶ確率」というのは、「『遅延報酬を選ぶ』という結果が得られる確率」と言い換えることができます。この「『遅延報酬を選ぶ』という結果が得られる確率」は、パラメタ&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;と&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;を色々な値にすれば、それに応じて様々な値に変動します。&lt;/p&gt;
 &lt;p&gt;ここで、「参加者が実際に遅延報酬を選んで」いたとしましょう。このとき、適当にパラメタを代入して、「『遅延報酬を選ぶ』という結果が得られる確率」が高かった場合、それは何を意味しているでしょうか。&lt;/p&gt;
-&lt;p&gt;日常言語で表すと、「参加者は遅延報酬を選んだ。適当にパラメタを代入したら、遅延報酬を選ぶ確率は高いらしい。これって結構近いじゃん」ということになります。さらにこれを引っ張ると、「予結構近いんだから、このパラメタって、もしかして良い線行ってるんじゃね？」となります。逆に、予測が外れた場合は、そのパラメタはあまりよろしくないと言えます。&lt;/p&gt;
-&lt;p&gt;つまり、「ある結果が得られている。そこで、適当にパラメタを設定したら、その結果が得られる確率も高いようだ。だったら、そのパラメタは『ふさわしい』んじゃないか」ということです。このようなパラメタの「ふさわしさ」（&lt;strong&gt;パラメタを設定したとき、手元のデータが得られる確率&lt;/strong&gt;）を真面目に言うと「尤度」になります。また、尤度をもとにパラメタを推定する方法を最尤推定と言います。&lt;/p&gt;
-&lt;p&gt;この例では、「いま、参加者が遅延報酬を選んだことがわかっている。そこで、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたとき、遅延報酬を選ぶ確率は0.6791787だった」となります。すなわち、尤度は0.6791787です&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;日常言語で表すと、「参加者は遅延報酬を選んでいた。適当にパラメタを代入したら、遅延報酬を選ぶ確率は高いらしい。これって実際のデータと結構近いじゃん」ということになります。さらにこれを引っ張ると、「結構近いんだから、このパラメタって、もしかして良い線行ってるんじゃね？」となります。逆に、予測が外れた場合は、そのパラメタはあまりよろしくないと言えます。&lt;/p&gt;
+&lt;p&gt;つまり、「ある結果が得られている。そこで、適当にパラメタを設定したら、その結果が得られる確率も高いようだ。だったら、そのパラメタは『ふさわしい』んじゃないか」ということです。このようなパラメタの「ふさわしさ」（&lt;strong&gt;パラメタを設定したとき、手元にあるデータが得られる確率&lt;/strong&gt;）を真面目に言うと「尤度」になります。また、尤度をもとにパラメタを推定する方法を最尤推定と言います。&lt;/p&gt;
+&lt;p&gt;この例では、「いま、参加者が遅延報酬を選んだことがわかっている。そこで、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたとき、遅延報酬を選ぶ確率は0.6791787だった」ということになります。すなわち、尤度は0.6791787です&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;尤度を計算する&#34; class=&#34;section level2&#34;&gt;
@@ -224,7 +224,7 @@ data %&amp;gt;%
 ## [49] 0.011756686 0.007163930&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;上に表示されているのは、遅延報酬を選ぶ確率&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;です。&lt;/p&gt;
-&lt;p&gt;しかし、これをそのまま最尤推定に使うことはできません。なぜなら、尤度とは「あるパラメタを設定したときに、&lt;strong&gt;手元の&lt;/strong&gt;データが得られる確率」だからです。実験では、参加者が即時報酬を選ぶ場合も当然あるので、その場合は「即時報酬を選ぶ確率」を使わないといけません。したがって、各回の尤度（likelihood）は以下のようになります。&lt;/p&gt;
+&lt;p&gt;しかし、これをそのまま最尤推定に使うことはできません。なぜなら、尤度とは「あるパラメタを設定したときに、&lt;strong&gt;手元にあるデータ&lt;/strong&gt;が得られる確率」だからです。実験では、参加者が即時報酬を選ぶ場合も当然あるので、その場合は「即時報酬を選ぶ確率」を使わないといけません。したがって、各回の尤度（&lt;code&gt;likelihood&lt;/code&gt;）は以下のようになります。&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;likelihood &amp;lt;- data %&amp;gt;%
   # 遅延報酬のUと、遅延報酬を選ぶ確率pを計算
   # さらに、参加者の選択に応じて条件分岐をして尤度を計算
@@ -250,16 +250,16 @@ likelihood&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;対数尤度を計算する&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;対数尤度を計算する&lt;/h2&gt;
 &lt;p&gt;では、ここで全50回の尤度を1つの指標にまとめたいと思います（まとめたいですよね？）。このとき、直観的には尤度を足し算すれば良いんじゃないか、と思うかもしれませんが、それは間違いです。&lt;/p&gt;
-&lt;p&gt;正解は「かけ算」です。詳しい説明は適宜教科書を読むなり、ググってもらえるとありがたいです&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。簡単な例で言えば、「3回連続でじゃんけんに勝つ確率は？」と聞かれたとき、「1/3を3回足して1」ではなく、「1/3を3回かけ算して1/27」と答えるのが正解になるのも同じ理屈です。&lt;/p&gt;
+&lt;p&gt;正解は「かけ算」です。詳しい説明は適宜教科書を読むなり、ググってもらえるとありがたいです&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。簡単な例で言えば、「3回連続でじゃんけんに勝つ確率は？」と聞かれたとき、「1/3を3回足して1」ではなく、「1/3を3回かけ算して1/27」と答えるのが正解になるのと同じ理屈です。&lt;/p&gt;
 &lt;p&gt;では、上で求めた尤度を全部かけ算してみましょう。&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# prod()で、要素を全部かけあわせることになる
 prod(likelihood)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 1.143327e-20&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;これは0.000000000001067125を表しています。&lt;/p&gt;
+&lt;p&gt;これは0.00000000000000000001143327を表しています。&lt;/p&gt;
 &lt;p&gt;ちっさ！って思うのではないでしょうか。と同時に、「やっぱ、パソコンはこんな細かい計算できて偉いなあ」と思う人がいるかもしれません。&lt;/p&gt;
 &lt;p&gt;しかし、残念ながらそれは間違いです。あまりに数字が小さいと、パソコンの計算にも誤差が生じてしまいます&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;これを防ぐため、尤度を計算するときは、&lt;strong&gt;対数を取る&lt;/strong&gt;というのが決まりになっています。なぜなら、かけ算の対数を取ると足し算になるという便利な性質があるからです&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;。対数を取って求めた尤度を「対数尤度（log likelihood）」と言います。&lt;/p&gt;
+&lt;p&gt;これを防ぐため、尤度を計算するときは、&lt;strong&gt;対数を取る&lt;/strong&gt;というのが決まりになっています。なぜなら、かけ算の対数を取ると足し算になるという便利な性質があるからです&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;。対数を取って求めた尤度を「対数尤度」と言います。&lt;/p&gt;
 &lt;p&gt;また、対数は単調増加関数なので、「尤度の積が大きい（もっともらしい）場合は、その対数も大きくなる」という関係が成り立ちます。対数、便利です。&lt;/p&gt;
 &lt;p&gt;では、対数尤度を計算し、全部を足し算してみましょう。&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sum(log(likelihood))&lt;/code&gt;&lt;/pre&gt;
@@ -274,7 +274,7 @@ prod(likelihood)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;optimでパラメタを推定する&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;optimでパラメタを推定する&lt;/h2&gt;
-&lt;p&gt;さて、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたときの50回の対数尤度は-27.56605になりました。&lt;/p&gt;
+&lt;p&gt;さて、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたときの50回の対数尤度は-45.91776になりました。&lt;/p&gt;
 &lt;p&gt;で？　それが何？&lt;/p&gt;
 &lt;p&gt;そうです。これだけでは、まだ何も言えていません。他のパラメタの候補も調べないと、どのパラメタが良さそうかはわかりません。&lt;/p&gt;
 &lt;p&gt;では、どうすればよいでしょうか？　素朴に考えたら、有り得そうな&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;や&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;を片っ端から代入して対数尤度を計算する、というのが良さそうです。しかし、そんな時間は私たちにはありません。&lt;/p&gt;
@@ -344,7 +344,7 @@ data &amp;lt;- expand_grid(
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;この式は、双曲割引（hyperbolic discounting）と言います。&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -362,9 +362,9 @@ data &amp;lt;- expand_grid(
     
     <item>
       <title>PsychoPy Coderチュートリアル</title>
-      <link>/post/2020/09/02/psychopy-coder-tutorial/</link>
+      <link>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/09/02/psychopy-coder-tutorial/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</guid>
       <description>&lt;h2&gt;目次&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -884,9 +884,9 @@ core.quit()
     
     <item>
       <title>英語を書かなきゃいけないときに使う辞書系ツール</title>
-      <link>/post/2020/08/28/english-dictionary/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/28/english-dictionary/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
       <description>&lt;h2&gt;目次&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -969,9 +969,9 @@ core.quit()
     
     <item>
       <title>大学院生が（いまさら）買ってよかったもの8選</title>
-      <link>/post/2020/08/25/mustbuy-2020-summer/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/25/mustbuy-2020-summer/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
       <description>&lt;h2&gt;目次&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
@@ -1052,9 +1052,9 @@ core.quit()
     
     <item>
       <title>データの可視化 まとめ</title>
-      <link>/post/2020/08/22/datareporting/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/22/datareporting/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
       <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
 &lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
@@ -1062,9 +1062,9 @@ core.quit()
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>/post/2020/08/21/hugo-academic/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/21/hugo-academic/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
       <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
 &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
@@ -1075,25 +1075,25 @@ core.quit()
     
     <item>
       <title>Investor&#39;s Pessimistic and False Belief About Trustworthiness and Stake Size in Trust Decision</title>
-      <link>/publication/kuroda2020investor/</link>
+      <link>https://kirikuroda.github.io/publication/kuroda2020investor/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/kuroda2020investor/</guid>
+      <guid>https://kirikuroda.github.io/publication/kuroda2020investor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>You Watch My Back, I&#39;ll Watch Yours: Emergence of Collective Risk Monitoring Through Tacit Coordination in Human Social Foraging</title>
-      <link>/publication/kuroda2019you/</link>
+      <link>https://kirikuroda.github.io/publication/kuroda2019you/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/kuroda2019you/</guid>
+      <guid>https://kirikuroda.github.io/publication/kuroda2019you/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Perception of Spontaneous and Volitional Laughter Across 21 Societies</title>
-      <link>/publication/bryant2018perception/</link>
+      <link>https://kirikuroda.github.io/publication/bryant2018perception/</link>
       <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/bryant2018perception/</guid>
+      <guid>https://kirikuroda.github.io/publication/bryant2018perception/</guid>
       <description></description>
     </item>
     
