@@ -14,7 +14,7 @@ projects: []
 publication: '*PsyArXiv*'
 publication_short: ""
 publication_types:
-- "2"
+- "3"
 publishDate: "2020-04-15T00:00:00Z"
 tags:
 title: "Bilateral (but not Unilateral) Interaction Creates and Cements Norms at the Covert Psychophysical Level: A Behavioral and an FMRI Study"
