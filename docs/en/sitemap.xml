@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/en/publication_types/2/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -18,8 +18,23 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/en/authors/akitoshi-ogawa/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/akitoshi-ogawa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/akitoshi-ogawa/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/en/authors/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -29,6 +44,141 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kirikuroda.github.io/en/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/publication/kuroda2020bilateral/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/publication/kuroda2020bilateral/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/publication/kuroda2020bilateral/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/authors/kazushi-ikeda/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/kazushi-ikeda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/kazushi-ikeda/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/authors/kiri-kuroda/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/kiri-kuroda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/kiri-kuroda/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/publication_types/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/publication/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/publication/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/authors/tatsuya-kameda/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/tatsuya-kameda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/tatsuya-kameda/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/authors/tomoya-tamei/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/tomoya-tamei/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/tomoya-tamei/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/en/authors/yukiko-ogura/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/authors/yukiko-ogura/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/authors/yukiko-ogura/"
                 />
   </url>
   
@@ -44,81 +194,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kirikuroda.github.io/en/publication/kuroda2020investor/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/authors/kiri-kuroda/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/authors/kiri-kuroda/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/authors/kiri-kuroda/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/publication_types/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/publication_types/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/publication/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/publication/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/en/authors/tatsuya-kameda/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/authors/tatsuya-kameda/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/authors/tatsuya-kameda/"
                 />
   </url>
   
