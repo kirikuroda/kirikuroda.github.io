@@ -8,7 +8,7 @@ authors:
 - Kazushi Ikeda
 - Tatsuya Kameda
 date: "2020-10-22T00:00:00Z"
-doi: "https://doi.org/10.31234/osf.io/sk9eq"
+doi: ""
 featured: false
 projects: []
 publication: '*PsyArXiv*'
@@ -20,7 +20,7 @@ tags:
 title: "Bilateral (but not Unilateral) Interaction Creates and Cements Norms at the Covert Psychophysical Level: A Behavioral and an FMRI Study"
 url_code: ""
 url_dataset: ""
-url_pdf: ""
+url_pdf: "https://doi.org/10.31234/osf.io/sk9eq"
 url_poster: ""
 url_project: ""
 url_slides: ""
