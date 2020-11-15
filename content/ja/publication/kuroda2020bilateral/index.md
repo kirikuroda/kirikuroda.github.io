@@ -17,7 +17,7 @@ publication_types:
 - "3"
 publishDate: "2020-04-15T00:00:00Z"
 tags:
-title: "Bilateral (but not Unilateral) Interaction Creates and Cements Norms at the Covert Psychophysical Level: A Behavioral and an FMRI Study"
+title: "Bilateral (but Not Unilateral) Interaction Creates and Cements Norms at the Covert Psychophysical Level: A Behavioral and an Fmri Study"
 url_code: ""
 url_dataset: ""
 url_pdf: "https://doi.org/10.31234/osf.io/sk9eq"
