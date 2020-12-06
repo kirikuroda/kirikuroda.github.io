@@ -1,12 +1,12 @@
 # Page Sharer
-# Documentation: https://wowchemy.com/docs/customization/#page-sharer
+# Documentation: https://sourcethemes.com/academic/docs/customization/#page-sharer
 
 [[buttons]]
   id = "twitter"
   url = "https://twitter.com/intent/tweet?url={url}&text={title}"
   title = "Twitter"
   icon_pack = "fab"
-  icon = "twitter"
+  icon = "twitter-square"
   enable = true
 
 [[buttons]]
@@ -14,15 +14,31 @@
   url = "https://www.facebook.com/sharer.php?u={url}&t={title}"
   title = "Facebook"
   icon_pack = "fab"
-  icon = "facebook"
+  icon = "facebook-square"
   enable = true
 
 [[buttons]]
-  id = "email"
-  url = "mailto:?subject={title}&body={url}"
-  title = "Email"
-  icon_pack = "fas"
-  icon = "envelope"
+  id = "line"
+  url = "https://social-plugins.line.me/lineit/share?url={url}"
+  title = "Line"
+  icon_pack = "fab"
+  icon = "line"
+  enable = true
+
+[[buttons]]
+  id = "hatena"
+  url = "http://b.hatena.ne.jp/add?mode=confirm&url={url}&title={title}"
+  title = "Hatena"
+  icon_pack = "fa"
+  icon = "hatena"
+  enable = true
+
+[[buttons]]
+  id = "pocket"
+  url = "http://getpocket.com/edit?url={url}&title={title}"
+  title = "Pocket"
+  icon_pack = "fab"
+  icon = "get-pocket"
   enable = true
 
 [[buttons]]
@@ -30,7 +46,7 @@
   url = "https://www.linkedin.com/shareArticle?url={url}&title={title}"
   title = "LinkedIn"
   icon_pack = "fab"
-  icon = "linkedin-in"
+  icon = "linkedin"
   enable = true
 
 [[buttons]]
@@ -39,7 +55,7 @@
   title = "WhatsApp"
   icon_pack = "fab"
   icon = "whatsapp"
-  enable = true
+  enable = false
 
 [[buttons]]
   id = "weibo"
@@ -47,14 +63,6 @@
   title = "Weibo"
   icon_pack = "fab"
   icon = "weibo"
-  enable = true
-
-[[buttons]]
-  id = "reddit"
-  url = "https://reddit.com/submit?url={url}&title={title}"
-  title = "Reddit"
-  icon_pack = "fab"
-  icon = "reddit-alien"
   enable = false
 
 [[buttons]]
@@ -78,5 +86,21 @@
   url = "https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&title={title}"
   title = "Tumblr"
   icon_pack = "fab"
-  icon = "tumblr"
+  icon = "tumblr-square"
+  enable = true
+
+[[buttons]]
+  id = "reddit"
+  url = "https://reddit.com/submit?url={url}&title={title}"
+  title = "Reddit"
+  icon_pack = "fab"
+  icon = "reddit"
   enable = false
+
+[[buttons]]
+  id = "email"
+  url = "mailto:?subject={title}&body={url}"
+  title = "Email"
+  icon_pack = "fas"
+  icon = "envelope"
+  enable = true
