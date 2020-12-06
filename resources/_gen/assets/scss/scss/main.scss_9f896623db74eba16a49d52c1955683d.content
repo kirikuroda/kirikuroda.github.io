@@ -9714,7 +9714,3 @@ a#back_to_top.docs-toc-title {
 
 .see-all a:hover {
   text-decoration: underline; }
-
-ul.nav-icons li {
-  display: inline;
-  padding-right: 2rem; }
