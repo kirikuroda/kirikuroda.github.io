@@ -5,7 +5,7 @@
     <link>https://kirikuroda.github.io/post/</link>
       <atom:link href="https://kirikuroda.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>Blog</title>
@@ -18,6 +18,8 @@
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -97,7 +99,7 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
   theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
   theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: t日後に50000円もらったときの嬉しさ
 &lt;/p&gt;
@@ -164,7 +166,7 @@ data &amp;lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;/p&gt;
@@ -435,8 +437,7 @@ data &amp;lt;- expand_grid(
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;既に公開されている優れたチュートリアル&#34;&gt;既に公開されている優れたチュートリアル&lt;/h2&gt;
-&lt;p&gt;PsychoPyのCoderについては、既に優れたチュートリアルがいくつか公開されています（参照：
-&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;）。この「チュートリアルまとめ」、およびそこで紹介されているチュートリアルのいずれにおいても、Pythonの初歩から実験実施までが丁寧に解説されています。&lt;/p&gt;
+&lt;p&gt;PsychoPyのCoderについては、既に優れたチュートリアルがいくつか公開されています（参照：&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;）。この「チュートリアルまとめ」、およびそこで紹介されているチュートリアルのいずれにおいても、Pythonの初歩から実験実施までが丁寧に解説されています。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;このチュートリアルの特色&#34;&gt;このチュートリアルの特色（？）&lt;/h2&gt;
 &lt;p&gt;このチュートリアルでは、Pythonの初歩の説明をすっ飛ばします。上で紹介した記事も含め、もっと優れた資料や書籍が山のようにあるからです。&lt;/p&gt;
@@ -459,8 +460,7 @@ data &amp;lt;- expand_grid(
 &lt;h2 id=&#34;いきなりセットアップ&#34;&gt;いきなりセットアップ&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;この記事では&lt;strong&gt;Mac&lt;/strong&gt;と&lt;strong&gt;PsychoPy 2020.2.3&lt;/strong&gt;を使ってます。&lt;strong&gt;この際なので、PsychoPyをアップデートしてください。&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/kirikuroda/psychopy_coder_demo&#34; title=&#34;GitHubのページ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/kirikuroda/psychopy_coder_demo&lt;/a&gt;からファイルをダウンロードして、PCの適当な場所に保存してください。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kirikuroda/psychopy_coder_demo&#34; title=&#34;GitHubのページ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/kirikuroda/psychopy_coder_demo&lt;/a&gt;からファイルをダウンロードして、PCの適当な場所に保存してください。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;いきなり実験&#34;&gt;いきなり実験&lt;/h2&gt;
@@ -472,8 +472,7 @@ data &amp;lt;- expand_grid(
 &lt;p&gt;すると、短い課題が画面に表示されます。この課題を解説していくので、まずは課題をやってみてください。1分で終わります。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;（Macで）以下のようなエラーが出る場合は、
-&lt;a href=&#34;https://discourse.psychopy.org/t/keyboard-psychtoolbox-hid-failing-with-mac-os-catalina-update/9389&#34; title=&#34;Keyboard psychtoolbox/hid failing with Mac OS Catalina update&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちらのページ（英語）&lt;/a&gt;を参考にしてください。&lt;/p&gt;
+&lt;p&gt;（Macで）以下のようなエラーが出る場合は、&lt;a href=&#34;https://discourse.psychopy.org/t/keyboard-psychtoolbox-hid-failing-with-mac-os-catalina-update/9389&#34; title=&#34;Keyboard psychtoolbox/hid failing with Mac OS Catalina update&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちらのページ（英語）&lt;/a&gt;を参考にしてください。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;File “psychtoolbox/hid.pyc”, line 137, in init
 File “psychtoolbox/hid.pyc”, line 145, in _create_queue
 FileNotFoundError: [Errno 2] No such file or directory
@@ -861,8 +860,7 @@ core.quit()
 &lt;p&gt;終了のメッセージを出して、3秒経過したら実験が終わります。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
-&lt;p&gt;このチュートリアルでは割愛した内容もあります。その中で最も重要なものは「関数の自作」です。関数の自作については、
-&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;の第7回を読んでください。&lt;/p&gt;
+&lt;p&gt;このチュートリアルでは割愛した内容もあります。その中で最も重要なものは「関数の自作」です。関数の自作については、&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;の第7回を読んでください。&lt;/p&gt;
 &lt;p&gt;おそらく、このチュートリアルはわかりにくいです。しかし、ここに載っている機能を使えば、大体の社会心理学実験や意思決定実験のたたき台を作ることはできると思います&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。かなり駆け足でしたが、このチュートリアルが誰かの役に立てば幸いです。&lt;/p&gt;
 &lt;br&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
@@ -924,33 +922,27 @@ core.quit()
 &lt;br&gt;
 &lt;h1 id=&#34;英英類語辞典&#34;&gt;英英・類語辞典&lt;/h1&gt;
 &lt;h2 id=&#34;lexico&#34;&gt;LEXICO&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.lexico.com&#34; title=&#34;LEXICO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LEXICO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexico.com&#34; title=&#34;LEXICO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LEXICO&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;語義・類語・例文・語源、オールインワンの辞書サイト&lt;/strong&gt;です。Oxford Dictionaryによって運営されているようです。アメリカ英語・イギリス英語、両方とも載っているので、英単語の意味を調べるときは、とりあえずこれで良いと思います。&lt;/p&gt;
 &lt;p&gt;特に、類語（シソーラス）を調べるときには、必ずこのサイトを使っています。検索窓のメニューを「THESAURUS」にすると、類語を検索できます。あるいは、各単語のページの「+ Synonyms」をクリックしても、類語を見ることができます。&lt;/p&gt;
 &lt;p&gt;例文が多いのも魅力的です。各単語のページの「+ More example sentences」をクリックすると、どういうニュアンスで使われることが多いかを確認できます。&lt;/p&gt;
 &lt;h2 id=&#34;oxford-learners-dictionaries&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.oxfordlearnersdictionaries.com&#34; title=&#34;Oxford Learner&amp;#39;s Dictionaries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.oxfordlearnersdictionaries.com&#34; title=&#34;Oxford Learner&amp;#39;s Dictionaries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;名前のとおり、英語学習者用の辞書であるため、LEXICOより情報がコンパクトになっています。&lt;strong&gt;単語の意味をさっと確認したいときに便利&lt;/strong&gt;です。また、&lt;strong&gt;平易な英語で語義が説明されている&lt;/strong&gt;ので、LEXICOの説明がわかりにくいときに使うのもおすすめです。頻出単語については、コロケーションや用法も載っています。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;コロケーション&#34;&gt;コロケーション&lt;/h1&gt;
 &lt;h2 id=&#34;just-the-word&#34;&gt;Just the Word&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://www.just-the-word.com&#34; title=&#34;Just the Word&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Just the Word&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.just-the-word.com&#34; title=&#34;Just the Word&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Just the Word&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;単語を検索するとコロケーションが表示される&lt;/strong&gt;、というシンプルなサイトです。また、気になったコロケーションをクリックすると、例文も表示されます。コロケーションに関するウェブサイト（そういうのをコーパスっていうんでしょうか？）は他にもありますが、Just the Wordは見た目と機能がシンプルであり、使い方がわかりやすいので気に入っています。&lt;/p&gt;
 &lt;h2 id=&#34;netspeak&#34;&gt;Netspeak&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://netspeak.org&#34; title=&#34;Netspeak&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netspeak&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://netspeak.org&#34; title=&#34;Netspeak&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netspeak&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ある単語や語順の使用頻度を調べたり、比較したりする&lt;/strong&gt;のに使います。たとえば、「atとin、どっちがよく使われるんだろう？」とか、「この副詞は文のどこに置かれることが多いんだろう？」と思ったときに使います。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;フレーズ集&#34;&gt;フレーズ集&lt;/h1&gt;
 &lt;h2 id=&#34;useful-phrases&#34;&gt;Useful Phrases&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.springer.com/jp/book/9783319260921&#34; title=&#34;Useful Phrases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.springer.com/jp/book/9783319260921&#34; title=&#34;Useful Phrases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;英語論文で頻出のフレーズ&lt;/strong&gt;がまとまっています。&amp;ldquo;English for Writing Research Papers&amp;rdquo;（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。&lt;/p&gt;
-&lt;p&gt;同様のフレーズ集として、
-&lt;a href=&#34;http://www.phrasebank.manchester.ac.uk&#34; title=&#34;Academic Phrasebank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Phrasebank&lt;/a&gt;というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。&lt;/p&gt;
+&lt;p&gt;同様のフレーズ集として、&lt;a href=&#34;http://www.phrasebank.manchester.ac.uk&#34; title=&#34;Academic Phrasebank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Phrasebank&lt;/a&gt;というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
 &lt;p&gt;以上、「英語を書かなきゃいけないときに使う辞書系ツール」を紹介しました。このようなツールを使うと、Google検索でなんとなく英語を調べるよりは、裏づけのある良質な情報を得られると思います。ぜひ、自分にピッタリのツールを探してみてください。&lt;/p&gt;
@@ -959,8 +951,7 @@ core.quit()
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;この&amp;quot;English for Writing Research Papers&amp;quot;という本は、非常に参考になりました。昨年、『
-&lt;a href=&#34;https://bookclub.kodansha.co.jp/product?item=0000275980&#34; title=&#34;ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術&lt;/a&gt;』（講談社、2019）として翻訳されたので、関心のある人は読んでみてください。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;この&amp;quot;English for Writing Research Papers&amp;quot;という本は、非常に参考になりました。昨年、『&lt;a href=&#34;https://bookclub.kodansha.co.jp/product?item=0000275980&#34; title=&#34;ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術&lt;/a&gt;』（講談社、2019）として翻訳されたので、関心のある人は読んでみてください。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -991,15 +982,13 @@ core.quit()
 &lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;iphone-se第2世代&#34;&gt;iPhone SE（第2世代）&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.apple.com/jp/iphone-se/&#34; title=&#34;iPhone SE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;高校の頃から10年近く使ってきたガラケーにガタが来ていました。これまではiPod touchやiPadでごまかしてきたけれど、ようやく腹をくくってiPhoneを買うことにしました。おおむね便利です。&lt;/p&gt;
 &lt;p&gt;しかし、iPhoneを導入してから数日後、外出先で通知を確認するのがめちゃくちゃめんどくさい、というか、通知を見逃しやすいということに気がつきました。ガラケーと違い、通知のバイブレーションが短くて弱すぎたのです。&lt;/p&gt;
 &lt;p&gt;この「通知気づきにくい問題」に対処するため、Apple Watchを買いました。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;apple-watch-series-3&#34;&gt;Apple Watch Series 3&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.apple.com/jp/apple-watch-series-3/&#34; title=&#34;Apple Watch Series 3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;買う当初は「スマートウォッチって贅沢すぎでは？」と思っていましが、使っているうちに、この1年でベスト3くらいの買い物だと考えを改めることになりました。以下の3つが特に便利です。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1015,14 +1004,12 @@ core.quit()
 &lt;p&gt;逆に、スマートウォッチを持っていない人は、どうやって通知を確認しているのでしょうか？　いちいちスマホを開くのが無駄だと感じている場合は、購入を考えても良いかもしれません。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;bellroyのスマホケース&#34;&gt;Bellroyのスマホケース&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&#34; title=&#34;Phone Case – 3 Card&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phone Case – 3 Card&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ja.bellroy.com/products/phone-case-3-card/leather_iphone_se/caramel#slide-0&#34; title=&#34;Phone Case – 3 Card&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phone Case – 3 Card&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;名前の通り、背面にカードを3枚入れられるスマホケースです。このケースの中に、クレジットカード・学生証・大学生協の組合員証を入れています。これのおかげで財布をほぼ使わなくなったし、近場に行くときには財布を持つことすらなくなりました。&lt;/p&gt;
 &lt;p&gt;このスマホケースは10000円します。カードを入れられるスマホケースで、もっと安いものはいくらでも見つかると思います。実際、私も「さすがに贅沢では」と悩みましたが、ふだん安物買いの銭失いで失敗することが多いので、思い切って買うことにしました。長く使いたいです。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;airpods-pro&#34;&gt;AirPods Pro&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.apple.com/jp/airpods-pro/&#34; title=&#34;AirPods Pro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;めちゃくちゃ良いです。ノイズキャンセリング性能が良いのはもちろんのこと、装着感が軽いのが何より素晴らしいです。自分は音楽をほぼ聞かないし、かなりいい値段もするけれど、それでも買って良かったと思います。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;クリアサングラス&#34;&gt;クリアサングラス&lt;/h1&gt;
@@ -1030,8 +1017,7 @@ core.quit()
 &lt;p&gt;そこで、クリアサングラス（透明なサングラス）を買いました。見た目にはふつうの眼鏡なので、マスクと合わせても不審者感は全くないです。地味にいい買い物でした。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;thermosの真空断熱タンブラー&#34;&gt;THERMOSの真空断熱タンブラー&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;真空断熱タンブラー&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.shopthermos.jp/shop/g/g350059280500/&#34; title=&#34;真空断熱タンブラー JDM-420 ブラック&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;真空断熱タンブラー&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;真空断熱タンブラーこそ、「地味に生活のクオリティを上げてくれるアイテム」の筆頭だと思います。これまで2年くらい、サーモスのステンレス製タンブラーを使ってきました。今回買い替えたのは、（おそらく）経年劣化のために保冷効果が弱まってきたからです。&lt;/p&gt;
 &lt;p&gt;今までのステンレス製とは違い、今回買ったのは陶器っぽいマットな仕上がりで、飲み口も柔らかくなっています。他にも色や素材にバリエーションがあるので、気になった方は調べてみてください。&lt;/p&gt;
 &lt;br&gt;
@@ -1039,8 +1025,7 @@ core.quit()
 &lt;p&gt;持っている人からしたら当たり前のことですが、洗顔ネットを使うと「どこにこんな泡があったんだ！？」というレベルでもこもこ泡立ちます。はじめて使ったとき、この数ヶ月で一番びっくりしました。値段も全然高くないし、一度買えば数年から一生は使えると思うので、買ってよかったです。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;realforceのキーボード&#34;&gt;REALFORCEのキーボード&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REALFORCE TKL SA for Mac&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.realforce.co.jp/products/R2TLSA-US3M-WH/&#34; title=&#34;REALFORCE TKL SA for Mac / R2TLSA-US3M-WH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REALFORCE TKL SA for Mac&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;REALFORCEというのは、有名なキーボードブランドの1つです。HHKBというブランドもありますが、個人的には、REALFORCEのほうが軽くて好みです。&lt;/p&gt;
 &lt;p&gt;それなりに文章に接する職業の人間、すなわち博士課程の院生なら、高めのキーボードを買ったほうが良いと思います。ふつうのキーボードより手への負担が減るだけでなく、文章を書くこと自体がなんとなく楽しくなります。&lt;/p&gt;
 &lt;p&gt;ちなみに、同じメーカーでもキーボードの種類が多いので、買うときは公式サイトやネットの情報をよく調べるようにしてください。&lt;/p&gt;
@@ -1055,8 +1040,7 @@ core.quit()
       <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
-      <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。
-&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
+      <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
     </item>
     
@@ -1065,9 +1049,7 @@ core.quit()
       <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
-      <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた
-&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、
-&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
+      <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
 &lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
 &lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
 </description>

@@ -5,7 +5,7 @@
     <link>https://kirikuroda.github.io/categories/%E5%AE%9F%E9%A8%93/</link>
       <atom:link href="https://kirikuroda.github.io/categories/%E5%AE%9F%E9%A8%93/index.xml" rel="self" type="application/rss+xml" />
     <description>実験</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
       <title>実験</title>
@@ -18,6 +18,8 @@
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -97,7 +99,7 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
   theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
   theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: t日後に50000円もらったときの嬉しさ
 &lt;/p&gt;
@@ -164,7 +166,7 @@ data &amp;lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;/p&gt;
@@ -435,8 +437,7 @@ data &amp;lt;- expand_grid(
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;既に公開されている優れたチュートリアル&#34;&gt;既に公開されている優れたチュートリアル&lt;/h2&gt;
-&lt;p&gt;PsychoPyのCoderについては、既に優れたチュートリアルがいくつか公開されています（参照：
-&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;）。この「チュートリアルまとめ」、およびそこで紹介されているチュートリアルのいずれにおいても、Pythonの初歩から実験実施までが丁寧に解説されています。&lt;/p&gt;
+&lt;p&gt;PsychoPyのCoderについては、既に優れたチュートリアルがいくつか公開されています（参照：&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;）。この「チュートリアルまとめ」、およびそこで紹介されているチュートリアルのいずれにおいても、Pythonの初歩から実験実施までが丁寧に解説されています。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;このチュートリアルの特色&#34;&gt;このチュートリアルの特色（？）&lt;/h2&gt;
 &lt;p&gt;このチュートリアルでは、Pythonの初歩の説明をすっ飛ばします。上で紹介した記事も含め、もっと優れた資料や書籍が山のようにあるからです。&lt;/p&gt;
@@ -459,8 +460,7 @@ data &amp;lt;- expand_grid(
 &lt;h2 id=&#34;いきなりセットアップ&#34;&gt;いきなりセットアップ&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;この記事では&lt;strong&gt;Mac&lt;/strong&gt;と&lt;strong&gt;PsychoPy 2020.2.3&lt;/strong&gt;を使ってます。&lt;strong&gt;この際なので、PsychoPyをアップデートしてください。&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/kirikuroda/psychopy_coder_demo&#34; title=&#34;GitHubのページ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/kirikuroda/psychopy_coder_demo&lt;/a&gt;からファイルをダウンロードして、PCの適当な場所に保存してください。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kirikuroda/psychopy_coder_demo&#34; title=&#34;GitHubのページ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/kirikuroda/psychopy_coder_demo&lt;/a&gt;からファイルをダウンロードして、PCの適当な場所に保存してください。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;いきなり実験&#34;&gt;いきなり実験&lt;/h2&gt;
@@ -472,8 +472,7 @@ data &amp;lt;- expand_grid(
 &lt;p&gt;すると、短い課題が画面に表示されます。この課題を解説していくので、まずは課題をやってみてください。1分で終わります。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;（Macで）以下のようなエラーが出る場合は、
-&lt;a href=&#34;https://discourse.psychopy.org/t/keyboard-psychtoolbox-hid-failing-with-mac-os-catalina-update/9389&#34; title=&#34;Keyboard psychtoolbox/hid failing with Mac OS Catalina update&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちらのページ（英語）&lt;/a&gt;を参考にしてください。&lt;/p&gt;
+&lt;p&gt;（Macで）以下のようなエラーが出る場合は、&lt;a href=&#34;https://discourse.psychopy.org/t/keyboard-psychtoolbox-hid-failing-with-mac-os-catalina-update/9389&#34; title=&#34;Keyboard psychtoolbox/hid failing with Mac OS Catalina update&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちらのページ（英語）&lt;/a&gt;を参考にしてください。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;File “psychtoolbox/hid.pyc”, line 137, in init
 File “psychtoolbox/hid.pyc”, line 145, in _create_queue
 FileNotFoundError: [Errno 2] No such file or directory
@@ -861,8 +860,7 @@ core.quit()
 &lt;p&gt;終了のメッセージを出して、3秒経過したら実験が終わります。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
-&lt;p&gt;このチュートリアルでは割愛した内容もあります。その中で最も重要なものは「関数の自作」です。関数の自作については、
-&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;の第7回を読んでください。&lt;/p&gt;
+&lt;p&gt;このチュートリアルでは割愛した内容もあります。その中で最も重要なものは「関数の自作」です。関数の自作については、&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;の第7回を読んでください。&lt;/p&gt;
 &lt;p&gt;おそらく、このチュートリアルはわかりにくいです。しかし、ここに載っている機能を使えば、大体の社会心理学実験や意思決定実験のたたき台を作ることはできると思います&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。かなり駆け足でしたが、このチュートリアルが誰かの役に立てば幸いです。&lt;/p&gt;
 &lt;br&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
