@@ -101,20 +101,32 @@ p a {
   color: #ffd803;
 }
 
-.search-hit a:hover, .pub a:hover, li a:hover, #talks p a:hover, p a:hover {
+.search-results a:hover, .pub a:hover, li a:hover, #talks p a:hover, p a:hover {
   color: #d9473d;
   text-decoration: underline;
 }
 
-.dark .search-hit a:hover, .dark .pub a:hover, .dark li a:hover, .dark #talks p a:hover, .dark p a:hover {
+.dark .search-results a:hover, .dark .pub a:hover, .dark li a:hover, .dark #talks p a:hover, .dark p a:hover {
   color: #ffd803;
   text-decoration: underline;
+}
+
+
+.dark .search-header {
+  background-color: #44475a;
+}
+
+.dark .search-results {
+  background-color: #44475a;
+  border-color: #44475a;
+  box-shadow: 0 0 0 0.2rem #ffd803;
 }
 
 .dark .form-control:focus {
   background-color: #44475a;
   border-color: #ffd803;
   box-shadow: 0 0 0 0.2rem #ffd803;
+  color: #333333;
 }
 
 a:hover h4.card-title.exp-title.text-muted {
@@ -474,6 +486,10 @@ li.nav-item a:hover {
 
 .dark a:hover, .dark a:focus, .dark .navbar .dropdown-item.active, .dark .navbar .dropdown-item-active {
   color: #ffd803 !important;
+}
+
+ a:hover, a:focus, .navbar .dropdown-item.active, .navbar .dropdown-item-active {
+  color: #d9473d !important;
 }
 
 .section-heading p {
