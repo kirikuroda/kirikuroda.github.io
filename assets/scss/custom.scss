@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  font-family: "Roboto" "Noto Sans JP";
+  font-family: "Roboto" "Noto+Sans+JP";
 }
 
 body.dark {
   background: rgb(10, 10, 10);
-  font-family: "Roboto" "Noto Sans JP";
+  font-family: "Roboto" "Noto+Sans+JP";
 }
 
 .dark .pub {
@@ -32,7 +32,7 @@ body.dark {
 }
 
 .article h1 {
-  font-family: "Montserrat", "Noto Sans JP";
+  font-family: "Montserrat", "Noto+Sans+JP";
   font-weight: bold;
 }
 

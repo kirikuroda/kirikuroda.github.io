@@ -9290,11 +9290,11 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Roboto" "Noto Sans JP"; }
+  font-family: "Roboto" "Noto+Sans+JP"; }
 
 body.dark {
   background: #0a0a0a;
-  font-family: "Roboto" "Noto Sans JP"; }
+  font-family: "Roboto" "Noto+Sans+JP"; }
 
 .dark .pub {
   background-color: #0a0a0a; }
@@ -9312,7 +9312,7 @@ body.dark {
   background: #282828; }
 
 .article h1 {
-  font-family: "Montserrat", "Noto Sans JP";
+  font-family: "Montserrat", "Noto+Sans+JP";
   font-weight: bold; }
 
 a {
