@@ -9388,6 +9388,11 @@ p a {
   box-shadow: 0 0 0 0.2rem #ffd803;
   color: #333333; }
 
+.dark .form-control {
+  background-color: #44475a;
+  border-color: #333333;
+  color: #333333; }
+
 a:hover h4.card-title.exp-title.text-muted {
   color: #d9473d !important; }
 
