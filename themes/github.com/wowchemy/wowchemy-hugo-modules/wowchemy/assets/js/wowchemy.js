@@ -93,7 +93,7 @@ $('#navbar-main li.nav-item a.nav-link, .js-scroll').on('click', function (event
 
     $('html, body').animate({
       scrollTop: elementOffset
-    }, 800);
+    }, 300);
   }
 });
 
@@ -626,7 +626,7 @@ $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
   setTimeout(function () {
     dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
     menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-  }, 800);
+  }, 100);
 });
 
 // Call `fixScrollspy` when window is resized.
