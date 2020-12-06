@@ -7,7 +7,7 @@
 /docs/authors/*
 !/docs/authors/admin
 /docs/authors/admin/index.html
-/docs/authors/admin/index.xml
+
 /docs/courses
 /docs/media
 /docs/publication_types
