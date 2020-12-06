@@ -7164,7 +7164,7 @@ body {
   font-size: 1rem;
   line-height: inherit;
   color: inherit;
-  background-color: whitesmoke;
+  background-color: white;
   padding-top: 0;
   counter-reset: captions;
   overflow-x: hidden;
@@ -7405,7 +7405,7 @@ small,
  *  Modals.
  **************************************************/
 .modal-content {
-  background: whitesmoke; }
+  background: white; }
 
 .modal-title {
   margin: 0;
@@ -8022,7 +8022,7 @@ a.summary-link {
 .search-results {
   transform: scale(0);
   -webkit-transform: scale(0);
-  background-color: whitesmoke;
+  background-color: white;
   bottom: 0;
   left: 0;
   right: 0;
@@ -8033,7 +8033,7 @@ a.summary-link {
   z-index: -99; }
 
 .dark .search-results {
-  background-color: #23252f; }
+  background-color: whitesmoke; }
 
 .searching {
   overflow: hidden; }
@@ -8061,12 +8061,12 @@ a.summary-link {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: whitesmoke;
+  background-color: white;
   padding-top: 2rem;
   padding-bottom: 1rem; }
 
 .dark .search-header {
-  background-color: #23252f; }
+  background-color: whitesmoke; }
 
 .search-header h1 {
   margin: 0;
@@ -8131,10 +8131,10 @@ a.summary-link {
 /* DARK themed components. */
 /* Algolia search input */
 .dark .ais-search-box--input {
-  background-color: #23252f; }
+  background-color: whitesmoke; }
 
 .dark #search-query {
-  background-color: #23252f; }
+  background-color: whitesmoke; }
 
 /*************************************************
  *  Page content
@@ -8471,7 +8471,7 @@ ul.share li:hover i {
  *  Page Builder: sections and widgets
  **************************************************/
 .home-section {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   padding: 110px 0 110px 0;
   z-index: 0; }
@@ -8545,13 +8545,13 @@ ul.share li:hover i {
   padding-top: 50px; }
 
 .home-section:nth-of-type(even) {
-  background-color: #ebebeb; }
+  background-color: #f7f7f7; }
 
 .dark .home-section {
-  background-color: #272935; }
+  background-color: whitesmoke; }
 
 .dark .home-section:nth-of-type(even) {
-  background-color: #23252f; }
+  background-color: #ebebeb; }
 
 @media screen and (max-width: 768px) {
   .home-section {
@@ -9167,7 +9167,7 @@ body.dark,
 .dark .form-control,
 .dark .form-control:focus {
   color: #f8f8f2;
-  background: #23252f; }
+  background: whitesmoke; }
 
 .dark .form-control {
   background-color: #44475a; }
