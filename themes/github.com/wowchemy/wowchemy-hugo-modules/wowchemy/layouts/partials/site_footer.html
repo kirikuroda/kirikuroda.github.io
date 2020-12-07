@@ -19,7 +19,7 @@
   {{ partial "site_footer_license" . }}
 
   <p class="powered-by">
-    {{ $is_sponsor := site.Params.i_am_a_sponsor | default true }}
+    {{ $is_sponsor := site.Params.i_am_a_sponsor | default false }}
     {{ $hide_published_with_footer := site.Params.power_ups.hide_published_with | default true }}
     {{ if not (and $is_sponsor $hide_published_with_footer) }}
     Published with
