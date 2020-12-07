@@ -3,11 +3,12 @@ html {
 }
 
 body {
+  background: rgb(235, 235, 235);
   font-family: "Roboto" "Noto+Sans+JP";
 }
 
 body.dark {
-  background: rgb(10, 10, 10);
+  background: rgb(40, 40, 40);
   font-family: "Roboto" "Noto+Sans+JP";
 }
 
@@ -20,11 +21,11 @@ body.dark {
 }
 
 .dark .home-section:nth-of-type(even) {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(40, 40, 40) !important;
 }
 
 .dark .home-section:nth-of-type(odd) {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10) !important;
 }
 
 .dark .card-simple {

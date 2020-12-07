@@ -9290,10 +9290,11 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  background: #ebebeb;
   font-family: "Roboto" "Noto+Sans+JP"; }
 
 body.dark {
-  background: #0a0a0a;
+  background: #282828;
   font-family: "Roboto" "Noto+Sans+JP"; }
 
 .dark .pub {
@@ -9303,10 +9304,10 @@ body.dark {
   background-color: #282828; }
 
 .dark .home-section:nth-of-type(even) {
-  background-color: #282828; }
+  background-color: #282828 !important; }
 
 .dark .home-section:nth-of-type(odd) {
-  background-color: #0a0a0a; }
+  background-color: #0a0a0a !important; }
 
 .dark .card-simple {
   background: #282828; }
