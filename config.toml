@@ -15,7 +15,7 @@ baseurl = "https://kirikuroda.github.io/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
-copyright = ""
+copyright = "`&copy;` Kiri Kuroda, `{year}`"
 
 ############################
 ## Advanced options below ##
@@ -23,7 +23,7 @@ copyright = ""
 
 # 追加
 publishDir = "docs"
-relativeurls = true
+relativeurls = false
 languageCode = "ja-jp"
 
 # Get last modified date for content from Git?
