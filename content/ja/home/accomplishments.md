@@ -19,6 +19,16 @@ date_format = "2006年1月"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "第13回日本人間行動進化学会大会"
+  organization_url = "https://www.hbesj.org"
+  title = "最優秀発表賞"
+  url = "https://www.hbesj.org/?page_id=128"
+  certificate_url = ""
+  date_start = "2020-12-13"
+  date_end = ""
+  description = ""
+
+[[item]]
   organization = "日本心理学会第84回大会"
   organization_url = "https://psych.or.jp"
   title = "学術大会特別優秀発表賞"
