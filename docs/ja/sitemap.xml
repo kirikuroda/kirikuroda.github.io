@@ -3,6 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kirikuroda.github.io/post/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/categories/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/categories/%E5%AE%9F%E9%A8%93/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/publication_types/3/</loc>
     <lastmod>2020-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -93,21 +148,6 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/</loc>
-    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/publication_types/</loc>
     <lastmod>2020-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -180,41 +220,6 @@
                 hreflang="ja"
                 href="https://kirikuroda.github.io/publication/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/post/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/%E5%AE%9F%E9%A8%93/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -1,0 +1,1521 @@
+<!DOCTYPE html><html lang="ja-jp" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Kiri Kuroda">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="素人の浅知恵が悲惨な結果をもたらすという格好の事例。他山の石にしてください">
+
+  
+  <link rel="alternate" hreflang="ja-jp" href="https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#d9473d">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700%7CMontserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.e81b9a9520d82388efc8bb1a991b75d7.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89644431-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-89644431-3', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Kiri Kuroda">
+  <meta property="og:url" content="https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/">
+  <meta property="og:title" content="jsPsych &#43; Firebaseでやらかした話 | Kiri Kuroda">
+  <meta property="og:description" content="素人の浅知恵が悲惨な結果をもたらすという格好の事例。他山の石にしてください"><meta property="og:image" content="https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/featured.jpg">
+  <meta property="twitter:image" content="https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/featured.jpg"><meta property="og:locale" content="ja-jp">
+  
+    
+      <meta property="article:published_time" content="2020-12-16T15:33:47&#43;09:00">
+    
+    <meta property="article:modified_time" content="2020-12-16T15:33:47&#43;09:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/"
+  },
+  "headline": "jsPsych + Firebaseでやらかした話",
+  
+  "image": [
+    "https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/featured.jpg"
+  ],
+  
+  "datePublished": "2020-12-16T15:33:47+09:00",
+  "dateModified": "2020-12-16T15:33:47+09:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Kiri Kuroda"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kiri Kuroda",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "素人の浅知恵が悲惨な結果をもたらすという格好の事例。他山の石にしてください"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>jsPsych &#43; Firebaseでやらかした話 | Kiri Kuroda</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>検索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Kiri Kuroda</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切り替え">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Kiri Kuroda</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Papers</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#accomplishments"><span>Awards & Grants</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#experience"><span>Career</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="検索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>jsPsych &#43; Firebaseでやらかした話</h1>
+
+  
+  <p class="page-subtitle">やらかした……</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020年12月16日
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/%E5%AE%9F%E9%A8%93/">実験</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 378px;">
+  <div style="position: relative">
+    <img src="/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/featured_hu35891f681fb48fe4e96db3b5e23beae0_70894_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2>目次</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#この記事のサマリー">この記事のサマリー</a></li>
+    <li><a href="#自己紹介">自己紹介</a></li>
+    <li><a href="#ウェブ実験の背景">ウェブ実験の背景</a></li>
+    <li><a href="#悲劇の経緯">悲劇の経緯</a></li>
+    <li><a href="#悲劇の原因と解決策">悲劇の原因と解決策</a>
+      <ul>
+        <li><a href="#正解">正解</a></li>
+        <li><a href="#不正解今回やってしまったこと">不正解（今回やってしまったこと）</a></li>
+        <li><a href="#何が起きていたか">何が起きていたか？</a></li>
+      </ul>
+    </li>
+    <li><a href="#テスト">テスト</a>
+      <ul>
+        <li><a href="#テスト状況">テスト状況</a></li>
+        <li><a href="#結果">結果</a></li>
+        <li><a href="#考察">考察</a></li>
+      </ul>
+    </li>
+    <li><a href="#教訓">教訓</a></li>
+  </ul>
+</nav>
+<br>
+<h1 id="この記事のサマリー">この記事のサマリー</h1>
+<ul>
+<li>
+<p>jsPsychとFirebaseでウェブ実験を実施した</p>
+</li>
+<li>
+<p>私の浅知恵のせいで、データが十分に記録されないという悲劇が生じた</p>
+</li>
+<li>
+<p>結局のところ、<a href="https://kunisatolab.github.io/main/how-to-jspsych-firebase.html" title="jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;データ保存しよう！" target="_blank" rel="noopener">国里先生の記事</a>や<a href="https://ando-roid.hatenablog.com/entry/intro_psyexp_R" title="「Rで始める心理学Web実験」を書いた話" target="_blank" rel="noopener">安藤先生の記事</a>を忠実に守れば悲劇なんて起こらないということがわかった</p>
+</li>
+</ul>
+<br>
+<h1 id="自己紹介">自己紹介</h1>
+<p><a href="https://adventar.org/calendars/6005" title="Online Psychological Experiment Advent Calendar" target="_blank" rel="noopener">Online Psychological Experiment Advent Calendar</a> の21日目に登録した黒田起吏と申します。社会情報の処理過程や集団意思決定時の認知過程について、主に実験室実験（ヒトを対象とした認知行動実験）を用いて研究してきました。</p>
+<p>先日、jsPsychとFirebaseを用いたウェブ実験を行ったところ、大きなミスを犯しました。この記事ではその経緯と原因を説明します。反面教師にしていただければ幸いです。</p>
+<br>
+<h1 id="ウェブ実験の背景">ウェブ実験の背景</h1>
+<p>COVID-19の影響で、ヒトを対象とした実験室実験を実施しにくくなっています。近頃では、<a href="https://www.yomiuri.co.jp/national/20201207-OYT1T50081/" title="同じ端末のキーボード共有、クラスター原因か…ボタンに「高さ」あるタイプ" target="_blank" rel="noopener">共用のキーボードからコロナに感染した話</a>もあるそうです。この状況では、協力してくださる方々が安心して実験に参加できるとは思えないため、いまは実験室実験を自粛しています。</p>
+<p>そのため今年度から、私はjsPsychとFirebaseを用いてウェブ実験を行ってきました。実施方法については、<a href="https://kunisatolab.github.io/main/how-to-jspsych-firebase.html" title="jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;データ保存しよう！" target="_blank" rel="noopener">国里先生の記事</a>や<a href="https://ando-roid.hatenablog.com/entry/intro_psyexp_R" title="「Rで始める心理学Web実験」を書いた話" target="_blank" rel="noopener">安藤先生の記事</a>をご覧ください。</p>
+<p><b><u>結論としては、2つの記事の内容を忠実に守ればトラブルは起きません。</b></u>しかし、私は浅知恵を働かせてしまい、記事の内容を忠実には守りませんでした。結局のところ、それが悲劇の原因でした。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<br>
+<h1 id="悲劇の経緯">悲劇の経緯</h1>
+<p>2020年12月14日、ウェブ実験の参加者をメールで募集しました。このウェブ実験は「参加希望者がURLからサイトにアクセスし、自分のペースで80試行の課題に取り組む」というシンプルなものです。サンプルサイズについては、63名を計画していました。</p>
+<p>しばらくして、70名程度（脱落者や外れ値がいるかもしれないと考えていたので、63名より若干多めに実施）のデータが集まりました。FirebaseからJSONデータをエクスポートし、データが記録されているかを確認しました。</p>
+<p>すると、下の図のような結果が得られました。X軸は各参加者、Y軸は記録できた試行数を表しています。</p>
+<p><img src="img/dataloss.png" alt="dataloss"></p>
+<p>OMG。<u><strong>全80試行を記録できた人が、たった8人しかいません。残り60数名では、大なり小なり欠損が生じてしまっています。</strong></u>なぜこのようなことが起きてしまったのでしょうか？</p>
+<br>
+<h1 id="悲劇の原因と解決策">悲劇の原因と解決策</h1>
+<p>結論から言うと、Firebaseへのデータの記録方法が間違っていたのが原因でした。まず、正解（<a href="https://kunisatolab.github.io/main/how-to-jspsych-firebase.html" title="jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;データ保存しよう！" target="_blank" rel="noopener">国里先生の記事</a>や<a href="https://ando-roid.hatenablog.com/entry/intro_psyexp_R" title="「Rで始める心理学Web実験」を書いた話" target="_blank" rel="noopener">安藤先生の記事</a>で紹介されている方法）を見ていきます。</p>
+<br>
+<h2 id="正解">正解</h2>
+<p>正解のやり方では、以下のようなコードでデータを記録します。</p>
+<pre><code class="language-js">jsPsych.init({
+  timeline: timeline,
+  on_finish: function() {
+    firebase.database().ref(exp_id).set({
+      data: jsPsych.data.get().values()
+    })
+  }
+});
+</code></pre>
+<p>これが意味しているのは「<strong><u>実験が全て終わったら、これまでのデータを一括で記録する</u></strong>」ということです。こうしておけば、データはきちんと記録されます。</p>
+<br>
+<h2 id="不正解今回やってしまったこと">不正解（今回やってしまったこと）</h2>
+<p>しかし、私は浅知恵を働かせてしまいました。どのような浅知恵だったかを説明します。</p>
+<p>まず、<a href="https://kunisatolab.github.io/main/how-to-jspsych-firebase.html" title="jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;データ保存しよう！" target="_blank" rel="noopener">国里先生の記事</a>や<a href="https://ando-roid.hatenablog.com/entry/intro_psyexp_R" title="「Rで始める心理学Web実験」を書いた話" target="_blank" rel="noopener">安藤先生の記事</a>を読んだとき、素朴にこう思いました。</p>
+<br>
+<blockquote>
+<p>この方法（正解バージョン）だと、実験の途中で参加者が脱落したら、データを記録できないのでは？？？</p>
+</blockquote>
+<br>
+<p>実際、この考え自体は正しいです（おそらくは。でもあまり自信ないです）。そこで私は「<strong><u>各試行が終わるたびにデータを記録</u></strong>」するようにしました。下のようなコードです。</p>
+<pre><code class="language-js">// 以下のコードは不正解なので真似しないでください!!
+
+// 80試行のタイムライン。
+// 各試行の最後（参加者の反応後）にこれまでの全てのデータを逐一記録
+const timeline = {
+  timeline: [fixation, stimulus, response],
+  timeline_variables: variables, // 80試行のパラメタ
+	repetitions: 1,
+  on_finish: function() {
+    firebase.database().ref(exp_id).set({
+      data: jsPsych.data.get().values()
+    })
+  }
+};
+
+// 実験の最後にもついでにデータを記録
+jsPsych.init({
+  timeline: timeline,
+  on_finish: function() {
+    firebase.database().ref(exp_id).set({
+      data: jsPsych.data.get().values()
+    })
+  }
+});
+</code></pre>
+<p>実際、このコードは動くし、データも記録できます。</p>
+<p>ただしそれは、1人ないし少人数が同時に取り組んでいる場合だけです。<u><strong>つまり、自分1人でテストする限り、このコードが不具合を起こすことはほとんどありません。しかし、複数人が同時にこの課題に取り組むと、データの欠損が生じてしまいます。</strong></u></p>
+<br>
+<h2 id="何が起きていたか">何が起きていたか？</h2>
+<p>データの欠損に気がついたとき、私は以下の3つが原因かもしれないと考えました。</p>
+<ol>
+<li>Firebaseが無料プランだった（しょぼかった）</li>
+<li>同時に参加した人数が多く、それがサーバに負荷をかけた</li>
+<li>データを毎試行（頻繁に）記録して、それがサーバに負荷をかけた</li>
+</ol>
+<br>
+<p>まず1についてです。Firebaseに詳しくないので確かなことは言えませんが「課金すればいいんじゃないの」と思い、早速自分のクレジットカードを登録しました。つまり1の原因は（おそらく）潰せました。</p>
+<p>次に2についてです。同時接続数を確認したところ、最大12人が同時接続していたことがわかりました。12人が同時接続するだけでサーバが駄目になるサービスだとしたら、Firebaseの商売は成り立ってないはずなので、この可能性はかなり低いと考えました。ただ、一応その可能性は切り捨てませんでした。</p>
+<p>残った最後の可能性として、3の原因が一番大きそうだと考えるに至りました。これまで私は「毎試行データを記録するぐらい、Firebaseサンなら大丈夫でしょ」と思っていましたが、そうではないかもしれないと考え直したということです。</p>
+<br>
+<h1 id="テスト">テスト</h1>
+<h2 id="テスト状況">テスト状況</h2>
+<p>上の説を検証するため、12月16日にテストを行いました。テスト状況は以下のとおりです。</p>
+<ul>
+<li>Firebaseのプランをアップグレードした</li>
+<li>実験データを「実験の最後に一括で記録」するようにした。つまり、国里先生や安藤先生のやり方に忠実に従ったということ</li>
+<li>13人（研究室のメンバーなど）に頼み、同時にウェブサイトに接続して課題に取り組んでもらった</li>
+</ul>
+<br>
+<h2 id="結果">結果</h2>
+<p>記録されたデータを確認したところ、13人全員のデータ全てが記録されていました。つまり成功です。</p>
+<br>
+<h2 id="考察">考察</h2>
+<p>コードを正解バージョンに修正したことがかなり有効だったと考えられます。もちろんFirebaseのアップグレードが有効だったという可能性は残っていますが、とにかくデータ欠損の問題は解決しました。</p>
+<br>
+<h1 id="教訓">教訓</h1>
+<p>まとめると、jsPsychとFirebaseで実験を実施するときは、</p>
+<ol>
+<li><a href="https://kunisatolab.github.io/main/how-to-jspsych-firebase.html" title="jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;データ保存しよう！" target="_blank" rel="noopener">国里先生の記事</a>や<a href="https://ando-roid.hatenablog.com/entry/intro_psyexp_R" title="「Rで始める心理学Web実験」を書いた話" target="_blank" rel="noopener">安藤先生の記事</a>にあるように「実験が全て終わったときにデータを記録する」のが良い</li>
+<li>（インテンシブに）データを取る場合、Firebaseは一応有料プランにしておくのが良いかもしれない。無料枠の中で済んだらどうせお金を払わずに済むので（おそらくは。詳しくはご自身の責任でお調べください）</li>
+</ol>
+<p>ということになります。</p>
+<p>私のようにやらかす人は少ないとは思いますが、念のためご注意いただければと思います。</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://shorebird.hatenablog.com/entry/2020/01/11/113010" title="『文化がヒトを進化させた』の書評" target="_blank" rel="noopener">『文化がヒトを進化させた』の書評</a>にもあるように、まさに「累積的に進化した文化のコンテンツは個人の体験や思考の限界を超えて有用なことが多いからなぜそうするのかわからなくてもまず従うことが有利」ということでした。つまり「よくわからんけど、とりあえず言い伝えには従っておく」が正解だったということです。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/&amp;text=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/&amp;t=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://social-plugins.line.me/lineit/share?url=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/" target="_blank" rel="noopener" class="share-btn-line">
+          <i class="fab fa-line"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      <li>
+        <a href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/&amp;title=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1" target="_blank" rel="noopener" class="share-btn-hatena">
+          <i class="fa fa-hatena"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="http://getpocket.com/edit?url=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/&amp;title=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1" target="_blank" rel="noopener" class="share-btn-pocket">
+          <i class="fab fa-get-pocket"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/&amp;title=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/&amp;title=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1" target="_blank" rel="noopener" class="share-btn-tumblr">
+          <i class="fab fa-tumblr-square"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=jsPsych%20&#43;%20Firebase%e3%81%a7%e3%82%84%e3%82%89%e3%81%8b%e3%81%97%e3%81%9f%e8%a9%b1&amp;body=https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase%E3%81%A6%E3%82%84%E3%82%89%E3%81%8B%E3%81%97%E3%81%9F%E8%A9%B1/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+    <li>
+      <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fkirikuroda.github.io%2Findex.xml" target="_blank">
+        <i class="fa icon-feedly-o font-normal"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kirikuroda.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu219fcabef873e532f569b4eca90c980a_20624_270x270_fill_q90_lanczos_center.jpg" alt="Kiri Kuroda"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kirikuroda.github.io/">Kiri Kuroda</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=H8qxiuAAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-7278-1430" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/kirikuroda" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Kiri_Kuroda" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">前へ</div>
+    <a href="/post/2020/09/05/mle-delay-discounting/" rel="prev">認知モデルのパラメタを最尤推定する</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>関連ページ</h3>
+    <ul>
+      
+      <li><a href="/post/2020/09/05/mle-delay-discounting/">認知モデルのパラメタを最尤推定する</a></li>
+      
+      <li><a href="/post/2020/09/02/psychopy-coder-tutorial/">PsychoPy Coderチュートリアル</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Kiri Kuroda, 2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> コピー
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> ダウンロード
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"結果が見つかりません。","placeholder":"Search...","results":"件"};
+      const content_type = {
+        'post': "投稿",
+        'project': "プロジェクト",
+        'publication' : "論文",
+        'talk' : "学会発表",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.8ba03f268d2a3b6ec04bc36bab9774be.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
