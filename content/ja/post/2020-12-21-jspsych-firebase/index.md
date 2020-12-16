@@ -2,6 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "jsPsych + Firebaseでやらかした話"
+slug: jspsych-firebase
 subtitle: "やらかした……"
 summary: "素人の浅知恵が悲惨な結果をもたらすという格好の事例。他山の石にしてください"
 authors: []
