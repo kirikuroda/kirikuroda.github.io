@@ -974,7 +974,7 @@
 const timeline = {
   timeline: [fixation, stimulus, response],
   timeline_variables: variables, // 80試行のパラメタ
-	repetitions: 1,
+  repetitions: 1,
   on_finish: function() {
     firebase.database().ref(exp_id).set({
       data: jsPsych.data.get().values()
