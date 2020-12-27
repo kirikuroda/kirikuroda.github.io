@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>データビジュアライゼーション | Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/tags/%E3%83%86%E3%83%BC%E3%82%BF%E3%83%92%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</link>
-      <atom:link href="https://kirikuroda.github.io/tags/%E3%83%86%E3%83%BC%E3%82%BF%E3%83%92%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
-    <description>データビジュアライゼーション</description>
+    <title>スライド | Kiri Kuroda</title>
+    <link>https://kirikuroda.github.io/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    <description>スライド</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2020</copyright><lastBuildDate>Sun, 27 Dec 2020 12:40:55 +0900</lastBuildDate>
     <image>
       <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
-      <title>データビジュアライゼーション</title>
-      <link>https://kirikuroda.github.io/tags/%E3%83%86%E3%83%BC%E3%82%BF%E3%83%92%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</link>
+      <title>スライド</title>
+      <link>https://kirikuroda.github.io/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/</link>
     </image>
     
     <item>
@@ -74,15 +74,6 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>データの可視化 まとめ</title>
-      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
-      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
-      <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
     </item>
     

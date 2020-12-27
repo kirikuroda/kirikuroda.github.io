@@ -10,7 +10,7 @@ categories: ["プレゼンテーション"]
 date: 2020-12-27T12:40:55+09:00
 lastmod: 2020-12-27T12:40:55+09:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
