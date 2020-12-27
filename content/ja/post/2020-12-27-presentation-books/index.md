@@ -43,7 +43,7 @@ toc: true
 
 <br>
 
-## **『一生使える見やすい資料のデザイン入門』**
+## 『一生使える見やすい資料のデザイン入門』
 
 [『見やすいプレゼン資料の作り方』](https://www.slideshare.net/yutamorishige50/how-to-present-better "slideshareのリンク")というスライドの書籍版です。今年の夏に出会いました。
 
@@ -51,7 +51,7 @@ toc: true
 
 <br>
 
-## **『伝わるデザインの基本 増補改訂版 よい資料を作るためのレイアウトのルール』**
+## 『伝わるデザインの基本 増補改訂版 よい資料を作るためのレイアウトのルール』
 
 [『伝わるデザイン 研究発表のユニバーサルデザイン』](https://tsutawarudesign.com "伝わるデザイン")というウェブサイトの書籍版です。
 
@@ -61,7 +61,7 @@ toc: true
 
 <br>
 
-## **『できる研究者のプレゼン術 スライドづくり、話の組み立て、話術』**
+## 『できる研究者のプレゼン術 スライドづくり、話の組み立て、話術』
 
 "Better Presentations: A Guide for Scholars, Researchers, and Wonks"という本の日本語版です。今年の夏に原著を買おうとしたら、この日本語版（2020年3月出版）を見つけました。
 
@@ -71,7 +71,7 @@ toc: true
 
 <br>
 
-## **"English for Presentations at International Conferences (Second Edition)"**
+## "English for Presentations at International Conferences (Second Edition)"
 
 著者はアカデミックライティングを教えている人で、これまでに多くのライティング本を出版しています。この"English for Presentations"もその1つとして書かれたものです。実際にこの本でも「どういうセリフを言ったり、どういう文章をスライドに載せたりするべきか」を教えてくれます。
 
@@ -85,7 +85,7 @@ toc: true
 
 <br>
 
-## **"Fundamentals of Data Visualization"**
+## "Fundamentals of Data Visualization"
 
 [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/ "Fundamentals of Data Visualization")
 
@@ -99,7 +99,7 @@ toc: true
 
 <br>
 
-## **『Rグラフィックス クックブック 第2版 ggplot2によるグラフ作成のレシピ集』**
+## 『Rグラフィックス クックブック 第2版 ggplot2によるグラフ作成のレシピ集』
 
 [R Graphics Cookbook, 2nd edition](https://r-graphics.org "R Graphics Cookbook")というウェブサイト（本）の日本語版書籍です。
 
