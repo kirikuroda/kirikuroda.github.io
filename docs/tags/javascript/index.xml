@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript | Kiri Kuroda</title>
+    <link>https://kirikuroda.github.io/tags/javascript/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <description>javascript</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2020</copyright><lastBuildDate>Wed, 16 Dec 2020 15:33:47 +0900</lastBuildDate>
+    <image>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <title>javascript</title>
+      <link>https://kirikuroda.github.io/tags/javascript/</link>
+    </image>
+    
+    <item>
+      <title>jsPsych &#43; Firebaseでやらかした話</title>
+      <link>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</link>
+      <pubDate>Wed, 16 Dec 2020 15:33:47 +0900</pubDate>
+      <guid>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</guid>
+      <description>&lt;h1 id=&#34;この記事のサマリー&#34;&gt;この記事のサマリー&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;jsPsychとFirebaseでウェブ実験を実施した&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;私の浅知恵のせいで、データが十分に記録されないという悲劇が生じた&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;結局のところ、&lt;a href=&#34;https://kunisatolab.github.io/main/how-to-jspsych-firebase.html&#34; title=&#34;jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;amp;データ保存しよう！&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国里先生の記事&lt;/a&gt;や&lt;a href=&#34;https://ando-roid.hatenablog.com/entry/intro_psyexp_R&#34; title=&#34;「Rで始める心理学Web実験」を書いた話&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;安藤先生の記事&lt;/a&gt;を忠実に守れば悲劇なんて起こらないということがわかった&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://adventar.org/calendars/6005&#34; title=&#34;Online Psychological Experiment Advent Calendar&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Psychological Experiment Advent Calendar&lt;/a&gt; の21日目に登録した黒田起吏と申します。社会情報の処理過程や集団意思決定時の認知過程について、主に実験室実験（ヒトを対象とした認知行動実験）を用いて研究してきました。&lt;/p&gt;
+&lt;p&gt;先日、jsPsychとFirebaseを用いたウェブ実験を行ったところ、大きなミスを犯しました。この記事ではその経緯と原因を説明します。反面教師にしていただければ幸いです。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;ウェブ実験の背景&#34;&gt;ウェブ実験の背景&lt;/h1&gt;
+&lt;p&gt;COVID-19の影響で、ヒトを対象とした実験室実験を実施しにくくなっています。近頃では、&lt;a href=&#34;https://www.yomiuri.co.jp/national/20201207-OYT1T50081/&#34; title=&#34;同じ端末のキーボード共有、クラスター原因か…ボタンに「高さ」あるタイプ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;共用のキーボードからコロナに感染した話&lt;/a&gt;もあるそうです。この状況では、協力してくださる方々が安心して実験に参加できるとは思えないため、いまは実験室実験を自粛しています。&lt;/p&gt;
+&lt;p&gt;そのため今年度から、私はjsPsychとFirebaseを用いてウェブ実験を行ってきました。実施方法については、&lt;a href=&#34;https://kunisatolab.github.io/main/how-to-jspsych-firebase.html&#34; title=&#34;jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;amp;データ保存しよう！&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国里先生の記事&lt;/a&gt;や&lt;a href=&#34;https://ando-roid.hatenablog.com/entry/intro_psyexp_R&#34; title=&#34;「Rで始める心理学Web実験」を書いた話&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;安藤先生の記事&lt;/a&gt;をご覧ください。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;u&gt;結論としては、2つの記事の内容を忠実に守ればトラブルは起きません。&lt;/b&gt;&lt;/u&gt;しかし、私は浅知恵を働かせてしまい、記事の内容を忠実には守りませんでした。結局のところ、それが悲劇の原因でした。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;悲劇の経緯&#34;&gt;悲劇の経緯&lt;/h1&gt;
+&lt;p&gt;2020年12月14日、ウェブ実験の参加者をメールで募集しました。このウェブ実験は「参加希望者がURLからサイトにアクセスし、自分のペースで80試行の課題に取り組む」というシンプルなものです。サンプルサイズについては、63名を計画していました。&lt;/p&gt;
+&lt;p&gt;しばらくして、70名程度（脱落者や外れ値がいるかもしれないと考えていたので、63名より若干多めに実施）のデータが集まりました。FirebaseからJSONデータをエクスポートし、データが記録されているかを確認しました。&lt;/p&gt;
+&lt;p&gt;すると、下の図のような結果が得られました。X軸は各参加者、Y軸は記録できた試行数を表しています。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;img/dataloss.png&#34; alt=&#34;dataloss&#34;&gt;&lt;/p&gt;
+&lt;p&gt;OMG。&lt;u&gt;&lt;strong&gt;全80試行を記録できた人が、たった8人しかいません。残り60数名では、大なり小なり欠損が生じてしまっています。&lt;/strong&gt;&lt;/u&gt;なぜこのようなことが起きてしまったのでしょうか？&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;悲劇の原因と解決策&#34;&gt;悲劇の原因と解決策&lt;/h1&gt;
+&lt;p&gt;結論から言うと、Firebaseへのデータの記録方法が間違っていたのが原因でした。まず、正解（&lt;a href=&#34;https://kunisatolab.github.io/main/how-to-jspsych-firebase.html&#34; title=&#34;jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;amp;データ保存しよう！&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国里先生の記事&lt;/a&gt;や&lt;a href=&#34;https://ando-roid.hatenablog.com/entry/intro_psyexp_R&#34; title=&#34;「Rで始める心理学Web実験」を書いた話&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;安藤先生の記事&lt;/a&gt;で紹介されている方法）を見ていきます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;正解&#34;&gt;正解&lt;/h2&gt;
+&lt;p&gt;正解のやり方では、以下のようなコードでデータを記録します。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;jsPsych.init({
+  timeline: timeline,
+  on_finish: function() {
+    firebase.database().ref(exp_id).set({
+      data: jsPsych.data.get().values()
+    })
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これが意味しているのは「&lt;strong&gt;&lt;u&gt;実験が全て終わったら、これまでのデータを一括で記録する&lt;/u&gt;&lt;/strong&gt;」ということです。こうしておけば、データはきちんと記録されます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;不正解今回やってしまったこと&#34;&gt;不正解（今回やってしまったこと）&lt;/h2&gt;
+&lt;p&gt;しかし、私は浅知恵を働かせてしまいました。どのような浅知恵だったかを説明します。&lt;/p&gt;
+&lt;p&gt;まず、&lt;a href=&#34;https://kunisatolab.github.io/main/how-to-jspsych-firebase.html&#34; title=&#34;jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;amp;データ保存しよう！&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国里先生の記事&lt;/a&gt;や&lt;a href=&#34;https://ando-roid.hatenablog.com/entry/intro_psyexp_R&#34; title=&#34;「Rで始める心理学Web実験」を書いた話&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;安藤先生の記事&lt;/a&gt;を読んだとき、素朴にこう思いました。&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;この方法（正解バージョン）だと、実験の途中で参加者が脱落したら、データを記録できないのでは？？？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;実際、この考え自体は正しいです（おそらくは。でもあまり自信ないです）。そこで私は「&lt;strong&gt;&lt;u&gt;各試行が終わるたびにデータを記録&lt;/u&gt;&lt;/strong&gt;」するようにしました。下のようなコードです。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// 以下のコードは不正解なので真似しないでください!!
+
+// 80試行のタイムライン。
+// 各試行の最後（参加者の反応後）にこれまでの全てのデータを逐一記録
+const timeline = {
+  timeline: [fixation, stimulus, response],
+  timeline_variables: variables, // 80試行のパラメタ
+  repetitions: 1,
+  on_finish: function() {
+    firebase.database().ref(exp_id).set({
+      data: jsPsych.data.get().values()
+    })
+  }
+};
+
+// 実験の最後にもついでにデータを記録
+jsPsych.init({
+  timeline: timeline,
+  on_finish: function() {
+    firebase.database().ref(exp_id).set({
+      data: jsPsych.data.get().values()
+    })
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;実際、このコードは動くし、データも記録できます。&lt;/p&gt;
+&lt;p&gt;ただしそれは、1人ないし少人数が同時に取り組んでいる場合だけです。&lt;u&gt;&lt;strong&gt;つまり、自分1人でテストする限り、このコードが不具合を起こすことはほとんどありません。しかし、複数人が同時にこの課題に取り組むと、データの欠損が生じてしまいます。&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;何が起きていたか&#34;&gt;何が起きていたか？&lt;/h2&gt;
+&lt;p&gt;データの欠損に気がついたとき、私は以下の3つが原因かもしれないと考えました。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Firebaseが無料プランだった（しょぼかった）&lt;/li&gt;
+&lt;li&gt;同時に参加した人数が多く、それがサーバに負荷をかけた&lt;/li&gt;
+&lt;li&gt;データを毎試行（頻繁に）記録して、それがサーバに負荷をかけた&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;p&gt;まず1についてです。Firebaseに詳しくないので確かなことは言えませんが「課金すればいいんじゃないの」と思い、早速自分のクレジットカードを登録しました。つまり1の原因は（おそらく）潰せました。&lt;/p&gt;
+&lt;p&gt;次に2についてです。同時接続数を確認したところ、最大12人が同時接続していたことがわかりました。12人が同時接続するだけでサーバが駄目になるサービスだとしたら、Firebaseの商売は成り立ってないはずなので、この可能性はかなり低いと考えました。ただ、一応その可能性は切り捨てませんでした。&lt;/p&gt;
+&lt;p&gt;残った最後の可能性として、3の原因が一番大きそうだと考えるに至りました。これまで私は「毎試行データを記録するぐらい、Firebaseサンなら大丈夫でしょ」と思っていましたが、そうではないかもしれないと考え直したということです。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;テスト&#34;&gt;テスト&lt;/h1&gt;
+&lt;h2 id=&#34;テスト状況&#34;&gt;テスト状況&lt;/h2&gt;
+&lt;p&gt;上の説を検証するため、12月16日にテストを行いました。テスト状況は以下のとおりです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firebaseのプランをアップグレードした&lt;/li&gt;
+&lt;li&gt;実験データを「実験の最後に一括で記録」するようにした。つまり、国里先生や安藤先生のやり方に忠実に従ったということ&lt;/li&gt;
+&lt;li&gt;13人（研究室のメンバーなど）に頼み、同時にウェブサイトに接続して課題に取り組んでもらった&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+&lt;p&gt;記録されたデータを確認したところ、13人全員のデータ全てが記録されていました。つまり成功です。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;考察&#34;&gt;考察&lt;/h2&gt;
+&lt;p&gt;コードを正解バージョンに修正したことがかなり有効だったと考えられます。もちろんFirebaseのアップグレードが有効だったという可能性は残っていますが、とにかくデータ欠損の問題は解決しました。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;教訓&#34;&gt;教訓&lt;/h1&gt;
+&lt;p&gt;まとめると、jsPsychとFirebaseで実験を実施するときは、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://kunisatolab.github.io/main/how-to-jspsych-firebase.html&#34; title=&#34;jsPsychを用いたWEB実験の実施：Firebaseでホスティング&amp;amp;データ保存しよう！&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;国里先生の記事&lt;/a&gt;や&lt;a href=&#34;https://ando-roid.hatenablog.com/entry/intro_psyexp_R&#34; title=&#34;「Rで始める心理学Web実験」を書いた話&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;安藤先生の記事&lt;/a&gt;にあるように「実験が全て終わったときにデータを記録する」のが良い&lt;/li&gt;
+&lt;li&gt;（インテンシブに）データを取る場合、Firebaseは一応有料プランにしておくのが良いかもしれない。無料枠の中で済んだらどうせお金を払わずに済むので（おそらくは。詳しくはご自身の責任でお調べください）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ということになります。&lt;/p&gt;
+&lt;p&gt;私のようにやらかす人は少ないとは思いますが、念のためご注意いただければと思います。&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://shorebird.hatenablog.com/entry/2020/01/11/113010&#34; title=&#34;『文化がヒトを進化させた』の書評&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;『文化がヒトを進化させた』の書評&lt;/a&gt;にもあるように、まさに「累積的に進化した文化のコンテンツは個人の体験や思考の限界を超えて有用なことが多いからなぜそうするのかわからなくてもまず従うことが有利」ということでした。つまり「よくわからんけど、とりあえず言い伝えには従っておく」が正解だったということです。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
