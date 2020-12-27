@@ -5,6 +5,7 @@ date: '2020-08-25'
 slug: mustbuy-2020-summer
 categories:
   - 生活
+tags: ["買ってよかったもの", "生活"]
 subtitle: 'どのアイテムも地味に生活のクオリティを上げてくれます'
 summary: 'どのアイテムも地味に生活のクオリティを上げてくれます'
 authors: []
@@ -17,8 +18,6 @@ projects: []
 toc: true
 draft: false
 ---
-
-{{%toc%}}
 
 # はじめに
 

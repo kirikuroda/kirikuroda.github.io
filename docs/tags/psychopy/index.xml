@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PsychoPy | Kiri Kuroda</title>
+    <link>https://kirikuroda.github.io/tags/psychopy/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/psychopy/index.xml" rel="self" type="application/rss+xml" />
+    <description>PsychoPy</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2020</copyright><lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <title>PsychoPy</title>
+      <link>https://kirikuroda.github.io/tags/psychopy/</link>
+    </image>
+    
+    <item>
+      <title>PsychoPy Coderチュートリアル</title>
+      <link>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+&lt;h2 id=&#34;想定している読者層&#34;&gt;想定している読者層&lt;/h2&gt;
+&lt;p&gt;このチュートリアルでは、以下のタイプの読者を想定しています：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;実験プログラムを書かなきゃいけなくなった心理学（特に社会心理学）系の学部生&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;卒論で（いきなり&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;）心理学実験のプログラムを書かなくちゃいけなくなった人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pythonの初心者本は一通り読んだけど、いざPsychoPyになるとよくわからない人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Coderのどこから手を着ければいいかわからない人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;せっかくやるならBuilderじゃなくてCoderがいい、でもよくわからない、という人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CoderにDemosってやつがあるらしいけど、英語を読むことに苦手意識がある（あるいは、Demosの存在を知らない）という人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;時間がない人&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;既に公開されている優れたチュートリアル&#34;&gt;既に公開されている優れたチュートリアル&lt;/h2&gt;
+&lt;p&gt;PsychoPyのCoderについては、既に優れたチュートリアルがいくつか公開されています（参照：&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;）。この「チュートリアルまとめ」、およびそこで紹介されているチュートリアルのいずれにおいても、Pythonの初歩から実験実施までが丁寧に解説されています。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;このチュートリアルの特色&#34;&gt;このチュートリアルの特色（？）&lt;/h2&gt;
+&lt;p&gt;このチュートリアルでは、Pythonの初歩の説明をすっ飛ばします。上で紹介した記事も含め、もっと優れた資料や書籍が山のようにあるからです。&lt;/p&gt;
+&lt;p&gt;その代わりに、&lt;strong&gt;（社会）心理学の実験で割と使うと思われる機能&lt;/strong&gt;に絞って話を進めます。くわえてこのチュートリアルでは、&lt;strong&gt;最初から完成したコードを見て&lt;/strong&gt;、それを順に解説していくという方針を取ります。「該当するコードをコピペしていけば、自分の実験も書けるんじゃないか？」と思ってもらえることを狙っています。&lt;/p&gt;
+&lt;p&gt;主に説明するのは以下の機能です：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ダイアログボックス&lt;/li&gt;
+&lt;li&gt;データをCSVに記録&lt;/li&gt;
+&lt;li&gt;テキスト刺激の呈示&lt;/li&gt;
+&lt;li&gt;キー押しの検出&lt;/li&gt;
+&lt;li&gt;クリックの検出&lt;/li&gt;
+&lt;li&gt;反応時間の計測&lt;/li&gt;
+&lt;li&gt;マウスやキー押しに応じて刺激の色を変える&lt;/li&gt;
+&lt;li&gt;反応に応じたフィードバック　etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;p&gt;このチュートリアルの試みがどこまでうまくいくかわかりませんが、とりあえずセットアップしてみましょう。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;いきなりやってみるタイプのチュートリアル&#34;&gt;いきなりやってみるタイプのチュートリアル&lt;/h1&gt;
+&lt;h2 id=&#34;いきなりセットアップ&#34;&gt;いきなりセットアップ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;この記事では&lt;strong&gt;Mac&lt;/strong&gt;と&lt;strong&gt;PsychoPy 2020.2.3&lt;/strong&gt;を使ってます。&lt;strong&gt;この際なので、PsychoPyをアップデートしてください。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kirikuroda/psychopy_coder_demo&#34; title=&#34;GitHubのページ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/kirikuroda/psychopy_coder_demo&lt;/a&gt;からファイルをダウンロードして、PCの適当な場所に保存してください。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;いきなり実験&#34;&gt;いきなり実験&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;先ほどダウンロードした&lt;code&gt;psychopy_coder_demo.py&lt;/code&gt;を、PsychoPy Coder（Experiment Runner）で実行してください。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;すると、短い課題が画面に表示されます。この課題を解説していくので、まずは課題をやってみてください。1分で終わります。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;（Macで）以下のようなエラーが出る場合は、&lt;a href=&#34;https://discourse.psychopy.org/t/keyboard-psychtoolbox-hid-failing-with-mac-os-catalina-update/9389&#34; title=&#34;Keyboard psychtoolbox/hid failing with Mac OS Catalina update&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちらのページ（英語）&lt;/a&gt;を参考にしてください。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;File “psychtoolbox/hid.pyc”, line 137, in init
+File “psychtoolbox/hid.pyc”, line 145, in _create_queue
+FileNotFoundError: [Errno 2] No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;実験の構造&#34;&gt;実験の構造&lt;/h2&gt;
+&lt;p&gt;実験は終わりましたか？　実験の構造を確認しましょう：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;参加者のIDを入力&lt;/li&gt;
+&lt;li&gt;教示が表示される&lt;/li&gt;
+&lt;li&gt;Startをクリックすると課題が始まる&lt;/li&gt;
+&lt;li&gt;最初に試行数が表示される&lt;/li&gt;
+&lt;li&gt;次に都市名が表示される&lt;/li&gt;
+&lt;li&gt;どちらの都市の人口が多いかをFかJで回答する&lt;/li&gt;
+&lt;li&gt;何もせずに5秒以上経つと「Hurry up!」が表示される&lt;/li&gt;
+&lt;li&gt;FかJを押すと、選んだ方の都市が黄色くなり、四角で囲まれる&lt;/li&gt;
+&lt;li&gt;正解不正解のフィードバックが表示される&lt;/li&gt;
+&lt;li&gt;（裏でその試行のデータが記録される）&lt;/li&gt;
+&lt;li&gt;※4〜10を繰り返す&lt;/li&gt;
+&lt;li&gt;実験終了のメッセージが表示される&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;p&gt;では、コードを順になぞっていきます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;解説&#34;&gt;解説&lt;/h1&gt;
+&lt;h2 id=&#34;ダイアログボックスを呈示する3846行目&#34;&gt;ダイアログボックスを呈示する（38–46行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# ダイアログボックスを呈示し、参加者の情報を入力
+subj_info = {&amp;quot;subj_id&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;add_here_what_you_want&amp;quot;: &amp;quot;&amp;quot;}
+dialogue_box = gui.DlgFromDict(subj_info, order = [&amp;quot;subj_id&amp;quot;, &amp;quot;add_here_what_you_want&amp;quot;])
+
+# OKならID（subj_id）を記録して実験を進める。キャンセルなら実験を中止
+if dialogue_box.OK:
+    subj_id = subj_info[&amp;quot;subj_id&amp;quot;]
+else:
+    core.quit()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参加者の情報を入力するためのダイアログボックスを呈示しています。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;add_here_what_you_want&lt;/code&gt;と書いてあるように、他に記録したい情報がある場合は、後ろに付け足してください。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;データファイルの名前を作る5267行目&#34;&gt;データファイルの名前を作る（52–67行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 現在日時を記録
+exp_date = data.getDateStr(&amp;quot;%Y%m%d%H%M%S&amp;quot;)
+
+# データファイルを保存するフォルダを作る
+# フォルダがなければ作る
+try:
+    os.makedirs(&amp;quot;data/csv&amp;quot;)
+    os.makedirs(&amp;quot;data/log&amp;quot;)
+# フォルダが既にある場合は何もしない
+except OSError:
+    pass
+
+# データファイルの名前を作る（ID_日付）
+file_name = subj_id + &amp;quot;_&amp;quot; + exp_date
+file_name_csv = os.path.join(&amp;quot;data/csv/&amp;quot; + file_name + &amp;quot;.csv&amp;quot;)
+file_name_log = os.path.join(&amp;quot;data/log/&amp;quot; + file_name + &amp;quot;.log&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参加者のIDと現在日時からファイル名を作っています。プログラムを実行した日時は、何らかの形で記録しておくようにしましょう。&lt;/p&gt;
+&lt;p&gt;CSVファイルに行動データ、logファイルに実験のログを記録することにします。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;クイズの項目を読み込む6970行目&#34;&gt;クイズの項目を読み込む（69–70行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# クイズの項目（都市名、人口）を読み込む
+city = pd.read_csv(&amp;quot;city.csv&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;この実験課題で呈示する項目（CSVファイル）を読み込んでいます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;画面マウスキーボードを設定する7680行目&#34;&gt;画面、マウス、キーボードを設定する（76–80行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 画面の座標系　units = &amp;quot;norm&amp;quot;
+# 画面中心が(0, 0)、X軸が-1〜+1、Y軸が-1〜+1
+win = visual.Window(width = 1200, height = 900, units = &amp;quot;norm&amp;quot;)
+mouse = event.Mouse()
+kb = keyboard.Keyboard()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;PsychoPyでは、ふつうスクリーンを&lt;code&gt;win&lt;/code&gt;として記録します。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;都市名刺激を設定する86103行目&#34;&gt;都市名刺激を設定する（86–103行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# テキスト刺激の色と日本語フォント
+color_default, color_highlight = &amp;quot;white&amp;quot;, &amp;quot;yellow&amp;quot;
+font_ja = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;
+
+# 刺激（都市名）　textは毎試行変わるので、後で定義
+city_1_text = visual.TextStim(win, font = font_ja)
+city_2_text = visual.TextStim(win, font = font_ja)
+
+# 刺激の呈示位置のカウンターバランス
+# 都市名をX軸方向にどれくらいずらすか
+city_nudge_x = 0.5
+# 4試行のカウンターバランスをcity_posとして保存
+city_pos = [&amp;quot;one_two&amp;quot;, &amp;quot;one_two&amp;quot;, &amp;quot;two_one&amp;quot;, &amp;quot;two_one&amp;quot;]
+# city_text_posを並び替える
+city_pos = np.random.permutation(city_pos)
+
+# 試行の順序をランダマイズする。trial_order: [3, 2, 0, 1]のようになる
+trial_order = np.random.permutation(range(len(city)))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;テキスト刺激は&lt;code&gt;visual.TextStim()&lt;/code&gt;で作ります。日本語フォントは好きなものに修正してもらって構いません。&lt;/p&gt;
+&lt;p&gt;ここでは、呈示位置のカウンターバランスと、試行順序のランダマイズもしています&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;キーを設定する105112行目&#34;&gt;キーを設定する（105–112行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# キー設定
+key_left, key_right = &amp;quot;f&amp;quot;, &amp;quot;j&amp;quot;
+
+# 押すべきキーの名前（課題中に呈示しておく）
+# キーのテキストをY軸方向にどれくらいずらすか
+key_text_nudge_y = 0.5
+key_left_text = visual.TextStim(win, text = &amp;quot;F&amp;quot;, pos = (-city_nudge_x, key_text_nudge_y))
+key_right_text = visual.TextStim(win, text = &amp;quot;J&amp;quot;, pos = (city_nudge_x, key_text_nudge_y))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fが左、Jが右に対応するようにしています。&lt;/p&gt;
+&lt;p&gt;また、課題中に呈示する「F」と「J」の刺激もここで作っています。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;教示を定義する114121行目&#34;&gt;教示を定義する（114–121行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 教示を定義
+inst_text = visual.TextStim(win, alignText = &amp;quot;left&amp;quot;, anchorHoriz = &amp;quot;center&amp;quot;)
+inst_text.setText(&amp;quot;&amp;quot;&amp;quot;
+Which city has a larger population?
+Select the city by pressing the F or J of the keyboard.
+
+Click &amp;quot;Start&amp;quot; and work on the task.
+&amp;quot;&amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;教示を作っています。日本語だと少しめんどくさいので、英語で書いています。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.setText()&lt;/code&gt;を使うと、&lt;code&gt;TextStim&lt;/code&gt;にテキストを埋め込むことができます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;startボタンを定義する123129行目&#34;&gt;Startボタンを定義する（123–129行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# ボックスの線の太さ
+box_line_width = 10
+
+# 開始ボタンのボックスとテキスト
+start_pos_y = -0.5 # Y軸座標
+start_box = visual.Rect(win, width = 0.2, height = 0.2, pos = (0, start_pos_y), lineWidth = box_line_width)
+start_text = visual.TextStim(win, text = &amp;quot;Start&amp;quot;, pos = (0, start_pos_y))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Startボタンを定義しています。四角形は&lt;code&gt;visual.Rect()&lt;/code&gt;で作ります。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;その他のテキスト刺激や図形を定義する131157行目&#34;&gt;その他のテキスト刺激や図形を定義する（131–157行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 試行間で呈示するテキスト（テキストの中身は毎試行変えるので、後で定義する）
+iti_text = visual.TextStim(win)
+# ITIの長さ
+iti_length = 2
+
+# どちらの都市名を選んだかを何秒呈示するか
+confirmation_length = 1
+# 選んだ方の都市を囲うボックスを定義
+city_box_width, city_box_height = 0.5, 0.2 # ボックスのサイズ
+city_box_left = visual.Rect(win,
+    width = city_box_width, height = city_box_height, pos = (-city_nudge_x, 0),
+    lineColor = color_highlight, lineWidth = box_line_width
+)
+city_box_right = visual.Rect(win,
+    width = city_box_width, height = city_box_height, pos = (city_nudge_x, 0),
+    lineColor = color_highlight, lineWidth = box_line_width
+)
+
+# 正解不正解のテキスト
+correct_text = visual.TextStim(win, text = &amp;quot;Correct!&amp;quot;)
+wrong_text = visual.TextStim(win, text = &amp;quot;Wrong...&amp;quot;)
+feedback_length = 1
+
+# プロンプトのテキスト
+hurry_text = visual.TextStim(win, text = &amp;quot;Hurry up!&amp;quot;, pos = (0, 0.8), color = color_highlight)
+# time_limit秒経過したらプロンプトを出す
+time_limit = 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;その他のテキスト刺激や図形を定義しています。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;ログファイルを設定する163164行目&#34;&gt;ログファイルを設定する（163–164行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# ログファイルの設定
+file_log = logging.LogFile(file_name_log, level = logging.EXP)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ログファイルを設定しています。実験中に何が起きたかをほぼ自動で記録してくれるので、設定しておくことをおすすめします。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;教示を呈示する170190行目&#34;&gt;教示を呈示する（170–190行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 教示（無限ループ）
+while True:
+
+    # Startにカーソルが載ってたら黄色に
+    if start_box.contains(mouse):
+        start_box.setLineColor(color_highlight)
+        start_text.setColor(color_highlight)
+    # 載ってなければ白に
+    else:
+        start_box.setLineColor(color_default)
+        start_text.setColor(color_default)
+
+    # 教示とボックスを描画
+    inst_text.draw()
+    start_box.draw()
+    start_text.draw()
+    win.flip()
+
+    # 開始ボタンがクリックされたら無限ループを抜ける
+    if mouse.isPressedIn(start_box):
+        break
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;教示を呈示しています。刺激を&lt;code&gt;draw()&lt;/code&gt;してから&lt;code&gt;win.flip()&lt;/code&gt;するのが基本です。&lt;/p&gt;
+&lt;p&gt;Startボタンにカーソルが載ったら色を変えるようにしています。これを応用すると、マウスの位置を記録することができます。&lt;/p&gt;
+&lt;p&gt;Startボタンがクリックされたらループを抜けます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;csvファイルの1行目に変数名を書き込む192199行目&#34;&gt;CSVファイルの1行目に変数名を書き込む（192–199行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# CSVファイルの先頭行に変数名を書き込む
+with open(file_name_csv, &amp;quot;a&amp;quot;, encoding = &amp;quot;cp932&amp;quot;) as f:
+    writer = csv.writer(f, lineterminator = &amp;quot;\n&amp;quot;)
+    writer.writerow([
+        &amp;quot;subj_id&amp;quot;, &amp;quot;trial&amp;quot;, &amp;quot;city_1&amp;quot;, &amp;quot;city_2&amp;quot;,
+        &amp;quot;population_1&amp;quot;, &amp;quot;population_2&amp;quot;, &amp;quot;choice&amp;quot;,
+        &amp;quot;correct_answer&amp;quot;, &amp;quot;result&amp;quot;, &amp;quot;rt&amp;quot;, &amp;quot;key&amp;quot;, &amp;quot;pos&amp;quot;
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;CSVファイルに変数名を書き込んでいます。データを記録するときは、この書き方を真似するのがおすすめです。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;カーソルを消して課題を始める205215行目&#34;&gt;カーソルを消して課題を始める（205–215行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# カーソルを消す
+mouse.setVisible(False)
+
+# 課題開始
+for trial_index in range(len(city)):
+
+    # 試行間のテキストを定義して描画
+    iti_text.setText(str(trial_index + 1) + &amp;quot;/&amp;quot; + str(len(city)))
+    iti_text.draw()
+    win.flip()
+    core.wait(iti_length)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;カーソルを消してから、試行のループに移っています。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;iti_text&lt;/code&gt;を定義し、呈示しています。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;core.wait(秒数)&lt;/code&gt;で、プログラムを指定時間止めることができます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;都市名を呈示217244行目&#34;&gt;都市名を呈示（217–244行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    # 刺激テキストをセット
+    city_1 = city[&amp;quot;city_1&amp;quot;][trial_order[trial_index]]
+    city_2 = city[&amp;quot;city_2&amp;quot;][trial_order[trial_index]]
+    city_1_text.setText(city_1)
+    city_2_text.setText(city_2)
+
+    # ついでに人口と正解も記録しておく
+    population_1 = city[&amp;quot;population_1&amp;quot;][trial_order[trial_index]]
+    population_2 = city[&amp;quot;population_2&amp;quot;][trial_order[trial_index]]
+    if population_1 &amp;gt; population_2:
+        answer = &amp;quot;city_1&amp;quot;
+    else:
+        answer = &amp;quot;city_2&amp;quot;
+
+    # 刺激の位置のカウンターバランス
+    if city_pos[trial_index] == &amp;quot;one_two&amp;quot;:
+        city_1_text.setPos((-city_nudge_x, 0))
+        city_2_text.setPos((city_nudge_x, 0))
+    else:
+        city_1_text.setPos((city_nudge_x, 0))
+        city_2_text.setPos((-city_nudge_x, 0))
+
+    # 刺激を描画
+    city_1_text.draw()
+    city_2_text.draw()
+    key_left_text.draw()
+    key_right_text.draw()
+    win.flip()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;都市名刺激を定義・描画したり、課題に関連するデータを記録したりしています。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.setPos()&lt;/code&gt;を使うと、刺激の呈示位置を変更することができます。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;開始時間を記録しキーボードをリセット246251行目&#34;&gt;開始時間を記録し、キーボードをリセット（246–251行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    # 回答を待ち始めた時間をresp_onsetとして記録
+    resp_onset = core.Clock()
+
+    # キー押しをリセット
+    kb.getKeys([key_left, key_right], waitRelease = False)
+    kb.clock.reset()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;刺激呈示の開始時間を記録し、キーボードをリセットしています。&lt;/p&gt;
+&lt;p&gt;ここでキーボードをリセットしないと、次の試行にキー押しが引き継がれてしまいます。忘れないようにしましょう。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;回答を待つ253318行目&#34;&gt;回答を待つ（253–318行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    # 回答を待つ（無限ループ）
+    while True:
+
+        # FかJのキー押しを待つ
+        key_pressed = kb.getKeys(keyList = [key_left, key_right], waitRelease = False)
+
+        # もしFかJが押されたら
+        if len(key_pressed) &amp;gt; 0:
+
+            # 反応時間を記録
+            rt = key_pressed[0].rt
+
+            # どっちのキーを押したかをkeyとして記録
+            # カウンターバランスに応じて、どっちの都市を選んだかをchoiceとして記録
+            if key_pressed[0].name == key_left:
+                key = key_left
+                if city_pos[trial_index] == &amp;quot;one_two&amp;quot;:
+                    choice = &amp;quot;city_1&amp;quot;
+                else:
+                    choice = &amp;quot;city_2&amp;quot;
+            else:
+                key = key_right
+                if city_pos[trial_index] == &amp;quot;one_two&amp;quot;:
+                    choice = &amp;quot;city_2&amp;quot;
+                else:
+                    choice = &amp;quot;city_1&amp;quot;
+
+            # 結果を記録
+            if choice == answer:
+                result = &amp;quot;correct&amp;quot;
+            else:
+                result = &amp;quot;wrong&amp;quot;
+
+            # 選んだ方の都市名を黄色にする
+            if choice == &amp;quot;city_1&amp;quot;:
+                city_1_text.setColor(color_highlight)
+            else:
+                city_2_text.setColor(color_highlight)
+
+            # 選んだ方の都市を囲う四角を描画
+            if key == key_left:
+                city_box_left.draw()
+            else:
+                city_box_right.draw()
+
+            # その他の刺激も描画して、1秒間呈示
+            city_1_text.draw()
+            city_2_text.draw()
+            key_left_text.draw()
+            key_right_text.draw()
+            win.flip()
+            core.wait(confirmation_length)
+
+            # 刺激の色をリセットし、無限ループから抜ける
+            city_1_text.setColor(color_default)
+            city_2_text.setColor(color_default)
+            break
+
+        # ※time_limitを過ぎたらプロンプトを出す
+        if resp_onset.getTime() &amp;gt; time_limit:
+            city_1_text.draw()
+            city_2_text.draw()
+            key_left_text.draw()
+            key_right_text.draw()
+            hurry_text.draw()
+            win.flip()
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;回答を待ちます。反応があったらテキストを黄色にし、四角で囲みます。5秒経過したらプロンプトを出すようにしています。&lt;/p&gt;
+&lt;p&gt;コードは長めですが、ここでのキー押し判定や条件分岐は汎用性が高いです。というか、ほとんどの実験はこういう（長い）パーツの組み合わせからできています。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;フィードバックをし各試行のデータを記録320338行目&#34;&gt;フィードバックをし、各試行のデータを記録（320–338行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    # 正解不正解のフィードバックを呈示
+    if result == &amp;quot;correct&amp;quot;:
+        correct_text.draw()
+    else:
+        wrong_text.draw()
+    win.flip()
+    core.wait(feedback_length)
+
+    # CSVファイルにデータを記録
+    with open(file_name_csv, &amp;quot;a&amp;quot;, encoding = &amp;quot;cp932&amp;quot;) as f:
+        writer = csv.writer(f, lineterminator = &amp;quot;\n&amp;quot;)
+        writer.writerow([
+            subj_id, trial_index, city_1, city_2,
+            population_1, population_2, choice,
+            answer, result, rt, key, city_pos[trial_index]
+        ])
+
+    # ログファイルを保存
+    logging.flush()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;正解不正解のフィードバックを出してから、データを記録しています。&lt;/p&gt;
+&lt;p&gt;なお、ここでは日本語（都市名）を記録しているので、&lt;code&gt;encoding = &amp;quot;cp932&amp;quot;&lt;/code&gt;としていますが、ふつうは要らないです。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;実験終了344355行目&#34;&gt;実験終了（344–355行目）&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 終わりの画面を定義
+finish_text = visual.TextStim(win)
+finish_text.setText(&amp;quot;&amp;quot;&amp;quot;
+Finish! Thanks!
+&amp;quot;&amp;quot;&amp;quot;)
+
+# 3秒呈示してから実験終了
+finish_text.draw()
+win.flip()
+core.wait(3)
+win.close()
+core.quit()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;終了のメッセージを出して、3秒経過したら実験が終わります。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
+&lt;p&gt;このチュートリアルでは割愛した内容もあります。その中で最も重要なものは「関数の自作」です。関数の自作については、&lt;a href=&#34;https://qiita.com/snishym/items/8b52db0d901cf5744463&#34; title=&#34;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsychoPy Coderによる心理学実験作成チュートリアルまとめ&lt;/a&gt;の第7回を読んでください。&lt;/p&gt;
+&lt;p&gt;おそらく、このチュートリアルはわかりにくいです。しかし、ここに載っている機能を使えば、大体の社会心理学実験や意思決定実験のたたき台を作ることはできると思います&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;。かなり駆け足でしたが、このチュートリアルが誰かの役に立てば幸いです。&lt;/p&gt;
+&lt;br&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;本当は「いきなり」じゃない、すなわち、ある程度想定できたことなんだけど、なかなか準備できないものです。私もそうでした。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;試行の順序がシャッフルされているので、本来は呈示位置をシャッフルする必要はないです。一応参考のために書いています。 &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;そもそも、この（不親切な）説明に付いて来ようとしている時点でかなりモチベーションがあるはずです。プラスアルファで公式のリファレンスを読めば、実用に耐える実験プログラムをすぐに書けるようになると思います。 &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

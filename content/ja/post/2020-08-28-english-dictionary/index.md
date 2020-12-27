@@ -5,7 +5,7 @@ date: '2020-08-28'
 slug: english-dictionary
 categories:
   - 執筆
-tags:
+tags: ["執筆", "論文", "アカデミックライティング", "アカデミックイングリッシュ", "辞書", "ライティング"]
 subtitle: '「これ」という辞書を厳選するのが大事'
 summary: '「これ」という辞書を厳選するのが大事'
 authors: []
@@ -18,8 +18,6 @@ projects: []
 toc: true
 draft: false
 ---
-
-{{% toc %}}
 
 # 辞書をあらかじめ決めておく
 

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cognitive modeling | Kiri Kuroda</title>
+    <link>https://kirikuroda.github.io/tags/cognitive-modeling/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/cognitive-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <description>cognitive modeling</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2020</copyright><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <title>cognitive modeling</title>
+      <link>https://kirikuroda.github.io/tags/cognitive-modeling/</link>
+    </image>
+    
+    <item>
+      <title>認知モデルのパラメタを最尤推定する</title>
+      <link>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
+      <description>
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#背景&#34;&gt;背景&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#このページの概要&#34;&gt;このページの概要&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#遅延割引のモデルを解説&#34;&gt;遅延割引のモデルを解説&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#遅延割引課題とは&#34;&gt;遅延割引課題とは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#遅延割引のモデル&#34;&gt;遅延割引のモデル&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#肢選択のモデル&#34;&gt;2肢選択のモデル&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#実際に遅延割引パラメタを推定する&#34;&gt;実際に遅延割引パラメタを推定する&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#実験データを作ってみる&#34;&gt;実験データを作ってみる&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#素朴にパラメタを推定してみる&#34;&gt;素朴にパラメタを推定してみる&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#尤度を計算する&#34;&gt;尤度を計算する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#対数尤度を計算する&#34;&gt;対数尤度を計算する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#optimでパラメタを推定する&#34;&gt;optimでパラメタを推定する&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;はじめに&lt;/h1&gt;
+&lt;div id=&#34;背景&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;背景&lt;/h2&gt;
+&lt;p&gt;いま一部の心理学領域で、認知モデルを立ててそのパラメタを推定する、あるいは、複数のモデルの良さを比較する、というデータ分析がスタンダードになりつつあります。また、その分析手法として、主にStanを使ったベイズ推定が取り上げられるようになっています。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;しかし、一体どれだけの人（特に学部生）がベイズ推定についていけているでしょうか？&lt;/strong&gt;　実際には、「ベイズ推定どころか最尤推定って何？　具体的にはどう計算するの？　どういうコードを書けばいいの？　そもそも認知モデルって何？」となってしまう&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;場合が多いのでは？、というのが私の肌感覚です。&lt;/p&gt;
+&lt;p&gt;そういう「置いてけぼり感」を覚えてしまうことに無理はないです。現状、心理学（特に社会心理学）の授業で、認知モデルに関するトレーニングを受ける機会は少ないからです&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;このページの概要&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;このページの概要&lt;/h2&gt;
+&lt;p&gt;そこでこのページでは、&lt;strong&gt;遅延割引課題&lt;/strong&gt;を例として、認知モデルのパラメタをどうやって&lt;strong&gt;最尤推定&lt;/strong&gt;するかを、具体的に見ていくことにします。推定にはRを使います。&lt;/p&gt;
+&lt;p&gt;なお、この課題については、『&lt;a href=&#34;http://www.asakura.co.jp/books/isbn/978-4-254-12842-0/&#34; title=&#34;社会科学のためのベイズ統計モデリング&#34;&gt;社会科学のためのベイズ統計モデリング&lt;/a&gt;』の第9章を参考にしています。より詳しく知りたい方は、そちらを読んでください。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;遅延割引のモデルを解説&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;遅延割引のモデルを解説&lt;/h1&gt;
+&lt;div id=&#34;遅延割引課題とは&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;遅延割引課題とは&lt;/h2&gt;
+&lt;p&gt;遅延割引課題とは、「&lt;strong&gt;いますぐに小さい金額をもらうか、だいぶ先になっちゃうけどより大きい金額をもらうか&lt;/strong&gt;」のどちらかを選ぶという課題です。&lt;/p&gt;
+&lt;p&gt;ここでは、「&lt;strong&gt;いますぐにr円をもらうか、n日後に50000円をもらうか&lt;/strong&gt;」のどちらかを選ぶことになったとします。もっと具体的に考えるために、以下の2つの例を考えてみましょう。&lt;/p&gt;
+&lt;p&gt;まず、「&lt;strong&gt;いますぐに5000円をもらうか、30日後に50000円をもらうか&lt;/strong&gt;」と聞かれたら、どっちを選びますか？　おそらく、多くの人は「&lt;strong&gt;30日後に50000円&lt;/strong&gt;」を選ぶのではないでしょうか。&lt;/p&gt;
+&lt;p&gt;次に、「&lt;strong&gt;いますぐに45000円をもらうか、720日後に50000円をもらうか&lt;/strong&gt;」と聞かれたら、どっちを選びますか？　ここでは逆に、「&lt;strong&gt;いますぐに45000円&lt;/strong&gt;」を選ぶ人が多いと思います。&lt;/p&gt;
+&lt;p&gt;イメージはつきましたか？　この例からわかるように、遅延割引課題は「&lt;strong&gt;長期的利益のために、人々が目先の利益をどれくらい我慢できるか&lt;/strong&gt;」を測定するものです。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;遅延割引のモデル&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;遅延割引のモデル&lt;/h2&gt;
+&lt;p&gt;さて、「&lt;strong&gt;人が長期的な利益をどれくらい良いと感じるか&lt;/strong&gt;」は、以下の式（モデル）で表現できるとされています&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+U(A,t) = U(A)\frac{1}{1+kt}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;それぞれの記号は以下の内容を表しています：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;：金額。ここでは50000円だと考えてください&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;：何日後に&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;（すなわち50000円）をもらえるか&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U(A, t)\)&lt;/span&gt;：&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;（50000円）をもらった場合の「嬉しさ」&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U(A)\)&lt;/span&gt;：いますぐに&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;（50000円）をもらった場合の嬉しさ&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;：&lt;strong&gt;遅延割引パラメタ&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;では、この&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;（遅延割引パラメタ）とは具体的にどういうものなのでしょうか？　それを理解するために、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;をいじってみましょう。&lt;/p&gt;
+&lt;p&gt;Figure 1の横軸は「t日」、縦軸は「そのとき50000円をもらったときの嬉しさ（すなわち、&lt;span class=&#34;math inline&#34;&gt;\(U(A,t)\)&lt;/span&gt;）」を表しています。ここでは、&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日を0〜30で変化させ、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;を0から0.5まで0.05刻みで変化させています。&lt;/p&gt;
+&lt;p&gt;この図からどういうことが読み取れるでしょうか？&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+
+expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
+  mutate(u = 50000 * (1 / (1 + k * t))) %&amp;gt;%
+  ggplot(aes(x = t, y = u, group = k, color = k)) +
+  geom_line() +
+  scale_color_viridis_c() +
+  labs(x = &amp;quot;t（日）&amp;quot;, y = &amp;quot;t日後に50000円もらったときの嬉しさ&amp;quot;) +
+  theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
+  theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: t日後に50000円もらったときの嬉しさ
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;まず、&lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt;のとき、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;がどんな値であれ、縦軸（50000円もらったときの嬉しさ）は50000円です。&lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt;は「今すぐ」と同じだからです。&lt;/p&gt;
+&lt;p&gt;次に、&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;が大きくなるほど、「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円」の嬉しさは低くなっています。&lt;/p&gt;
+&lt;p&gt;また、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きくなるほど（線が明るい色になるほど）、「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円」の嬉しさは低くなっています。これを引っ張って考えると、「&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きい人ほど、今すぐの利益に目がくらんでしまいがち&lt;/strong&gt;」ということになります&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;肢選択のモデル&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2肢選択のモデル&lt;/h2&gt;
+&lt;p&gt;では次に「2つの選択肢（目先の利益 vs. 長期的な利益）をどうやって選ぶか」のモデルを考えてみましょう。&lt;/p&gt;
+&lt;p&gt;ここでは「今すぐ5000円をもらうか、1ヶ月後に50000円をもらうか」を選ぶ状況を例とします。私たちは多くの場合、「1ヶ月後に50000円」を選ぶでしょう。&lt;/p&gt;
+&lt;p&gt;しかし、人間というものは、そこまで完璧ではありません。もし「ねえ、今すぐ5000円あげるけど、欲しいよね？」と100回も聞かれたら、何回かは誘惑にかられて「今すぐ5000円」を選んでしまうかもしれません。&lt;/p&gt;
+&lt;p&gt;このような現象を表すため、よくロジスティック関数&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;というものが用いられます。遅延割引課題の例では、以下のように書くことができます。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+P_{d} = \frac{1}{1+\exp(-\beta[U(A^{d})-U(A^{s})])}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;記号の意味は以下のとおりです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(P_{d}\)&lt;/span&gt;：遅延報酬（&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円）を選ぶ確率（0〜1の値）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U(A^{d})\)&lt;/span&gt;：遅延報酬をもらった時の嬉しさ&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U(A^{s})\)&lt;/span&gt;：即時報酬（今すぐの報酬）をもらった時の嬉しさ&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;：逆温度パラメタ（&lt;strong&gt;嬉しさの差分&lt;/strong&gt;にどれくらい敏感に反応するか）&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;詳しくは「ロジスティック関数」などで調べてほしいのですが、この式で大事なのは以下の2点です。&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(U(A^{d})-U(A^{s})\)&lt;/span&gt;が大きくなるほど&lt;span class=&#34;math inline&#34;&gt;\(P_{d}\)&lt;/span&gt;も大きくなる。&lt;/strong&gt;すなわち、遅延報酬が即時報酬よりも魅力的であるほど、遅延報酬を選ぶ確率が高くなるということです。裏を返すと、即時報酬のほうが魅力的であるほど、遅延報酬を選ぶ確率が低くなる（つまり、即時報酬を選ぶ確率が高くなる）ということも表しています。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が大きいほど、「嬉しさ」の差分に強く反応する。&lt;/strong&gt;つまり、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が大きい場合、嬉しさの大きい方を忠実に選ぶようになるということです。逆に&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;が0に近いほど、どちらを選ぶかはランダムに近づく（「嬉しさ」の影響力が弱くなり、選択肢をでたらめに選ぶようになる）ということも表しています。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;さて、遅延割引課題を用いた研究で知りたいのは、&lt;strong&gt;ある人（参加者）がどれくらい目先の利益に目がくらみがちか&lt;/strong&gt;、そして、&lt;strong&gt;ある人（参加者）がどれくらい「嬉しさ」の差分に強く反応するか&lt;/strong&gt;ということです。これを言い換えると、&lt;strong&gt;ある人がどれくらいの&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;（遅延割引パラメタ）を持っているか&lt;/strong&gt;、&lt;strong&gt;ある人がどれくらいの&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;（逆温度パラメタ）を持っているか&lt;/strong&gt;ということになります。&lt;/p&gt;
+&lt;p&gt;認知モデルのパラメタを推定するというのは、まさに「ある人がどれくらいのパラメタ（認知的な傾向）を持っているか」を探ろうとする分析を意味しています。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;実際に遅延割引パラメタを推定する&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;実際に遅延割引パラメタを推定する&lt;/h1&gt;
+&lt;div id=&#34;実験データを作ってみる&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;実験データを作ってみる&lt;/h2&gt;
+&lt;p&gt;ここで具体的な分析方法を説明したいのですが、まだ手元にはデータがありません。&lt;/p&gt;
+&lt;p&gt;そこで、ある1人の参加者が50回の遅延割引課題に取り組んだと仮定します。具体的には「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円をもらうか、今すぐ&lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;円をもらうか」を選んだとしましょう。各回で、日数&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;は｛30, 90, 180, 360, 720｝のいずれか、今すぐの報酬&lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;は｛5000, 1000, …, 50000｝のいずれかとします（5通り×10通りなので50回の課題、ということです）。では、下のコードのように仮想的なデータを作り、&lt;code&gt;data&lt;/code&gt;というデータフレームとして保存してみましょう&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
+data &amp;lt;- expand_grid(
+  t = c(30, 90, 180, 360, 720),
+  r = seq(5000, 50000, 5000)
+  ) %&amp;gt;%
+  mutate(
+    u_delay = 50000 * (1 / (1 + 0.01 * t)),
+    p = 1 / (1 + exp(-0.00005 * (u_delay - r)))
+  ) %&amp;gt;%
+  group_by(row_number()) %&amp;gt;%
+  mutate(choice = rbinom(1, 1, p))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;では、この参加者は遅延報酬（「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円」）を何回選んだのでしょうか？　遅延報酬を選んだ場合、&lt;code&gt;data&lt;/code&gt;の&lt;code&gt;choice&lt;/code&gt;という変数は&lt;code&gt;1&lt;/code&gt;になっています。逆に即時報酬（「すぐに&lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;円」）を選んだ場合、&lt;code&gt;choice&lt;/code&gt;は&lt;code&gt;0&lt;/code&gt;です。&lt;/p&gt;
+&lt;p&gt;参加者の選択を下にプロットしてみました。横軸は遅延日数&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;、縦軸は選択（0か1）、各パネルの上の数字は即時報酬の金額を表しています。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data %&amp;gt;%
+  ggplot(aes(x = t, y = choice)) +
+  geom_point() +
+  scale_y_continuous(breaks = c(0, 1)) +
+  facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: ある参加者がどれくらい遅延報酬を選んだか
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;素朴にパラメタを推定してみる&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;素朴にパラメタを推定してみる&lt;/h2&gt;
+&lt;p&gt;さて、どのようにパラメタを推定すればよいのでしょうか？　まず、素朴なアイデアから出発してみます。&lt;/p&gt;
+&lt;p&gt;たとえば、「なんとなくだけど、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;は0.1で、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;は0.0001じゃね？」と考えたとしましょう。このとき、これらのパラメタの値はどれくらいふさわしいでしょうか？　また、そのふさわしさはどのように評価（計算）されるべきでしょうか？&lt;/p&gt;
+&lt;p&gt;とりあえず、上で説明した2つのモデルに代入してみましょう。ここでは、「今すぐ5000円」と「30日後に50000円」を比べた場合を考えてみます。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t &amp;lt;- 30
+k &amp;lt;- 0.1
+beta &amp;lt;- 0.0001
+
+# u_delay：遅延報酬のU
+u_delay &amp;lt;- 50000 * (1 / (1 + 0.1 * t))
+
+# 30日後に50000円を選ぶ確率
+p &amp;lt;- 1 / (1 + exp(-beta * (u_delay - 5000)))
+
+print(p)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.6791787&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;さて、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたとき、遅延報酬を選ぶ確率は0.6791787になりました。では、実際のデータはどうだったでしょうか？ つまり、「今すぐ5000円 vs. 30日後に50000円」のとき、どっちを選んでいたでしょうか？&lt;/p&gt;
+&lt;p&gt;Figure 2を見ると、参加者が遅延報酬（30日後に50000円）を選んでいたということがわかります。では、上の計算で出てきた「遅延報酬を選ぶ確率は0.6791787」と「参加者が実際に遅延報酬を選んでいたという事実」はどのように関係しているのでしょうか。&lt;/p&gt;
+&lt;p&gt;「遅延報酬を選ぶ確率」というのは、「『遅延報酬を選ぶ』という結果が得られる確率」と言い換えることができます。この「『遅延報酬を選ぶ』という結果が得られる確率」は、パラメタ&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;と&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;を色々な値にすれば、それに応じて様々な値に変動します。&lt;/p&gt;
+&lt;p&gt;ここで、「参加者が実際に遅延報酬を選んで」いたとしましょう。このとき、適当にパラメタを代入して、「『遅延報酬を選ぶ』という結果が得られる確率」が高かった場合、それは何を意味しているでしょうか。&lt;/p&gt;
+&lt;p&gt;日常言語で表すと、「参加者は遅延報酬を選んでいた。適当にパラメタを代入したら、遅延報酬を選ぶ確率は高いらしい。これって実際のデータと結構近いじゃん」ということになります。さらにこれを引っ張ると、「結構近いんだから、このパラメタって、もしかして良い線行ってるんじゃね？」となります。逆に、予測が外れた場合は、そのパラメタはあまりよろしくないと言えます。&lt;/p&gt;
+&lt;p&gt;つまり、「ある結果が得られている。そこで、適当にパラメタを設定したら、その結果が得られる確率も高いようだ。だったら、そのパラメタは『ふさわしい』んじゃないか」ということです。このようなパラメタの「ふさわしさ」（&lt;strong&gt;パラメタを設定したとき、手元にあるデータが得られる確率&lt;/strong&gt;）を真面目に言うと「尤度」になります。また、尤度をもとにパラメタを推定する方法を最尤推定と言います。&lt;/p&gt;
+&lt;p&gt;この例では、「いま、参加者が遅延報酬を選んだことがわかっている。そこで、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたとき、遅延報酬を選ぶ確率は0.6791787だった」ということになります。すなわち、尤度は0.6791787です&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;尤度を計算する&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;尤度を計算する&lt;/h2&gt;
+&lt;p&gt;では、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;とし、全50回の尤度を計算してみましょう。まず、以下のコードを実行します。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t &amp;lt;- 30
+k &amp;lt;- 0.1
+beta &amp;lt;- 0.0001
+
+data %&amp;gt;%
+  # 遅延報酬のUと、遅延報酬を選ぶ確率pを計算
+  mutate(
+    u_delay = 50000 * (1 / (1 + k * t)),
+    p = 1 / (1 + exp(-beta * (u_delay - r)))
+  ) %&amp;gt;%
+  # 遅延報酬を選ぶ確率pを抽出
+  pull(p)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.679178699 0.562176501 0.437823499 0.320821301 0.222700139 0.148047198
+##  [7] 0.095349465 0.060086650 0.037326887 0.022977370 0.500000000 0.377540669
+## [13] 0.268941421 0.182425524 0.119202922 0.075858180 0.047425873 0.029312231
+## [19] 0.017986210 0.010986943 0.441064710 0.323695074 0.224986141 0.149714490
+## [25] 0.096490497 0.060834074 0.037802587 0.023274618 0.014247244 0.008690106
+## [31] 0.409782432 0.296323939 0.203450772 0.134137019 0.085891464 0.053918000
+## [37] 0.033411753 0.020535219 0.012556698 0.007653837 0.393766567 0.282619107
+## [43] 0.192864008 0.126583888 0.080801479 0.050617863 0.031325176 0.019236783
+## [49] 0.011756686 0.007163930&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;上に表示されているのは、遅延報酬を選ぶ確率&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;です。&lt;/p&gt;
+&lt;p&gt;しかし、これをそのまま最尤推定に使うことはできません。なぜなら、尤度とは「あるパラメタを設定したときに、&lt;strong&gt;手元にあるデータ&lt;/strong&gt;が得られる確率」だからです。実験では、参加者が即時報酬を選ぶ場合も当然あるので、その場合は「即時報酬を選ぶ確率」を使わないといけません。したがって、各回の尤度（&lt;code&gt;likelihood&lt;/code&gt;）は以下のようになります。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;likelihood &amp;lt;- data %&amp;gt;%
+  # 遅延報酬のUと、遅延報酬を選ぶ確率pを計算
+  # さらに、参加者の選択に応じて条件分岐をして尤度を計算
+  mutate(
+    u_delay = 50000 * (1 / (1 + k * t)),
+    p = 1 / (1 + exp(-beta * (u_delay - r))),
+    likelihood = if_else(choice == 1, p, 1 - p)
+  ) %&amp;gt;%
+  pull(likelihood)
+
+likelihood&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] 0.67917870 0.56217650 0.43782350 0.67917870 0.22270014 0.85195280
+##  [7] 0.90465054 0.06008665 0.03732689 0.97702263 0.50000000 0.37754067
+## [13] 0.73105858 0.18242552 0.88079708 0.92414182 0.04742587 0.02931223
+## [19] 0.98201379 0.01098694 0.55893529 0.32369507 0.77501386 0.85028551
+## [25] 0.90350950 0.93916593 0.96219741 0.97672538 0.01424724 0.99130989
+## [31] 0.40978243 0.70367606 0.79654923 0.86586298 0.08589146 0.94608200
+## [37] 0.03341175 0.97946478 0.98744330 0.99234616 0.60623343 0.28261911
+## [43] 0.19286401 0.87341611 0.91919852 0.05061786 0.96867482 0.98076322
+## [49] 0.98824331 0.99283607&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;対数尤度を計算する&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;対数尤度を計算する&lt;/h2&gt;
+&lt;p&gt;では、ここで全50回の尤度を1つの指標にまとめたいと思います（まとめたいですよね？）。このとき、直観的には尤度を足し算すれば良いんじゃないか、と思うかもしれませんが、それは間違いです。&lt;/p&gt;
+&lt;p&gt;正解は「かけ算」です。詳しい説明は適宜教科書を読むなり、ググってもらえるとありがたいです&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。簡単な例で言えば、「3回連続でじゃんけんに勝つ確率は？」と聞かれたとき、「1/3を3回足して1」ではなく、「1/3を3回かけ算して1/27」と答えるのが正解になるのと同じ理屈です。&lt;/p&gt;
+&lt;p&gt;では、上で求めた尤度を全部かけ算してみましょう。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# prod()で、要素を全部かけあわせることになる
+prod(likelihood)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1.143327e-20&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;これは0.00000000000000000001143327を表しています。&lt;/p&gt;
+&lt;p&gt;ちっさ！って思うのではないでしょうか。と同時に、「やっぱ、パソコンはこんな細かい計算できて偉いなあ」と思う人がいるかもしれません。&lt;/p&gt;
+&lt;p&gt;しかし、残念ながらそれは間違いです。あまりに数字が小さいと、パソコンの計算にも誤差が生じてしまいます&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;これを防ぐため、尤度を計算するときは、&lt;strong&gt;対数を取る&lt;/strong&gt;というのが決まりになっています。なぜなら、かけ算の対数を取ると足し算になるという便利な性質があるからです&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;。対数を取って求めた尤度を「対数尤度」と言います。&lt;/p&gt;
+&lt;p&gt;また、対数は単調増加関数なので、「尤度の積が大きい（もっともらしい）場合は、その対数も大きくなる」という関係が成り立ちます。対数、便利です。&lt;/p&gt;
+&lt;p&gt;では、対数尤度を計算し、全部を足し算してみましょう。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sum(log(likelihood))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] -45.91776&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;確認のため、尤度を全部掛け算したやつの対数を取ってみましょう。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;log(prod(likelihood))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] -45.91776&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;ちゃんと2つが一致しました。ただし、データの数が多いほどかけ算の誤差は大きくなるので、やはり対数を取ってから足し算をするようにしましょう。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;optimでパラメタを推定する&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;optimでパラメタを推定する&lt;/h2&gt;
+&lt;p&gt;さて、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;としたときの50回の対数尤度は-45.91776になりました。&lt;/p&gt;
+&lt;p&gt;で？　それが何？&lt;/p&gt;
+&lt;p&gt;そうです。これだけでは、まだ何も言えていません。他のパラメタの候補も調べないと、どのパラメタが良さそうかはわかりません。&lt;/p&gt;
+&lt;p&gt;では、どうすればよいでしょうか？　素朴に考えたら、有り得そうな&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;や&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;を片っ端から代入して対数尤度を計算する、というのが良さそうです。しかし、そんな時間は私たちにはありません。&lt;/p&gt;
+&lt;p&gt;そこで使うのが、Rの最適化関数&lt;code&gt;optim&lt;/code&gt;です。最適化関数とは、ある関数の最大値／最小値を求めるための道具だと考えてください。&lt;/p&gt;
+&lt;p&gt;いま私たちがやりたいのは、対数尤度が最も大きくなりそうなパラメタ&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;と&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;の組み合わせを調べるということです。つまり、&lt;code&gt;optim&lt;/code&gt;を使って、対数尤度（関数）が最大化されるような&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;と&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;を見つければ目的達成ということになります。&lt;/p&gt;
+&lt;p&gt;では、具体的な書き方を説明します。まず、対数尤度関数（&lt;code&gt;ll_delay&lt;/code&gt;）を自分で定義します。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# 関数を定義する
+ll_delay &amp;lt;- function(param, data) {
+  
+  # param[1]はk、param[2]はbetaを表している
+  # dataは参加者のデータフレームそのものを表している
+  
+  data %&amp;gt;%
+    # 毎回の対数尤度を計算する
+    mutate(
+      u_delay = 50000 * (1 / (1 + param[1] * t)),
+      p = 1 / (1 + exp(-param[2] * (u_delay - r))),
+      likelihood = if_else(choice == 1, p, 1 - p),
+      ll = log(likelihood)
+    ) %&amp;gt;%
+    # 最後に全部足し合わせる
+    pull(ll) %&amp;gt;%
+    sum()
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;これを&lt;code&gt;optim&lt;/code&gt;に突っ込みます。&lt;code&gt;par&lt;/code&gt;には推定したいパラメタの初期値、&lt;code&gt;fn&lt;/code&gt;には最適化したい関数を入れます。&lt;code&gt;control = list(fnscale = -1)&lt;/code&gt;とすると、関数の最大化が行われるようになります。その他の引数（この例では&lt;code&gt;data&lt;/code&gt;）では、&lt;code&gt;ll_delay&lt;/code&gt;にどんな引数を渡すかを指示してあげます。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale = -1))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $par
+## [1] 0.0132120062 0.0000423154
+## 
+## $value
+## [1] -30.70504
+## 
+## $counts
+## function gradient 
+##       89       NA 
+## 
+## $convergence
+## [1] 0
+## 
+## $message
+## NULL&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;結果の&lt;code&gt;par&lt;/code&gt;が推定値を表しています。&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が0.0132120062、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;は0.0000423154でした。&lt;/p&gt;
+&lt;p&gt;では、正解は何だったのでしょうか？　正解は、データを作ったコードの中に隠れています。改めてコードを見てみましょう。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
+data &amp;lt;- expand_grid(
+  t = c(30, 90, 180, 360, 720),
+  r = seq(5000, 50000, 5000)
+  ) %&amp;gt;%
+  mutate(
+    u_delay = 50000 * (1 / (1 + 0.01 * t)),
+    p = 1 / (1 + exp(-0.00005 * (u_delay - r)))
+  ) %&amp;gt;%
+  group_by(row_number()) %&amp;gt;%
+  mutate(choice = rbinom(1, 1, p))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;最初は詳しく説明しませんでしたが、このコードでは、遅延割引と2肢選択のモデルを用いて、参加者の選択を仮想的に作っていました。とくに7行目と8行目を見てください。ここでは、参加者が&lt;span class=&#34;math inline&#34;&gt;\(k=0.01\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta=0.00005\)&lt;/span&gt;というパラメタを持つように設定しています。さて、推定結果は&lt;span class=&#34;math inline&#34;&gt;\(k=0.0132120062\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta=0.0000423154\)&lt;/span&gt;でした。まあまあ良い線行ってるのではないでしょうか。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;おわりに&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;おわりに&lt;/h1&gt;
+&lt;p&gt;ここまで、駆け足で認知パラメタの最尤推定を見てきました。もちろん、まだまだ説明していないトピックはありますが、まずはここらへんの内容を押さえておくのが良いかと思います。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;この式は、双曲割引（hyperbolic discounting）と言います。&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;とりあえずこのコードの意味を意味を理解する必要はないです。&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;「積事象」や「尤度」でググってみてください。&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;これをアンダーフローと言います。たとえば、Rのコンソールに&lt;code&gt;1e-1000&lt;/code&gt;とか打ってみて、どうなるかを見てみましょう。&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

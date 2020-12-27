@@ -5,6 +5,7 @@ date: '2020-08-22'
 slug: datareporting
 categories:
   - プレゼンテーション
+tags: ["プレゼンテーション", "データビジュアライゼーション", "ggplot2", "R", "可視化"]
 subtitle: 'ggplot2の基礎'
 summary: 'ggplot2の基礎'
 authors: []

@@ -17,32 +17,7 @@
       <link>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</link>
       <pubDate>Wed, 16 Dec 2020 15:33:47 +0900</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</guid>
-      <description>&lt;h2&gt;目次&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#この記事のサマリー&#34;&gt;この記事のサマリー&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#自己紹介&#34;&gt;自己紹介&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#ウェブ実験の背景&#34;&gt;ウェブ実験の背景&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#悲劇の経緯&#34;&gt;悲劇の経緯&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#悲劇の原因と解決策&#34;&gt;悲劇の原因と解決策&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#正解&#34;&gt;正解&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#不正解今回やってしまったこと&#34;&gt;不正解（今回やってしまったこと）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#何が起きていたか&#34;&gt;何が起きていたか？&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#テスト&#34;&gt;テスト&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#テスト状況&#34;&gt;テスト状況&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#結果&#34;&gt;結果&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#考察&#34;&gt;考察&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#教訓&#34;&gt;教訓&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;この記事のサマリー&#34;&gt;この記事のサマリー&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;この記事のサマリー&#34;&gt;この記事のサマリー&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;jsPsychとFirebaseでウェブ実験を実施した&lt;/p&gt;
@@ -533,49 +508,7 @@ data &amp;lt;- expand_grid(
       <link>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</guid>
-      <description>&lt;h2&gt;目次&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#想定している読者層&#34;&gt;想定している読者層&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#既に公開されている優れたチュートリアル&#34;&gt;既に公開されている優れたチュートリアル&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#このチュートリアルの特色&#34;&gt;このチュートリアルの特色（？）&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#いきなりやってみるタイプのチュートリアル&#34;&gt;いきなりやってみるタイプのチュートリアル&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#いきなりセットアップ&#34;&gt;いきなりセットアップ&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#いきなり実験&#34;&gt;いきなり実験&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#実験の構造&#34;&gt;実験の構造&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#解説&#34;&gt;解説&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#ダイアログボックスを呈示する3846行目&#34;&gt;ダイアログボックスを呈示する（38–46行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#データファイルの名前を作る5267行目&#34;&gt;データファイルの名前を作る（52–67行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#クイズの項目を読み込む6970行目&#34;&gt;クイズの項目を読み込む（69–70行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#画面マウスキーボードを設定する7680行目&#34;&gt;画面、マウス、キーボードを設定する（76–80行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#都市名刺激を設定する86103行目&#34;&gt;都市名刺激を設定する（86–103行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#キーを設定する105112行目&#34;&gt;キーを設定する（105–112行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#教示を定義する114121行目&#34;&gt;教示を定義する（114–121行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#startボタンを定義する123129行目&#34;&gt;Startボタンを定義する（123–129行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#その他のテキスト刺激や図形を定義する131157行目&#34;&gt;その他のテキスト刺激や図形を定義する（131–157行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#ログファイルを設定する163164行目&#34;&gt;ログファイルを設定する（163–164行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#教示を呈示する170190行目&#34;&gt;教示を呈示する（170–190行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#csvファイルの1行目に変数名を書き込む192199行目&#34;&gt;CSVファイルの1行目に変数名を書き込む（192–199行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#カーソルを消して課題を始める205215行目&#34;&gt;カーソルを消して課題を始める（205–215行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#都市名を呈示217244行目&#34;&gt;都市名を呈示（217–244行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#開始時間を記録しキーボードをリセット246251行目&#34;&gt;開始時間を記録し、キーボードをリセット（246–251行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#回答を待つ253318行目&#34;&gt;回答を待つ（253–318行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#フィードバックをし各試行のデータを記録320338行目&#34;&gt;フィードバックをし、各試行のデータを記録（320–338行目）&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#実験終了344355行目&#34;&gt;実験終了（344–355行目）&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;h2 id=&#34;想定している読者層&#34;&gt;想定している読者層&lt;/h2&gt;
 &lt;p&gt;このチュートリアルでは、以下のタイプの読者を想定しています：&lt;/p&gt;
 &lt;ul&gt;
@@ -1051,31 +984,7 @@ core.quit()
       <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
-      <description>&lt;h2&gt;目次&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#英英類語辞典&#34;&gt;英英・類語辞典&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#lexico&#34;&gt;LEXICO&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#oxford-learners-dictionaries&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#コロケーション&#34;&gt;コロケーション&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#just-the-word&#34;&gt;Just the Word&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#netspeak&#34;&gt;Netspeak&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#フレーズ集&#34;&gt;フレーズ集&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#useful-phrases&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
 &lt;p&gt;タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。&lt;/p&gt;
 &lt;p&gt;大事なのは、&lt;strong&gt;使う辞書をあらかじめ決めておく&lt;/strong&gt;ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。&lt;/p&gt;
 &lt;p&gt;辞書系ツールを選ぶに当たり、以下の3つを選定基準としています。&lt;/p&gt;
@@ -1129,22 +1038,7 @@ core.quit()
       <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
-      <description>&lt;h2&gt;目次&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#iphone-se第2世代&#34;&gt;iPhone SE（第2世代）&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#apple-watch-series-3&#34;&gt;Apple Watch Series 3&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#bellroyのスマホケース&#34;&gt;Bellroyのスマホケース&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#airpods-pro&#34;&gt;AirPods Pro&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#クリアサングラス&#34;&gt;クリアサングラス&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#thermosの真空断熱タンブラー&#34;&gt;THERMOSの真空断熱タンブラー&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#洗顔ネット&#34;&gt;洗顔ネット&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#realforceのキーボード&#34;&gt;REALFORCEのキーボード&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;iphone-se第2世代&#34;&gt;iPhone SE（第2世代）&lt;/h1&gt;

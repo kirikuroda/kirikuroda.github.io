@@ -33,6 +33,21 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/tags/firebase/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/javscript/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/jspsych/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</loc>
     <lastmod>2020-12-16T15:33:47+09:00</lastmod>
   </url>
@@ -50,6 +65,36 @@
                 hreflang="ja"
                 href="https://kirikuroda.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%82%A6%E3%82%A7%E3%83%95%E5%AE%9F%E9%A8%93/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E5%A4%B1%E6%95%97%E8%AB%87/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E5%AE%9F%E9%A8%93/</loc>
+    <lastmod>2020-12-16T15:33:47+09:00</lastmod>
   </url>
   
   <url>
@@ -223,13 +268,78 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/tags/cognitive-modeling/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/delay-discounting/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%83%86%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E6%9C%80%E5%B0%A4%E6%8E%A8%E5%AE%9A/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E8%AA%8D%E7%9F%A5%E3%83%A2%E3%83%86%E3%83%AB/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/tags/%E9%81%85%E5%BB%B6%E5%89%B2%E5%BC%95/</loc>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/psychopy/</loc>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</loc>
     <lastmod>2020-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/python/</loc>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/</loc>
+    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%82%A2%E3%82%AB%E3%83%86%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%83%E3%82%B7%E3%83%A5/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%82%A2%E3%82%AB%E3%83%86%E3%83%9F%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E5%9F%B7%E7%AD%86/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -243,7 +353,22 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/tags/%E8%AB%96%E6%96%87/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E8%BE%9E%E6%9B%B8/</loc>
+    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</loc>
+    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2020-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -253,7 +378,32 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/tags/%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE/</loc>
+    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/ggplot2/</loc>
+    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/r/</loc>
+    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/post/2020/08/22/datareporting/</loc>
+    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%83%86%E3%83%BC%E3%82%BF%E3%83%92%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
+    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%83%95%E3%83%AC%E3%82%BB%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
     <lastmod>2020-08-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -263,7 +413,32 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/tags/%E5%8F%AF%E8%A6%96%E5%8C%96/</loc>
+    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/blogdown/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/hugo-academic/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/wowchemy/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%83%95%E3%83%AD%E3%82%AF/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -412,20 +587,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://kirikuroda.github.io/authors/admin/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/tags/"
                 />
   </url>
   

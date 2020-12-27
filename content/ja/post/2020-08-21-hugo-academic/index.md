@@ -5,7 +5,7 @@ date: '2020-08-21'
 slug: hugo-academic
 categories:
   - 執筆
-tags:
+tags: ["Hugo Academic", "R", "blogdown", "Wowchemy", "執筆", "ブログ"]
 subtitle: 'Hugo Academicとblogdownがおすすめ'
 summary: 'Hugo Academicとblogdownがおすすめ'
 authors: []

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ライティング | Kiri Kuroda</title>
+    <link>https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
+    <description>ライティング</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2020</copyright><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kirikuroda.github.io/images/icon_hu219fcabef873e532f569b4eca90c980a_20624_512x512_fill_lanczos_center_2.png</url>
+      <title>ライティング</title>
+      <link>https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</link>
+    </image>
+    
+    <item>
+      <title>英語を書かなきゃいけないときに使う辞書系ツール</title>
+      <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
+      <description>&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
+&lt;p&gt;タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。&lt;/p&gt;
+&lt;p&gt;大事なのは、&lt;strong&gt;使う辞書をあらかじめ決めておく&lt;/strong&gt;ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。&lt;/p&gt;
+&lt;p&gt;辞書系ツールを選ぶに当たり、以下の3つを選定基準としています。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;無料&lt;/strong&gt;　現状、辞書系ツールに限って言えば、無料で十分だと思います。ただし、専門家じゃないので断言はできません。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;オンライン&lt;/strong&gt;　デバイスの環境に依存しないのがメリットです。ただし当然ですが、ネットにつながらないと使えません。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NO自動翻訳&lt;/strong&gt;　機械学習による自動翻訳ツールは除きました。なるべく自力で文章を書いたほうが、長期的には自分のスキルアップにつながると思うからです。しかし、自動翻訳ツールが発達している今、こういう考えは時代遅れになりつつあるのかもしれません。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;では、辞書系ツールを紹介します。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;英英類語辞典&#34;&gt;英英・類語辞典&lt;/h1&gt;
+&lt;h2 id=&#34;lexico&#34;&gt;LEXICO&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexico.com&#34; title=&#34;LEXICO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LEXICO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;語義・類語・例文・語源、オールインワンの辞書サイト&lt;/strong&gt;です。Oxford Dictionaryによって運営されているようです。アメリカ英語・イギリス英語、両方とも載っているので、英単語の意味を調べるときは、とりあえずこれで良いと思います。&lt;/p&gt;
+&lt;p&gt;特に、類語（シソーラス）を調べるときには、必ずこのサイトを使っています。検索窓のメニューを「THESAURUS」にすると、類語を検索できます。あるいは、各単語のページの「+ Synonyms」をクリックしても、類語を見ることができます。&lt;/p&gt;
+&lt;p&gt;例文が多いのも魅力的です。各単語のページの「+ More example sentences」をクリックすると、どういうニュアンスで使われることが多いかを確認できます。&lt;/p&gt;
+&lt;h2 id=&#34;oxford-learners-dictionaries&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.oxfordlearnersdictionaries.com&#34; title=&#34;Oxford Learner&amp;#39;s Dictionaries&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Learner&amp;rsquo;s Dictionaries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;名前のとおり、英語学習者用の辞書であるため、LEXICOより情報がコンパクトになっています。&lt;strong&gt;単語の意味をさっと確認したいときに便利&lt;/strong&gt;です。また、&lt;strong&gt;平易な英語で語義が説明されている&lt;/strong&gt;ので、LEXICOの説明がわかりにくいときに使うのもおすすめです。頻出単語については、コロケーションや用法も載っています。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;コロケーション&#34;&gt;コロケーション&lt;/h1&gt;
+&lt;h2 id=&#34;just-the-word&#34;&gt;Just the Word&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.just-the-word.com&#34; title=&#34;Just the Word&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Just the Word&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;単語を検索するとコロケーションが表示される&lt;/strong&gt;、というシンプルなサイトです。また、気になったコロケーションをクリックすると、例文も表示されます。コロケーションに関するウェブサイト（そういうのをコーパスっていうんでしょうか？）は他にもありますが、Just the Wordは見た目と機能がシンプルであり、使い方がわかりやすいので気に入っています。&lt;/p&gt;
+&lt;h2 id=&#34;netspeak&#34;&gt;Netspeak&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://netspeak.org&#34; title=&#34;Netspeak&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netspeak&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ある単語や語順の使用頻度を調べたり、比較したりする&lt;/strong&gt;のに使います。たとえば、「atとin、どっちがよく使われるんだろう？」とか、「この副詞は文のどこに置かれることが多いんだろう？」と思ったときに使います。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;フレーズ集&#34;&gt;フレーズ集&lt;/h1&gt;
+&lt;h2 id=&#34;useful-phrases&#34;&gt;Useful Phrases&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.springer.com/jp/book/9783319260921&#34; title=&#34;Useful Phrases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Useful Phrases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;英語論文で頻出のフレーズ&lt;/strong&gt;がまとまっています。&amp;ldquo;English for Writing Research Papers&amp;rdquo;（著・Adrian Wallwork：Springer）という、アカデミック・ライティングの書籍&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;の付録です。リンク先にある「Free Download: Useful Phrases」をクリックすると、フレーズ集が載ったPDFをダウンロードできます。&lt;/p&gt;
+&lt;p&gt;同様のフレーズ集として、&lt;a href=&#34;http://www.phrasebank.manchester.ac.uk&#34; title=&#34;Academic Phrasebank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Phrasebank&lt;/a&gt;というのがあり、結構多くのブログで紹介されています。フレーズの検索性が低いので、私はあまり使っていませんが、有益なサイトの1つだと思います。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1 id=&#34;おわりに&#34;&gt;おわりに&lt;/h1&gt;
+&lt;p&gt;以上、「英語を書かなきゃいけないときに使う辞書系ツール」を紹介しました。このようなツールを使うと、Google検索でなんとなく英語を調べるよりは、裏づけのある良質な情報を得られると思います。ぜひ、自分にピッタリのツールを探してみてください。&lt;/p&gt;
+&lt;br&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;この&amp;quot;English for Writing Research Papers&amp;quot;という本は、非常に参考になりました。昨年、『&lt;a href=&#34;https://bookclub.kodansha.co.jp/product?item=0000275980&#34; title=&#34;ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術&lt;/a&gt;』（講談社、2019）として翻訳されたので、関心のある人は読んでみてください。 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

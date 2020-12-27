@@ -5,7 +5,7 @@ date: '2020-09-02'
 slug: psychopy-coder-tutorial
 categories:
   - 実験
-tags:
+tags: ["実験", "プログラミング", "Python", "PsychoPy"]
 subtitle: 'いきなりやってみるタイプのCoderチュートリアル'
 summary: 'いきなりやってみるタイプのCoderチュートリアル'
 authors: []
@@ -18,8 +18,6 @@ projects: []
 toc: true
 draft: false
 ---
-
-{{%toc%}}
 
 # はじめに
 
