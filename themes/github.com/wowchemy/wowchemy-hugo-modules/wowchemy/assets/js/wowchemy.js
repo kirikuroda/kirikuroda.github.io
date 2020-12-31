@@ -626,7 +626,7 @@ $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
   setTimeout(function () {
     dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
     menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-  }, 25);
+  }, 300);
 });
 
 // Call `fixScrollspy` when window is resized.

@@ -13,7 +13,7 @@ body.dark {
 }
 
 .dark .pub {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(20, 20, 20);
 }
 
 .dark artricle.article {
@@ -25,7 +25,7 @@ body.dark {
 }
 
 .dark .home-section:nth-of-type(odd) {
-  background-color: rgb(10, 10, 10) !important;
+  background-color: rgb(20, 20, 20) !important;
 }
 
 .dark .card-simple {
@@ -55,7 +55,7 @@ h3.article-title a:hover {
   transition: color 0.2s ease;
 }
 
-.dark h3.article-title a:hover {
+.dark h3.article-title a:hover, .dark a:hover .article-style {
   color: #ffd803;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -556,4 +556,28 @@ a#back_to_top.docs-toc-title {
 
 .see-all a:hover {
   text-decoration: underline;
+}
+
+.page-footer {
+  background: rgb(51, 51, 51);
+}
+
+.dark .page-footer {
+  background: black;
+}
+
+.site-footer, .dark .site-footer {
+  color: white;
+}
+
+.page-footer a, .page-footer a:hover {
+  color: white !important;
+}
+
+.content-widget-hr {
+  border-top: 1px solid rgba(0,0,0, 0.5);
+}
+
+.dark .content-widget-hr {
+  border-top: 1px solid rgba(255,255,255, 0.5);
 }
