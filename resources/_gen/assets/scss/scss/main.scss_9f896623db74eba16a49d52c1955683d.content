@@ -8471,7 +8471,7 @@ ul.share li:hover i {
  *  Page Builder: sections and widgets
  **************************************************/
 .home-section {
-  background-color: white;
+  background-color: #fafafa;
   position: relative;
   padding: 110px 0 110px 0;
   z-index: 0; }
