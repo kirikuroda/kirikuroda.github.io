@@ -8545,7 +8545,7 @@ ul.share li:hover i {
   padding-top: 50px; }
 
 .home-section:nth-of-type(even) {
-  background-color: whitesmoke; }
+  background-color: #f0f0f0; }
 
 .dark .home-section {
   background-color: #272935; }
@@ -9296,6 +9296,9 @@ body {
 body.dark {
   background: #282828;
   font-family: "Roboto" "Noto+Sans+JP"; }
+
+h2 {
+  font-weight: bold; }
 
 .dark .pub {
   background-color: #141414; }
