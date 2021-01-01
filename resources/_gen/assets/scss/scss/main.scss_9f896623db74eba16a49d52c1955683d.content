@@ -7164,7 +7164,7 @@ body {
   font-size: 1rem;
   line-height: inherit;
   color: inherit;
-  background-color: whitesmoke;
+  background-color: #fafafa;
   padding-top: 0;
   counter-reset: captions;
   overflow-x: hidden;
@@ -7405,7 +7405,7 @@ small,
  *  Modals.
  **************************************************/
 .modal-content {
-  background: whitesmoke; }
+  background: #fafafa; }
 
 .modal-title {
   margin: 0;
@@ -8022,7 +8022,7 @@ a.summary-link {
 .search-results {
   transform: scale(0);
   -webkit-transform: scale(0);
-  background-color: whitesmoke;
+  background-color: #fafafa;
   bottom: 0;
   left: 0;
   right: 0;
@@ -8061,7 +8061,7 @@ a.summary-link {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: whitesmoke;
+  background-color: #fafafa;
   padding-top: 2rem;
   padding-bottom: 1rem; }
 
@@ -8471,7 +8471,7 @@ ul.share li:hover i {
  *  Page Builder: sections and widgets
  **************************************************/
 .home-section {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   padding: 110px 0 110px 0;
   z-index: 0; }
@@ -8545,7 +8545,7 @@ ul.share li:hover i {
   padding-top: 50px; }
 
 .home-section:nth-of-type(even) {
-  background-color: #ebebeb; }
+  background-color: whitesmoke; }
 
 .dark .home-section {
   background-color: #272935; }
@@ -9290,7 +9290,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background: #ebebeb;
+  background: #fafafa;
   font-family: "Roboto" "Noto+Sans+JP"; }
 
 body.dark {
@@ -9410,7 +9410,7 @@ a:hover h4.card-title.exp-title.text-muted {
   color: #ffd803; }
 
 .experience .card-text {
-  color: #2f2f2f !important; }
+  color: #333333 !important; }
 
 .dark .experience .card-text {
   color: white !important; }

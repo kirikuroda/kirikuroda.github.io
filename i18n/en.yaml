@@ -237,3 +237,6 @@
 
 - id: cookie_learn
   translation: Learn more
+
+- id: posted_on
+  translation: Posted on

@@ -39,6 +39,8 @@ social:
 - icon: researchgate
   icon_pack: fab
   link: https://www.researchgate.net/profile/Kiri_Kuroda
+email: kuroda.kiri@gmail.com
 ---
 
 黒田起吏は、東京大学で社会心理学を専攻する大学院生である。彼は、行動実験・アイトラッキング・認知モデリングを用いながら、ヒトの集団意思決定を研究している。
+

@@ -77,7 +77,7 @@
 - id: date
   translation: 日付
 - id: last_updated
-  translation: Last updated on
+  translation: 最終更新
 - id: event
   translation: イベント
 - id: location
@@ -128,3 +128,5 @@
   translation: はい
 - id: cookie_learn
   translation: 詳細を見る
+- id: posted_on
+  translation: 投稿
