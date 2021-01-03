@@ -43,9 +43,9 @@
 - id: interests
   translation: 関心
 - id: education
-  translation: 学歴
+  translation: 経歴
 - id: user_profile_latest
-  translation: Latest
+  translation: 最近の投稿
 - id: see_certificate
   translation: See certificate
 - id: present
@@ -113,15 +113,15 @@
 - id: search
   translation: 検索
 - id: search_placeholder
-  translation: Search...
+  translation: 検索
 - id: search_results
   translation: 件
 - id: search_no_results
-  translation: 結果が見つかりません。
+  translation: 結果が見つかりません
 - id: page_not_found
-  translation: Page not found
+  translation: ページが見つかりません
 - id: 404_recommendations
-  translation: Are you looking for one of the following pages?
+  translation: " "
 - id: cookie_message
   translation: このウェブサイトはあなたが最高の体験を得るためにクッキーを使用します。
 - id: cookie_dismiss

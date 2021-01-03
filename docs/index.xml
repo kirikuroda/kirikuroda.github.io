@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/</link>
-      <atom:link href="https://kirikuroda.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Kiri Kuroda</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Sun, 27 Dec 2020 12:40:55 +0900</lastBuildDate>
     <image>
-      <url>https://kirikuroda.github.io/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
       <title>Kiri Kuroda</title>
-      <link>https://kirikuroda.github.io/</link>
+      <link>/</link>
     </image>
     
     <item>
       <title>学会の発表資料を作るときに参考になった本</title>
-      <link>https://kirikuroda.github.io/post/2020/12/27/presentation-books/</link>
+      <link>/post/2020/12/27/presentation-books/</link>
       <pubDate>Sun, 27 Dec 2020 12:40:55 +0900</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/12/27/presentation-books/</guid>
+      <guid>/post/2020/12/27/presentation-books/</guid>
       <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;今年は、色々と参考になるプレゼン本にめぐり会えました。そこで、これまで読んだ本の中で参考になったものをリストアップしておきます。&lt;/p&gt;
 &lt;p&gt;なお、ネットにも色々な情報は載っていますが、本のほうが体系的にまとまっているので、結局は買ったほうが早いという印象です。&lt;/p&gt;
@@ -79,9 +79,9 @@
     
     <item>
       <title>jsPsych &#43; Firebaseでやらかした話</title>
-      <link>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</link>
+      <link>/post/2020/12/16/jspsych-firebase/</link>
       <pubDate>Wed, 16 Dec 2020 15:33:47 +0900</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</guid>
+      <guid>/post/2020/12/16/jspsych-firebase/</guid>
       <description>&lt;h1 id=&#34;この記事のサマリー&#34;&gt;この記事のサマリー&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -212,20 +212,18 @@ jsPsych.init({
     
     <item>
       <title>Bilateral (but Not Unilateral) Interaction Creates and Cements Norms at the Covert Psychophysical Level: A Behavioral and an Fmri Study</title>
-      <link>https://kirikuroda.github.io/publication/kuroda2020bilateral/</link>
+      <link>/publication/kuroda2020bilateral/</link>
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/kuroda2020bilateral/</guid>
+      <guid>/publication/kuroda2020bilateral/</guid>
       <description></description>
     </item>
     
     <item>
       <title>認知モデルのパラメタを最尤推定する</title>
-      <link>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</link>
+      <link>/post/2020/09/05/mle-delay-discounting/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
+      <guid>/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
-&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -305,7 +303,7 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
   theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
   theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: t日後に50000円もらったときの嬉しさ
 &lt;/p&gt;
@@ -372,7 +370,7 @@ data &amp;lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;/p&gt;
@@ -552,17 +550,17 @@ data &amp;lt;- expand_grid(
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;この式は、双曲割引（hyperbolic discounting）と言います。&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;とりあえずこのコードの意味を意味を理解する必要はないです。&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;「積事象」や「尤度」でググってみてください。&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;これをアンダーフローと言います。たとえば、Rのコンソールに&lt;code&gt;1e-1000&lt;/code&gt;とか打ってみて、どうなるかを見てみましょう。&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;この式は、双曲割引（hyperbolic discounting）と言います。&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;とりあえずこのコードの意味を意味を理解する必要はないです。&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;「積事象」や「尤度」でググってみてください。&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;これをアンダーフローと言います。たとえば、Rのコンソールに&lt;code&gt;1e-1000&lt;/code&gt;とか打ってみて、どうなるかを見てみましょう。&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -570,9 +568,9 @@ data &amp;lt;- expand_grid(
     
     <item>
       <title>PsychoPy Coderチュートリアル</title>
-      <link>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</link>
+      <link>/post/2020/09/02/psychopy-coder-tutorial/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/09/02/psychopy-coder-tutorial/</guid>
+      <guid>/post/2020/09/02/psychopy-coder-tutorial/</guid>
       <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;h2 id=&#34;想定している読者層&#34;&gt;想定している読者層&lt;/h2&gt;
 &lt;p&gt;このチュートリアルでは、以下のタイプの読者を想定しています：&lt;/p&gt;
@@ -1046,9 +1044,9 @@ core.quit()
     
     <item>
       <title>英語を書かなきゃいけないときに使う辞書系ツール</title>
-      <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
+      <link>/post/2020/08/28/english-dictionary/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
+      <guid>/post/2020/08/28/english-dictionary/</guid>
       <description>&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
 &lt;p&gt;タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。&lt;/p&gt;
 &lt;p&gt;大事なのは、&lt;strong&gt;使う辞書をあらかじめ決めておく&lt;/strong&gt;ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。&lt;/p&gt;
@@ -1100,9 +1098,9 @@ core.quit()
     
     <item>
       <title>大学院生が（いまさら）買ってよかったもの8選</title>
-      <link>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</link>
+      <link>/post/2020/08/25/mustbuy-2020-summer/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/25/mustbuy-2020-summer/</guid>
+      <guid>/post/2020/08/25/mustbuy-2020-summer/</guid>
       <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;10万円が給付されたので、改めて身の回りのものを買い揃えました。買ってよかったものを8つ紹介します。&lt;/p&gt;
 &lt;br&gt;
@@ -1162,18 +1160,18 @@ core.quit()
     
     <item>
       <title>データの可視化 まとめ</title>
-      <link>https://kirikuroda.github.io/post/2020/08/22/datareporting/</link>
+      <link>/post/2020/08/22/datareporting/</link>
       <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/22/datareporting/</guid>
+      <guid>/post/2020/08/22/datareporting/</guid>
       <description>&lt;p&gt;数年前のことですが、データ可視化・報告・ggplot2の初歩をまとめました。&lt;a href=&#34;https://kirikuroda.github.io/datareporting/&#34; title=&#34;「いつか役に立つかもしれない資料」&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;こちら&lt;/a&gt;で読むことができます。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Hugo Academicでウェブサイトをリニューアルしました</title>
-      <link>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</link>
+      <link>/post/2020/08/21/hugo-academic/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/08/21/hugo-academic/</guid>
+      <guid>/post/2020/08/21/hugo-academic/</guid>
       <description>&lt;p&gt;2年ぶりにウェブサイトをリニューアルしました。リニューアルにあたり、かねがね気になっていた&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; title=&#34;Hugo Academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic&lt;/a&gt;というテンプレートと、&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; title=&#34;blogdown: Creating Websites with R Markdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;（Rのパッケージ）を使うことにしました。&lt;/p&gt;
 &lt;p&gt;サイト構築の詳しい手順は説明しませんが、1日から2日で一通り作ることができました。もう少し時間をかければ、配色やフォントを自分好みにカスタマイズできそうです。&lt;/p&gt;
 &lt;p&gt;そこまで労せずして、自分にしてはオシャレ（？）なサイトを作ることができて良かったです。くわえて、Markdown / R Markdownで記事を書くことができるのも嬉しいポイントです。気が向いたらなにか書きたいです。&lt;/p&gt;
@@ -1182,25 +1180,25 @@ core.quit()
     
     <item>
       <title>Investor&#39;s Pessimistic and False Belief About Trustworthiness and Stake Size in Trust Decision</title>
-      <link>https://kirikuroda.github.io/publication/kuroda2020investor/</link>
+      <link>/publication/kuroda2020investor/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/kuroda2020investor/</guid>
+      <guid>/publication/kuroda2020investor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>You Watch My Back, I&#39;ll Watch Yours: Emergence of Collective Risk Monitoring Through Tacit Coordination in Human Social Foraging</title>
-      <link>https://kirikuroda.github.io/publication/kuroda2019you/</link>
+      <link>/publication/kuroda2019you/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/kuroda2019you/</guid>
+      <guid>/publication/kuroda2019you/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Perception of Spontaneous and Volitional Laughter Across 21 Societies</title>
-      <link>https://kirikuroda.github.io/publication/bryant2018perception/</link>
+      <link>/publication/bryant2018perception/</link>
       <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/publication/bryant2018perception/</guid>
+      <guid>/publication/bryant2018perception/</guid>
       <description></description>
     </item>
     

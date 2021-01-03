@@ -1,5 +1,5 @@
 (() => {
-  // ns-hugo:/Users/kirikuroda/Google Drive/kirikuroda.github.io/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/assets/js/wowchemy-theming.js
+  // ns-hugo:/Users/kirikuroda/Google ドライブ/kirikuroda.github.io/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/assets/js/wowchemy-theming.js
   function getThemeMode() {
     return parseInt(localStorage.getItem("dark_mode") || 2);
   }

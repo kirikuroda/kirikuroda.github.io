@@ -2,8 +2,8 @@
   "name": "Kiri Kuroda",
   "short_name": "Kiri Kuroda",
   "lang": "en-us",
-  "theme_color": "#d9473d",
-  "background_color": "#d9473d",
+  "theme_color": "#ff5050",
+  "background_color": "#ff5050",
   "icons": [{
     "src": "/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",
@@ -14,5 +14,5 @@
     "type": "image/png"
      }],
   "display": "standalone",
-  "start_url": "/en/?utm_source=web_app_manifest"
+  "start_url": "/en?utm_source=web_app_manifest"
 }

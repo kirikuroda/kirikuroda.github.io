@@ -2,24 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cognitive modeling | Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/tags/cognitive-modeling/</link>
-      <atom:link href="https://kirikuroda.github.io/tags/cognitive-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/cognitive-modeling/</link>
+      <atom:link href="/tags/cognitive-modeling/index.xml" rel="self" type="application/rss+xml" />
     <description>cognitive modeling</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kirikuroda.github.io/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
       <title>cognitive modeling</title>
-      <link>https://kirikuroda.github.io/tags/cognitive-modeling/</link>
+      <link>/tags/cognitive-modeling/</link>
     </image>
     
     <item>
       <title>認知モデルのパラメタを最尤推定する</title>
-      <link>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</link>
+      <link>/post/2020/09/05/mle-delay-discounting/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
+      <guid>/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
-&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -99,7 +97,7 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
   theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
   theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: t日後に50000円もらったときの嬉しさ
 &lt;/p&gt;
@@ -166,7 +164,7 @@ data &amp;lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;/p&gt;
@@ -346,17 +344,17 @@ data &amp;lt;- expand_grid(
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;この式は、双曲割引（hyperbolic discounting）と言います。&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;とりあえずこのコードの意味を意味を理解する必要はないです。&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;「積事象」や「尤度」でググってみてください。&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;これをアンダーフローと言います。たとえば、Rのコンソールに&lt;code&gt;1e-1000&lt;/code&gt;とか打ってみて、どうなるかを見てみましょう。&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「&lt;strong&gt;ふだんから細かく&lt;/strong&gt;」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;この式は、双曲割引（hyperbolic discounting）と言います。&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;とりあえずこのコードの意味を意味を理解する必要はないです。&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;「積事象」や「尤度」でググってみてください。&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;これをアンダーフローと言います。たとえば、Rのコンソールに&lt;code&gt;1e-1000&lt;/code&gt;とか打ってみて、どうなるかを見てみましょう。&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>

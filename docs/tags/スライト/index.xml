@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>スライド | Kiri Kuroda</title>
-    <link>https://kirikuroda.github.io/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/</link>
-      <atom:link href="https://kirikuroda.github.io/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/</link>
+      <atom:link href="/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
     <description>スライド</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Sun, 27 Dec 2020 12:40:55 +0900</lastBuildDate>
     <image>
-      <url>https://kirikuroda.github.io/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
       <title>スライド</title>
-      <link>https://kirikuroda.github.io/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/</link>
+      <link>/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88/</link>
     </image>
     
     <item>
       <title>学会の発表資料を作るときに参考になった本</title>
-      <link>https://kirikuroda.github.io/post/2020/12/27/presentation-books/</link>
+      <link>/post/2020/12/27/presentation-books/</link>
       <pubDate>Sun, 27 Dec 2020 12:40:55 +0900</pubDate>
-      <guid>https://kirikuroda.github.io/post/2020/12/27/presentation-books/</guid>
+      <guid>/post/2020/12/27/presentation-books/</guid>
       <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;今年は、色々と参考になるプレゼン本にめぐり会えました。そこで、これまで読んだ本の中で参考になったものをリストアップしておきます。&lt;/p&gt;
 &lt;p&gt;なお、ネットにも色々な情報は載っていますが、本のほうが体系的にまとまっているので、結局は買ったほうが早いという印象です。&lt;/p&gt;

@@ -18,8 +18,6 @@ output:
 draft: false
 ---
 
-<link href="index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="index_files/anchor-sections/anchor-sections.js"></script>
 
 <div id="TOC">
 <ul>
@@ -99,7 +97,7 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&gt;%
   theme_minimal(base_family = &quot;ヒラギノ角ゴシック W3&quot;) +
   theme(axis.text = element_text(color = &quot;#333333&quot;))</code></pre>
 <div class="figure"><span id="fig:setup"></span>
-<img src="index_files/figure-html/setup-1.png" alt="t日後に50000円もらったときの嬉しさ" width="672" />
+<img src="/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png" alt="t日後に50000円もらったときの嬉しさ" width="672" />
 <p class="caption">
 Figure 1: t日後に50000円もらったときの嬉しさ
 </p>
@@ -166,7 +164,7 @@ data &lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)</code></pre>
 <div class="figure"><span id="fig:unnamed-chunk-2"></span>
-<img src="index_files/figure-html/unnamed-chunk-2-1.png" alt="ある参加者がどれくらい遅延報酬を選んだか" width="672" />
+<img src="/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png" alt="ある参加者がどれくらい遅延報酬を選んだか" width="672" />
 <p class="caption">
 Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 </p>
@@ -346,16 +344,16 @@ data &lt;- expand_grid(
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「<strong>ふだんから細かく</strong>」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>この式は、双曲割引（hyperbolic discounting）と言います。<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p><span class="math inline">\(U\)</span>は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、<span class="math inline">\(k\)</span>が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に<span class="math inline">\(k\)</span>が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p>ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
-<li id="fn7"><p>とりあえずこのコードの意味を意味を理解する必要はないです。<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
-<li id="fn8"><p>正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
-<li id="fn9"><p>「積事象」や「尤度」でググってみてください。<a href="#fnref9" class="footnote-back">↩︎</a></p></li>
-<li id="fn10"><p>これをアンダーフローと言います。たとえば、Rのコンソールに<code>1e-1000</code>とか打ってみて、どうなるかを見てみましょう。<a href="#fnref10" class="footnote-back">↩︎</a></p></li>
-<li id="fn11"><p>この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。<a href="#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>私が学部生の頃もそうでした。たとえば当時、とても偉い工学系の先生に「すみません、単回帰分析の最尤推定ってどうやるんですか？」みたいなことを聞いてたレベルです。ちなみに、単回帰分析の最尤推定は心理統計の教科書に載っているし、ググればすぐに出てくるような内容です。今思えばガチで恥ずかしいですが、「知らぬは一時の恥、聞かぬは一生の恥」です。そんな質問をしていた私ですら、いま一応なんとか生きてます。（以下、かなり脱線します。）わからないことがあったときにおすすめなのは、研究室や学科の先輩に質問することです。もちろんググっても良いのですが、先輩たちも同様の難所を乗り越えている場合が多いので、同じ目線で答えてくれる可能性が高いです。ただし、自分がふだん研究室に行かなかったり、先輩と全然コミュニケーションを取ったりしていないのに、「卒論締切間際に自分が困ったときにだけ質問する」みたいな姿勢は、傍から見ていると「それは虫が良すぎじゃね？」という感じがします。「<strong>ふだんから細かく</strong>」質問する、世間話をしておく（※先輩の機嫌を取るということではないです）、ぐらいのことをやっておいたほうが、長期的には良いと思います。このトピックだけで記事を1つ書けそうです。<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>まあ、「授業が全てを教えてくれる」という期待・態度がそもそも間違っているという説はあります。結局のところ、研究スキルなんて、試行錯誤で無理くり獲得していくものなのかもしれません。<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>この式は、双曲割引（hyperbolic discounting）と言います。<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p><span class="math inline">\(U\)</span>は「嬉しさ（Ureshisa）」の頭文字のUではなく、本当は「効用（Utility）」の頭文字を表しています。ここで「効用」とか書いちゃうと難しくなるので、「嬉しさ」にしています。<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>ちょっとジャンプがあるかもしれませんが、わからなかった場合はゆっくり考えてみてください。日常的な例（？）でいうと、<span class="math inline">\(k\)</span>が大きいほど、「健康診断のため1ヶ月後に3kg痩せるのは、今すぐに飴玉を1個食べるのと等しいと感じてしまう」ということです。このような人は「今すぐ飴玉2個あげるよ」と言われたら、飴玉2個を食べてしまう（目がくらんでしまう）ということになります。逆に<span class="math inline">\(k\)</span>が小さいと、「1ヶ月後に3kg痩せるのは、今すぐ高級マカロン100個を食べるのと等しいと感じる」ということです。このような人は「今すぐマカロン1個あげるよ」と言われても、「そんな少ないマカロンをもらうぐらいなら、我慢して減量したほうがマシ」と返事をして、拒絶することになるでしょう。<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>ソフトマックス関数といったほうが厳密かもしれません。詳しくは『社会科学のためのベイズ統計モデリング』を読んだり、「ソフトマックス関数　ロジスティック関数」でググったりしてみてください。<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>とりあえずこのコードの意味を意味を理解する必要はないです。<a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>正直、尤度や最尤推定については他にもっと優れた記事があると思うので、わからなければ適宜ググってもらえると嬉しいです。<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>「積事象」や「尤度」でググってみてください。<a href="#fnref9" class="footnote-back">↩</a></p></li>
+<li id="fn10"><p>これをアンダーフローと言います。たとえば、Rのコンソールに<code>1e-1000</code>とか打ってみて、どうなるかを見てみましょう。<a href="#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p>この説明は端折りますが、一応文系数学の範囲です。「尤度」でググると、この内容は必ず説明されているので、適宜調べてみてください。<a href="#fnref11" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
