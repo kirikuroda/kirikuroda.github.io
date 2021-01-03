@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ライティング | Kiri Kuroda</title>
-    <link>/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</link>
-      <atom:link href="/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
     <description>ライティング</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
       <title>ライティング</title>
-      <link>/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</link>
+      <link>https://kirikuroda.github.io/tags/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF/</link>
     </image>
     
     <item>
       <title>英語を書かなきゃいけないときに使う辞書系ツール</title>
-      <link>/post/2020/08/28/english-dictionary/</link>
+      <link>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/08/28/english-dictionary/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/08/28/english-dictionary/</guid>
       <description>&lt;h1 id=&#34;辞書をあらかじめ決めておく&#34;&gt;辞書をあらかじめ決めておく&lt;/h1&gt;
 &lt;p&gt;タイトルにもあるように、辞書系ツールを紹介します。しかし正直なところ、自分の使いやすいツールなら何でも良いと思います。&lt;/p&gt;
 &lt;p&gt;大事なのは、&lt;strong&gt;使う辞書をあらかじめ決めておく&lt;/strong&gt;ことです。いざ英語を書くときに、使う辞書が決まっていないと、辞書自体を探すところから始まってしまい、時間やエネルギーが奪われます。あるいは「よくわからないからとりあえずググるかー」となった場合、裏のない情報に運悪くトラップされてしまうかもしれません。使う辞書を先に厳選しておけば、そのような事態は避けられます。&lt;/p&gt;

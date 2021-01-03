@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cognitive modeling | Kiri Kuroda</title>
-    <link>/tags/cognitive-modeling/</link>
-      <atom:link href="/tags/cognitive-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/tags/cognitive-modeling/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/cognitive-modeling/index.xml" rel="self" type="application/rss+xml" />
     <description>cognitive modeling</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
       <title>cognitive modeling</title>
-      <link>/tags/cognitive-modeling/</link>
+      <link>https://kirikuroda.github.io/tags/cognitive-modeling/</link>
     </image>
     
     <item>
       <title>認知モデルのパラメタを最尤推定する</title>
-      <link>/post/2020/09/05/mle-delay-discounting/</link>
+      <link>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020/09/05/mle-delay-discounting/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -97,7 +97,7 @@ expand_grid(t = 0:30, k = seq(0, 0.5, 0.05)) %&amp;gt;%
   theme_minimal(base_family = &amp;quot;ヒラギノ角ゴシック W3&amp;quot;) +
   theme(axis.text = element_text(color = &amp;quot;#333333&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:setup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/setup-1.png&#34; alt=&#34;t日後に50000円もらったときの嬉しさ&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: t日後に50000円もらったときの嬉しさ
 &lt;/p&gt;
@@ -164,7 +164,7 @@ data &amp;lt;- expand_grid(
   scale_y_continuous(breaks = c(0, 1)) +
   facet_wrap(~r)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://kirikuroda.github.io/ja/post/2020-09-05-delay-discounting/index_files/figure-html/unnamed-chunk-2-1.png&#34; alt=&#34;ある参加者がどれくらい遅延報酬を選んだか&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;/p&gt;

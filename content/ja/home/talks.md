@@ -71,94 +71,133 @@ subtitle = "学会・シンポジウム"
  css_class = ""
 +++
 
-# **2020**
 
-**黒田起吏**・高橋茉優・亀田達也
-「自信のないメンバーの投票による集合愚の発生」
-[第13回日本人間行動進化学会](https://sites.google.com/view/hbes-j2020fukuoka/ "第13回日本人間行動進化学会")，オンライン開催，2020年12月12日–13日（[最優秀発表賞受賞](https://www.hbesj.org/?page_id=128 "最優秀発表賞")）
 
-高橋茉優・**黒田起吏**・亀田達也
-「経済格差の大小は再分配意思決定に影響するか」
-[第13回日本人間行動進化学会](https://sites.google.com/view/hbes-j2020fukuoka/ "第13回日本人間行動進化学会")，オンライン開催，2020年12月12日–13日
+<div class="acordion" id="accordionTalks">
+  <div class="card">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2020" aria-expanded="false" aria-controls="collapse2020">
+    	<div class="card-header" id="heading2020">
+      	<h1 class="mb-0">
+        	2020
+        </h1>
+    	</div>
+    </button>  
+    <div id="collapse2020" class="collapse" aria-labelledby="heading2020" data-parent="#accordionTalks">
+      <div class="card-body">
+        <ol>
+          <li><b>黒田起吏</b>・高橋茉優・亀田達也「自信のないメンバーの投票による集合愚の発生」<a href="https://sites.google.com/view/hbes-j2020fukuoka/" target="_blank">第13回日本人間行動進化学会</a>，オンライン開催，2020年12月12日–13日（<a href="https://www.hbesj.org/?page_id=128" target="_blank">最優秀発表賞受賞</a>）.</li>
+          <br>
+          <li>高橋茉優・<b>黒田起吏</b>・亀田達也「経済格差の大小は再分配意思決定に影響するか」<a href="https://sites.google.com/view/hbes-j2020fukuoka/" target="_blank">第13回日本人間行動進化学会</a>，オンライン開催，2020年12月12日–13日.</li>
+          <br>
+          <li><b>黒田起吏</b>・伊藤真利子・大槻久・亀田達也「Speed–accuracy tradeoff状況下で社会情報はどのように処理されるか」<a href="http://www.socialpsychology.jp/conf2020/" target="_blank">日本社会心理学会第61回大会</a>，オンライン開催，2020年11月7日–8日.</li>
+          <br>
+          <li><b>黒田起吏</b>・伊藤真利子・大槻久・亀田達也「Speed–accuracy tradeoff状況における社会情報処理の認知過程」<a href="http://jpa2020.com" target="_blank">日本心理学会第84回大会</a>，オンライン開催，2020年9月8日–11月2日（<a href="https://psych.or.jp/prize/conf/" target="_blank">特別優秀発表賞受賞</a>）.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
+    	<div class="card-header" id="heading2019">
+      	<h1 class="mb-0">
+        	2019
+        </h1>
+    	</div>
+    </button>
+    <div id="collapse2019" class="collapse" aria-labelledby="heading2019" data-parent="#accordionTalks">
+      <div class="card-body">
+        <ol>
+          <li><b>黒田起吏</b>・伊藤真利子・大槻久・亀田達也「Speed–accuracy tradeoff状況における社会情報処理の認知過程」<a href="https://inukailab.com/hbesj/" target="_blank">第12回日本人間行動進化学会</a>，<a href="https://www.meijigakuin.ac.jp" target="_blank">明治学院大学</a>，2019年12月7日–8日
+（ポスター：<a href="https://www.hbesj.org/?page_id=128" target="_blank">若手発表賞受賞</a>）.</li>
+          <br>
+          <li><b>黒田起吏</b>・伊藤真利子・大槻久・亀田達也「Speed-accuracy tradeoff状況における二者の意思決定プロセス」<a href="http://www.socialpsychology.jp/conf2019/" target="_blank">日本社会心理学会第60回大会</a>，<a href="http://www.ris.ac.jp" target="_blank">立正大学</a>，2019年11月9–10日（口頭）.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2018" aria-expanded="false" aria-controls="collapse2018">
+    	<div class="card-header" id="heading2018">
+      	<h1 class="mb-0">
+        	2018
+        </h1>
+    	</div>
+    </button>
+    <div id="collapse2018" class="collapse" aria-labelledby="heading2018" data-parent="#accordionTalks">
+      <div class="card-body">
+        <ol>
+          <li><b>黒田起吏</b>・大槻久・亀田達也「Speed–accuracy tradeoff状況における二者の意思決定プロセス」<a href="https://sites.google.com/site/hbesj2018/" target="_blank">第11回日本人間行動進化学会</a>，<a href="https://www.kochi-tech.ac.jp" target="_blank">高知工科大学</a>，2018年12月1日–2日（口頭）.</li>
+          <br>
+          <li><b>黒田起吏</b>・亀田達也「リスク下の社会的採餌における協力的な分業の創発 認知–生理–行動実験による検討」<a href="http://www.socialpsychology.jp/conf2018/" target="_blank">日本社会心理学会第59回大会</a>，<a href="https://www.otemon.ac.jp" target="_blank">追手門学院大学</a>，2018年8月28–29日（口頭）.</li>
+          <br>
+          <li><b>Kiri Kuroda</b> &amp; Tatsuya Kameda. Emergence of cooperative division of labor in dyadic foraging under risk. <a href="https://www.hbes.com/portfolio-item/30th-annual-hbes-conference/" target="_blank">The 30th Annual Human Behavior and Evolution Society Conference</a>, <a href="https://www.uva.nl/en" target="_blank">the University of Amsterdam</a>, July 4th–7th, 2018 (Oral).</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2017" aria-expanded="false" aria-controls="collapse2017">
+    	<div class="card-header" id="heading2017">
+      	<h1 class="mb-0">
+        	2017
+        </h1>
+    	</div>
+    </button>
+    <div id="collapse2017" class="collapse" aria-labelledby="heading2017" data-parent="#accordionTalks">
+      <div class="card-body">
+        <ol>
+          <li><b>黒田起吏</b>・亀田達也「2者のリスクモニタリング状況における協力的な分業の創発：認知–行動実験による検討」<a href="https://sites.google.com/site/hbesjnagoya/" target="_blank">第10回日本人間行動進化学会</a>，<a href="https://www.nitech.ac.jp" target="_blank">名古屋工業大学</a>，2017年12月9日–10日（口頭）.</li>
+          <br>
+          <li><b>黒田起吏</b>・亀田達也「信頼と裏切り回避：自他間の資源分配に関する選好と信頼行動の関係」<a href="http://socialpsychology.jp/conf2017/" target="_blank">日本社会心理学会第58回大会</a>，<a href="https://www.hiroshima-u.ac.jp" target="_blank">広島大学</a>，2017年10月28–29日（口頭）.</li>
+          <br>
+          <li><b>黒田起吏</b>・爲井智也・池田和司・亀田達也
+「二者の相互作用による知覚傾向の収束：心理物理的技法による検討」<a href="https://sites.google.com/view/16h06324/home" target="_blank">科学研究費基盤(S) ワークショップ「集合知の認知・神経・生態学的基盤」</a>，<a href="http://www.kurumebp.jp" target="_blank">久留米ビジネスプラザ</a>，2017年9月23日（ポスター）.</li>
+          <br>
+          <li><b>黒田起吏</b>・爲井智也・池田和司・亀田達也「二者の相互作用による知覚傾向の収束：心理物理的技法による検討」<a href="http://www.jpa2017.com" target="_blank">日本心理学会第81回大会</a>，<a href="https://kurumecityplaza.jp" target="_blank">久留米シティプラザ</a>，2017年9月20日–22日（ポスター）.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2016" aria-expanded="false" aria-controls="collapse2016">
+    	<div class="card-header" id="heading2016">
+      	<h1 class="mb-0">
+        	2016
+        </h1>
+    	</div>
+    </button>
+    <div id="collapse2016" class="collapse" aria-labelledby="heading2016" data-parent="#accordionTalks">
+      <div class="card-body">
+        <ol>
+        	<li><b>黒田起吏</b>・爲井智也・池田和司・亀田達也「二者の相互作用による知覚傾向の収束：心理物理的技法による検討」<a href="https://hbesj2016.wordpress.com" target="_blank">第9回日本人間行動進化学会</a>，<a href="https://www.bunka-h.gr.jp" target="_blank">金沢市文化ホール</a>，2016年12月10日–11日（口頭）</li>
+          <br>
+          <li><b>黒田起吏</b>・亀田達也「信頼は自己投影的な他者推論に支えられる：Social Value Orientationと裏切り回避の関係」<a href="http://www.utokyo-socpsy.com/events.html" target="_blank">第10回新・社会心理学コロキウム</a>，<a href="https://www.u-tokyo.ac.jp" target="_blank">東京大学</a>，2016年11月25日（ポスター）.</li>
+          <br>
+					<li><b>黒田起吏</b>・亀田達也「信頼は自己投影的な他者推論に支えられる：Social Value Orientationと裏切り回避の関係」<a href="/docs/expss2016.pdf" target="_blank">第20回実験社会科学カンファレンス</a>，<a href="https://www.doshisha.ac.jp" target="_blank">同志社大学</a>，2016年10月29日–30日
+（ポスター：<a href="/docs/expss2016.pdf" target="_blank">最優秀ポスター賞受賞</a>）.</li>
+          <br>
+          <li><b>黒田起吏</b>・爲井智也・池田和司・亀田達也「二者の相互作用による知覚傾向の収束：心理物理的技法によるSherif実験再訪」<a href="http://www.socialpsychology.jp/conf2016/" target="_blank">日本社会心理学会第57回大会</a>，<a href="https://www.kwansei.ac.jp" target="_blank">関西学院大学</a>，2016年9月17日–18日（口頭）.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2015" aria-expanded="false" aria-controls="collapse2015">
+    	<div class="card-header" id="heading2015">
+      	<h1 class="mb-0">
+        	2015
+        </h1>
+    	</div>
+    </button>
+    <div id="collapse2015" class="collapse" aria-labelledby="heading2015" data-parent="#accordionTalks">
+      <div class="card-body">
+        <ol>
+          <li><b>黒田起吏</b>・爲井智也・池田和司・亀田達也「集合知の発生条件を探る：共通の反応関数の形成」<a href="https://hbesj2015.wordpress.com" target="_blank">第8回日本人間行動進化学会</a>，<a href="https://www.soken.ac.jp" target="_blank">総合研究大学院大学</a>，2015年12月5日–6日（ポスター）.</li>
+          <br>
+          <li><b>黒田起吏</b>・爲井智也・池田和司・亀田達也「集合知の発生条件を探る：共通の反応関数の形成」<a href="http://expss2015.tatsuyakameda.com" target="_blank">第19回実験社会科学カンファレンス</a>，<a href="https://www.u-tokyo.ac.jp" target="_blank">東京大学</a>，2015年11月28日–29日（ポスター）.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
 
-**黒田起吏**・伊藤真利子・大槻久・亀田達也
-「Speed–accuracy tradeoff状況下で社会情報はどのように処理されるか」
-[日本社会心理学会第61回大会](http://www.socialpsychology.jp/conf2020/ "日本社会心理学会第61回大会")，オンライン開催，2020年11月7日–8日
-
-**黒田起吏**・伊藤真利子・大槻久・亀田達也
-「Speed–accuracy tradeoff状況における社会情報処理の認知過程」
-[日本心理学会第84回大会](http://jpa2020.com "日本心理学会第84回大会")，オンライン開催，2020年9月8日–11月2日（[特別優秀発表賞受賞](https://psych.or.jp/prize/conf/ "特別優秀発表賞")）
-
-# **2019**
-
-**黒田起吏**・伊藤真利子・大槻久・亀田達也
-「Speed–accuracy tradeoff状況における社会情報処理の認知過程」
-[第12回日本人間行動進化学会](https://inukailab.com/hbesj/ "第12回日本人間行動進化学会")，[明治学院大学](https://www.meijigakuin.ac.jp "明治学院大学")，2019年12月7日–8日
-（ポスター：[若手発表賞受賞](https://www.hbesj.org/?page_id=128 "若手発表賞")）
-
-**黒田起吏**・伊藤真利子・大槻久・亀田達也
-「Speed-accuracy tradeoff状況における二者の意思決定プロセス」
-[日本社会心理学会第60回大会](http://www.socialpsychology.jp/conf2019/)，[立正大学](http://www.ris.ac.jp "立正大学")，2019年11月9–10日（口頭）
-
-# **2018**
-
-**黒田起吏**・大槻久・亀田達也
-「Speed–accuracy tradeoff状況における二者の意思決定プロセス」
-[第11回日本人間行動進化学会](https://sites.google.com/site/hbesj2018/ "第11回日本人間行動進化学会")，[高知工科大学](https://www.kochi-tech.ac.jp "高知工科大学")，2018年12月1日–2日（口頭）
-
-**黒田起吏**・亀田達也
-「リスク下の社会的採餌における協力的な分業の創発 認知–生理–行動実験による検討」
-[日本社会心理学会第59回大会](http://www.socialpsychology.jp/conf2018/ "日本社会心理学会第59回大会")，[追手門学院大学](https://www.otemon.ac.jp "追手門学院大学")，2018年8月28–29日（口頭）
-
-**Kiri Kuroda** & Tatsuya Kameda.
-Emergence of cooperative division of labor in dyadic foraging under risk.
-[The 30th Annual Human Behavior and Evolution Society Conference](https://www.hbes.com/portfolio-item/30th-annual-hbes-conference/ "HBES 2018").
-[The University of Amsterdam](https://www.uva.nl/en "The University of Amsterdam"). July 4th–7th, 2018. (Oral)
-
-# **2017**
-
-**黒田起吏**・亀田達也
-「2者のリスクモニタリング状況における協力的な分業の創発：認知–行動実験による検討」
-[第10回日本人間行動進化学会](https://sites.google.com/site/hbesjnagoya/ "第10回日本人間行動進化学会")，[名古屋工業大学](https://www.nitech.ac.jp "名古屋工業大学")，2017年12月9日–10日（口頭）
-
-**黒田起吏**・亀田達也
-「信頼と裏切り回避：自他間の資源分配に関する選好と信頼行動の関係」
-[日本社会心理学会第58回大会](http://socialpsychology.jp/conf2017/ "日本社会心理学会第58回大会")，[広島大学](https://www.hiroshima-u.ac.jp "広島大学")，2017年10月28–29日（口頭）
-
-**黒田起吏**・爲井智也・池田和司・亀田達也
-「二者の相互作用による知覚傾向の収束：心理物理的技法による検討」
-[科学研究費基盤(S) ワークショップ「集合知の認知・神経・生態学的基盤」](https://sites.google.com/view/16h06324/home "基盤Sワークショップ")，
-[久留米ビジネスプラザ](http://www.kurumebp.jp "久留米ビジネスプラザ")，2017年9月23日（ポスター）
-
-**黒田起吏**・爲井智也・池田和司・亀田達也
-「二者の相互作用による知覚傾向の収束：心理物理的技法による検討」
-[日本心理学会第81回大会](http://www.jpa2017.com "日本心理学会第81回大会")，[久留米シティプラザ](https://kurumecityplaza.jp "久留米シティプラザ")，2017年9月20日–22日（ポスター）
-
-# **2016**
-
-**黒田起吏**・爲井智也・池田和司・亀田達也
-「二者の相互作用による知覚傾向の収束：心理物理的技法による検討」
-[第9回日本人間行動進化学会](https://hbesj2016.wordpress.com "第9回日本人間行動進化学会")，[金沢市文化ホール](https://www.bunka-h.gr.jp "金沢市文化ホール")，2016年12月10日–11日（口頭）
-
-**黒田起吏**・亀田達也
-「信頼は自己投影的な他者推論に支えられる：Social Value Orientationと裏切り回避の関係」
-[第10回新・社会心理学コロキウム](http://www.utokyo-socpsy.com/events.html "第10回新・社会心理学コロキウム")，[東京大学](https://www.u-tokyo.ac.jp "東京大学")，2016年11月25日（ポスター）
-
-**黒田起吏**・亀田達也
-「信頼は自己投影的な他者推論に支えられる：Social Value Orientationと裏切り回避の関係」
-[第20回実験社会科学カンファレンス](/docs/expss2016.pdf "PDF｜第20回実験社会科学カンファレンス")，[同志社大学](https://www.doshisha.ac.jp "同志社大学")，2016年10月29日–30日
-（ポスター：[最優秀ポスター賞受賞](/docs/expss2016.pdf "PDF｜第20回実験社会科学カンファレンス")）
-
-**黒田起吏**・爲井智也・池田和司・亀田達也
-「二者の相互作用による知覚傾向の収束：心理物理的技法によるSherif実験再訪」
-[日本社会心理学会第57回大会](http://www.socialpsychology.jp/conf2016/ "日本社会心理学会第57回大会")，[関西学院大学](https://www.kwansei.ac.jp "関西学院大学")，2016年9月17日–18日（口頭）
-
-# **2015**
-
-**黒田起吏**・爲井智也・池田和司・亀田達也
-「集合知の発生条件を探る：共通の反応関数の形成」
-[第8回日本人間行動進化学会](https://hbesj2015.wordpress.com "第8回日本人間行動進化学会")，[総合研究大学院大学](https://www.soken.ac.jp "総合研究大学院大学")，2015年12月5日–6日（ポスター）
-
-**黒田起吏**・爲井智也・池田和司・亀田達也
-「集合知の発生条件を探る：共通の反応関数の形成」
-[第19回実験社会科学カンファレンス](http://expss2015.tatsuyakameda.com "第19回実験社会科学カンファレンス")，[東京大学](https://www.u-tokyo.ac.jp "東京大学")，2015年11月28日–29日（ポスター）

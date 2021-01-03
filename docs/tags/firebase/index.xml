@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firebase | Kiri Kuroda</title>
-    <link>/tags/firebase/</link>
-      <atom:link href="/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kirikuroda.github.io/tags/firebase/</link>
+      <atom:link href="https://kirikuroda.github.io/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
     <description>Firebase</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Wed, 16 Dec 2020 15:33:47 +0900</lastBuildDate>
     <image>
-      <url>/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
+      <url>https://kirikuroda.github.io/images/icon_hu9bc081c4b1bf8357d2623794d9207396_18824_512x512_fill_lanczos_center_2.png</url>
       <title>Firebase</title>
-      <link>/tags/firebase/</link>
+      <link>https://kirikuroda.github.io/tags/firebase/</link>
     </image>
     
     <item>
       <title>jsPsych &#43; Firebaseでやらかした話</title>
-      <link>/post/2020/12/16/jspsych-firebase/</link>
+      <link>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</link>
       <pubDate>Wed, 16 Dec 2020 15:33:47 +0900</pubDate>
-      <guid>/post/2020/12/16/jspsych-firebase/</guid>
+      <guid>https://kirikuroda.github.io/post/2020/12/16/jspsych-firebase/</guid>
       <description>&lt;h1 id=&#34;この記事のサマリー&#34;&gt;この記事のサマリー&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
