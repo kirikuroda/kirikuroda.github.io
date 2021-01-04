@@ -8545,7 +8545,7 @@ ul.share li:hover i {
   padding-top: 50px; }
 
 .home-section:nth-of-type(even) {
-  background-color: #ebebeb; }
+  background-color: #f0f0f0; }
 
 .dark .home-section {
   background-color: #272935; }
