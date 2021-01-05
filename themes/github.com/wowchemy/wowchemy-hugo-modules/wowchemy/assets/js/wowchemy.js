@@ -5,8 +5,6 @@
  *  Core JS functions and initialization.
  **************************************************/
 
-import {canChangeTheme, changeThemeModeClick, initThemeVariation, renderThemeVariation} from './wowchemy-theming';
-
 
 /* ---------------------------------------------------------------------------
  * Responsive scrolling for URL hashes.
@@ -26,7 +24,7 @@ function getNavBarHeight() {
  * If it exists on current page, scroll to it responsively.
  * If `target` argument omitted (e.g. after event), assume it's the window's hash.
  */
-function scrollToAnchor(target, duration=600) {
+function scrollToAnchor(target, duration = 600) {
   // If `target` is undefined or HashChangeEvent object, set it to window's hash.
   // Decode the hash as browsers can encode non-ASCII characters (e.g. Chinese symbols).
   target = (typeof target === 'undefined' || typeof target === 'object') ? decodeURIComponent(window.location.hash) : target;
@@ -299,13 +297,15 @@ function initMap() {
  * --------------------------------------------------------------------------- */
 
 function printLatestRelease(selector, repo) {
-  $.getJSON('https://api.github.com/repos/' + repo + '/tags').done(function (json) {
-    let release = json[0];
-    $(selector).append(' ' + release.name);
-  }).fail(function (jqxhr, textStatus, error) {
-    let err = textStatus + ", " + error;
-    console.log("Request Failed: " + err);
-  });
+  if (hugoEnvironment === 'production') {
+    $.getJSON('https://api.github.com/repos/' + repo + '/tags').done(function (json) {
+      let release = json[0];
+      $(selector).append(' ' + release.name);
+    }).fail(function (jqxhr, textStatus, error) {
+      let err = textStatus + ", " + error;
+      console.log("Request Failed: " + err);
+    });
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -377,24 +377,8 @@ function fixHugoOutput() {
   $("input[type='checkbox'][disabled]").parents('ul').addClass('task-list');
 }
 
-/**
- * Fix Mermaid.js clash with Highlight.js.
- * Refactor Mermaid code blocks as divs to prevent Highlight parsing them and enable Mermaid to parse them.
- */
-function fixMermaid() {
-  let mermaids = [];
-  [].push.apply(mermaids, document.getElementsByClassName('language-mermaid'));
-  for (let i = 0; i < mermaids.length; i++) {
-    $(mermaids[i]).unwrap('pre');  // Remove <pre> wrapper.
-    $(mermaids[i]).replaceWith(function () {
-      // Convert <code> block to <div> and add `mermaid` class so that Mermaid will parse it.
-      return $("<div />").append($(this).contents()).addClass('mermaid');
-    });
-  }
-}
-
 // Get an element's siblings.
-function getSiblings (elem) {
+function getSiblings(elem) {
   // Filter out itself.
   return Array.prototype.filter.call(elem.parentNode.children, function (sibling) {
     return sibling !== elem;
@@ -415,49 +399,9 @@ $(document).ready(function () {
     hljs.initHighlighting();
   }
 
-  // Initialize theme variation.
-  initThemeVariation();
-
-  // Change theme mode.
-  $('.js-set-theme-light').click(function (e) {
-    e.preventDefault();
-    changeThemeModeClick(2);
-  });
-  $('.js-set-theme-dark').click(function (e) {
-    e.preventDefault();
-    changeThemeModeClick(0);
-  });
-  $('.js-set-theme-auto').click(function (e) {
-    e.preventDefault();
-    changeThemeModeClick(1);
-  });
-
-  // Live update of day/night mode on system preferences update (no refresh required).
-  // Note: since we listen only for *dark* events, we won't detect other scheme changes such as light to no-preference.
-  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  darkModeMediaQuery.addEventListener("change", (e) => {
-    if (!canChangeTheme()) {
-      // Changing theme variation is not allowed by admin.
-      return;
-    }
-    const darkModeOn = e.matches;
-    console.log(`OS dark mode preference changed to ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
-    let currentThemeVariation = parseInt(localStorage.getItem('dark_mode') || 2);
-    let isDarkTheme;
-    if (currentThemeVariation === 2) {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // The visitor prefers dark themes.
-        isDarkTheme = true;
-      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-        // The visitor prefers light themes.
-        isDarkTheme = false;
-      } else {
-        // The visitor does not have a day or night preference, so use the theme's default setting.
-        isDarkTheme = window.wc.isSiteThemeDark;
-      }
-      renderThemeVariation(isDarkTheme);
-    }
-  });
+  // Render theme variation, including any HLJS and Mermaid themes.
+  let {isDarkTheme, themeMode} = initThemeVariation();
+  renderThemeVariation(isDarkTheme, themeMode, true);
 });
 
 /* ---------------------------------------------------------------------------
@@ -485,7 +429,11 @@ $(window).on('load', function () {
     }
 
     // Get default filter (if any) for this instance
-    let filterText = isoSection.querySelector('.default-project-filter').textContent || '*';
+    let defaultFilter = isoSection.querySelector('.default-project-filter');
+    let filterText = '*';
+    if (defaultFilter !== null) {
+      filterText = defaultFilter.textContent;
+    }
     console.debug(`Default Isotope filter: ${filterText}`);
 
     // Init Isotope instance once its images have loaded.
@@ -527,7 +475,7 @@ $(window).on('load', function () {
   // Hook to perform actions once all Isotope instances have loaded.
   function incrementIsotopeCounter() {
     isotopeCounter++;
-    if ( isotopeCounter === isotopeInstancesCount ) {
+    if (isotopeCounter === isotopeInstancesCount) {
       console.debug(`All Portfolio Isotope instances loaded.`);
       // Once all Isotope instances and their images have loaded, scroll to hash (if set).
       // Prevents scrolling to the wrong location due to the dynamic height of Isotope instances.
@@ -586,26 +534,45 @@ $(window).on('load', function () {
 
   // Print latest version of GitHub projects.
   let githubReleaseSelector = '.js-github-release';
-  if ($(githubReleaseSelector).length > 0)
+  if ($(githubReleaseSelector).length > 0) {
     printLatestRelease(githubReleaseSelector, $(githubReleaseSelector).data('repo'));
+  }
 
-  // On search icon click toggle search dialog.
-  $('.js-search').click(function (e) {
-    e.preventDefault();
-    toggleSearchDialog();
-  });
-  $(document).on('keydown', function (e) {
-    if (e.which == 27) {
-      // `Esc` key pressed.
-      if ($('body').hasClass('searching')) {
+  // Parse Wowchemy keyboard shortcuts.
+  document.addEventListener('keyup', (event) => {
+    if (event.code === "Escape") {
+      const body = document.body;
+      if (body.classList.contains('searching')) {
+        // Close search dialog.
         toggleSearchDialog();
       }
-    } else if (e.which == 191 && e.shiftKey == false && !$('input,textarea').is(':focus')) {
-      // `/` key pressed outside of text input.
-      e.preventDefault();
-      toggleSearchDialog();
+    }
+    // Use `key` to check for slash. Otherwise, with `code` we need to check for modifiers.
+    if (event.key === "/" ) {
+      let focusedElement = (
+        document.hasFocus() &&
+        document.activeElement !== document.body &&
+        document.activeElement !== document.documentElement &&
+        document.activeElement
+      ) || null;
+      let isInputFocused = focusedElement instanceof HTMLInputElement || focusedElement instanceof HTMLTextAreaElement;
+      if (search_config && !isInputFocused) {
+        // Open search dialog.
+        event.preventDefault();
+        toggleSearchDialog();
+      }
     }
   });
+
+  // Search event handler
+  // Check that built-in search or Algolia enabled.
+  if (search_config) {
+    // On search icon click toggle search dialog.
+    $('.js-search').click(function (e) {
+      e.preventDefault();
+      toggleSearchDialog();
+    });
+  }
 
   // Init. author notes (tooltips).
   $('[data-toggle="tooltip"]').tooltip();
@@ -614,8 +581,37 @@ $(window).on('load', function () {
   fixScrollspy();
 });
 
-// Normalize Bootstrap carousel slide heights.
-$(window).on('load resize orientationchange', normalizeCarouselSlideHeights);
+// Theme chooser events.
+let linkLight = document.querySelector('.js-set-theme-light');
+let linkDark = document.querySelector('.js-set-theme-dark');
+let linkAuto = document.querySelector('.js-set-theme-auto');
+if (linkLight && linkDark && linkAuto) {
+  linkLight.addEventListener('click', event => {
+    event.preventDefault();
+    changeThemeModeClick(0);
+  });
+  linkDark.addEventListener('click', event => {
+    event.preventDefault();
+    changeThemeModeClick(1);
+  });
+  linkAuto.addEventListener('click', event => {
+    event.preventDefault();
+    changeThemeModeClick(2);
+  });
+}
+
+// Media Query events.
+// Live update of day/night mode on system preferences update (no refresh required).
+// Note: since we listen only for *dark* events, we won't detect other scheme changes such as light to no-preference.
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+darkModeMediaQuery.addEventListener("change", (event) => {
+  onMediaQueryListEvent(event);
+});
+
+// Normalize Bootstrap carousel slide heights for Slider widget instances.
+window.addEventListener('load', normalizeCarouselSlideHeights);
+window.addEventListener('resize', normalizeCarouselSlideHeights);
+window.addEventListener('orientationchange', normalizeCarouselSlideHeights);
 
 // Automatic main menu dropdowns on mouse over.
 $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
