@@ -10,7 +10,7 @@
     {{- if gt $index 0 }}, {{ end -}}
     <span {{ if $highlight_name }}class="author-highlighted"{{end}}>
       {{- if $link_authors -}}
-        <a href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+        {{.LinkTitle}}<!-- <a href="{{.RelPermalink}}">{{.LinkTitle}}</a> -->
       {{- else -}}
         {{ .LinkTitle }}
       {{- end -}}

@@ -9580,3 +9580,11 @@ a#back_to_top.docs-toc-title {
 
 #about h1 {
   color: #2bb7b3; }
+
+.article-title a {
+  color: #151515;
+  transition: none; }
+
+#publications .article-title a:hover {
+  color: #2bb7b3;
+  transition: none; }
