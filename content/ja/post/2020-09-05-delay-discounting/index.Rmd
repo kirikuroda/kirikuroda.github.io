@@ -5,7 +5,7 @@ date: '2020-09-05'
 slug: mle-delay-discounting
 categories:
   - 実験
-tags: ["実験", "データ分析", "認知モデル", "遅延割引", "最尤推定", "cognitive modeling", "delay discounting"]
+tags: ["実験", "データ分析", "認知モデル", "遅延割引", "最尤推定", "cognitive modeling", "delay discounting", "R"]
 subtitle: "遅延割引課題を例として使います"
 summary: "遅延割引課題を例として使います"
 image:

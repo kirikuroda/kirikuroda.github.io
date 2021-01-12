@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>javascript | Kiri Kuroda</title>
+    <title>JavaScript | Kiri Kuroda</title>
     <link>https://kirikuroda.github.io/tags/javascript/</link>
       <atom:link href="https://kirikuroda.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    <description>javascript</description>
+    <description>JavaScript</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>ja-jp</language><copyright>© Kiri Kuroda, 2021</copyright><lastBuildDate>Wed, 16 Dec 2020 15:33:47 +0900</lastBuildDate>
     <image>
       <url>https://kirikuroda.github.io/images/icon_hu9d8d1890cc5dd99366df3be946520ca2_21755_512x512_fill_lanczos_center_2.png</url>
-      <title>javascript</title>
+      <title>JavaScript</title>
       <link>https://kirikuroda.github.io/tags/javascript/</link>
     </image>
     

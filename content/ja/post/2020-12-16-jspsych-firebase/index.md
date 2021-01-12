@@ -6,7 +6,7 @@ slug: jspsych-firebase
 subtitle: "やらかした……"
 summary: "素人の浅知恵が悲惨な結果をもたらすという格好の事例。他山の石にしてください"
 authors: []
-tags: ["jsPsych", "javascript", "Firebase", "実験", "ウェブ実験", "失敗談"]
+tags: ["jsPsych", "JavaScript", "Firebase", "実験", "ウェブ実験", "失敗談"]
 categories: ["実験"]
 date: 2020-12-16T15:33:47+09:00
 lastmod: 2020-12-16T15:33:47+09:00
