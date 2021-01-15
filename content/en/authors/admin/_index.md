@@ -20,7 +20,7 @@ interests:
 organizations:
 - name: The University of Tokyo
   url: ""
-- name: JSPS Research Fellow (DC1)
+- name: JSPS Research Fellow
   url: ""
 role:
 social:
@@ -42,4 +42,4 @@ social:
 highlight_name: true
 ---
 
-Kiri Kuroda is a graduate student majoring in social psychology at the University of Tokyo. He studies group decision-making in humans with behavioral experiments, eye-tracking, and cognitive modeling.
+Kiri Kuroda is a graduate student majoring in social psychology at the University of Tokyo. KK studies group decision-making in humans with behavioral experiments, eye-tracking, and cognitive modeling.

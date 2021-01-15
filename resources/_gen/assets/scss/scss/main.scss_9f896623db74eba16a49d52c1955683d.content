@@ -9302,9 +9302,12 @@ body {
 h2 {
   font-weight: bold; }
 
-.pub h1 {
+.pub h1, dt {
   font-family: "Montserrat";
   font-weight: bold; }
+
+dt {
+  font-size: 20pt; }
 
 a {
   color: #2bb7b3;

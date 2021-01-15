@@ -20,9 +20,13 @@ h2 {
 }
 
 
-.pub h1 {
+.pub h1, dt {
   font-family: "Montserrat";
   font-weight: bold;
+}
+
+dt {
+  font-size: 20pt;
 }
 
 a {

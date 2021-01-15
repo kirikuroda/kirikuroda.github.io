@@ -8,6 +8,11 @@
   url = "#about"
   weight = 10
 
+  [[main]]
+    name = "News"
+    url = "#news"
+    weight = 15
+
 [[main]]
   name = "Papers"
   url = "#publications"

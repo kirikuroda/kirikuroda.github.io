@@ -52,15 +52,19 @@
   {{end}}
 
   <h3 class="article-title mb-1 mt-3">
-    <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+    {{ $item.Title }}
+    <!-- <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a> -->
   </h3>
 
   {{ with $summary }}
-  <a href="{{ $item.RelPermalink }}" class="summary-link">
+  <div class="article-style">
+    <p>{{.}}</p>
+  </div>
+  <!-- <a href="{{ $item.RelPermalink }}" class="summary-link">
     <div class="article-style">
       <p>{{.}}</p>
     </div>
-  </a>
+  </a> -->
   {{ end }}
 
   {{ if $show_buttons }}

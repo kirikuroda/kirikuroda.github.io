@@ -243,6 +243,21 @@
   </url>
   
   <url>
+    <loc>https://kirikuroda.github.io/publication/</loc>
+    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/publication/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kirikuroda.github.io/publication_types/</loc>
     <lastmod>2020-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -299,21 +314,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://kirikuroda.github.io/authors/yukiko-ogura/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/publication/</loc>
-    <lastmod>2020-10-22T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kirikuroda.github.io/en/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kirikuroda.github.io/publication/"
                 />
   </url>
   
@@ -607,6 +607,20 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://kirikuroda.github.io/authors/admin/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/news/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kirikuroda.github.io/en/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://kirikuroda.github.io/news/"
                 />
   </url>
   
