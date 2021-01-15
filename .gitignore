@@ -7,7 +7,8 @@
 /docs/authors/*
 !/docs/authors/admin
 /docs/authors/admin/index.html
-
+/docs/publication/*
+!/docs/publication/index.html
 /docs/courses
 /docs/media
 /docs/publication_types
@@ -17,6 +18,8 @@
 !/docs/en/authors/admin
 /docs/en/authors/admin/index.html
 /docs/en/authors/admin/index.xml
+/docs/en/publication/*
+!/docs/en/publication/index.html
 /docs/en/courses
 /docs/en/post
 /docs/en/publication_types
