@@ -88,7 +88,7 @@ view: 2
     2018-04-01
   </dt>
   <dd>
-    KK was awarded Grant-in-Aid for JSPS fellows (DC1) 18J21510 by Japan Society for the Promotion of Science.
+    KK was awarded Grant-in-Aid for JSPS fellows (DC1) by Japan Society for the Promotion of Science.
   </dd>
   <br>
 </article>
