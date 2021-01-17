@@ -92,7 +92,6 @@ subtitle = "お知らせ"
 </article>
 
 <div class="see-all">
-  <a href="/news/">お知らせ一覧
-    <i class="fas fa-angle-right"></i>
-  </a>
+  <i class="fas fa-arrow-circle-right"></i>
+  <a href="/news/">お知らせ一覧</a>
 </div>

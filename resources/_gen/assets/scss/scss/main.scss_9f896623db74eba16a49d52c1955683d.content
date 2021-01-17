@@ -9581,6 +9581,9 @@ a#back_to_top.docs-toc-title {
   #talks .btn-link:hover h1 {
     color: #2bb7b3; }
 
+#talks .btn-link:focus {
+  text-decoration: none; }
+
 #about h1 {
   color: #2bb7b3; }
 
@@ -9591,3 +9594,6 @@ a#back_to_top.docs-toc-title {
 #publications .article-title a:hover {
   color: #2bb7b3;
   transition: none; }
+
+.exp-company {
+  font-family: Roboto; }

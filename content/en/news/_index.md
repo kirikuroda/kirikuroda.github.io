@@ -91,5 +91,123 @@ view: 2
     KK was awarded Grant-in-Aid for JSPS fellows (DC1) by Japan Society for the Promotion of Science.
   </dd>
   <br>
+  <dt>
+    2018-04-01
+  </dt>
+  <dd>
+    KK enrolled in a Ph.D. program.
+  </dd>
+  <br>
+  <dt>
+    2018-03-31
+  </dt>
+  <dd>
+    KK completed the Master's degree.
+  </dd>
+  <br>
+  <dt>
+    2017-12-10
+  </dt>
+  <dd>
+    KK gave an online presentation at the 10th Annual Conference of Human Behavior & Evolution Society of Japan.
+  </dd>
+  <br>
+  <dt>
+    2017-10-29
+  </dt>
+  <dd>
+    KK gave an online presentation at the 58th Annual Conference of the Japanese Society of Social Psychology.
+  </dd>
+  <br>
+  <dt>
+    2017-09-23
+  </dt>
+  <dd>
+    KK gave a poster presentation at the workshop of "Cognitive, Neural, and Ecological Bases Underlying Collective Intelligence."
+  </dd>
+  <br>
+  <dt>
+    2017-09-22
+  </dt>
+  <dd>
+    KK gave an online presentation at the 81st Annual Convention of the Japanese Psychological Association.
+  </dd>
+  <br>
+  <dt>
+    2017-03-08
+  </dt>
+  <dd>
+    KK gave an oral presentation at the Young Researchers' Joint Meeting of "the Empathetic Systems" as a representative of the research unit "Empathy in Human Societies."
+  </dd>
+  <br>
+  <dt>
+    2016-12-10
+  </dt>
+  <dd>
+    KK gave an oral presentation at the 9th Annual Conference of Human Behavior & Evolution Society of Japan.
+  </dd>
+  <br>
+  <dt>
+    2016-11-25
+  </dt>
+  <dd>
+    KK gave a poster presentation at the 10th Colloquium of Social Psychology.
+  </dd>
+  <br>
+  <dt>
+    2016-10-30
+  </dt>
+  <dd>
+    KK gave a poster presentation at the 20th Annual Conference of Experimental Social Science and won the best poster presentation award.
+  </dd>
+  <br>
+  <dt>
+    2016-09-18
+  </dt>
+  <dd>
+    KK gave an oral presentation at the 57th Annual Conference of the Japanese Society of Social Psychology.
+  </dd>
+  <br>
+  <dt>
+    2016-04-01
+  </dt>
+  <dd>
+    KK enrolled in a master's program.
+  </dd>
+  <br>
+  <dt>
+    2016-03-31
+  </dt>
+  <dd>
+    KK completed the Bachelor's degree.
+  </dd>
+  <br>
+  <dt>
+    2015-12-06
+  </dt>
+  <dd>
+    KK gave a poster presentation at the 8th Annual Conference of Human Behavior & Evolution Society of Japan.
+  </dd>
+  <br>
+  <dt>
+    2015-11-29
+  </dt>
+  <dd>
+    KK gave a poster presentation at the 19th Annual Conference of Experimental Social Science.
+  </dd>
+  <br>
+  <dt>
+    2015-04-01
+  </dt>
+  <dd>
+    KK joined Tatsuya Kameda Laboratory.
+  </dd>
+  <br>
+  <dt>
+    2014-04-01
+  </dt>
+  <dd>
+    KK entered the Department of Social Psychology at the University of Tokyo.
+  </dd>
+  <br>
 </article>
-

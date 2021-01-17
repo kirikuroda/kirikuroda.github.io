@@ -91,7 +91,6 @@ subtitle = ""
 </article>
 
 <div class="see-all">
-  <a href="/en/news/">All news
-    <i class="fas fa-angle-right"></i>
-  </a>
+  <i class="fas fa-arrow-circle-right"></i>
+  <a href="/en/news/">All news</a>
 </div>
