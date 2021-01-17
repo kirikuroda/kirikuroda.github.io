@@ -13,7 +13,7 @@ image:
   focal_point: "Center"
   preview_only: false
 output:
-  blogdown::html_page:
+  blogdown::html_document2:
     toc: true
 draft: false
 ---
@@ -157,7 +157,7 @@ $$
 
 そこで、ある1人の参加者が50回の遅延割引課題に取り組んだと仮定します。具体的には「$t$日後に50000円をもらうか、今すぐ$r$円をもらうか」を選んだとしましょう。各回で、日数$t$は｛30, 90, 180, 360, 720｝のいずれか、今すぐの報酬$r$は｛5000, 1000, ..., 50000｝のいずれかとします（5通り×10通りなので50回の課題、ということです）。では、下のコードのように仮想的なデータを作り、`data`というデータフレームとして保存してみましょう[^7]。
 
-```{r}
+```{r, class.source="language-r"}
 set.seed(1)
 data <- expand_grid(
   t = c(30, 90, 180, 360, 720),
@@ -195,7 +195,7 @@ data %>%
 
 とりあえず、上で説明した2つのモデルに代入してみましょう。ここでは、「今すぐ5000円」と「30日後に50000円」を比べた場合を考えてみます。
 
-```{r}
+```{r, class.source="language-r"}
 t <- 30
 k <- 0.1
 beta <- 0.0001
@@ -231,7 +231,7 @@ Figure 2を見ると、参加者が遅延報酬（30日後に50000円）を選�
 
 では、$k = 0.1$、$\beta = 0.0001$とし、全50回の尤度を計算してみましょう。まず、以下のコードを実行します。
 
-```{r}
+```{r, class.source="language-r"}
 t <- 30
 k <- 0.1
 beta <- 0.0001
@@ -252,7 +252,7 @@ data %>%
 
 しかし、これをそのまま最尤推定に使うことはできません。なぜなら、尤度とは「あるパラメタを設定したときに、**手元にあるデータ**が得られる確率」だからです。実験では、参加者が即時報酬を選ぶ場合も当然あるので、その場合は「即時報酬を選ぶ確率」を使わないといけません。したがって、各回の尤度（`likelihood`）は以下のようになります。
 
-```{r}
+```{r, class.source="language-r"}
 likelihood <- data %>%
   # 遅延報酬のUと、遅延報酬を選ぶ確率pを計算
   # さらに、参加者の選択に応じて条件分岐をして尤度を計算
@@ -276,7 +276,7 @@ likelihood
 
 では、上で求めた尤度を全部かけ算してみましょう。
 
-```{r}
+```{r, class.source="language-r"}
 # prod()で、要素を全部かけあわせることになる
 prod(likelihood)
 ```
@@ -295,7 +295,7 @@ prod(likelihood)
 
 では、対数尤度を計算し、全部を足し算してみましょう。
 
-```{r}
+```{r, class.source="language-r"}
 sum(log(likelihood))
 ```
 
@@ -303,7 +303,7 @@ sum(log(likelihood))
 
 確認のため、尤度を全部掛け算したやつの対数を取ってみましょう。
 
-```{r}
+```{r, class.source="language-r"}
 log(prod(likelihood))
 ```
 
@@ -329,13 +329,13 @@ log(prod(likelihood))
 
 では、具体的な書き方を説明します。まず、対数尤度関数（`ll_delay`）を自分で定義します。
 
-```{r}
+```{r, class.source="language-r"}
 # 関数を定義する
 ll_delay <- function(param, data) {
-  
+
   # param[1]はk、param[2]はbetaを表している
   # dataは参加者のデータフレームそのものを表している
-  
+
   data %>%
     # 毎回の対数尤度を計算する
     mutate(
@@ -354,7 +354,7 @@ ll_delay <- function(param, data) {
 
 これを`optim`に突っ込みます。`par`には推定したいパラメタの初期値、`fn`には最適化したい関数を入れます。`control = list(fnscale = -1)`とすると、関数の最大化が行われるようになります。その他の引数（この例では`data`）では、`ll_delay`にどんな引数を渡すかを指示してあげます。
 
-```{r}
+```{r, class.source="language-r"}
 optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale = -1))
 ```
 
@@ -364,7 +364,7 @@ optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale =
 
 では、正解は何だったのでしょうか？　正解は、データを作ったコードの中に隠れています。改めてコードを見てみましょう。
 
-```{r}
+```{r, class.source="language-r"}
 set.seed(1)
 data <- expand_grid(
   t = c(30, 90, 180, 360, 720),

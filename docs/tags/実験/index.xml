@@ -51,7 +51,7 @@
 &lt;br&gt;
 &lt;h2 id=&#34;正解&#34;&gt;正解&lt;/h2&gt;
 &lt;p&gt;正解のやり方では、以下のようなコードでデータを記録します。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;jsPsych.init({
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;jsPsych.init({
   timeline: timeline,
   on_finish: function() {
     firebase.database().ref(exp_id).set({
@@ -152,27 +152,6 @@ jsPsych.init({
       <guid>https://kirikuroda.github.io/post/2020/09/05/mle-delay-discounting/</guid>
       <description>
 
-&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#背景&#34;&gt;背景&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#このページの概要&#34;&gt;このページの概要&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#遅延割引のモデルを解説&#34;&gt;遅延割引のモデルを解説&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#遅延割引課題とは&#34;&gt;遅延割引課題とは&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#遅延割引のモデル&#34;&gt;遅延割引のモデル&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#肢選択のモデル&#34;&gt;2肢選択のモデル&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#実際に遅延割引パラメタを推定する&#34;&gt;実際に遅延割引パラメタを推定する&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#実験データを作ってみる&#34;&gt;実験データを作ってみる&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#素朴にパラメタを推定してみる&#34;&gt;素朴にパラメタを推定してみる&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#尤度を計算する&#34;&gt;尤度を計算する&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#対数尤度を計算する&#34;&gt;対数尤度を計算する&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#optimでパラメタを推定する&#34;&gt;optimでパラメタを推定する&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#おわりに&#34;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 
 &lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;はじめに&lt;/h1&gt;
@@ -277,7 +256,7 @@ P_{d} = \frac{1}{1+\exp(-\beta[U(A^{d})-U(A^{s})])}
 &lt;h2&gt;実験データを作ってみる&lt;/h2&gt;
 &lt;p&gt;ここで具体的な分析方法を説明したいのですが、まだ手元にはデータがありません。&lt;/p&gt;
 &lt;p&gt;そこで、ある1人の参加者が50回の遅延割引課題に取り組んだと仮定します。具体的には「&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;日後に50000円をもらうか、今すぐ&lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;円をもらうか」を選んだとしましょう。各回で、日数&lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;は｛30, 90, 180, 360, 720｝のいずれか、今すぐの報酬&lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;は｛5000, 1000, …, 50000｝のいずれかとします（5通り×10通りなので50回の課題、ということです）。では、下のコードのように仮想的なデータを作り、&lt;code&gt;data&lt;/code&gt;というデータフレームとして保存してみましょう&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;set.seed(1)
 data &amp;lt;- expand_grid(
   t = c(30, 90, 180, 360, 720),
   r = seq(5000, 50000, 5000)
@@ -309,7 +288,7 @@ Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 &lt;p&gt;さて、どのようにパラメタを推定すればよいのでしょうか？　まず、素朴なアイデアから出発してみます。&lt;/p&gt;
 &lt;p&gt;たとえば、「なんとなくだけど、&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;は0.1で、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;は0.0001じゃね？」と考えたとしましょう。このとき、これらのパラメタの値はどれくらいふさわしいでしょうか？　また、そのふさわしさはどのように評価（計算）されるべきでしょうか？&lt;/p&gt;
 &lt;p&gt;とりあえず、上で説明した2つのモデルに代入してみましょう。ここでは、「今すぐ5000円」と「30日後に50000円」を比べた場合を考えてみます。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t &amp;lt;- 30
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;t &amp;lt;- 30
 k &amp;lt;- 0.1
 beta &amp;lt;- 0.0001
 
@@ -334,7 +313,7 @@ print(p)&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;尤度を計算する&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;尤度を計算する&lt;/h2&gt;
 &lt;p&gt;では、&lt;span class=&#34;math inline&#34;&gt;\(k = 0.1\)&lt;/span&gt;、&lt;span class=&#34;math inline&#34;&gt;\(\beta = 0.0001\)&lt;/span&gt;とし、全50回の尤度を計算してみましょう。まず、以下のコードを実行します。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t &amp;lt;- 30
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;t &amp;lt;- 30
 k &amp;lt;- 0.1
 beta &amp;lt;- 0.0001
 
@@ -358,7 +337,7 @@ data %&amp;gt;%
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;上に表示されているのは、遅延報酬を選ぶ確率&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;です。&lt;/p&gt;
 &lt;p&gt;しかし、これをそのまま最尤推定に使うことはできません。なぜなら、尤度とは「あるパラメタを設定したときに、&lt;strong&gt;手元にあるデータ&lt;/strong&gt;が得られる確率」だからです。実験では、参加者が即時報酬を選ぶ場合も当然あるので、その場合は「即時報酬を選ぶ確率」を使わないといけません。したがって、各回の尤度（&lt;code&gt;likelihood&lt;/code&gt;）は以下のようになります。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;likelihood &amp;lt;- data %&amp;gt;%
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;likelihood &amp;lt;- data %&amp;gt;%
   # 遅延報酬のUと、遅延報酬を選ぶ確率pを計算
   # さらに、参加者の選択に応じて条件分岐をして尤度を計算
   mutate(
@@ -385,7 +364,7 @@ likelihood&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;では、ここで全50回の尤度を1つの指標にまとめたいと思います（まとめたいですよね？）。このとき、直観的には尤度を足し算すれば良いんじゃないか、と思うかもしれませんが、それは間違いです。&lt;/p&gt;
 &lt;p&gt;正解は「かけ算」です。詳しい説明は適宜教科書を読むなり、ググってもらえるとありがたいです&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。簡単な例で言えば、「3回連続でじゃんけんに勝つ確率は？」と聞かれたとき、「1/3を3回足して1」ではなく、「1/3を3回かけ算して1/27」と答えるのが正解になるのと同じ理屈です。&lt;/p&gt;
 &lt;p&gt;では、上で求めた尤度を全部かけ算してみましょう。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# prod()で、要素を全部かけあわせることになる
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# prod()で、要素を全部かけあわせることになる
 prod(likelihood)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 1.143327e-20&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -395,11 +374,11 @@ prod(likelihood)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;これを防ぐため、尤度を計算するときは、&lt;strong&gt;対数を取る&lt;/strong&gt;というのが決まりになっています。なぜなら、かけ算の対数を取ると足し算になるという便利な性質があるからです&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;。対数を取って求めた尤度を「対数尤度」と言います。&lt;/p&gt;
 &lt;p&gt;また、対数は単調増加関数なので、「尤度の積が大きい（もっともらしい）場合は、その対数も大きくなる」という関係が成り立ちます。対数、便利です。&lt;/p&gt;
 &lt;p&gt;では、対数尤度を計算し、全部を足し算してみましょう。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sum(log(likelihood))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;sum(log(likelihood))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] -45.91776&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;確認のため、尤度を全部掛け算したやつの対数を取ってみましょう。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;log(prod(likelihood))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;log(prod(likelihood))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] -45.91776&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;ちゃんと2つが一致しました。ただし、データの数が多いほどかけ算の誤差は大きくなるので、やはり対数を取ってから足し算をするようにしましょう。&lt;/p&gt;
@@ -414,12 +393,12 @@ prod(likelihood)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;そこで使うのが、Rの最適化関数&lt;code&gt;optim&lt;/code&gt;です。最適化関数とは、ある関数の最大値／最小値を求めるための道具だと考えてください。&lt;/p&gt;
 &lt;p&gt;いま私たちがやりたいのは、対数尤度が最も大きくなりそうなパラメタ&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;と&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;の組み合わせを調べるということです。つまり、&lt;code&gt;optim&lt;/code&gt;を使って、対数尤度（関数）が最大化されるような&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;と&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;を見つければ目的達成ということになります。&lt;/p&gt;
 &lt;p&gt;では、具体的な書き方を説明します。まず、対数尤度関数（&lt;code&gt;ll_delay&lt;/code&gt;）を自分で定義します。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# 関数を定義する
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# 関数を定義する
 ll_delay &amp;lt;- function(param, data) {
-  
+
   # param[1]はk、param[2]はbetaを表している
   # dataは参加者のデータフレームそのものを表している
-  
+
   data %&amp;gt;%
     # 毎回の対数尤度を計算する
     mutate(
@@ -434,7 +413,7 @@ ll_delay &amp;lt;- function(param, data) {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;これを&lt;code&gt;optim&lt;/code&gt;に突っ込みます。&lt;code&gt;par&lt;/code&gt;には推定したいパラメタの初期値、&lt;code&gt;fn&lt;/code&gt;には最適化したい関数を入れます。&lt;code&gt;control = list(fnscale = -1)&lt;/code&gt;とすると、関数の最大化が行われるようになります。その他の引数（この例では&lt;code&gt;data&lt;/code&gt;）では、&lt;code&gt;ll_delay&lt;/code&gt;にどんな引数を渡すかを指示してあげます。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale = -1))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale = -1))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $par
 ## [1] 0.0132120062 0.0000423154
 ## 
@@ -453,7 +432,7 @@ ll_delay &amp;lt;- function(param, data) {
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;結果の&lt;code&gt;par&lt;/code&gt;が推定値を表しています。&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;が0.0132120062、&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;は0.0000423154でした。&lt;/p&gt;
 &lt;p&gt;では、正解は何だったのでしょうか？　正解は、データを作ったコードの中に隠れています。改めてコードを見てみましょう。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;set.seed(1)
 data &amp;lt;- expand_grid(
   t = c(30, 90, 180, 360, 720),
   r = seq(5000, 50000, 5000)

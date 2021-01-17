@@ -84,7 +84,7 @@ OMG。<u>**全80試行を記録できた人が、たった8人しかいません
 
 正解のやり方では、以下のようなコードでデータを記録します。
 
-```js
+```javascript
 jsPsych.init({
   timeline: timeline,
   on_finish: function() {

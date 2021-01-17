@@ -13,33 +13,12 @@ image:
   focal_point: "Center"
   preview_only: false
 output:
-  blogdown::html_page:
+  blogdown::html_document2:
     toc: true
 draft: false
 ---
 
 
-<div id="TOC">
-<ul>
-<li><a href="#はじめに">はじめに</a><ul>
-<li><a href="#背景">背景</a></li>
-<li><a href="#このページの概要">このページの概要</a></li>
-</ul></li>
-<li><a href="#遅延割引のモデルを解説">遅延割引のモデルを解説</a><ul>
-<li><a href="#遅延割引課題とは">遅延割引課題とは</a></li>
-<li><a href="#遅延割引のモデル">遅延割引のモデル</a></li>
-<li><a href="#肢選択のモデル">2肢選択のモデル</a></li>
-</ul></li>
-<li><a href="#実際に遅延割引パラメタを推定する">実際に遅延割引パラメタを推定する</a><ul>
-<li><a href="#実験データを作ってみる">実験データを作ってみる</a></li>
-<li><a href="#素朴にパラメタを推定してみる">素朴にパラメタを推定してみる</a></li>
-<li><a href="#尤度を計算する">尤度を計算する</a></li>
-<li><a href="#対数尤度を計算する">対数尤度を計算する</a></li>
-<li><a href="#optimでパラメタを推定する">optimでパラメタを推定する</a></li>
-</ul></li>
-<li><a href="#おわりに">おわりに</a></li>
-</ul>
-</div>
 
 <div id="はじめに" class="section level1">
 <h1>はじめに</h1>
@@ -144,7 +123,7 @@ P_{d} = \frac{1}{1+\exp(-\beta[U(A^{d})-U(A^{s})])}
 <h2>実験データを作ってみる</h2>
 <p>ここで具体的な分析方法を説明したいのですが、まだ手元にはデータがありません。</p>
 <p>そこで、ある1人の参加者が50回の遅延割引課題に取り組んだと仮定します。具体的には「<span class="math inline">\(t\)</span>日後に50000円をもらうか、今すぐ<span class="math inline">\(r\)</span>円をもらうか」を選んだとしましょう。各回で、日数<span class="math inline">\(t\)</span>は｛30, 90, 180, 360, 720｝のいずれか、今すぐの報酬<span class="math inline">\(r\)</span>は｛5000, 1000, …, 50000｝のいずれかとします（5通り×10通りなので50回の課題、ということです）。では、下のコードのように仮想的なデータを作り、<code>data</code>というデータフレームとして保存してみましょう<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>。</p>
-<pre class="r"><code>set.seed(1)
+<pre class="r language-r"><code>set.seed(1)
 data &lt;- expand_grid(
   t = c(30, 90, 180, 360, 720),
   r = seq(5000, 50000, 5000)
@@ -176,7 +155,7 @@ Figure 2: ある参加者がどれくらい遅延報酬を選んだか
 <p>さて、どのようにパラメタを推定すればよいのでしょうか？　まず、素朴なアイデアから出発してみます。</p>
 <p>たとえば、「なんとなくだけど、<span class="math inline">\(k\)</span>は0.1で、<span class="math inline">\(\beta\)</span>は0.0001じゃね？」と考えたとしましょう。このとき、これらのパラメタの値はどれくらいふさわしいでしょうか？　また、そのふさわしさはどのように評価（計算）されるべきでしょうか？</p>
 <p>とりあえず、上で説明した2つのモデルに代入してみましょう。ここでは、「今すぐ5000円」と「30日後に50000円」を比べた場合を考えてみます。</p>
-<pre class="r"><code>t &lt;- 30
+<pre class="r language-r"><code>t &lt;- 30
 k &lt;- 0.1
 beta &lt;- 0.0001
 
@@ -201,7 +180,7 @@ print(p)</code></pre>
 <div id="尤度を計算する" class="section level2">
 <h2>尤度を計算する</h2>
 <p>では、<span class="math inline">\(k = 0.1\)</span>、<span class="math inline">\(\beta = 0.0001\)</span>とし、全50回の尤度を計算してみましょう。まず、以下のコードを実行します。</p>
-<pre class="r"><code>t &lt;- 30
+<pre class="r language-r"><code>t &lt;- 30
 k &lt;- 0.1
 beta &lt;- 0.0001
 
@@ -225,7 +204,7 @@ data %&gt;%
 <p><br></p>
 <p>上に表示されているのは、遅延報酬を選ぶ確率<span class="math inline">\(p\)</span>です。</p>
 <p>しかし、これをそのまま最尤推定に使うことはできません。なぜなら、尤度とは「あるパラメタを設定したときに、<strong>手元にあるデータ</strong>が得られる確率」だからです。実験では、参加者が即時報酬を選ぶ場合も当然あるので、その場合は「即時報酬を選ぶ確率」を使わないといけません。したがって、各回の尤度（<code>likelihood</code>）は以下のようになります。</p>
-<pre class="r"><code>likelihood &lt;- data %&gt;%
+<pre class="r language-r"><code>likelihood &lt;- data %&gt;%
   # 遅延報酬のUと、遅延報酬を選ぶ確率pを計算
   # さらに、参加者の選択に応じて条件分岐をして尤度を計算
   mutate(
@@ -252,7 +231,7 @@ likelihood</code></pre>
 <p>では、ここで全50回の尤度を1つの指標にまとめたいと思います（まとめたいですよね？）。このとき、直観的には尤度を足し算すれば良いんじゃないか、と思うかもしれませんが、それは間違いです。</p>
 <p>正解は「かけ算」です。詳しい説明は適宜教科書を読むなり、ググってもらえるとありがたいです<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>。簡単な例で言えば、「3回連続でじゃんけんに勝つ確率は？」と聞かれたとき、「1/3を3回足して1」ではなく、「1/3を3回かけ算して1/27」と答えるのが正解になるのと同じ理屈です。</p>
 <p>では、上で求めた尤度を全部かけ算してみましょう。</p>
-<pre class="r"><code># prod()で、要素を全部かけあわせることになる
+<pre class="r language-r"><code># prod()で、要素を全部かけあわせることになる
 prod(likelihood)</code></pre>
 <pre><code>## [1] 1.143327e-20</code></pre>
 <p><br></p>
@@ -262,11 +241,11 @@ prod(likelihood)</code></pre>
 <p>これを防ぐため、尤度を計算するときは、<strong>対数を取る</strong>というのが決まりになっています。なぜなら、かけ算の対数を取ると足し算になるという便利な性質があるからです<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>。対数を取って求めた尤度を「対数尤度」と言います。</p>
 <p>また、対数は単調増加関数なので、「尤度の積が大きい（もっともらしい）場合は、その対数も大きくなる」という関係が成り立ちます。対数、便利です。</p>
 <p>では、対数尤度を計算し、全部を足し算してみましょう。</p>
-<pre class="r"><code>sum(log(likelihood))</code></pre>
+<pre class="r language-r"><code>sum(log(likelihood))</code></pre>
 <pre><code>## [1] -45.91776</code></pre>
 <p><br></p>
 <p>確認のため、尤度を全部掛け算したやつの対数を取ってみましょう。</p>
-<pre class="r"><code>log(prod(likelihood))</code></pre>
+<pre class="r language-r"><code>log(prod(likelihood))</code></pre>
 <pre><code>## [1] -45.91776</code></pre>
 <p><br></p>
 <p>ちゃんと2つが一致しました。ただし、データの数が多いほどかけ算の誤差は大きくなるので、やはり対数を取ってから足し算をするようにしましょう。</p>
@@ -281,12 +260,12 @@ prod(likelihood)</code></pre>
 <p>そこで使うのが、Rの最適化関数<code>optim</code>です。最適化関数とは、ある関数の最大値／最小値を求めるための道具だと考えてください。</p>
 <p>いま私たちがやりたいのは、対数尤度が最も大きくなりそうなパラメタ<span class="math inline">\(k\)</span>と<span class="math inline">\(\beta\)</span>の組み合わせを調べるということです。つまり、<code>optim</code>を使って、対数尤度（関数）が最大化されるような<span class="math inline">\(k\)</span>と<span class="math inline">\(\beta\)</span>を見つければ目的達成ということになります。</p>
 <p>では、具体的な書き方を説明します。まず、対数尤度関数（<code>ll_delay</code>）を自分で定義します。</p>
-<pre class="r"><code># 関数を定義する
+<pre class="r language-r"><code># 関数を定義する
 ll_delay &lt;- function(param, data) {
-  
+
   # param[1]はk、param[2]はbetaを表している
   # dataは参加者のデータフレームそのものを表している
-  
+
   data %&gt;%
     # 毎回の対数尤度を計算する
     mutate(
@@ -301,7 +280,7 @@ ll_delay &lt;- function(param, data) {
 }</code></pre>
 <p><br></p>
 <p>これを<code>optim</code>に突っ込みます。<code>par</code>には推定したいパラメタの初期値、<code>fn</code>には最適化したい関数を入れます。<code>control = list(fnscale = -1)</code>とすると、関数の最大化が行われるようになります。その他の引数（この例では<code>data</code>）では、<code>ll_delay</code>にどんな引数を渡すかを指示してあげます。</p>
-<pre class="r"><code>optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale = -1))</code></pre>
+<pre class="r language-r"><code>optim(par = c(0.1, 0.0001), fn = ll_delay, data = data, control = list(fnscale = -1))</code></pre>
 <pre><code>## $par
 ## [1] 0.0132120062 0.0000423154
 ## 
@@ -320,7 +299,7 @@ ll_delay &lt;- function(param, data) {
 <p><br></p>
 <p>結果の<code>par</code>が推定値を表しています。<span class="math inline">\(k\)</span>が0.0132120062、<span class="math inline">\(\beta\)</span>は0.0000423154でした。</p>
 <p>では、正解は何だったのでしょうか？　正解は、データを作ったコードの中に隠れています。改めてコードを見てみましょう。</p>
-<pre class="r"><code>set.seed(1)
+<pre class="r language-r"><code>set.seed(1)
 data &lt;- expand_grid(
   t = c(30, 90, 180, 360, 720),
   r = seq(5000, 50000, 5000)

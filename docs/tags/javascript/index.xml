@@ -51,7 +51,7 @@
 &lt;br&gt;
 &lt;h2 id=&#34;正解&#34;&gt;正解&lt;/h2&gt;
 &lt;p&gt;正解のやり方では、以下のようなコードでデータを記録します。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;jsPsych.init({
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;jsPsych.init({
   timeline: timeline,
   on_finish: function() {
     firebase.database().ref(exp_id).set({

@@ -391,7 +391,7 @@ function getSiblings(elem) {
 
 $(document).ready(function () {
   fixHugoOutput();
-  fixMermaid();
+  // fixMermaid();
 
   // Initialise code highlighting if enabled for this page.
   // Note: this block should be processed after the Mermaid code-->div conversion.

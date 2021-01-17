@@ -200,4 +200,3 @@ subtitle = "学会・シンポジウム"
     </div>
   </div>
 </div>
-
