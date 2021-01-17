@@ -92,20 +92,6 @@ view: 2
   </dd>
   <br>
   <dt>
-    2018-04-01
-  </dt>
-  <dd>
-    KK enrolled in a Ph.D. program.
-  </dd>
-  <br>
-  <dt>
-    2018-03-31
-  </dt>
-  <dd>
-    KK completed the Master's degree.
-  </dd>
-  <br>
-  <dt>
     2017-12-10
   </dt>
   <dd>
@@ -169,20 +155,6 @@ view: 2
   </dd>
   <br>
   <dt>
-    2016-04-01
-  </dt>
-  <dd>
-    KK enrolled in a master's program.
-  </dd>
-  <br>
-  <dt>
-    2016-03-31
-  </dt>
-  <dd>
-    KK completed the Bachelor's degree.
-  </dd>
-  <br>
-  <dt>
     2015-12-06
   </dt>
   <dd>
@@ -194,20 +166,6 @@ view: 2
   </dt>
   <dd>
     KK gave a poster presentation at the 19th Annual Conference of Experimental Social Science.
-  </dd>
-  <br>
-  <dt>
-    2015-04-01
-  </dt>
-  <dd>
-    KK joined Tatsuya Kameda Laboratory.
-  </dd>
-  <br>
-  <dt>
-    2014-04-01
-  </dt>
-  <dd>
-    KK entered the Department of Social Psychology at the University of Tokyo.
   </dd>
   <br>
 </article>
