@@ -69,6 +69,13 @@ subtitle = ""
 
 <article>
   <dt>
+    2021-01-28
+  </dt>
+  <dd>
+    KK won the 11th JSPS Ikushi Prize.
+  </dd>
+  <br/>
+  <dt>
     2020-12-13
   </dt>
   <dd>
@@ -80,13 +87,6 @@ subtitle = ""
   </dt>
   <dd>
     KK gave an online presentation at the 61st Annual Conference of the Japanese Society of Social Psychology.
-  </dd>
-  <br/>
-  <dt>
-    2020-10-20
-  </dt>
-  <dd>
-    KK gave an online presentation at the 84th Annual Convention of the Japanese Psychological Association and won the outstanding presentation award.
   </dd>
 </article>
 

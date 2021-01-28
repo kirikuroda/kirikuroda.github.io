@@ -3,9 +3,34 @@ abstract: "Laughter is a nonverbal vocalization occurring in every known culture
 authors:
 - Gregory A. Bryant
 - Daniel M. T. Fessler
-- ...
+- Riccardo Fusaroli
+- Edward Clint
+- Dorsa Amir
+- Brenda Chávez
+- Kaleda K. Denton
+- Cinthya Díaz
+- Lealaiauloto Togiaso Duran
+- Jana Fanćovićová
+- Michal Fux
+- Erni Farida Ginting
+- Youssef Hasan
+- Anning Hu
+- Shanmukh V. Kamble
+- Tatsuya Kameda
 - Kiri Kuroda
-- ...
+- Norman P. Li
+- Francesca R. Luberti
+- Raha Peyravi
+- Pavol Prokop
+- Katinka J. P. Quintelier
+- Hyun Jung Shin
+- Stefan Stieger
+- Lawrence S. Sugiyama
+- Ellis A. van den Hende
+- Hugo Viciana-Asensio
+- Saliha Elif Yildizhan
+- Jose C. Yong
+- Tessa Yuditha
 - Yi Zhou
 date: "2018-07-25T00:00:00Z"
 doi: "https://doi.org/10.1177%2F0956797618778235"

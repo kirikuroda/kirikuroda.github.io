@@ -130,6 +130,8 @@ subtitle = "学会・シンポジウム"
           <br>
           <li><b>黒田起吏</b>・亀田達也「リスク下の社会的採餌における協力的な分業の創発 認知–生理–行動実験による検討」<a href="http://www.socialpsychology.jp/conf2018/" target="_blank">日本社会心理学会第59回大会</a>，<a href="https://www.otemon.ac.jp" target="_blank">追手門学院大学</a>，2018年8月28–29日（口頭）.</li>
           <br>
+          <li>Daniel Freund, Tobias L. Kordsmeyer, Atsushi Ueshima, <b>Kiri Kuroda</b>, Tatsuya Kameda, &amp; Lars Penke. Cross-cultural perceptions of facial prosociality, attractiveness, health and dominance. <a href="https://www.hbes.com/portfolio-item/30th-annual-hbes-conference/" target="_blank">The 30th Annual Human Behavior and Evolution Society Conference</a>, <a href="https://www.uva.nl/en" target="_blank">the University of Amsterdam</a>, July 4th–7th, 2018 (Oral).</li>
+          <br>
           <li><b>Kiri Kuroda</b> &amp; Tatsuya Kameda. Emergence of cooperative division of labor in dyadic foraging under risk. <a href="https://www.hbes.com/portfolio-item/30th-annual-hbes-conference/" target="_blank">The 30th Annual Human Behavior and Evolution Society Conference</a>, <a href="https://www.uva.nl/en" target="_blank">the University of Amsterdam</a>, July 4th–7th, 2018 (Oral).</li>
         </ol>
       </div>

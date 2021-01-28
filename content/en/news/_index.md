@@ -8,6 +8,13 @@ view: 2
 
 <article>
   <dt>
+    2021-01-28
+  </dt>
+  <dd>
+    KK won the 11th JSPS Ikushi Prize.
+  </dd>
+  <br/>
+  <dt>
     2020-12-13
   </dt>
   <dd>

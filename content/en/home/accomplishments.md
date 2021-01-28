@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "Japan Society for the Promotion of Science"
+  organization_url = "https://www.jsps.go.jp/english/e-ikushi-prize/index.html"
+  title = "The 11th JSPS Ikushi Prize (JPY 1,100,000)"
+  url = "https://www.jsps.go.jp/english/e-ikushi-prize/data/awards/11th_Ikushi_list_en.pdf"
+  certificate_url = ""
+  date_start = "2021-01-28"
+  date_end = ""
+  description = ""
+
+[[item]]
   organization = "The 13th Annual Conference of Human Behavior & Evolution Society of Japan"
   organization_url = "https://www.hbesj.org/?page_id=154"
   title = "Best Presentation Award"
