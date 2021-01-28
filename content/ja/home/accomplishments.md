@@ -51,7 +51,7 @@ date_format = "2006年1月"
 [[item]]
   organization = "第12回日本人間行動進化学会大会"
   organization_url = "https://www.hbesj.org"
-  title = "若手発表賞"
+  title = "若手研究者発表賞"
   url = "https://www.hbesj.org/?page_id=128"
   certificate_url = ""
   date_start = "2019-12-08"
