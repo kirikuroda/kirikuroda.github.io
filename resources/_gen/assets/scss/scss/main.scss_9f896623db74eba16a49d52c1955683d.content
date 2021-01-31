@@ -9597,3 +9597,12 @@ a#back_to_top.docs-toc-title {
 
 .exp-company {
   font-family: Roboto; }
+
+#links h2, #links h3 {
+  margin-top: 0.5rem; }
+
+.wg-contact .fa-li {
+  top: 0; }
+
+article a:hover {
+  text-decoration: underline; }

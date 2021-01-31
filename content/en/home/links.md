@@ -5,12 +5,13 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 15  # Order that this section will appear.
+weight = 70  # Order that this section will appear.
 
-title = "News"
+title = "Links"
 subtitle = ""
 
 [content]
+
   # Page type to display. E.g. post, talk, or publication.
   page_type = "news"
 
@@ -65,30 +66,24 @@ subtitle = ""
 
  # CSS class.
  css_class = ""
+
 +++
 
-<article>
-	<dt>
-    2021-01-28
-  </dt>
-  <dd>
-    KK won <a href="https://www.jsps.go.jp/english/e-ikushi-prize/data/awards/11th_Ikushi_list_en.pdf" target="_blank">the 11th JSPS Ikushi Prize</a>.
-  </dd>
-  <dt>
-    2020-12-13
-  </dt>
-  <dd>
-    KK gave an online presentation at <a href="https://sites.google.com/view/hbes-j2020fukuoka/" target="_blank">the 13th Annual Conference of Human Behavior & Evolution Society of Japan</a> and won <a href="https://www.hbesj.org/?page_id=128" target="_blank">the best presentation award</a>.
-  </dd>
-  <dt>
-    2020-11-08
-  </dt>
-  <dd>
-    KK gave an online presentation at <a href="http://www.socialpsychology.jp/conf2020/" target="_blank">the 61st Annual Conference of the Japanese Society of Social Psychology</a>.
-  </dd>
-</article>
 
-<div class="see-all">
-  <i class="fas fa-arrow-circle-right"></i>
-  <a href="/en/news/">All news</a>
-</div>
+
+## Institutions
+
+- [Department of Social Psychology, the University of Tokyo](http://www.utokyo-socpsy.com/index-e.html)
+- [Tatsuya Kameda Laboratory](http://www.tatsuyakameda.com/homeeng.html)
+- [Human Behavior and Evolution Society](https://www.hbes.com)
+- [European Human Behaviour and Evolution Association](https://www.cambridge.org/core/membership/ehbea)
+- [The Japanese Society of Social Psychology](http://www.socialpsychology.jp)
+- [The Japanese Psychological Association](https://psych.or.jp/english/)
+- [Human Behavior and Evolution Society of Japan](https://www.hbesj.org/?page_id=154)
+
+<br>
+
+## Others
+
+- [researchmap (Kiri Kuroda)](https://researchmap.jp/kirikuroda?lang=en)
+

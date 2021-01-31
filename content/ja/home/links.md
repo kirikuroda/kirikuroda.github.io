@@ -5,10 +5,10 @@
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 15  # Order that this section will appear.
+weight = 70  # Order that this section will appear.
 
-title = "News"
-subtitle = ""
+title = "Links"
+subtitle = "リンク"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -65,30 +65,23 @@ subtitle = ""
 
  # CSS class.
  css_class = ""
+
 +++
 
-<article>
-	<dt>
-    2021-01-28
-  </dt>
-  <dd>
-    KK won <a href="https://www.jsps.go.jp/english/e-ikushi-prize/data/awards/11th_Ikushi_list_en.pdf" target="_blank">the 11th JSPS Ikushi Prize</a>.
-  </dd>
-  <dt>
-    2020-12-13
-  </dt>
-  <dd>
-    KK gave an online presentation at <a href="https://sites.google.com/view/hbes-j2020fukuoka/" target="_blank">the 13th Annual Conference of Human Behavior & Evolution Society of Japan</a> and won <a href="https://www.hbesj.org/?page_id=128" target="_blank">the best presentation award</a>.
-  </dd>
-  <dt>
-    2020-11-08
-  </dt>
-  <dd>
-    KK gave an online presentation at <a href="http://www.socialpsychology.jp/conf2020/" target="_blank">the 61st Annual Conference of the Japanese Society of Social Psychology</a>.
-  </dd>
-</article>
 
-<div class="see-all">
-  <i class="fas fa-arrow-circle-right"></i>
-  <a href="/en/news/">All news</a>
-</div>
+
+## 所属
+
+- [東京大学 社会心理学研究室](http://www.utokyo-socpsy.com)
+- [東京大学 亀田達也研究室](http://www.tatsuyakameda.com)
+- [日本社会心理学会](http://www.socialpsychology.jp)
+- [日本心理学会](https://psych.or.jp)
+- [日本人間行動進化学会](https://www.hbesj.org)
+- [Human Behavior and Evolution Society](https://www.hbes.com)
+- [European Human Behaviour and Evolution Association](https://www.cambridge.org/core/membership/ehbea)
+
+<br>
+
+## その他
+
+- [researchmap（黒田起吏）](https://researchmap.jp/kirikuroda?lang=ja)
