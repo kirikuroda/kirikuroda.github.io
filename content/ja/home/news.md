@@ -90,6 +90,8 @@ subtitle = "お知らせ"
   </dd>
 </article>
 
+<br>
+
 
 <div class="see-all">
   <i class="fas fa-arrow-circle-right"></i>

@@ -74,12 +74,14 @@ subtitle = ""
   <dd>
     KK won <a href="https://www.jsps.go.jp/english/e-ikushi-prize/data/awards/11th_Ikushi_list_en.pdf" target="_blank">the 11th JSPS Ikushi Prize</a>.
   </dd>
+  <br>
   <dt>
     2020-12-13
   </dt>
   <dd>
     KK gave an online presentation at <a href="https://sites.google.com/view/hbes-j2020fukuoka/" target="_blank">the 13th Annual Conference of Human Behavior & Evolution Society of Japan</a> and won <a href="https://www.hbesj.org/?page_id=128" target="_blank">the best presentation award</a>.
   </dd>
+  <br>
   <dt>
     2020-11-08
   </dt>
@@ -87,6 +89,9 @@ subtitle = ""
     KK gave an online presentation at <a href="http://www.socialpsychology.jp/conf2020/" target="_blank">the 61st Annual Conference of the Japanese Society of Social Psychology</a>.
   </dd>
 </article>
+
+<br>
+
 
 <div class="see-all">
   <i class="fas fa-arrow-circle-right"></i>
