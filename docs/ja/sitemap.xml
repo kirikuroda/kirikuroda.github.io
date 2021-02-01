@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/post/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kirikuroda.github.io/categories/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,13 +33,8 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/ggplot2/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -53,18 +48,13 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/powerpoint/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/r/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+    <loc>https://kirikuroda.github.io/tags/sciencegrit/</loc>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://kirikuroda.github.io/tags/</loc>
-    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -75,6 +65,46 @@
                 hreflang="ja"
                 href="https://kirikuroda.github.io/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E3%82%AD%E3%83%95%E3%83%88/</loc>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E8%AB%96%E6%96%87/</loc>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/post/2021/02/01/sciencegrit-publication-mug/</loc>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE/</loc>
+    <lastmod>2021-02-01T21:46:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/ggplot2/</loc>
+    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/powerpoint/</loc>
+    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kirikuroda.github.io/tags/r/</loc>
+    <lastmod>2020-12-27T12:40:55+09:00</lastmod>
   </url>
   
   <url>
@@ -403,11 +433,6 @@
   </url>
   
   <url>
-    <loc>https://kirikuroda.github.io/tags/%E8%AB%96%E6%96%87/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kirikuroda.github.io/tags/%E8%BE%9E%E6%9B%B8/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
@@ -419,16 +444,6 @@
   
   <url>
     <loc>https://kirikuroda.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2020-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kirikuroda.github.io/tags/%E8%B2%B7%E3%81%A3%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%82%E3%81%AE/</loc>
     <lastmod>2020-08-25T00:00:00+00:00</lastmod>
   </url>
   
