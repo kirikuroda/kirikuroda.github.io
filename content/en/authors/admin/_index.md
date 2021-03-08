@@ -39,7 +39,9 @@ social:
 - icon: researchgate
   icon_pack: fab
   link: https://www.researchgate.net/profile/Kiri_Kuroda
-highlight_name: true
+- icon: cv
+  icon_pack: ai
+  link: docs/cv_kirikuroda.pdf
 ---
 
 Kiri Kuroda is a graduate student majoring in social psychology at the University of Tokyo. KK studies group decision-making in humans with behavioral experiments, eye-tracking, and cognitive modeling.
