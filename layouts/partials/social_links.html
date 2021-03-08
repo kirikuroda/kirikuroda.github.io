@@ -14,7 +14,7 @@
       {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
     {{ end }}
     <li>
-      <a href="{{ $link | safeURL }}" target="_blank">
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
         <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i>
       </a>
     </li>

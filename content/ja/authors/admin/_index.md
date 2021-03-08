@@ -41,7 +41,7 @@ social:
   link: https://www.researchgate.net/profile/Kiri_Kuroda
 - icon: cv
   icon_pack: ai
-  link: docs/cv_kirikuroda.pdf
+  link: https://kirikuroda.github.io/docs/cv_kirikuroda.pdf
 ---
 
 
