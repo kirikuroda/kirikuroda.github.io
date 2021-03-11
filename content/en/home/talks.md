@@ -72,6 +72,22 @@ subtitle = ""
 
 
 <div class="acordion" id="accordionTalks">
+<div class="card">
+  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2021" aria-expanded="false" aria-controls="collapse2021">
+    <div class="card-header" id="heading2021">
+      <h1 class="mb-0">
+        2021
+      </h1>
+    </div>
+  </button>  
+  <div id="collapse2021" class="collapse" aria-labelledby="heading2021" data-parent="#accordionTalks">
+    <div class="card-body">
+      <ol>
+        <li><b>黒田起吏</b>「Speed-accuracy tradeoff状況における社会情報の認知処理過程」令和2年度育志賞研究発表会，オンライン開催，2021年3月10日.</li>
+      </ol>
+    </div>
+  </div>
+</div>
   <div class="card">
     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2020" aria-expanded="false" aria-controls="collapse2020">
     	<div class="card-header" id="heading2020">
@@ -200,4 +216,3 @@ subtitle = ""
     </div>
   </div>
 </div>
-

@@ -69,6 +69,13 @@ subtitle = "お知らせ"
 
 <article>
   <dt>
+    2021-03-10
+  </dt>
+  <dd>
+    令和2年度育志賞研究発表会でオンライン発表を行いました。
+  </dd>
+  <br/>
+  <dt>
     2021-01-28
   </dt>
   <dd>
@@ -80,13 +87,6 @@ subtitle = "お知らせ"
   </dt>
   <dd>
     <a href="https://sites.google.com/view/hbes-j2020fukuoka/" target="_blank">第13回日本人間行動進化学会</a>でオンライン発表を行い、<a href="https://www.hbesj.org/?page_id=128" target="_blank">最優秀発表賞</a>を受賞しました。
-  </dd>
-  <br/>
-  <dt>
-    2020-11-08
-  </dt>
-  <dd>
-    <a href="http://www.socialpsychology.jp/conf2020/" target="_blank">日本社会心理学会第61回大会</a>でオンライン発表を行いました。
   </dd>
 </article>
 
